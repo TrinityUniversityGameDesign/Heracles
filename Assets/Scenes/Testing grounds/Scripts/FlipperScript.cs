@@ -3,14 +3,15 @@
 /// <summary>
 /// Handle hitpoints and damages
 /// </summary>
-public class HealthScript : MonoBehaviour
+public class FlipperScript : MonoBehaviour
 {
 	 
 
 	/// <summary>
     /// Total hitpoints
     /// </summary>
-    public int hp = 1;
+    public int mode = 1;
+	public int numModes = 2;
 
     /// <summary>
     /// Enemy or player?
@@ -23,14 +24,35 @@ public class HealthScript : MonoBehaviour
     /// <param name="damageCount"></param>
     public void Damage(int damageCount)
     {
-        hp -= damageCount;
-
-        if (hp <= 0)
+        if (mode == 1)
         {
-            // Dead!
-            Destroy(gameObject);
+			GameObject gateA = gameObject.transform.Find("gateA").gameObject;
+			gateA.active = false; 
+
+			GameObject gateB = gameObject.transform.Find("gateB").gameObject;
+			gateB.active = true; 
+
         }
+
+		if (mode == 2) {
+			GameObject gateB = gameObject.transform.Find("gateB").gameObject;
+			gateB.active = false; 
+			
+			GameObject gateA = gameObject.transform.Find("gateA").gameObject;
+			gateA.active = true; 
+				}
+
+			mode += 1;
+
+		if (mode > numModes)
+			mode = 1;
     }
+
+	void Start(){
+//		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
+		GameObject gateB = gameObject.transform.Find("gateB").gameObject;
+		gateB.active = false; 
+	}
 
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
