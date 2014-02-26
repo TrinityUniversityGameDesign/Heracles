@@ -1,0 +1,13 @@
+In order to use moving and one-way platforms you must first add the 3rd party packages
+ to your unity project.
+
+First, navigate to the folder that has your unity project, and open the projects' asset folder
+	(just in the file browser, not within unity)
+
+Next, drag and drop all three items in the required assets folder into your 
+	projects' own assets folder
+
+If you have unity open during this it should pop up a dialogue and automatically 
+	load them when you click back over to it. 
+
+Done, should be able to use the prefabs.
