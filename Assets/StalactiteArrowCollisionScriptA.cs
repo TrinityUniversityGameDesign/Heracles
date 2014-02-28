@@ -3,6 +3,7 @@ using System.Collections;
 
 public class StalactiteArrowCollisionScriptA : MonoBehaviour {
 	Rigidbody2D beep;
+	public AudioClip stalacFall;
 
 	void Start()
 	{
@@ -17,6 +18,11 @@ public class StalactiteArrowCollisionScriptA : MonoBehaviour {
 		{
 			Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
 			beep.gravityScale = 1;
+			audio.clip = stalacFall;
+			audio.PlayOneShot(stalacFall);
 		}
 	}
 }
+
+
+
