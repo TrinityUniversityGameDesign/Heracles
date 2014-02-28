@@ -10,11 +10,13 @@ public class BT_ObjGeneratorScript : MonoBehaviour {
 	public GameObject obj;
 	public float genRate = 0.5f;
 	public float genCooldown = 0f;
+	public int angle;
+	public float force;
 
-	public int genDirectionX = 1;
-	public int genDirectionY = 1;
-	public float genSpeedX = 0.2f;
-	public float genSpeedY = 0f;
+	public bool aimForTarget;
+	public Transform target;
+	private bool haveFiringSolution = false;
+	private bool directFire = true;
 
 	// Update is called once per frame
 	void Update () {
@@ -29,17 +31,40 @@ public class BT_ObjGeneratorScript : MonoBehaviour {
 			genCooldown = genRate;
 			GameObject newObj = Instantiate(obj) as GameObject;
 			newObj.transform.position = transform.position;
-			BT_MovementScript movementScript = newObj.GetComponent<BT_MovementScript>();
-			if (movementScript != null) {
-				movementScript.SetControlMethod("ConstantSpeed");
-				movementScript.SetConstantSpeed(genDirectionX,genDirectionY,genSpeedX,genSpeedY);
+			newObj.AddComponent<BT_TragectoryScript>();
+			newObj.GetComponent<BT_TragectoryScript>().objShot = this.gameObject;
+			newObj.GetComponent<BT_TragectoryScript>().sightLine = newObj.GetComponent<LineRenderer>();
+			if (!aimForTarget) {
+				float angleRad = angle / 180.0f * Mathf.PI;
+				newObj.rigidbody2D.AddForce( (Mathf.Sin(angleRad) * newObj.transform.up + Mathf.Cos(angleRad) * newObj.transform.right) * force);
+				newObj.GetComponent<BT_TragectoryScript>().SetTragectory(angle,force);
+			}
+			else {
+				Vector2 direction = target.position - transform.position;
+				float distance = Mathf.Abs(target.position.x - transform.position.x);
+				float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
+				float tempForce = BallisticVel(target.position,tempAngle);
+				float angleRad = tempAngle / 180.0f * Mathf.PI;
+				newObj.rigidbody2D.AddForce( (Mathf.Sin(angleRad) * newObj.transform.up + Mathf.Cos(angleRad) * newObj.transform.right) * tempForce*49);
+				newObj.GetComponent<BT_TragectoryScript>().SetTragectory(tempAngle,tempForce);
 			}
 		}
+	}
+
+	float BallisticVel(Vector3 target,float newAngle) {
+		Vector3 dir = target - transform.position; 
+		float h = dir.y;
+		dir.y = 0;
+		float dist = dir.magnitude;
+		float a = angle * Mathf.Deg2Rad;
+		dir.y = dist * Mathf.Tan(a);
+		dist += h / Mathf.Tan(a);
+		return Mathf.Sqrt(Mathf.Abs(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a)));
 	}
 	
 	public bool CanGenerateNew {
 		get {
 			return genCooldown <= 0f;
 		}
-	}
+	}	
 }
