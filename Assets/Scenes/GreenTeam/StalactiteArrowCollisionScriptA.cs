@@ -14,7 +14,12 @@ public class StalactiteArrowCollisionScriptA : MonoBehaviour {
 	{
 		// Is this a shot?
 		ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
-		if (shot != null)
+		WaterScript water = otherCollider.gameObject.GetComponent<WaterScript> ();
+		if (water != null) {
+			beep.drag = 10;
+			beep.gravityScale = 0.2f;
+		}
+		else if (shot != null)
 		{
 			Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
 			beep.gravityScale = 1;
