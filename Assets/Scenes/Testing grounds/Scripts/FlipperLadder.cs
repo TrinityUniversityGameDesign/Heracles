@@ -17,6 +17,7 @@ public class FlipperLadder : MonoBehaviour
 	public string lad4;
 	public string lad5;
 	public bool isEnemy;
+	public bool destroyshot;
 
     /// <summary>
     /// Enemy or player?
@@ -78,7 +79,8 @@ public class FlipperLadder : MonoBehaviour
                 Damage();
 
                 // Destroy the shot
-                Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
+               if(destroyshot)
+					Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
             }
         }
     }
