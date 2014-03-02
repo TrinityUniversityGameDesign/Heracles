@@ -86,7 +86,7 @@ GameObject:
   - 61: {fileID: 58209593}
   - 114: {fileID: 58209592}
   m_Layer: 9
-  m_Name: Scene Changer
+  m_Name: Scene Changer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,6 +208,14 @@ Prefab:
     - target: {fileID: 6100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_Size.y
       value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Name
+      value: Scene Changer3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
@@ -588,7 +596,7 @@ GameObject:
   - 61: {fileID: 1236455889}
   - 114: {fileID: 1236455888}
   m_Layer: 9
-  m_Name: Scene Changer
+  m_Name: Scene Changer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
-  level: Amy_Scene2
+  level: 
 --- !u!61 &1236455889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -740,15 +748,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.02510679
+      value: 1.035375
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.56236839
+      value: 1.68295085
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -.779604912
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalRotation.x
@@ -787,6 +795,18 @@ Prefab:
       propertyPath: m_Size.y
       value: .100000001
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Name
+      value: Scene Changer2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
   m_RootGameObject: {fileID: 1994812086}
@@ -804,7 +824,7 @@ GameObject:
   - 61: {fileID: 1994812088}
   - 114: {fileID: 1994812087}
   m_Layer: 9
-  m_Name: Scene Changer
+  m_Name: Scene Changer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,7 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
-  level: Amy_Scene2
+  level: 
 --- !u!61 &1994812088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -867,7 +887,7 @@ Transform:
   m_PrefabInternal: {fileID: 1541179131}
   m_GameObject: {fileID: 1994812086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02510679, y: 1.56236839, z: 0}
+  m_LocalPosition: {x: 1.035375, y: 1.68295085, z: -.779604912}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -966,6 +986,10 @@ Prefab:
     - target: {fileID: 6100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_Size.y
       value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Name
+      value: Scene Changer1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}

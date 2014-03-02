@@ -453,6 +453,8 @@ GameObject:
   - 212: {fileID: 539284499}
   - 61: {fileID: 539284502}
   - 114: {fileID: 539284501}
+  - 114: {fileID: 539284503}
+  - 114: {fileID: 539284504}
   m_Layer: 0
   m_Name: Bow1
   m_TagString: Untagged
@@ -517,6 +519,31 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .126377866, y: .300000012}
   m_Center: {x: .00334701547, y: 0}
+--- !u!114 &539284503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539284498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caffe124cd17d4a7e95e0d2f344ae507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
+--- !u!114 &539284504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539284498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fddd23310356b40309166784d3fc4c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
+  level: 
 --- !u!1 &659871399
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +949,7 @@ GameObject:
   - 92: {fileID: 1154634008}
   - 124: {fileID: 1154634007}
   - 81: {fileID: 1154634006}
+  - 114: {fileID: 1154634011}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -990,6 +1018,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1154634011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154634005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a7434093c080e4f8e92047966597b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMargin: 1
+  yMargin: 1
+  xSmooth: 3
+  ySmooth: 3
+  maxXAndY: {x: 999, y: 999}
+  minXAndY: {x: -999, y: -999}
 --- !u!1 &1236569630
 GameObject:
   m_ObjectHideFlags: 0
