@@ -10,13 +10,17 @@ public class FlipperLadder : MonoBehaviour
 	/// <summary>
     /// Total hitpoints
     /// </summary>
-    public int mode = 1;
-	public int numModes = 2;
+	public int numLadders = 5;
+	public string lad1;
+	public string lad2;
+	public string lad3;
+	public string lad4;
+	public string lad5;
+	public bool isEnemy;
 
     /// <summary>
     /// Enemy or player?
     /// </summary>
-    public bool isEnemy = true;
 
     /// <summary>
     /// Inflicts damage and check if the object should be destroyed
@@ -24,40 +28,38 @@ public class FlipperLadder : MonoBehaviour
     /// <param name="damageCount"></param>
     public void Damage( )
     {
-        if (mode == 1)
-        {
-			GameObject gateA = GameObject.Find("gateA1");
-			Disable(gateA);
+		int i = 1;
+		//for (i = 1; i <= numLadders; i++) {
 
-			GameObject gateB = GameObject.Find("gateA2");
-			Enable(gateB); 
+						GameObject obj1 = GameObject.Find (lad1);
+						GameObject obj2 = GameObject.Find (lad2);
+						GameObject obj3 = GameObject.Find (lad3);
+						GameObject obj4 = GameObject.Find (lad4);
+						GameObject obj5 = GameObject.Find (lad5);
 
-        }
-
-		if (mode == 2) {
-			GameObject gateB = GameObject.Find("gateA2");
-			Disable(gateB); 
-			
-			GameObject gateA = GameObject.Find("gateA1");
-			Enable (gateA);  
-				}
-
-			mode += 1;
-
-		if (mode > numModes)
-			mode = 1;
-    }
+						Toggle (obj1);
+						Toggle (obj2);
+						Toggle (obj3);
+						Toggle (obj4);
+						Toggle (obj5);
+				//}
+	}
 
 	void Start(){
-//		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
-		GameObject gateB = gameObject.transform.Find("gateA2").gameObject;
-		Disable(gateB); 
+
 	}
+	void Toggle(GameObject obj){
+		if (obj.collider2D.enabled == false)
+						Enable (obj);
+				else
+						Disable (obj);
+		}
 
 	void Disable(GameObject obj){
 		obj.collider2D.enabled = false; 
 		obj.renderer.material.color = Color.grey;
 	}
+
 	void Enable(GameObject obj){
 		obj.collider2D.enabled = true; 
 		obj.renderer.material.color = Color.green;
