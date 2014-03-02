@@ -3,7 +3,7 @@
 /// <summary>
 /// Handle hitpoints and damages
 /// </summary>
-public class FlipperScript : MonoBehaviour
+public class FlipperLadder : MonoBehaviour
 {
 	 
 
@@ -22,24 +22,24 @@ public class FlipperScript : MonoBehaviour
     /// Inflicts damage and check if the object should be destroyed
     /// </summary>
     /// <param name="damageCount"></param>
-    public void Damage(int damageCount)
+    public void Damage( )
     {
         if (mode == 1)
         {
-			GameObject gateA = gameObject.transform.Find("gateA").gameObject;
-			gateA.active = false; 
+			GameObject gateA = GameObject.Find("gateA1");
+			Disable(gateA);
 
-			GameObject gateB = gameObject.transform.Find("gateB").gameObject;
-			gateB.active = true; 
+			GameObject gateB = GameObject.Find("gateA2");
+			Enable(gateB); 
 
         }
 
 		if (mode == 2) {
-			GameObject gateB = gameObject.transform.Find("gateB").gameObject;
-			gateB.active = false; 
+			GameObject gateB = GameObject.Find("gateA2");
+			Disable(gateB); 
 			
-			GameObject gateA = gameObject.transform.Find("gateA").gameObject;
-			gateA.active = true; 
+			GameObject gateA = GameObject.Find("gateA1");
+			Enable (gateA);  
 				}
 
 			mode += 1;
@@ -50,9 +50,19 @@ public class FlipperScript : MonoBehaviour
 
 	void Start(){
 //		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
-		GameObject gateB = GameObject.Find("gateB");
-		gateB.active = false; 
+		GameObject gateB = gameObject.transform.Find("gateA2").gameObject;
+		Disable(gateB); 
 	}
+
+	void Disable(GameObject obj){
+		obj.collider2D.enabled = false; 
+		obj.renderer.material.color = Color.grey;
+	}
+	void Enable(GameObject obj){
+		obj.collider2D.enabled = true; 
+		obj.renderer.material.color = Color.green;
+	}
+
 
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
@@ -63,7 +73,7 @@ public class FlipperScript : MonoBehaviour
             // Avoid friendly fire
             if (shot.isEnemyShot != isEnemy)
             {
-                Damage(shot.damage);
+                Damage();
 
                 // Destroy the shot
                 Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
