@@ -975,6 +975,7 @@ GameObject:
   - 4: {fileID: 1236569632}
   - 212: {fileID: 1236569631}
   - 61: {fileID: 1236569633}
+  - 114: {fileID: 1236569634}
   m_Layer: 0
   m_Name: Ladder_static
   m_TagString: Untagged
@@ -1027,6 +1028,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .319999993, y: .319999993}
   m_Center: {x: 0, y: 0}
+--- !u!114 &1236569634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1236569630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ca566634fd9214fb69a17ffbfa6b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
+  speed: 1
+  tick: .100000001
 --- !u!1001 &1365025242
 Prefab:
   m_ObjectHideFlags: 0
@@ -1785,6 +1800,7 @@ GameObject:
   - 4: {fileID: 1786749242}
   - 212: {fileID: 1786749241}
   - 61: {fileID: 1786749243}
+  - 114: {fileID: 1786749244}
   m_Layer: 0
   m_Name: Ladder_static
   m_TagString: Untagged
@@ -1837,6 +1853,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .319999993, y: .319999993}
   m_Center: {x: 0, y: 0}
+--- !u!114 &1786749244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1786749240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ca566634fd9214fb69a17ffbfa6b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
+  speed: 1
+  tick: .100000001
 --- !u!1001 &2113006743
 Prefab:
   m_ObjectHideFlags: 0
