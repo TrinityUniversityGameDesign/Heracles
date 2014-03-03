@@ -9,6 +9,7 @@ public class BT_HindScript : MonoBehaviour {
 	private Vector2 force = Vector2.zero;
 	private bool doStop = false;
 	private bool doSlow = false;
+	public float jumpForce;
 	
 	// Use this for initialization
 	void Start () {
@@ -59,12 +60,12 @@ public class BT_HindScript : MonoBehaviour {
 		}
 		if (direction == "jumpLeft") {
 			movement = new Vector3 (-speed,rigidbody2D.velocity.y,0f);
-			force = new Vector2(0f,600f);
+			force = new Vector2(0f,jumpForce);
 			direction = "left";
 		}
 		if (direction == "jumpRight") {
 			movement = new Vector3(speed,rigidbody2D.velocity.y,0f);
-			force = new Vector2(0f,600f);
+			force = new Vector2(0f,jumpForce);
 			direction = "right";
 		}
 	}
