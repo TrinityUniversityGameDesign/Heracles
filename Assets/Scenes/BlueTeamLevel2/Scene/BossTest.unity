@@ -602,6 +602,7 @@ GameObject:
   - 82: {fileID: 790228444}
   - 114: {fileID: 790228443}
   - 114: {fileID: 790228442}
+  - 114: {fileID: 790228453}
   m_Layer: 8
   m_Name: PlayerChar
   m_TagString: P1
@@ -838,6 +839,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 7077db25b63e24a4d92d87b3d93e3553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &790228453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 790228440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d1f08a8dbd6ff4a88842d590ba67fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpAxisName: Vertical
 --- !u!1 &916811795
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +940,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 965571424}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &965571426
 Behaviour:
   m_ObjectHideFlags: 0
