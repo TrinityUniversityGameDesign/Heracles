@@ -20,7 +20,7 @@ public class CharacterSoundEffects : MonoBehaviour {
 	void FixedUpdate() {
 		bool jump = Input.GetButtonDown (jumpAxisName);
 		if (jump) {
-			//audio.PlayOneShot();							
+			audio.Play();							
 		}
 	}
 }
