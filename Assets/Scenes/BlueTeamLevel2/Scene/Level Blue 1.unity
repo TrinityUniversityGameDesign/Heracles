@@ -215,8 +215,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 9a421243c660c4decad27be414b3d90e, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: .319999993, y: 1}
-  m_Center: {x: -.100000001, y: 0}
+  m_Size: {x: .200000003, y: .899999976}
+  m_Center: {x: 0, y: 0}
 --- !u!50 &88167159
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c1bf016019f6fb143a369f9f64d6cede, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7077db25b63e24a4d92d87b3d93e3553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &88167162
 Transform:
@@ -279,7 +279,7 @@ Transform:
   m_PrefabInternal: {fileID: 843591321}
   m_GameObject: {fileID: 88167155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.9050398, y: -3.708179, z: 0}
+  m_LocalPosition: {x: -11.976985, y: -3.708179, z: 0}
   m_LocalScale: {x: 1.27543414, y: 1.27542722, z: 1}
   m_Children:
   - {fileID: 1276124218}
@@ -489,7 +489,7 @@ Animator:
   m_GameObject: {fileID: 375285229}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4736dd13ed9c2ff498a900c7215b6ba4, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -525,7 +525,7 @@ Transform:
   m_PrefabInternal: {fileID: 1028250661}
   m_GameObject: {fileID: 375285229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.3314133, y: -3.49411225, z: 0}
+  m_LocalPosition: {x: 34.2179031, y: -3.6530304, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -929,7 +929,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.9050398
+      value: -11.976985
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
       propertyPath: m_LocalPosition.y
@@ -970,6 +970,23 @@ Prefab:
     - target: {fileID: 6100000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7077db25b63e24a4d92d87b3d93e3553,
+        type: 3}
+    - target: {fileID: 6100000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
+      propertyPath: m_Size.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
+      propertyPath: m_Size.y
+      value: .899999976
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
@@ -1047,11 +1064,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 34.3314133
+      value: 34.2179031
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.49411225
+      value: -3.6530304
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1077,6 +1094,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 88167155}
+    - target: {fileID: 9500000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4736dd13ed9c2ff498a900c7215b6ba4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
   m_RootGameObject: {fileID: 375285229}
