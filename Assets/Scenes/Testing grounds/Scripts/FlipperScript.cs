@@ -50,7 +50,7 @@ public class FlipperScript : MonoBehaviour
 
 	void Start(){
 //		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
-		GameObject gateB = gameObject.transform.Find("gateB").gameObject;
+		GameObject gateB = GameObject.Find("gateB");
 		gateB.active = false; 
 	}
 
