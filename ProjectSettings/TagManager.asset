@@ -4,9 +4,13 @@
 TagManager:
   tags:
   - 
+<<<<<<< HEAD
   - P1
   - Hind
 
+=======
+  - Flip1
+>>>>>>> FETCH_HEAD
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
