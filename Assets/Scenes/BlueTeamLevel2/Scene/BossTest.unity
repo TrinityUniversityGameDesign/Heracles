@@ -579,7 +579,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 770288606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.8461208, y: -3.69342613, z: -12.2657051}
+  m_LocalPosition: {x: -11.2504358, y: -3.69342613, z: -12.2657051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1571,6 +1571,7 @@ GameObject:
   - 114: {fileID: 1660905075}
   - 50: {fileID: 1660905074}
   - 114: {fileID: 1660905073}
+  - 114: {fileID: 1660905080}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1590,10 +1591,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 100000, guid: 5b9e906cd7c3d44348fdbc99d585505a, type: 2}
-  genRate: 2
+  genRate: 3
   genCooldown: 4
   angle: 25
-  force: 100
+  force: 10
   aimForTarget: 1
 --- !u!50 &1660905074
 Rigidbody2D:
@@ -1685,6 +1686,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1660905080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660905072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46fb0bb43482a7542851eb24a4b2ea40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoolDown: 4
+  phase: 0
 --- !u!1 &1666727887
 GameObject:
   m_ObjectHideFlags: 0
