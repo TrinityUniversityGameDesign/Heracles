@@ -15,7 +15,7 @@
         #ifdef VERTEX
         void main() {
         	vec4 pos = (gl_ModelViewProjectionMatrix * gl_Vertex);
-            gl_Position = vec4(pos.x, pos.y + 1.0*sin(_Time.x*10.0 + pos.x*10.0), pos.z, 1.0);
+            gl_Position = vec4(pos.x, pos.y + 0.05*sin(_Time.x*10.0 + pos.x*10.0), pos.z, 1.0);
             col = gl_Color;
             texVert = gl_MultiTexCoord0;
 		}
