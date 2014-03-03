@@ -56,8 +56,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.9595404, y: -3.0400269, z: 0}
-  m_LocalScale: {x: 2, y: .200000003, z: 1}
+  m_LocalPosition: {x: 6.15846634, y: 1.88681507, z: 0}
+  m_LocalScale: {x: -2.16316032, y: -.216316685, z: 1}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
@@ -137,10 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: CP_MPOne
-  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  pathColor: {r: .75686276, g: .75686276, b: .75686276, a: 1}
   nodes:
-  - {x: -11.9595404, y: -3.0400269, z: 0}
-  - {x: -7.07984352, y: -.144298315, z: 0}
+  - {x: 5.92723036, y: 2.06321383, z: 0}
+  - {x: 6.01042557, y: -4.48800373, z: 0}
   nodeCount: 2
   initialized: 1
   initialName: New Path 1
