@@ -43,10 +43,10 @@ public class BT_ObjGeneratorScript : MonoBehaviour {
 				Vector2 direction = GameObject.FindGameObjectWithTag("P1").transform.position - transform.position;
 				float distance = Mathf.Abs(GameObject.FindGameObjectWithTag("P1").transform.position.x - transform.position.x);
 				float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
-				float tempForce = BallisticVel(GameObject.FindGameObjectWithTag("P1").transform.position,tempAngle);
+				//float tempForce = BallisticVel(GameObject.FindGameObjectWithTag("P1").transform.position,tempAngle);
 				float angleRad = tempAngle / 180.0f * Mathf.PI;
-				newObj.rigidbody2D.AddForce( (Mathf.Sin(angleRad) * newObj.transform.up + Mathf.Cos(angleRad) * newObj.transform.right) * tempForce*49);
-				newObj.GetComponent<BT_TragectoryScript>().SetTragectory(tempAngle,tempForce);
+				newObj.rigidbody2D.AddForce( (Mathf.Sin(angleRad) * newObj.transform.up + Mathf.Cos(angleRad) * newObj.transform.right) * force*49);
+				newObj.GetComponent<BT_TragectoryScript>().SetTragectory(tempAngle,force);
 			}
 		}
 	}

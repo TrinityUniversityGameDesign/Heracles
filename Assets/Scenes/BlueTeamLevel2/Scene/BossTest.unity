@@ -1591,9 +1591,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 100000, guid: 5b9e906cd7c3d44348fdbc99d585505a, type: 2}
   genRate: 2
-  genCooldown: 6
+  genCooldown: 4
   angle: 25
-  force: 800
+  force: 100
   aimForTarget: 1
 --- !u!50 &1660905074
 Rigidbody2D:
