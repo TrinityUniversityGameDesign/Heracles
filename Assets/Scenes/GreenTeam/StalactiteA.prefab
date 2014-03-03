@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.55818653, y: 5.34488869, z: 0}
+  m_LocalPosition: {x: 43.8407135, y: 7.1829319, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stalacFall: {fileID: 8300000, guid: 67a28ac5e7dcca9448f6719a5c85debb, type: 3}
+  timeToDisappear: 450
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
