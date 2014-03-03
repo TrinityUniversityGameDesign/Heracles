@@ -4,36 +4,8 @@
 TagManager:
   tags:
   - 
-<<<<<<< HEAD
-<<<<<<< HEAD
   - P1
   - Hind
-=======
-  - Flip1
-  - Terrain
-=======
->>>>>>> FETCH_HEAD
-  - P1
-  - Hind
-  - 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - Prey
-  - 
-  - Hind
-=======
-  - Enemy
->>>>>>> FETCH_HEAD
->>>>>>> FETCH_HEAD
-=======
-  - Enemy
->>>>>>> FETCH_HEAD
->>>>>>> FETCH_HEAD
-=======
-  - Enemy
->>>>>>> FETCH_HEAD
->>>>>>> FETCH_HEAD
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
