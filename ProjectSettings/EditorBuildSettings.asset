@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/Level Blue 1.unity
   - enabled: 1
-    path: Assets/Scenes/Red Team/Amy_Scene2.unity
+    path: Assets/Scenes/Red Team/Scenes/Amy_Scene2.unity
   - enabled: 1
     path: Assets/Scenes/Testing grounds/Vivian WIP.unity
   - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/Level Blue 2.unity
   - enabled: 1
-    path: Assets/Scenes/Red Team/Brittney_Scene.unity
+    path: Assets/Scenes/Red Team/Scenes/Brittney_Scene.unity
   - enabled: 1
-    path: Assets/Scenes/Red Team/Amy_Scene1.unity
+    path: Assets/Scenes/Red Team/Scenes/Amy_Scene1.unity
   - enabled: 1
-    path: Assets/Scenes/Red Team/cpeake.unity
+    path: Assets/Scenes/Red Team/Scenes/cpeake.unity
   - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/BossTest.unity
