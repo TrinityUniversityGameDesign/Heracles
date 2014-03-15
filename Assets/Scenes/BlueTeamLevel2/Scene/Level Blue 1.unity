@@ -157,11 +157,10 @@ GameObject:
   - 61: {fileID: 88167158}
   - 114: {fileID: 88167157}
   - 114: {fileID: 88167156}
-  - 114: {fileID: 88167163}
-  - 114: {fileID: 88167164}
   - 82: {fileID: 88167165}
   - 114: {fileID: 88167166}
   - 114: {fileID: 88167167}
+  - 114: {fileID: 88167163}
   m_Layer: 8
   m_Name: PlayerChar
   m_TagString: P1
@@ -292,30 +291,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 88167155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f626a407d9d0a4db4ecb62a9b527f2, type: 3}
+  m_Script: {fileID: 11500000, guid: b70835d1552cf498b8a2a5e22e1c0133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pc: {fileID: 88167157}
-  cp: {fileID: 1928588152}
-  newCX: 0
-  newCY: -4
---- !u!114 &88167164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 88167155}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a7434093c080e4f8e92047966597b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xMargin: 1
-  yMargin: 1
-  xSmooth: 8
-  ySmooth: 8
-  maxXAndY: {x: 0, y: 0}
-  minXAndY: {x: 0, y: 0}
 --- !u!82 &88167165
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1811,9 +1789,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1578848746}
   - 212: {fileID: 1578848745}
+  - 61: {fileID: 1578848747}
   m_Layer: 0
   m_Name: P10_320_1
-  m_TagString: Untagged
+  m_TagString: Hind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,6 +1831,17 @@ Transform:
   m_LocalScale: {x: .879023552, y: .879020512, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1578848747
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578848744}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 3, y: 5.25}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1653679404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,6 +2069,7 @@ GameObject:
   - 114: {fileID: 1928588155}
   - 114: {fileID: 1928588156}
   - 82: {fileID: 1928588157}
+  - 114: {fileID: 1928588158}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2099,7 +2090,7 @@ Behaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1928588148}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &1928588151
 Behaviour:
   m_ObjectHideFlags: 0
@@ -2143,7 +2134,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1928588148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.22851658, y: -3.8368566, z: -12.2657051}
+  m_LocalPosition: {x: -9.22851658, y: -3.8368566, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2170,7 +2161,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1928588148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f7fb882f17aca4aa83167fab6100b5, type: 3}
   m_Name: 
@@ -2245,6 +2236,20 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1928588158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928588148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9754345a432c0482dbe0c538c23b07a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 88167162}
+  zoom: 1
+  zoomSpeed: 2
 --- !u!1 &1990638660
 GameObject:
   m_ObjectHideFlags: 0
