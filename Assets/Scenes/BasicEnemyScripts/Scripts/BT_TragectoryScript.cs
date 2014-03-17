@@ -27,6 +27,9 @@ public class BT_TragectoryScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		SimulatePath();
+        if(!Input.GetButton("Fire")) {
+            sightLine.SetWidth(0f, 0f);
+        }
 	}
 
 	void SimulatePath() {
@@ -49,7 +52,7 @@ public class BT_TragectoryScript : MonoBehaviour {
 				segments[i] = segments[i-1] + segVelocity * segTime;
 			}
 		}
-		Color startColor = Color.green;
+        Color startColor = Color.black;
 		Color endColor =  Color.red;
 		startColor.a = 0.25f;
 		endColor.a = 0;

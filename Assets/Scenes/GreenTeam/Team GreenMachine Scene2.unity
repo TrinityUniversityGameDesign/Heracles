@@ -133,11 +133,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 580fe366430bec34abbf0aa76d4a0eca, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.36469519
+      value: -1.81837189
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 580fe366430bec34abbf0aa76d4a0eca, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.82527924
+      value: -4.76856995
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 580fe366430bec34abbf0aa76d4a0eca, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
-  shotPrefab: {fileID: 100000, guid: 107d588c09517ed47a7b87a68920e445, type: 2}
+  shotPrefab: {fileID: 100000, guid: e6e482515dc9747168c5f6e6f6663473, type: 2}
   angle: 0
   shotStrength: 0
 --- !u!114 &568505361
@@ -2946,7 +2946,7 @@ Transform:
   m_PrefabInternal: {fileID: 106975740}
   m_GameObject: {fileID: 1585104928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.36469519, y: -4.82527924, z: 0}
+  m_LocalPosition: {x: -1.81837189, y: -4.76856995, z: 0}
   m_LocalScale: {x: 4, y: 18, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3605,6 +3605,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
+      propertyPath: shotPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: e6e482515dc9747168c5f6e6f6663473, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a877f785ddbc46b48b105e7d7fa6f652, type: 2}
   m_RootGameObject: {fileID: 568505359}
