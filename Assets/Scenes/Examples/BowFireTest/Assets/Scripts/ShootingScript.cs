@@ -36,13 +36,13 @@ public class ShootingScript : MonoBehaviour
             {
                 shotStrength += 2.0f;
             }
-
             direction = Input.mousePosition;
-            direction.x -= Screen.width / 2;
-            direction.y -= Screen.height / 2;
+            Vector3 direction3 = Camera.main.ScreenToWorldPoint(new Vector3 (direction.x, direction.y, 0));
+            direction = new Vector2(direction3.x, direction3.y);
+            direction.x -= this.gameObject.transform.position.x;
+            direction.y -= this.gameObject.transform.position.y;
             direction.Normalize();
             direction = direction * shotStrength / 35;
-            float distance = Mathf.Abs(GameObject.FindGameObjectWithTag("P1").transform.position.x - transform.position.x);
             float tempAngle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
             traj.SetTragectory(tempAngle, shotStrength);
         }
