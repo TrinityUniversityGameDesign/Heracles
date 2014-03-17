@@ -9,20 +9,23 @@ public class ShootingScript : MonoBehaviour
     //--------------------------------
     // 1 - Designer variables
     //--------------------------------
-
-    /// <summary>
-    /// Projectile prefab for shooting
-    /// </summary>
-    public Transform shotPrefab;
+    public Vector2 direction;
+    public GameObject shotPrefab;
+    private BT_TragectoryScript traj;
+    public int angle;
+    //public Transform target; Original Script
 
     /// <summary>
     /// Building strength of shot
     /// </summary>
-    public int shotStrength;
+    public float shotStrength;
 
     void Start()
     {
         shotStrength = 0;
+        traj = this.gameObject.GetComponent<BT_TragectoryScript>();
+        traj.objShot = this.gameObject;
+        traj.sightLine = this.GetComponent<LineRenderer>();
     }
 
     void FixedUpdate()
@@ -31,8 +34,17 @@ public class ShootingScript : MonoBehaviour
         {
             if (shotStrength < 100)
             {
-                shotStrength += 1;
+                shotStrength += 2.0f;
             }
+
+            direction = Input.mousePosition;
+            direction.x -= Screen.width / 2;
+            direction.y -= Screen.height / 2;
+            direction.Normalize();
+            direction = direction * shotStrength / 35;
+            float distance = Mathf.Abs(GameObject.FindGameObjectWithTag("P1").transform.position.x - transform.position.x);
+            float tempAngle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
+            traj.SetTragectory(tempAngle, shotStrength);
         }
         else if (shotStrength > 0)
         {
@@ -48,7 +60,7 @@ public class ShootingScript : MonoBehaviour
     /// <summary>
     /// Create a new projectile if possible
     /// </summary>
-    public void Attack()
+    /*public void Attack()
     {
         var mouseDir = Input.mousePosition;
         mouseDir.x -= Screen.width / 2;
@@ -68,4 +80,38 @@ public class ShootingScript : MonoBehaviour
             move.direction = mouseDir; // towards in 2D space is the right of the sprite
         }
     }
+    */
+    public void Attack()
+    {
+        //if (CanGenerateNew)
+        //{
+            GameObject newObj = Instantiate(shotPrefab) as GameObject;
+            newObj.transform.position = transform.position;
+            InitialVelocityScript move = newObj.GetComponent<InitialVelocityScript>();
+            if (move != null)
+            {
+                move.direction = direction; // towards in 2D space is the right of the sprite
+            }
+        //}
+    }
+
+    /*float BallisticVel(Vector3 target, float newAngle)
+    {
+        Vector3 dir = target - transform.position;
+        float h = dir.y;
+        dir.y = 0;
+        float dist = dir.magnitude;
+        float a = angle * Mathf.Deg2Rad;
+        dir.y = dist * Mathf.Tan(a);
+        dist += h / Mathf.Tan(a);
+        return Mathf.Sqrt(Mathf.Abs(dist * Physics.gravity.magnitude / Mathf.Sin(2 * a)));
+    }
+
+    public bool CanGenerateNew
+    {
+        get
+        {
+            return genCooldown <= 0f;
+        }
+    }*/
 }
