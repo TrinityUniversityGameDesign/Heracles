@@ -17,7 +17,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 120: {fileID: 12000000}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: ArtemisArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,7 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 1
   canHit:
-  - Player
+  - P1
+  - Hind
   destoryOnHit: 1
 --- !u!120 &12000000
 LineRenderer:
