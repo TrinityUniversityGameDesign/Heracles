@@ -4,28 +4,41 @@ using System.Collections;
 public class BossLionBehavior : MonoBehaviour {
 
 
-	bool left = false;
-	bool right = false;
-	int fallblock = rigidbody2D.velocity.y;
+
+
+
+	GameObject greenpaw = gameObject.transform.Find("greenpaw").gameObject;
+
+	GameObject redpaw = gameObject.transform.Find("redpaw").gameObject;
+
+	GameObject lion = gameObject.transform.Find("BossLion").gameObject;
+
+
 
 	// Use this for initialization
 	void Start () {
 
-		
-	void OnTriggerEnter2D (Collider2D other) {
-			if (other.gameObject.rigidbody2D.mass >= 1){
-				fallblock == transform.ImagePosition.y;
+		redpaw.Sprite = false;
+		greenpaw.Sprite = false;
 
-				while (fallblock == transform.ImagePosition.y ){
-					rigidbody2D.velocity.x = rigidbody2D.velocity.x*-1;
-
-
-				}
-			}
-		}
-	
 	}
-	
+
+
+
+	void OnTriggerEnter2D(Collider2D otherCollider)
+	{
+		currentpos = lion.Vector2;
+		lion.Vector2.MoveTowards (currentpos, redpaw.Vector2, 3);
+
+	}
+
+	/*void OnTriggerEnter2D(Collider2D otherCollider)
+	{
+		currentpos = lion.Vector2;
+		lion.Vector2.MoveTowards (currentpos, greenpaw.Vector2, 3);
+		
+	}
+      */
 
 
 }
