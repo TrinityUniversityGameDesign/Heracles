@@ -56,7 +56,10 @@ public class PlayerControl : MonoBehaviour {
 								bc.center = new Vector2(bc.center.x,0f);
 						}
 				}
-		}
+			if (Input.GetKey(KeyCode.Q)){
+				gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
+			}
+	}
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
 		float vel = inputX * runSpeed;
