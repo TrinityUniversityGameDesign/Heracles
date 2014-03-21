@@ -27,9 +27,9 @@ public class PlayerControl : MonoBehaviour {
 
 //	bool dead = false;
 
-//	Animator anim;
+	Animator anim;
 	void Awake() {
-//		anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> ();
 		bc = GetComponent<BoxCollider2D>();
 	}
 
@@ -63,6 +63,7 @@ public class PlayerControl : MonoBehaviour {
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
 		float vel = inputX * runSpeed;
+		anim.SetFloat("Speed", Mathf.Abs(vel));
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
 	}
 }
