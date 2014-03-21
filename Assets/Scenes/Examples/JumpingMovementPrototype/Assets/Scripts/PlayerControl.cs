@@ -38,7 +38,7 @@ public class PlayerControl : MonoBehaviour {
 				grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 				//anim.SetBool ("Grounded", grounded);
 				bool jump = Input.GetButtonDown (jumpAxisName);
-				if (jump && grounded) {
+				if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 						rigidbody2D.AddForce (new Vector2 (0, jumpPower));
 				}
 				bool crouch = Input.GetKey (KeyCode.X);

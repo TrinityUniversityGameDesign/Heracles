@@ -60,25 +60,25 @@ public class OneWayPlatform : MonoBehaviour {
 			case "up":
 				if(under && !left && !right)
 					Ghost();
-				else if(over)
+				else if(over || right || left)
 					StopGhost();
 				break;
 			case "down":
 				if(over && !left && !right)
 					Ghost();
-				else if(under)
+				else if(under || right || left)
 					StopGhost();
 				break;
 			case "right":
 				if(left && !over && !under)
 					Ghost();
-				else if(right)
+				else if(right || under || over)
 					StopGhost();
 				break;
 			case "left":
 				if(right && !over && !under)
 					Ghost(); 
-				else if(left)
+				else if(left || under || over)
 					StopGhost();
 				break;
 			default:
