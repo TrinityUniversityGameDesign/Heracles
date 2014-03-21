@@ -11,6 +11,8 @@ public class BT_TragectoryScript : MonoBehaviour {
 	private float angle = 0;
 	private float force = 0f;
 
+	public bool lineAlwaysVisible = false;
+
 	private Collider _hitObject;
 	public Collider hitObject {get {return _hitObject; }}
 	
@@ -27,7 +29,7 @@ public class BT_TragectoryScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		SimulatePath();
-        if(!Input.GetButton("Fire")) {
+        if(!Input.GetButton("Fire") && !lineAlwaysVisible) {
             sightLine.SetWidth(0f, 0f);
         }
 	}

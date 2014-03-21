@@ -32,6 +32,8 @@ GameObject:
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400004}
   - 120: {fileID: 12000000}
+  - 82: {fileID: 8200002}
+  - 114: {fileID: 11400006}
   m_Layer: 8
   m_Name: PlayerChar
   m_TagString: P1
@@ -57,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.30785179, y: .820862055, z: 0}
+  m_LocalPosition: {x: 1.58814442, y: 1.10115433, z: 0}
   m_LocalScale: {x: 1.85743535, y: 1.85742533, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -96,9 +98,67 @@ AudioSource:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: fc8801af4e44221428894812886e3b8b, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 87085e9375bf4364489eb047aad208a9, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: .0939999968
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &8200002
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 87085e9375bf4364489eb047aad208a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -174,6 +234,8 @@ MonoBehaviour:
   resetPosition: {x: -7.5, y: -1.75}
   walkSpeed: 4
   runSpeed: 4
+  crouchSpeed: 0
+  crouchHeight: .5
   groundCheck: {fileID: 400000}
   groundMask:
     serializedVersion: 2
@@ -181,6 +243,8 @@ MonoBehaviour:
   jumpPower: 560
   horizAxisName: Horizontal
   jumpAxisName: Vertical
+  isCrouched: 0
+  boxcollider: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,9 +257,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
-  shotPrefab: {fileID: 100000, guid: 107d588c09517ed47a7b87a68920e445, type: 2}
+  shotPrefab: {fileID: 100000, guid: e6e482515dc9747168c5f6e6f6663473, type: 2}
   angle: 0
   shotStrength: 0
+  maxShotStrength: 40
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,6 +276,18 @@ MonoBehaviour:
   objShot: {fileID: 0}
   segmentCount: 20
   segmentScale: 1
+  lineAlwaysVisible: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3875f07887533b4c80a2696be9aee71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!120 &12000000
 LineRenderer:
   m_ObjectHideFlags: 1
