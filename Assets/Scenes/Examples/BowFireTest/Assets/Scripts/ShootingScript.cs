@@ -18,11 +18,11 @@ public class ShootingScript : MonoBehaviour
     /// <summary>
     /// Building strength of shot
     /// </summary>
-    public float shotStrength;
+    public float shotStrength = 0;
+	public int maxShotStrength = 40;
 
     void Start()
     {
-        shotStrength = 0;
         traj = this.gameObject.GetComponent<BT_TragectoryScript>();
         traj.objShot = this.gameObject;
         traj.sightLine = this.GetComponent<LineRenderer>();
@@ -32,7 +32,7 @@ public class ShootingScript : MonoBehaviour
     {
         if (Input.GetButton("Fire"))
         {
-            if (shotStrength < 100)
+            if (shotStrength < maxShotStrength)
             {
                 shotStrength += 2.0f;
             }

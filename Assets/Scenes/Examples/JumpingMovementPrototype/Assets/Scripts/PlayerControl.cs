@@ -27,9 +27,9 @@ public class PlayerControl : MonoBehaviour {
 
 //	bool dead = false;
 
-//	Animator anim;
+	Animator anim;
 	void Awake() {
-//		anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> ();
 		bc = GetComponent<BoxCollider2D>();
 	}
 
@@ -38,7 +38,7 @@ public class PlayerControl : MonoBehaviour {
 				grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 				//anim.SetBool ("Grounded", grounded);
 				bool jump = Input.GetButtonDown (jumpAxisName);
-				if (jump && grounded) {
+				if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 						rigidbody2D.AddForce (new Vector2 (0, jumpPower));
 				}
 				bool crouch = Input.GetKey (KeyCode.X);
@@ -56,10 +56,14 @@ public class PlayerControl : MonoBehaviour {
 								bc.center = new Vector2(bc.center.x,0f);
 						}
 				}
-		}
+			if (Input.GetKey(KeyCode.Q)){
+				gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
+			}
+	}
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
 		float vel = inputX * runSpeed;
+		anim.SetFloat("Speed", Mathf.Abs(vel));
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
 	}
 }
