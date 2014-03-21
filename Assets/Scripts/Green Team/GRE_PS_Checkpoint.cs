@@ -3,15 +3,14 @@ using System.Collections;
 
 
 public class GRE_PS_Checkpoint : MonoBehaviour {
-	public Vector2 pos = new Vector2(1.30785f, 0.10806f); //Need to make a global spawn variable for each level
+	public Vector2 respawnPos = new Vector2(-1000f, 0.373f); //Need to make a global spawn variable for each level
 	void OnTriggerEnter2D(Collider2D playerCollision)
 	{
-		Debug.Log("Wut");
-		if (playerCollision.tag == "DeathArea") {
-			gameObject.transform.position = pos;
-		} 
-		else if (playerCollision.tag == "Checkpoint") {
-			pos = transform.position;
+		if (gameObject.tag == "DeathArea") {
+			playerCollision.transform.position = respawnPos; //Not sure about this
+	} 
+		if (gameObject.tag == "Checkpoint") {
+			respawnPos = transform.position;
 		}
 	}
 }

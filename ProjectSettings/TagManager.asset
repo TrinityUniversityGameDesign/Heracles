@@ -6,8 +6,10 @@ TagManager:
   - Crate
   - P1
   - Hind
-  - 
+  - Checkpoint
   - crate
+  - DeathArea
+  - Enemy
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
