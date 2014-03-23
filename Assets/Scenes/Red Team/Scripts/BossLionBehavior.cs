@@ -6,7 +6,7 @@ public class BossLionBehavior : MonoBehaviour {
 
 
 
-
+	/*
 	GameObject greenpaw = gameObject.transform.Find("greenpaw").gameObject;
 
 	GameObject redpaw = gameObject.transform.Find("redpaw").gameObject;

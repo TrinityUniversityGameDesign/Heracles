@@ -247,6 +247,7 @@ MonoBehaviour:
   shotPrefab: {fileID: 100000, guid: e6e482515dc9747168c5f6e6f6663473, type: 2}
   angle: 0
   shotStrength: 0
+  maxShotStrength: 40
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,6 +288,7 @@ MonoBehaviour:
   objShot: {fileID: 0}
   segmentCount: 20
   segmentScale: 1
+  lineAlwaysVisible: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,7 +312,7 @@ LineRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
