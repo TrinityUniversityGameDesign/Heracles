@@ -15,11 +15,7 @@ public class BT_TragectoryScript : MonoBehaviour {
 
 	private Collider _hitObject;
 	public Collider hitObject {get {return _hitObject; }}
-	
-	// Use this for initialization
-	void Start () {
-
-	}
+	private bool yup = false;
 
 	public void SetTragectory(float newAngle, float newForce) {
 		angle = newAngle;
@@ -27,7 +23,7 @@ public class BT_TragectoryScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate() {
 		SimulatePath();
         if(!Input.GetButton("Fire") && !lineAlwaysVisible) {
             sightLine.SetWidth(0f, 0f);
@@ -54,11 +50,11 @@ public class BT_TragectoryScript : MonoBehaviour {
 				segments[i] = segments[i-1] + segVelocity * segTime;
 			}
 		}
-        Color startColor = Color.black;
-		Color endColor =  Color.red;
+        Color startColor = Color.cyan;
+		Color endColor =  Color.magenta;
 		startColor.a = 0.25f;
 		endColor.a = 0;
-		sightLine.SetWidth(0.1f,0.1f);
+		sightLine.SetWidth(0.08f,0.08f);
 		sightLine.SetColors(startColor,endColor);
 		sightLine.SetVertexCount(segmentCount);
 		for (int i = 0; i < segmentCount; i++)
