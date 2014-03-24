@@ -16,9 +16,7 @@ public class OneWayPlatform : MonoBehaviour {
 	public bool left;
 	public bool right;
 
-	void Awake() {
-	}
-	
+
 	void Start () {
 		Transform platBox = gameObject.transform; 
 		
@@ -27,10 +25,14 @@ public class OneWayPlatform : MonoBehaviour {
 		platY = platBox.position.y;
 		width = platBox.localScale.x;
 		height = platBox.localScale.y;
+
+		this.enabled = false;
 	}
 
 	// Update is called once per frame
 	void Update () {
+		PlatformCanDrop dropRef =  gameObject.GetComponent<PlatformCanDrop>();
+
 		if (isClose) {
 		
 						float minx = platX - (width / 2.0f);
@@ -56,6 +58,12 @@ public class OneWayPlatform : MonoBehaviour {
 						left = (pmaxx < minx);
 						right = (pminx > maxx); 
 
+
+			if(dropRef.dropping && over && !left && !right)   // this allows drop-down platforms to work on all one ways
+			{ Ghost();
+				dropRef.dropping = false;
+			}
+			else
 				switch (whichWay){
 			case "up":
 				if(under && !left && !right)
@@ -86,6 +94,7 @@ public class OneWayPlatform : MonoBehaviour {
 				break; 	
 			}
 				}
+
 	}
 	
 	void Ghost(){
@@ -100,6 +109,7 @@ public class OneWayPlatform : MonoBehaviour {
 	
 
 	void OnTriggerEnter2D (Collider2D other) {
+		this.enabled = true;
 		if (other.gameObject == playerObject) {
 						isClose = true;
 
@@ -111,5 +121,6 @@ public class OneWayPlatform : MonoBehaviour {
 			isClose = false;
 			StopGhost();
 		}
+		this.enabled = false; 
 	}
 }
