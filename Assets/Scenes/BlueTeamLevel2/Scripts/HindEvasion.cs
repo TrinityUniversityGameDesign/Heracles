@@ -14,10 +14,9 @@ public class HindEvasion : MonoBehaviour {
 	{
 		currentPosition = currentPlatform.transform.position;
 		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
-
-		currentPosition.y += currentPlatform.transform.localScale.y /2;
-		currentPosition.y += transform.localScale.y /2;
-
+		
+		currentPosition.y += this.gameObject.transform.localScale.y;
+		
 		transform.position = currentPosition;
 	}
 
@@ -48,7 +47,12 @@ public class HindEvasion : MonoBehaviour {
 	void Start ()
 	{
 		currentPlatform = startPlatform;
-		ChangePosition();
+		currentPosition = currentPlatform.transform.position;
+		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
+		
+		currentPosition.y += this.gameObject.transform.localScale.y;
+		
+		transform.position = currentPosition;
 	}
 	
 	// Update is called once per frame
