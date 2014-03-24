@@ -32,7 +32,8 @@ public class PressurePlate : MonoBehaviour {
 		}
 	}
 	void gotReleased(){
-		if (isPressed == 0) {
+		if (isPressed <= 0) {
+			isPressed = 0;
 					gameObject.renderer.material.color = Color.yellow; 
 			childScript.activate_Me = false; 
 				}
