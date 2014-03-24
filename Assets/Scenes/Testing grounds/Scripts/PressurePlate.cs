@@ -3,14 +3,14 @@ using System.Collections;
 
 public class PressurePlate : MonoBehaviour {
 
-	public GameObject playerObject;
+	public GameObject childObj;
+	private PressurePlateChildScript childScript;
 	public int isPressed = 0;
-	public float speed = 1f;
-	public float tick = .1f;
 
 	// Use this for initialization
 	void Start () {
-		playerObject = GameObject.FindWithTag("P1");
+		GameObject childObj = gameObject.transform.Find("PressureChild").gameObject;
+		childScript = childObj.GetComponent<PressurePlateChildScript>();
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
@@ -28,12 +28,14 @@ public class PressurePlate : MonoBehaviour {
 	void gotPressed() {
 				if (isPressed == 1) {
 					gameObject.renderer.material.color = Color.grey; 
-				}
+			childScript.activate_Me = true; 
+		}
 	}
 	void gotReleased(){
-		if (isPressed == 0) {
+		if (isPressed <= 0) {
+			isPressed = 0;
 					gameObject.renderer.material.color = Color.yellow; 
-
+			childScript.activate_Me = false; 
 				}
 		}
 }
