@@ -24,7 +24,7 @@ public class PositionLadderScript : MonoBehaviour {
 		if (other.gameObject == playerObject) {
 						canClimb = false;
 
-						playerObject.rigidbody2D.gravityScale = 2.7f;
+				//		playerObject.rigidbody2D.gravityScale = 2.7f;
 				}
 	}
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class PositionLadderScript : MonoBehaviour {
 		if (canClimb) {
 			playerObject.rigidbody2D.velocity = new Vector2(0f,0f);
 
-			if(Input.GetKey(KeyCode.Q)) {
+			if(Input.GetAxis("Vertical") > .5) {
 				playerObject.transform.position = new Vector3(playerObject.transform.position.x, playerObject.transform.position.y + tick, playerObject.transform.position.z);
 				//playerObject.rigidbody2D.gravityScale = 0; 
 
@@ -42,8 +42,8 @@ public class PositionLadderScript : MonoBehaviour {
 					playerObject.rigidbody2D.velocity = new Vector2 (-1, playerObject.rigidbody2D.velocity.y) ;
 			*/
 			}
-			if(Input.GetKey (KeyCode.W)) {
-				playerObject.transform.position = new Vector3(playerObject.transform.position.x, playerObject.transform.position.y + tick, playerObject.transform.position.z);
+			if(Input.GetAxis("Vertical") < -.5) {
+				playerObject.transform.position = new Vector3(playerObject.transform.position.x, playerObject.transform.position.y - tick, playerObject.transform.position.z);
 			//	playerObject.rigidbody2D.gravityScale = 0; 			
 			}
 		}

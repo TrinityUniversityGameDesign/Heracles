@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: switchFor5
+  m_Name: TargetPrefab Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .790881157, y: -2.81030655, z: 0}
+  m_LocalPosition: {x: 2.88703942, y: .0365883783, z: 0}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,15 +48,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 380d5cf4544f4d64ca3b7517179c7be9, type: 3}
+  m_Script: {fileID: 11500000, guid: da8ec8bdde17d634f8c44c5c5d6dbf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numLadders: 5
-  lad1: lad1
-  lad2: lad2
-  lad3: lad3
-  lad4: lad4
-  lad5: lad5
+  hp: 1
   isEnemy: 1
 --- !u!212 &21200000
 SpriteRenderer:

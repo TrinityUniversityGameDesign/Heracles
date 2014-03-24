@@ -46,7 +46,7 @@ GameObject:
   - 61: {fileID: 6100004}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: FirstFlipper
+  m_Name: FirstFlipper Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

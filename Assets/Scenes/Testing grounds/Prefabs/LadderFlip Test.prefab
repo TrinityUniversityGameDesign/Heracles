@@ -48,7 +48,7 @@ GameObject:
   - 61: {fileID: 6100004}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: LadderFlip
+  m_Name: LadderFlip Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,8 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380d5cf4544f4d64ca3b7517179c7be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 1
-  numModes: 2
   numLadders: 5
   lad1: 
   lad2: 
@@ -170,6 +168,7 @@ MonoBehaviour:
   lad4: 
   lad5: 
   isEnemy: 1
+  destroyshot: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
