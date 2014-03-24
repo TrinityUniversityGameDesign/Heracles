@@ -9,7 +9,6 @@ public class PlatformCanDrop : MonoBehaviour {
 	public string horizAxisName = "Horizontal";
 	public string jumpAxisName = "Vertical";
 	public float vertAx = 0.0f;
-	public bool vertHeldDwn;
 	public bool isColliding = false;
 
 	void Awake() {
@@ -19,10 +18,7 @@ public class PlatformCanDrop : MonoBehaviour {
 	void Update () {
 		vertAx = Input.GetAxis (jumpAxisName); 
 		bool drop = false;
-		if (Input.GetButtonDown (jumpAxisName))
-			vertHeldDwn = true;
-		else
-			vertHeldDwn = false; 
+
 		
 		if(Input.GetAxis (jumpAxisName) < 0)
 			drop = true;
