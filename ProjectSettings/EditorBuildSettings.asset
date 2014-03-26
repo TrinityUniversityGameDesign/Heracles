@@ -10,7 +10,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Red Team/Scenes/Amy_Scene2.unity
   - enabled: 1
-    path: Assets/Scenes/Testing grounds/Vivian WIP.unity
+    path: Assets/Scenes/Red Team/Scenes/Vivian WIP.unity
   - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/Level Blue 2.unity
   - enabled: 1

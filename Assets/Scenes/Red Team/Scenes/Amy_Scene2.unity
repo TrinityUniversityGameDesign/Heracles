@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 1463454753}
-  level: Amy_Scene1
+  level: Brittney_Scene
 --- !u!61 &1196769535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1531,6 +1531,8 @@ MonoBehaviour:
   resetPosition: {x: -7.5, y: -1.75}
   walkSpeed: 4
   runSpeed: 4
+  crouchSpeed: 0
+  crouchHeight: .5
   groundCheck: {fileID: 341785819}
   groundMask:
     serializedVersion: 2
@@ -1538,6 +1540,8 @@ MonoBehaviour:
   jumpPower: 560
   horizAxisName: Horizontal
   jumpAxisName: Vertical
+  isCrouched: 0
+  boxcollider: {fileID: 0}
 --- !u!61 &1463454760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1560,8 +1564,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b978f90b8e62914dbf488804bc05cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
   shotPrefab: {fileID: 400000, guid: e6e482515dc9747168c5f6e6f6663473, type: 2}
+  angle: 0
   shotStrength: 0
+  maxShotStrength: 40
 --- !u!1001 &1588084357
 Prefab:
   m_ObjectHideFlags: 0
@@ -1636,9 +1643,9 @@ GameObject:
   - 4: {fileID: 1591050910}
   - 212: {fileID: 1591050914}
   - 61: {fileID: 1591050913}
-  - 114: {fileID: 1591050911}
-  - 114: {fileID: 1591050912}
   - 50: {fileID: 1591050915}
+  - 114: {fileID: 1591050912}
+  - 114: {fileID: 1591050911}
   m_Layer: 9
   m_Name: MovingPlatform
   m_TagString: Untagged
@@ -1670,11 +1677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd579f64b5b1d458c7f4763d0813c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: CP_MPOne
-  time: 5
-  delay: 2
-  easetype: easeInOutSine
-  looptype: pingPong
+  pathName: 
+  time: 0
+  delay: 0
+  easetype: 
+  looptype: 
 --- !u!114 &1591050912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,8 +1694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: CP_MPOne
-  pathColor: {r: .75686276, g: .75686276, b: .75686276, a: 1}
+  pathName: New Path 1
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
   - {x: -9, y: 0, z: 0}
   - {x: 2, y: 1, z: 0}
@@ -1785,7 +1792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: level
-      value: Amy_Scene1
+      value: Brittney_Scene
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: playerObject
@@ -1806,9 +1813,9 @@ GameObject:
   - 4: {fileID: 1610291928}
   - 212: {fileID: 1610291932}
   - 61: {fileID: 1610291931}
-  - 114: {fileID: 1610291929}
-  - 114: {fileID: 1610291930}
   - 50: {fileID: 1610291933}
+  - 114: {fileID: 1610291930}
+  - 114: {fileID: 1610291929}
   m_Layer: 9
   m_Name: MovingPlatform
   m_TagString: Untagged
@@ -1841,10 +1848,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: MPTwo
-  time: 5
-  delay: 2
-  easetype: easeInOutSine
-  looptype: pingPong
+  time: 0
+  delay: 0
+  easetype: 
+  looptype: 
 --- !u!114 &1610291930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,7 +1865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: MPTwo
-  pathColor: {r: .75686276, g: .75686276, b: .75686276, a: 1}
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
   - {x: 7, y: 5, z: 0}
   - {x: 15, y: 6, z: 0}
