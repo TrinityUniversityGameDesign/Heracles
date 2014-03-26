@@ -227,7 +227,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2332ba3baa6468647b2dca821ce562a2, type: 2}
+  m_Controller: {fileID: 9100000, guid: f831d79ba1d38401ea5d5b2e6375da5e, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
@@ -245,9 +245,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   shotPrefab: {fileID: 100000, guid: e6e482515dc9747168c5f6e6f6663473, type: 2}
+  traj: {fileID: 0}
   angle: 0
   shotStrength: 0
-  maxShotStrength: 40
+  maxShotStrength: -299
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
