@@ -19,7 +19,7 @@ GameObject:
   - 82: {fileID: 8200002}
   - 95: {fileID: 9500000}
   - 58: {fileID: 5800000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.70998645, y: 2.61703706, z: 0}
+  m_LocalPosition: {x: 3.28141689, y: 2.28754258, z: 0}
   m_LocalScale: {x: 1.85743535, y: 1.85742533, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -262,15 +262,13 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 4
   crouchSpeed: 0
-  crouchHeight: .5
   groundCheck: {fileID: 400002}
   groundMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  jumpPower: 560
+    m_Bits: 256
+  jumpPower: 600
   horizAxisName: Horizontal
   jumpAxisName: Vertical
-  isCrouched: 0
   boxcollider: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:

@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour {
 	public float walkSpeed;
 	public float runSpeed;
 	public float crouchSpeed;
-	public float crouchHeight = .5f;
+	private float crouchHeight = .5f;
 	
 	public Transform groundCheck;
 	float groundRadius = 0.3f;
@@ -19,7 +19,7 @@ public class PlayerControl : MonoBehaviour {
 	public float jumpPower;
 	public string horizAxisName = "Horizontal";
 	public string jumpAxisName = "Vertical";
-	public bool isCrouched = false;
+	private bool isCrouched = false;
 
 	public Component boxcollider;
 
