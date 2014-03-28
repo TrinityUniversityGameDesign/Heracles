@@ -33,6 +33,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: TestPrefab
   m_TagString: P1
@@ -230,6 +231,18 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
   m_HasTransformHierarchy: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef31b2059e75434ea90b266b9ff7b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,7 +258,11 @@ MonoBehaviour:
   objShot: {fileID: 0}
   segmentCount: 20
   segmentScale: 1
+  angle: 0
+  force: 0
   lineAlwaysVisible: 0
+  _hitObject: {fileID: 0}
+  yup: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
