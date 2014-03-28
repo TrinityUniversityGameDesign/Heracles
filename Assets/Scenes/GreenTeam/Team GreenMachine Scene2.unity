@@ -188,7 +188,7 @@ GameObject:
   - 212: {fileID: 146709093}
   - 61: {fileID: 146709092}
   - 114: {fileID: 146709091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   - 212: {fileID: 261698516}
   - 61: {fileID: 261698515}
   - 114: {fileID: 261698514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - 212: {fileID: 324469733}
   - 61: {fileID: 324469732}
   - 114: {fileID: 324469735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   - 50: {fileID: 425397361}
   - 114: {fileID: 425397360}
   - 82: {fileID: 425397359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StalactiteA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -987,7 +987,7 @@ GameObject:
   - 212: {fileID: 552716130}
   - 61: {fileID: 552716129}
   - 114: {fileID: 552716128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sightLine: {fileID: 0}
-  empty: {fileID: 0}
   objShot: {fileID: 0}
   segmentCount: 20
   segmentScale: 1
@@ -1468,7 +1467,7 @@ GameObject:
   - 50: {fileID: 588870095}
   - 114: {fileID: 588870094}
   - 82: {fileID: 588870093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StalactiteA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1669,7 @@ GameObject:
   - 212: {fileID: 825680577}
   - 61: {fileID: 825680576}
   - 114: {fileID: 825680579}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,7 +1832,7 @@ GameObject:
   - 50: {fileID: 926871276}
   - 114: {fileID: 926871275}
   - 82: {fileID: 926871274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stalactite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1987,7 +1986,7 @@ GameObject:
   - 212: {fileID: 966303996}
   - 61: {fileID: 966303995}
   - 114: {fileID: 966303998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2066,7 +2065,7 @@ GameObject:
   - 50: {fileID: 998016916}
   - 114: {fileID: 998016915}
   - 82: {fileID: 998016914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StalactiteA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2400,7 +2399,7 @@ GameObject:
   - 212: {fileID: 1346770748}
   - 61: {fileID: 1346770747}
   - 114: {fileID: 1346770746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2567,7 +2566,7 @@ GameObject:
   - 50: {fileID: 1413764582}
   - 114: {fileID: 1413764583}
   - 82: {fileID: 1413764581}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stalactite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2817,7 +2816,7 @@ GameObject:
   - 212: {fileID: 1461830894}
   - 61: {fileID: 1461830893}
   - 114: {fileID: 1461830892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2942,7 +2941,7 @@ GameObject:
   - 212: {fileID: 1512246595}
   - 61: {fileID: 1512246594}
   - 114: {fileID: 1512246593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3238,7 +3237,7 @@ GameObject:
   - 212: {fileID: 1682223809}
   - 61: {fileID: 1682223808}
   - 114: {fileID: 1682223807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3315,7 +3314,6 @@ GameObject:
   - 212: {fileID: 1700787683}
   - 61: {fileID: 1700787682}
   - 114: {fileID: 1700787681}
-  - 114: {fileID: 1700787685}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -3332,7 +3330,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1700787680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d6bc845366e634ea5624d44445d51e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5288331ccda364c43b2f7fa6f25d5d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1700787682
@@ -3379,21 +3377,9 @@ Transform:
   m_GameObject: {fileID: 1700787680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 43.9096832, y: -2.62568402, z: 1}
-  m_LocalScale: {x: 45, y: 12, z: 1}
+  m_LocalScale: {x: 26.6027527, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1700787685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8,
-    type: 2}
-  m_PrefabInternal: {fileID: 491328049}
-  m_GameObject: {fileID: 1700787680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5288331ccda364c43b2f7fa6f25d5d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1793177957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,7 +3537,7 @@ GameObject:
   - 212: {fileID: 1950251971}
   - 61: {fileID: 1950251970}
   - 114: {fileID: 1950251969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3788,7 +3774,7 @@ GameObject:
   - 212: {fileID: 2051427629}
   - 61: {fileID: 2051427628}
   - 114: {fileID: 2051427631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3867,7 +3853,7 @@ GameObject:
   - 50: {fileID: 2057410013}
   - 114: {fileID: 2057410012}
   - 82: {fileID: 2057410011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StalactiteA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4021,7 +4007,7 @@ GameObject:
   - 212: {fileID: 2074976142}
   - 61: {fileID: 2074976141}
   - 114: {fileID: 2074976140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4098,7 +4084,7 @@ GameObject:
   - 212: {fileID: 2113261708}
   - 61: {fileID: 2113261707}
   - 114: {fileID: 2113261706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4175,7 +4161,7 @@ GameObject:
   - 212: {fileID: 2130961649}
   - 61: {fileID: 2130961648}
   - 114: {fileID: 2130961647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
