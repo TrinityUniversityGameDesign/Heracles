@@ -35,8 +35,17 @@ public class PlayerControl : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-				grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
-				//anim.SetBool ("Grounded", grounded);
+		Collider2D[] GroundList = Physics2D.OverlapCircleAll (groundCheck.position, groundRadius,groundMask);
+		grounded = false;
+		if (GroundList.Length > 0) {
+						for (int a =0; a<GroundList.Length; a++) {
+								if (!GroundList [a].isTrigger) {
+										grounded = true;
+								}
+						}
+				}
+				//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
+				
 				bool jump = Input.GetButtonDown (jumpAxisName);
 				if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 						rigidbody2D.AddForce (new Vector2 (0, jumpPower));
