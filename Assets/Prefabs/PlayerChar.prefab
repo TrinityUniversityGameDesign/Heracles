@@ -48,7 +48,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2711792, y: 3.01561904, z: 0}
+  m_LocalPosition: {x: -5.55263901, y: .835992157, z: 0}
   m_LocalScale: {x: 1.85743535, y: 1.85742533, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -226,7 +226,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 82f07e550c9af8f478ecebb661ec4973, type: 2}
+  m_Controller: {fileID: 9100000, guid: 655493e52ca1e4da681364474af6c26f, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
@@ -239,14 +239,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03dab99c8e47b4a4790528bc4b88743b, type: 3}
+  m_Script: {fileID: 11500000, guid: 56693eaa350124aecbf96cddca175926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
-  shotPrefab: {fileID: 0}
-  angle: 0
-  shotStrength: 0
-  maxShotStrength: 40
+  resetPosition: {x: -7.5, y: -1.75}
+  walkSpeed: 0
+  runSpeed: 4
+  crouchSpeed: 0
+  groundCheck: {fileID: 400002}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+  jumpPower: 600
+  horizAxisName: Horizontal
+  jumpAxisName: Vertical
+  boxcollider: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,21 +262,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2df240942ad1241b812a1b054ae4f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e7c7a275ebcd4f8d95a3a2624f6980f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 0
-  runSpeed: 0
-  crouchSpeed: 0
-  groundCheck: {fileID: 0}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
-  jumpPower: 0
-  horizAxisName: Horizontal
-  jumpAxisName: Vertical
-  boxcollider: {fileID: 0}
+  direction: {x: 0, y: 0}
+  shotPrefab: {fileID: 100000, guid: ca8f4d8f6f30b4ff1ae1265447853205, type: 2}
+  angle: 0
+  shotStrength: 0
+  maxShotStrength: 40
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
