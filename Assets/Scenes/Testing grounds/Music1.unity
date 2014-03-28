@@ -84,10 +84,9 @@ GameObject:
   - 4: {fileID: 100859257}
   - 212: {fileID: 100859256}
   - 61: {fileID: 100859255}
-  - 114: {fileID: 100859254}
   - 114: {fileID: 100859253}
   m_Layer: 8
-  m_Name: Ground
+  m_Name: TransitionState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,18 +105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 1965006602}
   level: Music2
---- !u!114 &100859254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: e2e440b10f0270d46894203fe359d070,
-    type: 2}
-  m_PrefabInternal: {fileID: 294619679}
-  m_GameObject: {fileID: 100859252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bcae7d0930aa41949d3e3dce043d5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &100859255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,8 +113,8 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 294619679}
   m_GameObject: {fileID: 100859252}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 9a421243c660c4decad27be414b3d90e, type: 2}
-  m_IsTrigger: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!212 &100859256
@@ -153,7 +140,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 1, g: .39310348, b: 0, a: 1}
+  m_Color: {r: .733333349, g: .733333349, b: .733333349, a: 0}
 --- !u!4 &100859257
 Transform:
   m_ObjectHideFlags: 0
@@ -161,8 +148,8 @@ Transform:
   m_PrefabInternal: {fileID: 294619679}
   m_GameObject: {fileID: 100859252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.60833359, y: -6.40033197, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.63676167, y: -4.38191986, z: 0}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &112875477
@@ -222,11 +209,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.60833359
+      value: 9.63676167
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.40033197
+      value: -4.38191986
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_LocalPosition.z
@@ -248,7 +235,44 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.r
+      value: .733333349
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.g
+      value: .733333349
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.b
+      value: .733333349
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Name
+      value: TransitionState
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: e2e440b10f0270d46894203fe359d070, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
   m_RootGameObject: {fileID: 100859252}
   m_IsPrefabParent: 0
@@ -847,6 +871,10 @@ Prefab:
       propertyPath: Priority
       value: 221
       objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
   m_RootGameObject: {fileID: 1965006602}
@@ -1028,6 +1056,7 @@ GameObject:
   - 58: {fileID: 1965006606}
   - 114: {fileID: 1965006605}
   - 114: {fileID: 1965006604}
+  - 61: {fileID: 1965006615}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
@@ -1084,7 +1113,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 600
+  jumpPower: 800
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   boxcollider: {fileID: 0}
@@ -1099,7 +1128,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .109999999
-  m_Center: {x: 0, y: -.419999987}
+  m_Center: {x: 0, y: -.430000007}
 --- !u!95 &1965006607
 Animator:
   serializedVersion: 2
@@ -1337,3 +1366,14 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 7077db25b63e24a4d92d87b3d93e3553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1965006615
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1965006602}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .266666681, y: 1.06666672}
+  m_Center: {x: 0, y: 0}
