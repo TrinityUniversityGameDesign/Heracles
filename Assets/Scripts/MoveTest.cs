@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveTest : MonoBehaviour {
+public class MoveTest2 : MonoBehaviour {
 	public string pathName;
 	public double time;
 	public double delay;

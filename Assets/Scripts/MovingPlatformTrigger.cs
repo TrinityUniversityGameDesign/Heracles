@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MovingPlatformTrigger : MonoBehaviour {
+public class MovingPlatformTrigger2 : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		other.transform.parent = gameObject.transform;
