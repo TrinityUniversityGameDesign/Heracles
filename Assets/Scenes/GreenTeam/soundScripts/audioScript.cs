@@ -6,6 +6,20 @@ public class audioScript : MonoBehaviour {
 	//public AudioClip theme;
 	public AudioClip footsteps;
 
+	private static audioScript instance = null;
+	public static audioScript Instance {
+		get { return instance; }
+	}
+	void Awake() {
+		if (instance != null && instance != this) {
+			Destroy(this.gameObject);
+			return;
+		} else {
+			instance = this;
+		}
+		DontDestroyOnLoad(this.gameObject);
+	}
+
 	// Use this for initialization
 	void Start () {
 		//player = gameObject.FindWithTag("P1");
@@ -15,6 +29,8 @@ public class audioScript : MonoBehaviour {
 			audio.Play ();
 		}
 	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
