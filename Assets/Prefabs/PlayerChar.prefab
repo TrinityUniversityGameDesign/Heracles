@@ -227,7 +227,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 655493e52ca1e4da681364474af6c26f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 532737a00f6ef4d49adb57de52fd8353, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56693eaa350124aecbf96cddca175926, type: 3}
+  m_Script: {fileID: 11500000, guid: cc53f317b403c45278cab888a2b13c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
@@ -263,11 +263,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7c7a275ebcd4f8d95a3a2624f6980f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ad8a0c71d0cd4dda9f111e7e34c2952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
-  shotPrefab: {fileID: 100000, guid: ca8f4d8f6f30b4ff1ae1265447853205, type: 2}
+  shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
