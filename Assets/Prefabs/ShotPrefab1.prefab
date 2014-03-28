@@ -11,12 +11,9 @@ GameObject:
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 0}
-  - 114: {fileID: 0}
-  - 114: {fileID: 0}
   m_Layer: 0
   m_Name: ShotPrefab1
   m_TagString: Untagged
@@ -69,9 +66,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef96b5e73fab37e449a2b0a83e03eea7, type: 3}
+  m_Script: {fileID: 11500000, guid: cd8bba3265dd94360869aff52b745078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  isEnemyShot: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac5bf73a15aa71546b13edb358b54899, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a362da341adf4607820f2cbecdf60bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11400004
@@ -91,9 +90,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 415b8d767b5d06447b2f6756a8bde708, type: 3}
+  m_Script: {fileID: 11500000, guid: d296cbbeb5a4a467caf842940b01b3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: {x: 23, y: 23}
+  direction: {x: -1, y: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
