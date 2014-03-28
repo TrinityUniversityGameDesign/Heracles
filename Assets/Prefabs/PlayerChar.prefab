@@ -18,6 +18,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
@@ -238,12 +239,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36799265253142f4fb61da565e243cbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 03dab99c8e47b4a4790528bc4b88743b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  shotPrefab: {fileID: 0}
+  angle: 0
+  shotStrength: 0
+  maxShotStrength: 40
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2df240942ad1241b812a1b054ae4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 4
-  runSpeed: 4
+  walkSpeed: 0
+  runSpeed: 0
   crouchSpeed: 0
   groundCheck: {fileID: 0}
   groundMask:
