@@ -35,9 +35,9 @@ public class PlayerController : MonoBehaviour {
 			grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 			float horizVal = Input.GetAxis ("Horizontal");
 			jump = Input.GetButtonDown ("Jump");
-			if (grounded && jump) {
-				AudioSource.PlayClipAtPoint (jumpSound, transform.position);
-			}
+//			if (grounded && jump) {
+//				AudioSource.PlayClipAtPoint (jumpSound, transform.position);
+//			}
 			//Horizontal movement control
 			float speed = horizVal * maxSpeed;
 			rigidbody2D.velocity = new Vector2 (speed, rigidbody2D.velocity.y);
