@@ -20,6 +20,7 @@ public class PlayerControl : MonoBehaviour {
 	public string horizAxisName = "Horizontal";
 	public string jumpAxisName = "Vertical";
 	private bool isCrouched = false;
+	private bool facingLeft = false;
 
 	public Component boxcollider;
 
@@ -71,6 +72,15 @@ public class PlayerControl : MonoBehaviour {
 	}
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
+		if (inputX < 0 && !facingLeft) {
+			facingLeft = true;
+			gameObject.transform.localScale = new Vector3 (-1 * transform.localScale.x, transform.localScale.y, transform.localScale.x);
+		}
+		if (inputX > 0 && facingLeft) {
+			facingLeft = false;
+			gameObject.transform.localScale = new Vector3 (-1 * transform.localScale.x, transform.localScale.y, transform.localScale.x);
+		}
+			
 		float vel = inputX * runSpeed;
 		anim.SetFloat("Speed", Mathf.Abs(vel));
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
