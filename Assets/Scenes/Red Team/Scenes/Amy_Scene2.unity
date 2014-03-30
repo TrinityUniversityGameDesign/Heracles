@@ -1362,7 +1362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
-  level: Brittney_Scene
+  level: cpeake
 --- !u!61 &1196769535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1397,8 +1397,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2129546692ab64fba818c640cd1c06c3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1196769537
 Transform:
   m_ObjectHideFlags: 0
@@ -1406,7 +1406,7 @@ Transform:
   m_PrefabInternal: {fileID: 1605707655}
   m_GameObject: {fileID: 1196769533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.716238, y: -2.62879133, z: 0}
+  m_LocalPosition: {x: 25.359169, y: -1.9102087, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2140,15 +2140,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25.716238
+      value: 25.359169
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.62879133
+      value: -1.9102087
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2168,11 +2168,36 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: level
-      value: Brittney_Scene
+      value: cpeake
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: playerObject
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2129546692ab64fba818c640cd1c06c3,
+        type: 3}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
