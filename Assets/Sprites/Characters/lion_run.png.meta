@@ -24,13 +24,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,96 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: lion_run_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 60
+        width: 87
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 60
+        width: 86
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 60
+        width: 94
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 65
+        width: 104
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_4
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 68
+        width: 107
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 4
+        width: 112
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_6
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 112
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 109
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 106
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: lion_run_9
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 97
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
