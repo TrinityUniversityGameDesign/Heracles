@@ -48,57 +48,57 @@ TextureImporter:
     - name: lion_run_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 0
         y: 60
-        width: 87
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 42
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 60
-        width: 86
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 61
+        width: 112
+        height: 42
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_2
       rect:
         serializedVersion: 2
-        x: 218
+        x: 214
         y: 60
-        width: 94
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 112
+        height: 42
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_3
       rect:
         serializedVersion: 2
-        x: 328
-        y: 65
-        width: 104
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 327
+        y: 60
+        width: 112
+        height: 42
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_4
       rect:
         serializedVersion: 2
-        x: 455
-        y: 68
-        width: 107
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 453
+        y: 60
+        width: 112
+        height: 42
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_5
       rect:
         serializedVersion: 2
         x: 14
-        y: 4
+        y: 0
         width: 112
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 42
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_6
       rect:
         serializedVersion: 2
@@ -106,34 +106,34 @@ TextureImporter:
         y: 0
         width: 112
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_7
       rect:
         serializedVersion: 2
         x: 258
         y: 0
-        width: 109
+        width: 112
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_8
       rect:
         serializedVersion: 2
-        x: 375
+        x: 369
         y: 0
-        width: 106
+        width: 112
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_9
       rect:
         serializedVersion: 2
         x: 482
         y: 0
-        width: 97
+        width: 112
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
   spritePackingTag: 
   userData: 

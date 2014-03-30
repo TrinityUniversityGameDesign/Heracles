@@ -72,9 +72,10 @@ public class BossLionBehavior : MonoBehaviour {
 						GetComponent<SpriteRenderer>().color = Color.green;
 						}
 
-			if(enemyTransform.position.x == target.position.x ){
-				anim.SetBool("movingState", false);
 			}
-			}
+
+		else
+			//begin chase animation
+			anim.SetBool("movingState", false);
 	}
 }
