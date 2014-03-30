@@ -7,10 +7,12 @@ public class BossLionBehavior : MonoBehaviour {
 	public Transform enemyTransform;
 	public float speed = 3f;
 	public float attackDist = 3f;
+	Animator anim;
 
 
 	void Start () {
-		
+
+		anim = GetComponent<Animator> ();
 	}
 	
 	void FixedUpdate(){
@@ -33,6 +35,9 @@ public class BossLionBehavior : MonoBehaviour {
 										enemyTransform.localScale = new Vector3 (-1 * rot, enemyTransform.localScale.y, enemyTransform.localScale.x);
 								}
 
+								//begin chase animation
+								anim.SetBool("movingState", true);
+
 								//chase to the right
 								float x = enemyTransform.position.x;
 								enemyTransform.position = new Vector3 (x + (1 * speed * Time.deltaTime), enemyTransform.position.y, enemyTransform.position.z);
@@ -52,16 +57,24 @@ public class BossLionBehavior : MonoBehaviour {
 										enemyTransform.localScale = new Vector3 (-1 * rot, enemyTransform.localScale.y, enemyTransform.localScale.x);
 								}
 		   
+				                //begin chase animation
+								anim.SetBool("movingState", true);
+
 								//chase to the left
 								float x = enemyTransform.position.x;
 								enemyTransform.position = new Vector3 (x + (-1 * speed * Time.deltaTime), enemyTransform.position.y, enemyTransform.position.z);
 
+				// if in attack range
 				if(enemyTransform.position.x - target.position.x < attackDist)
 					GetComponent<SpriteRenderer>().color = Color.red; 
 				else 
 					if(enemyTransform.position.x - target.position.x > attackDist)
 						GetComponent<SpriteRenderer>().color = Color.green;
 						}
+
+			if(enemyTransform.position.x == target.position.x ){
+				anim.SetBool("movingState", false);
+			}
 			}
 	}
 }
