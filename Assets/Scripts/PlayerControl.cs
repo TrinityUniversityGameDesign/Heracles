@@ -38,36 +38,36 @@ public class PlayerControl : MonoBehaviour {
 		Collider2D[] GroundList = Physics2D.OverlapCircleAll (groundCheck.position, groundRadius,groundMask);
 		grounded = false;
 		if (GroundList.Length > 0) {
-						for (int a =0; a<GroundList.Length; a++) {
-								if (!GroundList [a].isTrigger) {
-										grounded = true;
-								}
-						}
+			for (int a =0; a<GroundList.Length; a++) {
+				if (!GroundList [a].isTrigger) {
+					grounded = true;
 				}
-				//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
-				
-				bool jump = Input.GetButtonDown (jumpAxisName);
-				if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
-						rigidbody2D.AddForce (new Vector2 (0, jumpPower));
-				}
-				bool crouch = Input.GetKey (KeyCode.X);
-				if (crouch) {
-						if (!isCrouched) {
-								isCrouched = true;
-								walkSpeed = crouchSpeed;
-								//BoxCollider2D = new BoxCollider2D (BoxCollider2D.size.x, crouchHeight);//BoxCollider2D.size.y = BoxCollider2D.size.y / 2;
-								bc.size = new Vector2(bc.size.x,crouchHeight);
-								bc.center = new Vector2(bc.center.x,-.25f);
-						} else {
-								isCrouched = false;
-								walkSpeed = crouchSpeed*2f;
-								bc.size = new Vector2(bc.size.x,1f);
-								bc.center = new Vector2(bc.center.x,0f);
-						}
-				}
-			if (Input.GetKey(KeyCode.Q)){
-				gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
 			}
+		}
+		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
+				
+		bool jump = Input.GetButtonDown (jumpAxisName);
+		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
+			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
+		}
+		bool crouch = Input.GetKey (KeyCode.X);
+		if (crouch) {
+			if (!isCrouched) {
+				isCrouched = true;
+				walkSpeed = crouchSpeed;
+				//BoxCollider2D = new BoxCollider2D (BoxCollider2D.size.x, crouchHeight);//BoxCollider2D.size.y = BoxCollider2D.size.y / 2;
+				bc.size = new Vector2(bc.size.x,crouchHeight);
+				bc.center = new Vector2(bc.center.x,-.25f);
+            }
+        } else {
+            isCrouched = false;
+            walkSpeed = crouchSpeed * 2f;
+            bc.size = new Vector2(bc.size.x, 1f);
+            bc.center = new Vector2(bc.center.x, 0f);
+        }
+	    if (Input.GetKey(KeyCode.Q)){
+		    gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
+	    }
 	}
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
