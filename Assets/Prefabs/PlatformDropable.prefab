@@ -12,7 +12,8 @@ GameObject:
   - 61: {fileID: 6100002}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
-  m_Layer: 9
+  - 114: {fileID: 11400002}
+  m_Layer: 8
   m_Name: PlatformDropable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.18172359, y: -2.29045582, z: 0}
-  m_LocalScale: {x: 3, y: .300000012, z: 1}
+  m_LocalPosition: {x: .186179191, y: -2.04978967, z: 0}
+  m_LocalScale: {x: 18.3779125, y: .367558241, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -39,7 +40,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.13999999, y: 3.81999993}
   m_Center: {x: 0, y: 0}
 --- !u!61 &6100002
 BoxCollider2D:
@@ -69,8 +70,27 @@ MonoBehaviour:
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   vertAx: 0
-  vertHeldDwn: 0
   isColliding: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760d0cdd911804c96b415e3e0f7e5b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClose: 0
+  isGhost: 0
+  whichWay: up
+  platX: 0
+  platY: 0
+  under: 0
+  over: 0
+  left: 0
+  right: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
