@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.5834532, y: 2.43669391, z: 0}
-  m_LocalScale: {x: 3, y: .300000012, z: 1}
+  m_LocalPosition: {x: -6.61133051, y: 7.14973974, z: 0}
+  m_LocalScale: {x: 15, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -59,27 +59,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780ce9ebefe891e47b91d2913ec71dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isClose: 0
-  isGhost: 0
-  whichWay: up
-  platX: 0
-  platY: 0
-  under: 0
-  over: 0
-  left: 0
-  right: 0
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5446dc0976504274e9408db6b087aaf1, type: 3}
   m_Name: 
@@ -91,6 +71,26 @@ MonoBehaviour:
   jumpAxisName: Vertical
   vertAx: 0
   isColliding: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760d0cdd911804c96b415e3e0f7e5b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClose: 0
+  isGhost: 0
+  whichWay: up
+  platX: 0
+  platY: 0
+  under: 0
+  over: 1
+  left: 0
+  right: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
