@@ -1450,6 +1450,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 1919693023}
   speed: 3
+<<<<<<< HEAD
+  attackDist: 2
+=======
   attackDist: 3
 --- !u!95 &1919693025
 Animator:
@@ -1465,3 +1468,4 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
   m_HasTransformHierarchy: 1
+>>>>>>> 07e5f4bdb61cdbeaf7805971c567286896fcac05
