@@ -27,7 +27,7 @@ public class BossLionBehavior : MonoBehaviour {
 		if (enemyTransform.position.y - target.position.y < 2f) {
 
 
-			if ((enemyTransform.position.x < target.position.x) && (target.position.x - enemyTransform.position.x  > attackDist)) {
+						if ((enemyTransform.position.x < target.position.x) && (target.position.x - enemyTransform.position.x > attackDist)) {
 
 								//rotates right
 								if (enemyTransform.localScale.x < 0) {
@@ -36,20 +36,23 @@ public class BossLionBehavior : MonoBehaviour {
 								}
 
 								//begin chase animation
-								anim.SetBool("movingState", true);
+								anim.SetBool ("movingState", true);
 
 								//chase to the right
 								float x = enemyTransform.position.x;
 								enemyTransform.position = new Vector3 (x + (1 * speed * Time.deltaTime), enemyTransform.position.y, enemyTransform.position.z);
 
-				if(target.position.x - enemyTransform.position.x < attackDist)
-					GetComponent<SpriteRenderer>().color = Color.red; 
-				else 
-					if(target.position.x - enemyTransform.position.x > attackDist)
-						GetComponent<SpriteRenderer>().color = Color.green;
-			}
+								if (target.position.x - enemyTransform.position.x < attackDist) {
+										GetComponent<SpriteRenderer> ().color = Color.red; 
+										anim.SetBool ("attackState", true);
+								} else 
+					if (target.position.x - enemyTransform.position.x > attackDist) {
+										GetComponent<SpriteRenderer> ().color = Color.green;
+										anim.SetBool ("attackState", false);
+								}
+						}
 
-			if ((enemyTransform.position.x > target.position.x )&& (enemyTransform.position.x - target.position.x  > attackDist)) {
+						if ((enemyTransform.position.x > target.position.x) && (enemyTransform.position.x - target.position.x > attackDist)) {
 
 								//rotates left
 								if (enemyTransform.localScale.x > 0) {
@@ -57,25 +60,28 @@ public class BossLionBehavior : MonoBehaviour {
 										enemyTransform.localScale = new Vector3 (-1 * rot, enemyTransform.localScale.y, enemyTransform.localScale.x);
 								}
 		   
-				                //begin chase animation
-								anim.SetBool("movingState", true);
+								//begin chase animation
+								anim.SetBool ("movingState", true);
 
 								//chase to the left
 								float x = enemyTransform.position.x;
 								enemyTransform.position = new Vector3 (x + (-1 * speed * Time.deltaTime), enemyTransform.position.y, enemyTransform.position.z);
 
-				// if in attack range
-				if(enemyTransform.position.x - target.position.x < attackDist)
-					GetComponent<SpriteRenderer>().color = Color.red; 
-				else 
-					if(enemyTransform.position.x - target.position.x > attackDist)
-						GetComponent<SpriteRenderer>().color = Color.green;
+								// if in attack range
+								if (enemyTransform.position.x - target.position.x < attackDist) {
+										GetComponent<SpriteRenderer> ().color = Color.red; 
+										anim.SetBool ("attackState", true);
+								} else 
+					if (enemyTransform.position.x - target.position.x > attackDist) {
+										GetComponent<SpriteRenderer> ().color = Color.green;
+										anim.SetBool ("attackState", false);
+								}
 						}
 
-			}
-
-		else
-			//begin chase animation
-			anim.SetBool("movingState", false);
+				} else {
+						//begin chase animation
+						anim.SetBool ("movingState", false);
+						anim.SetBool("attackState",false );
+				}
 	}
 }

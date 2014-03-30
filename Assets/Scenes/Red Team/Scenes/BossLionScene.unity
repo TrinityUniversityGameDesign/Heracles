@@ -871,7 +871,8 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 90387f16232b3a645bd09d2642598c1c, type: 2}
   m_RootGameObject: {fileID: 1919693019}
   m_IsPrefabParent: 0
@@ -1363,10 +1364,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1919693023}
   - 212: {fileID: 1919693022}
-  - 61: {fileID: 1919693021}
   - 50: {fileID: 1919693020}
   - 114: {fileID: 1919693024}
   - 95: {fileID: 1919693025}
+  - 60: {fileID: 1919693021}
   m_Layer: 0
   m_Name: BossLion
   m_TagString: Untagged
@@ -1390,18 +1391,60 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &1919693021
-BoxCollider2D:
+--- !u!60 &1919693021
+PolygonCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: 90387f16232b3a645bd09d2642598c1c,
-    type: 2}
-  m_PrefabInternal: {fileID: 890941931}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1919693019}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .920857728, y: .403897613}
-  m_Center: {x: -.0345186852, y: -.0978471935}
+  m_Poly:
+    m_Paths:
+    - - {x: .214843974, y: -.495117158}
+      - {x: .113281481, y: -.241210923}
+      - {x: .519531429, y: -.0761718675}
+      - {x: .519531429, y: .25390622}
+      - {x: .456054896, y: .317382783}
+      - {x: .202148661, y: .317382783}
+      - {x: .164062724, y: .30468747}
+      - {x: .0117189875, y: .190429673}
+      - {x: -.153320059, y: -.08886718}
+      - {x: -.331054419, y: -.215820298}
+      - {x: -.496093482, y: -.266601533}
+      - {x: -.496093482, y: -.393554658}
+      - {x: -.496093482, y: -.393554658}
+      - {x: -.254882544, y: -.35546872}
+      - {x: -.204101309, y: -.495117158}
+      - {x: -.0771481916, y: -.495117158}
+      - {x: -.0771481916, y: -.469726533}
+      - {x: -.0390622579, y: -.368164033}
+      - {x: .0498049222, y: -.495117158}
+    - - {x: .405273646, y: .063476555}
+      - {x: .405273646, y: .08886718}
+      - {x: .379883021, y: .114257805}
+      - {x: .379883021, y: .165039048}
+      - {x: .367187709, y: .203124985}
+      - {x: .329101771, y: .215820298}
+      - {x: .367187709, y: .17773436}
+      - {x: .379883021, y: .17773436}
+      - {x: .392578334, y: .165039048}
+      - {x: .367187709, y: .139648423}
+      - {x: .367187709, y: .12695311}
+      - {x: .392578334, y: .08886718}
+      - {x: .456054896, y: .063476555}
+      - {x: .468750209, y: .0761718675}
+      - {x: .456054896, y: .08886718}
+      - {x: .456054896, y: .08886718}
+      - {x: .417968959, y: .0507812463}
+      - {x: .417968959, y: .0380859338}
+      - {x: .367187709, y: .0253906231}
+      - {x: .379883021, y: .0253906231}
+    - - {x: .417968959, y: .22851561}
+      - {x: .430664271, y: .215820298}
+      - {x: .456054896, y: .203124985}
+      - {x: .443359584, y: .22851561}
 --- !u!212 &1919693022
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1424,7 +1467,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300006, guid: 736271f16306244729d4251a36e694df, type: 3}
+  m_Sprite: {fileID: 21300018, guid: 55a5dc8cd9fbb4bc3b28340b913a6670, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1919693023
 Transform:
@@ -1433,7 +1476,7 @@ Transform:
   m_PrefabInternal: {fileID: 890941931}
   m_GameObject: {fileID: 1919693019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.91937852, y: 4.8345499, z: 0}
+  m_LocalPosition: {x: 1.64718556, y: 5.87796068, z: 0}
   m_LocalScale: {x: 5.34279871, y: 5.25980949, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1450,9 +1493,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 1919693023}
   speed: 3
-<<<<<<< HEAD
-  attackDist: 2
-=======
   attackDist: 3
 --- !u!95 &1919693025
 Animator:
@@ -1468,4 +1508,3 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 1
   m_HasTransformHierarchy: 1
->>>>>>> 07e5f4bdb61cdbeaf7805971c567286896fcac05
