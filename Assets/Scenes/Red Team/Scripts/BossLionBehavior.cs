@@ -6,7 +6,7 @@ public class BossLionBehavior : MonoBehaviour {
 	Transform target;
 	public Transform enemyTransform;
 	public float speed = 3f;
-	public float attackDist = 2f;
+	public float attackDist = 3f;
 
 
 	void Start () {
