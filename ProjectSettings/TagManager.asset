@@ -11,6 +11,8 @@ TagManager:
   - DeathArea
   - Enemy
   - Music
+  - Lion
+  - Shot
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
