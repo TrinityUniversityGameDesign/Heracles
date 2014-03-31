@@ -1988,16 +1988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a392fe3644dd4453a19d05891d408c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 4
-  runSpeed: 4
-  groundCheck: {fileID: 433654588}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967039
-  jumpPower: 560
-  horizAxisName: Horizontal
-  jumpAxisName: Vertical
 --- !u!61 &1824124773
 BoxCollider2D:
   m_ObjectHideFlags: 0
