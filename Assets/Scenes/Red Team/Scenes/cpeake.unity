@@ -2806,7 +2806,7 @@ GameObject:
   - 4: {fileID: 1465677738}
   - 82: {fileID: 1465677737}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: levelMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2822,7 +2822,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: a1a8edf26924dbf4592eee6b9e10ea09, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 1
   Mute: 0
