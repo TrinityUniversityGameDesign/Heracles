@@ -16,7 +16,7 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
             {
 
                 playerCollision.transform.position = respawnPos;
-				death.deathCount += .5;
+				death.deathCount += .5; // actually adds 1 to the deathcount, can't figure out why it is getting triggered twice.
 
             }
             if (gameObject.tag == "Checkpoint")
