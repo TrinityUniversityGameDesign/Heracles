@@ -4,6 +4,9 @@ using System.Collections;
 public class DeathCount : MonoBehaviour {
 	public GUIText deathCountText;
 	public double deathCount = 0;
+
+
+
 	// Use this for initialization
 	void Start () {
 	
