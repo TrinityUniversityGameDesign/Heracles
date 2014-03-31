@@ -3,6 +3,10 @@ using System.Collections;
 
 
 public class GRE_PS_Checkpoint : MonoBehaviour {
+
+	// Death Count Script Reference
+	public DeathCount death;
+
 	public static Vector2 respawnPos = new Vector2(); //Need to make a global spawn variable for each level
 	void OnTriggerEnter2D(Collider2D playerCollision)
 	{
@@ -10,12 +14,16 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
         {
             if (gameObject.tag == "DeathArea")
             {
+
                 playerCollision.transform.position = respawnPos;
+				death.deathCount += .5;
+
             }
             if (gameObject.tag == "Checkpoint")
             {
                 respawnPos = playerCollision.transform.position; //Not resetting global variable
             }
+
         }
 	}
 }
