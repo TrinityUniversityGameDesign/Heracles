@@ -20,6 +20,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
@@ -49,8 +50,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3095367, y: 1.08161259, z: 0}
-  m_LocalScale: {x: 1.85743535, y: 1.85742533, z: 1}
+  m_LocalPosition: {x: -88.0946579, y: 4.16332722, z: 0}
+  m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -74,7 +75,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
-  m_GravityScale: 2.70000005
+  m_GravityScale: 7
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -89,8 +90,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .109999999
-  m_Center: {x: 0, y: -.430000007}
+  m_Radius: .25
+  m_Center: {x: 0, y: -.25}
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -100,8 +101,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .25, y: .800000012}
-  m_Center: {x: -.0199999996, y: .100000001}
+  m_Size: {x: .600000024, y: .899999976}
+  m_Center: {x: -.00999999978, y: .100000001}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -244,14 +245,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 2
-  runSpeed: 4
+  walkSpeed: 8
+  runSpeed: 10
   crouchSpeed: 1
   groundCheck: {fileID: 400002}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 800
+  jumpPower: 1500
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   boxcollider: {fileID: 0}
@@ -300,6 +301,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 0}
   timer: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba4d94fc2ba5c74aaefbb9f09f32e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathCountText: {fileID: 0}
+  deathCount: 0
 --- !u!120 &12000000
 LineRenderer:
   m_ObjectHideFlags: 1
