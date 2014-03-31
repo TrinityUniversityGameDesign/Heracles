@@ -5,6 +5,8 @@ public class SceneChangeScript : MonoBehaviour {
 
 	public GameObject playerObject;
 	public string level;
+	public AudioClip changeMusic;
+
 
 	// Use this for initialization
 	void Start () {

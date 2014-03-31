@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Testing grounds/Music1.unity
   - enabled: 1
     path: Assets/Scenes/Testing grounds/Music2.unity
+  - enabled: 1
+    path: Assets/Scenes/Testing grounds/Music3.unity
