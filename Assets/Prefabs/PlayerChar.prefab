@@ -19,6 +19,7 @@ GameObject:
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
@@ -48,7 +49,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5362005, y: 1.22174215, z: 0}
+  m_LocalPosition: {x: 2.3095367, y: 1.08161259, z: 0}
   m_LocalScale: {x: 1.85743535, y: 1.85742533, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -99,7 +100,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .200000003, y: .800000012}
+  m_Size: {x: .25, y: .800000012}
   m_Center: {x: -.0199999996, y: .100000001}
 --- !u!82 &8200000
 AudioSource:
@@ -286,6 +287,19 @@ MonoBehaviour:
   segmentCount: 20
   segmentScale: 1
   lineAlwaysVisible: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8069eb8a6d101e4badfea4d88fc6b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 0}
+  timer: 0
 --- !u!120 &12000000
 LineRenderer:
   m_ObjectHideFlags: 1
