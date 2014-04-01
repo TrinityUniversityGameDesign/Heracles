@@ -9,7 +9,7 @@ public class CameraZoom : MonoBehaviour {
 
 	private bool isZooming = false;
 	private float zoomTo;
-	private float[] zoomLevels = {1,2,5,8,10};
+	private float[] zoomLevels = {1,2,5,8,12,16};
 	private int zoomIndex = 0;
 
 	void Start() {
@@ -31,8 +31,8 @@ public class CameraZoom : MonoBehaviour {
 	public void SetZoom(float newZoom) {
 		if (newZoom < 1)
 			newZoom = 1;
-		if (newZoom > 10)
-			newZoom = 10;
+		if (newZoom > 16)
+			newZoom = 16;
 		isZooming = true;
 		zoomTo = newZoom;
 	}
@@ -40,7 +40,7 @@ public class CameraZoom : MonoBehaviour {
 	private void DetermineZoomIndex() {
 		zoomIndex = 0;
 		foreach (float lvl in zoomLevels) {
-			if (lvl == 10)
+			if (lvl == 16)
 				break;
 			if (zoomTo > lvl)
 				zoomIndex++;

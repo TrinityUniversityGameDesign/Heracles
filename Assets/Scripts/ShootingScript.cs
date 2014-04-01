@@ -30,7 +30,7 @@ public class ShootingScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetButton("Fire"))
+		if (Input.GetButton("Fire"))
         {
             if (shotStrength < maxShotStrength)
             {
