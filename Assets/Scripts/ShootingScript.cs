@@ -22,6 +22,7 @@ public class ShootingScript : MonoBehaviour
     /// </summary>
     public float shotStrength = 0;
 	public int maxShotStrength = 40;
+	public bool bowPullLoop = true;
 
     void Start()
     {	
@@ -34,13 +35,11 @@ public class ShootingScript : MonoBehaviour
     {
 		if (Input.GetButton("Fire"))
         {
-			/*bool bowPullLoop = true;
 			if(bowPullLoop) {
 				audio.clip = bowPull;
 				audio.Play ();
 				bowPullLoop = false;
 			}
-			*/
             if (shotStrength < maxShotStrength)
             {
                 shotStrength += 2.0f;
@@ -94,7 +93,7 @@ public class ShootingScript : MonoBehaviour
     {
         //if (CanGenerateNew)
         //{
-			//audio.Stop ();
+			audio.Stop ();
             GameObject newObj = Instantiate(shotPrefab) as GameObject;
             newObj.transform.position = transform.position;
             InitialVelocityScript move = newObj.GetComponent<InitialVelocityScript>();
