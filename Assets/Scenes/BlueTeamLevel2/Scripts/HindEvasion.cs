@@ -45,24 +45,23 @@ public class HindEvasion : MonoBehaviour {
 	public void CheckDistance (GameObject triggerPlatform)
 	{
 		//Checks whether the platorm the player has just landed on is adjacent to currentPlatform
-		if (Array.Exists(adjacentPlatforms, platform => platform == triggerPlatform))
-		{
+		if (Array.Exists (adjacentPlatforms, platform => platform == triggerPlatform)) {
 			int i = 0;
-			GameObject nextPlatform = adjacentPlatforms[i];
+			GameObject nextPlatform = adjacentPlatforms [i];
 			GameObject[] adjacentToPlayer = triggerPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
 
 			//Iterates through array of adjacent platforms until it finds one that is not adjacent to the player and is not the platform the player landed on
-			while ((Array.Exists(adjacentToPlayer, platform => platform == nextPlatform) || nextPlatform == triggerPlatform) && i < adjacentPlatforms.Length)
-			{
-				nextPlatform = adjacentPlatforms[i];
+			while ((Array.Exists(adjacentToPlayer, platform => platform == nextPlatform) || nextPlatform == triggerPlatform) && i < adjacentPlatforms.Length) {
+				nextPlatform = adjacentPlatforms [i];
 				i += 1;
 			}
 
-			if (!Array.Exists(adjacentToPlayer, platform => platform == nextPlatform) && nextPlatform != triggerPlatform)
-			{
+			if (!Array.Exists (adjacentToPlayer, platform => platform == nextPlatform) && nextPlatform != triggerPlatform) {
 				currentPlatform = nextPlatform;
-				ChangePosition();
+				ChangePosition ();
 			}
+		} else {
+			print("no array");
 		}
 
 	}

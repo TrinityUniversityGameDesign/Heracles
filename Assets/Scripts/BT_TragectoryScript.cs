@@ -34,7 +34,7 @@ public class BT_TragectoryScript : MonoBehaviour {
 		Vector3[] segments = new Vector3[segmentCount];
 		segments[0] = objShot.transform.position;
 		float angleRad = angle / 180.0f * Mathf.PI;
-		Vector3 segVelocity = ((Mathf.Sin(angleRad) * transform.up + Mathf.Cos(angleRad) * transform.right) * force);
+		Vector3 segVelocity = ((Mathf.Sin(angleRad) * transform.up + Mathf.Cos(angleRad) * transform.right) * force * 1.6f);
 		_hitObject = null;
 		for (int i = 1; i < segmentCount; i++) {
 			float segTime = (segVelocity.sqrMagnitude != 0) ? segmentScale/segVelocity.magnitude : 0;

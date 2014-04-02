@@ -5,9 +5,13 @@ using System.Collections;
 public class GRE_PS_Checkpoint : MonoBehaviour {
 
 	// Death Count Script Reference
-	public DeathCount death;
-
+	private DeathCount death;
 	public static Vector2 respawnPos = new Vector2(); //Need to make a global spawn variable for each level
+
+	void Start() {
+		death = GameObject.FindGameObjectWithTag("P1").GetComponent<DeathCount>();
+	}
+
 	void OnTriggerEnter2D(Collider2D playerCollision)
 	{
         if (playerCollision.gameObject.tag == "P1")
