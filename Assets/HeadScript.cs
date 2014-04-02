@@ -19,6 +19,8 @@ public class HeadScript : MonoBehaviour {
 	public GameObject fire;
 	public GameObject arcFire;
     private bool charging;
+	public int fireLife;
+	public float fireSpeed;
 	// Use this for initialization
 	void Start () {
         charge = 0;
@@ -30,11 +32,12 @@ public class HeadScript : MonoBehaviour {
 		waitTime = 0;
 		waitMax = 20;
         charging = false;
+		active = true;
 	}
 
     void FixedUpdate()
     {
-        if (abs(Vector3.Distance(pos.localPosition, dest)) > 0.15f) //destination is more than .1ish away from position, then move towards
+        if (abs(Vector3.Distance(pos.localPosition, dest)) > 0.05f) //destination is more than .1ish away from position, then move towards
         {
 			moveTowardsDest();
         }
@@ -43,7 +46,8 @@ public class HeadScript : MonoBehaviour {
             chargingColors();
             charge += 1;
             if(charge >= chargeMax) {
-                attack();
+				attack();
+				sprite.color = baseColor;
                 attacking = false;
                 charging = false;
 				charge = 0;
@@ -60,7 +64,7 @@ public class HeadScript : MonoBehaviour {
 
     void moveTowardsDest() //we have a destination, now head there
     {
-		Vector3 towardDest = new Vector3(dest.x - pos.localPosition.x, dest.y - pos.localPosition.y, pos.localPosition.z);
+		Vector3 towardDest = new Vector3(dest.x - pos.localPosition.x, dest.y - pos.localPosition.y, 0);
         towardDest.Normalize();
         pos.Translate(towardDest * speed);
     }
@@ -88,7 +92,11 @@ public class HeadScript : MonoBehaviour {
 
     void attack() //use the next attack
     {
-
+		GameObject newObj = Instantiate(fire) as GameObject;
+		newObj.transform.position = new Vector3(pos.position.x, pos.position.y, pos.position.z);
+		FireballScript fireS = newObj.GetComponent<FireballScript>();
+		fireS.life = fireLife;
+		fireS.speed = fireSpeed;
     }
 
     float abs(float num)
@@ -128,7 +136,10 @@ public class HeadScript : MonoBehaviour {
     }
 
     void damage() {
+		attacking = false;
+		charging = false;
         active = false;
+		sprite.color = baseColor;
         this.gameObject.SetActive(false);
     }
 }
