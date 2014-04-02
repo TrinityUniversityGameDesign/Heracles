@@ -22,7 +22,7 @@ public class ShootingScript : MonoBehaviour
     /// </summary>
     public float shotStrength = 0;
 	public int maxShotStrength = 40;
-	public bool bowPullLoop = true;
+	public bool bowPullLoop = false;
 
     void Start()
     {	
@@ -33,32 +33,28 @@ public class ShootingScript : MonoBehaviour
 
     void FixedUpdate()
     {
-		if (Input.GetButton("Fire"))
-        {
-			if(bowPullLoop) {
-				audio.clip = bowPull;
-				audio.Play ();
-				bowPullLoop = false;
+		  if (Input.GetButton ("Fire")) {
+			if (!bowPullLoop) {
+					audio.clip = bowPull;
+					audio.Play ();
+					bowPullLoop = true;
 			}
-            if (shotStrength < maxShotStrength)
-            {
-                shotStrength += 2.0f;
-            }
-            direction = Input.mousePosition;
-            Vector3 direction3 = Camera.main.ScreenToWorldPoint(new Vector3 (direction.x, direction.y, 0));
-            direction = new Vector2(direction3.x, direction3.y);
-            direction.x -= this.gameObject.transform.position.x;
-            direction.y -= this.gameObject.transform.position.y;
-            direction.Normalize();
-            direction = direction * shotStrength / 35;
-            float tempAngle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
-            traj.SetTragectory(tempAngle, shotStrength);
-        }
-        else if (shotStrength > 0)
-        {
-            Attack();
-            shotStrength = 0;
-        }
+			if (shotStrength < maxShotStrength) {
+					shotStrength += 2.0f;
+			}
+			direction = Input.mousePosition;
+			Vector3 direction3 = Camera.main.ScreenToWorldPoint (new Vector3 (direction.x, direction.y, 0));
+			direction = new Vector2 (direction3.x, direction3.y);
+			direction.x -= this.gameObject.transform.position.x;
+			direction.y -= this.gameObject.transform.position.y;
+			direction.Normalize ();
+			direction = direction * shotStrength / 35;
+			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
+			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
+		} else if (shotStrength > 10) { 	  
+	        Attack ();
+		    shotStrength = 0;
+		  }
     }
 
     //--------------------------------
@@ -94,6 +90,7 @@ public class ShootingScript : MonoBehaviour
         //if (CanGenerateNew)
         //{
 			audio.Stop ();
+			bowPullLoop = false;
             GameObject newObj = Instantiate(shotPrefab) as GameObject;
             newObj.transform.position = transform.position;
             InitialVelocityScript move = newObj.GetComponent<InitialVelocityScript>();
