@@ -7,6 +7,7 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 	// Death Count Script Reference
 	private DeathCount death;
 	public static Vector2 respawnPos = new Vector2(); //Need to make a global spawn variable for each level
+	private bool check = false;
 
 	void Start() {
 		death = GameObject.FindGameObjectWithTag("P1").GetComponent<DeathCount>();
@@ -16,11 +17,11 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 	{
         if (playerCollision.gameObject.tag == "P1")
         {
-            if (gameObject.tag == "DeathArea")
+            if (gameObject.tag == "DeathArea" && !check)
             {
-
+				check = true;
                 playerCollision.transform.position = respawnPos;
-				death.deathCount += .5; // actually adds 1 to the deathcount, can't figure out why it is getting triggered twice.
+				death.deathCount += 1; // actually adds 1 to the deathcount, can't figure out why it is getting triggered twice.
 
             }
             if (gameObject.tag == "Checkpoint")
@@ -29,5 +30,9 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
             }
 
         }
+	}
+
+	void OnTriggerExit2D(Collider2D other) {
+		check = false;
 	}
 }

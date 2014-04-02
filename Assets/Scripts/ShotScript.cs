@@ -36,8 +36,11 @@ public class ShotScript : MonoBehaviour
     // 2 - Limited time to live to avoid any leak
     Destroy(gameObject, 20); // 20sec
   }
-  void OnTriggerEnter2D () 
+  void OnTriggerEnter2D (Collider2D other) 
   {
-    audio.PlayOneShot (arrowHit1);
+	if(other.tag != "P1") {
+	  audio.PlayOneShot (arrowHit1);
+	  Debug.Log(other.tag);
+	}
   }
 }
