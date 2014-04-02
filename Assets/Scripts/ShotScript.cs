@@ -10,7 +10,8 @@ public class ShotScript : MonoBehaviour
   public AudioClip arrowShoot2;
   public AudioClip arrowHit1;
   public AudioClip arrowHit2;
-  public AudioClip arrowHit3;  
+  public AudioClip arrowHit3;
+  public AudioClip lionHurt;
   // 1 - Designer variables
 
   /// <summary>
@@ -38,7 +39,10 @@ public class ShotScript : MonoBehaviour
   }
   void OnTriggerEnter2D (Collider2D other) 
   {
-	if(other.tag != "P1") {
+
+	if (other.tag == "Lion") {
+	  audio.PlayOneShot (lionHurt);
+	} else if(other.tag != "P1") {
 	  audio.PlayOneShot (arrowHit1);
 	  Debug.Log(other.tag);
 	}

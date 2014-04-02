@@ -15,7 +15,7 @@ GameObject:
   - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: BossLion
-  m_TagString: Untagged
+  m_TagString: Lion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,14 @@ MonoBehaviour:
   enemyTransform: {fileID: 400000}
   speed: 3
   attackDist: 2
+  HP: 3
+  spike_hit: 0
+  stun_time: 2
+  attack_ko_power: 99900
+  hit_delay: 1
+  can_hit: 0
+  flee_time: 1.29999995
+  fleeing: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
