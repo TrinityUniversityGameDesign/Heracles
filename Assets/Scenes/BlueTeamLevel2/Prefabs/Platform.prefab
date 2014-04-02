@@ -12,9 +12,9 @@ GameObject:
   - 61: {fileID: 6100000}
   - 68: {fileID: 6800000}
   - 114: {fileID: 11400000}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: HindPlatformTags
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .224026799, y: -2.73133969, z: 0}
-  m_LocalScale: {x: 1.70000005, y: .200000003, z: 1}
+  m_LocalPosition: {x: 2.24008489, y: 4.51647854, z: 0}
+  m_LocalScale: {x: 1.35144472, y: .158993453, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,7 +40,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 9a421243c660c4decad27be414b3d90e, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: -.5}
+  m_Center: {x: 0, y: 0}
 --- !u!68 &6800000
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: bbaf570bfffe34f9ebd4f323977ff7f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
   m_Color: {r: .757352948, g: .757352948, b: .757352948, a: 1}
 --- !u!1001 &100100000
 Prefab:
