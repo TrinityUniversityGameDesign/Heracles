@@ -24,6 +24,7 @@ public class DialogueScript : MonoBehaviour {
 	private bool initilized = false;
 	private bool wait = false;
 	private bool skip = false;
+	private bool collide = false;
 
 	// Use this for initialization
 	void Start () {
@@ -42,13 +43,14 @@ public class DialogueScript : MonoBehaviour {
 		else if (Input.GetKeyDown("space") && wait) {
 			skip = true;
 		}
-		else if (Input.GetKeyDown("space") && !isDisplaying) {
+		else if (Input.GetKeyDown("space") && !isDisplaying && collide) {
 			isDisplaying = true;
 			DisplayMessage(message,numberOfLines);
 		}
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
+		collide = true;
 		if (other.tag == "P1" && !isDisplaying) {
 			if (oneUse && !used) {
 				isDisplaying = used = true;
@@ -59,6 +61,10 @@ public class DialogueScript : MonoBehaviour {
 				DisplayMessage(message,numberOfLines);
 			}
 		}
+	}
+
+	void OnTriggerExit2D(Collider2D other) {
+		collide = false;
 	}
 
 	public void DisplayMessage(string newMessage, int lineHt) {
