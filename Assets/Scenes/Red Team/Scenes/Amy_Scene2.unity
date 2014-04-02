@@ -251,7 +251,7 @@ Transform:
   m_PrefabInternal: {fileID: 334080076}
   m_GameObject: {fileID: 84330418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.6001854, y: 1.05379462, z: 0}
+  m_LocalPosition: {x: -30, y: 1.05379462, z: 0}
   m_LocalScale: {x: 1.15561986, y: 11.5562019, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -377,7 +377,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 27.2162628
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -522,7 +522,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -28.6001854
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -846,7 +846,7 @@ Transform:
   m_PrefabInternal: {fileID: 104851704}
   m_GameObject: {fileID: 659871399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.2162628, y: 1.03619182, z: 0}
+  m_LocalPosition: {x: 30, y: 1.03619182, z: 0}
   m_LocalScale: {x: 1.15561986, y: 11.5562019, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -975,7 +975,7 @@ Transform:
   m_GameObject: {fileID: 678000179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.685035706, y: -4.15629387, z: 0}
-  m_LocalScale: {x: 56.9680939, y: 1.15741575, z: 1}
+  m_LocalScale: {x: 60, y: 1.15741575, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &812909701
@@ -1414,8 +1414,8 @@ MonoBehaviour:
   yMargin: 1
   xSmooth: 3
   ySmooth: 3
-  maxXAndY: {x: 999, y: 999}
-  minXAndY: {x: -999, y: 4}
+  maxXAndY: {x: 20, y: 999}
+  minXAndY: {x: -20, y: 4}
 --- !u!1 &1196769533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad8a0c71d0cd4dda9f111e7e34c2952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bowPull: {fileID: 0}
   direction: {x: 0, y: 0}
   shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
@@ -2211,7 +2212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
       propertyPath: m_LocalScale.x
-      value: 56.9680939
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
       propertyPath: m_LocalScale.y
