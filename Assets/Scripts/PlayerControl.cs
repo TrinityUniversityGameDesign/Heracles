@@ -19,8 +19,11 @@ public class PlayerControl : MonoBehaviour {
 	public float jumpPower;
 	public string horizAxisName = "Horizontal";
 	public string jumpAxisName = "Vertical";
+
 	private bool isCrouched = false;
-	private bool facingLeft = false;
+	private float animIdleRate = 4f;
+	private float idleCooldown;
+	private bool facingRight = true;
 
 	public Component boxcollider;
 
@@ -30,6 +33,7 @@ public class PlayerControl : MonoBehaviour {
 
 	Animator anim;
 	void Awake() {
+		idleCooldown = animIdleRate;
 		anim = GetComponent<Animator> ();
 		bc = GetComponent<BoxCollider2D>();
 	}
@@ -69,20 +73,33 @@ public class PlayerControl : MonoBehaviour {
 	    if (Input.GetKey(KeyCode.Q)){
 		    gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
 	    }
+
+		if (idleCooldown > 0)
+			idleCooldown -= Time.deltaTime;
+		if (idleCooldown < 0){
+			idleCooldown = animIdleRate;
+			anim.SetTrigger("doPuff");
+		}
 	}
+
+	void flipDirection() {
+		facingRight = !facingRight;
+		Vector3 transScale = transform.localScale;
+		transScale.x *= -1;
+		transform.localScale = transScale;
+	}
+
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
-		if (inputX < 0 && !facingLeft) {
-			facingLeft = true;
-			gameObject.transform.localScale = new Vector3 (-1 * transform.localScale.x, transform.localScale.y, transform.localScale.x);
-		}
-		if (inputX > 0 && facingLeft) {
-			facingLeft = false;
-			gameObject.transform.localScale = new Vector3 (-1 * transform.localScale.x, transform.localScale.y, transform.localScale.x);
-		}
-			
 		float vel = inputX * runSpeed;
-		anim.SetFloat("Speed", Mathf.Abs(vel));
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
+
+		anim.SetFloat("Speed", Mathf.Abs(vel));
+		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+		anim.SetBool("Grounded",grounded);
+
+		if (inputX > 0 && !facingRight) flipDirection();
+		else if (inputX < 0 && facingRight) flipDirection();
+		if (inputX > 0) idleCooldown = animIdleRate;
 	}
 }

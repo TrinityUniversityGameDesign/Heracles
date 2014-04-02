@@ -3867,7 +3867,7 @@ MonoBehaviour:
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
-  bowPullLoop: 1
+  bowPullLoop: 0
 --- !u!114 &892931545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4148,7 +4148,7 @@ Transform:
   m_PrefabInternal: {fileID: 1359232586}
   m_GameObject: {fileID: 892931543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3095367, y: 1.08161259, z: 0}
+  m_LocalPosition: {x: 37.1909294, y: 17.1270523, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 133530181}
@@ -5429,11 +5429,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.3095367
+      value: 37.1909294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.08161259
+      value: 17.1270523
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
