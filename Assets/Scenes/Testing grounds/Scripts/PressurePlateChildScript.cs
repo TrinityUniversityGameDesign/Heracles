@@ -7,101 +7,131 @@ public class PressurePlateChildScript : MonoBehaviour {
 	public bool alreadyGoing = false; 
 	public Vector2 LocA = new Vector2 (0f, 0f);
 	public Vector2 LocB = new Vector2 (0f, 0f);
+	public Vector2 currentLocation = new Vector2(0f,0f);
 	public string state = "A"; 
 	public float waitA = .5f;
 	public float Xvel = 1f;
 	public float Yvel = 1f;
+	public float speed = 2f; 
+	public float triggerDelay = 0f; 
 	public bool vertOnly = true;
 	public bool horizOnly = false; 
 	public bool resetWhenDone = false;
 	public bool resetMe = false;
-	public string resetState = "WaitB"; 
-	
+	public string resetState = "waitB";
+	public bool currentlyBetween = false; 
+	private bool btwnX = false;
+	private bool btwnY = false; 
+
+	private bool left = false;
+	private int xMult = 1;
+	private bool down = false;
+	private int yMult = 1; 
+	private float angle;
+	private int waitCounter = 0;
+
+
 	// Use this for initialization
 	void Start () {
 		LocB = gameObject.transform.Find("LocB").position;
 		LocA = transform.position;
-		if(LocA.x > LocB.x){
-			LocA.x = LocB.x;
-			LocB.x = transform.position.x; 
+		if(LocA.x < LocB.x){
+			left = true;
+			xMult = -1;
 		}
-		if(LocA.y > LocB.y){
-			LocA.y = LocB.y;
-			LocB.y = transform.position.y; 
+		if(LocA.y < LocB.y){
+			down = true;
+			yMult = -1; 
 		}
+	// Trigonometry here
+		/*
+		float adj = LocA.x - LocB.x;
+		if (adj < 0)
+			adj *= -1;
+		float opp = LocA.y - LocB.y;
+		if (opp < 0)
+			opp *= -1;
 
-		state = "Start";
-		
+		angle = Mathf.Atan ((opp / adj));
+
+		xMult *= Mathf.
+	*/
+			state = "start";
 	}
 	
-	IEnumerator myWait(){
-		yield return new WaitForSeconds(waitA);
-
+	IEnumerator myWait(float myWait, string nextState){
+		state = "waiting";
+		yield return new WaitForSeconds(myWait);
+		state = nextState;
+		if (nextState == "start")
+			alreadyGoing = false; 
 	}
-	
-	void toA(){
-		if (state == "ToA") {
-			rigidbody2D.velocity = new Vector2 (Xvel*(-1f), Yvel*(-1f));
 
-		}
-
-	}
-	
-	void toB(){
-		if (state == "ToB") {
-
-
-		}
-
-	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (resetState == state)
-						resetMe = true; 
+		currentLocation = transform.position; 
 
-		if (activate_Me && !alreadyGoing) {
-			rigidbody2D.velocity = new Vector2 (Xvel, Yvel);
-			alreadyGoing = true; 
+		if (transform.position.x >= Mathf.Min (LocA.x, LocB.x) && transform.position.x <= Mathf.Max (LocA.x, LocB.x))
+			btwnX = true;
+		else
+			btwnX = false;
+		if (transform.position.y >= Mathf.Min (LocA.y, LocB.y) && transform.position.y <= Mathf.Max (LocA.y, LocB.y))
+			btwnY = true;
+		else 
+			btwnY = false; 
+
+		if (btwnX && btwnY)
+			currentlyBetween = true;
+		else 
+			currentlyBetween = false; 
+
+
+		switch(state){
+		case "waiting":
+			waitCounter +=1; 
+			break;
+		case "start":
+			if(activate_Me)
+				if(!alreadyGoing){
+				alreadyGoing = true;
+				if(triggerDelay == 0f)
+					state = "toB";
+				else
+					StartCoroutine(myWait(triggerDelay,"toB"));
 				}
+			break;
 
-		if(!vertOnly)
-		if (transform.position.x > LocB.x) {
-			transform.position = LocB;
-			rigidbody2D.velocity = new Vector2 (0, 0);
-			state = "WaitB";
-			alreadyGoing = false;
-		}
-		if(!vertOnly)
-		if (transform.position.x < LocA.x) {
-			transform.position = LocA;
-			rigidbody2D.velocity = new Vector2 (0, 0);
-			state = "WaitA";
-			alreadyGoing = false;
-		}
+		case "toB":
+			if(!currentlyBetween){
+				transform.position = LocB;
+				rigidbody2D.velocity = new Vector2 (0, 0);
+				StartCoroutine(myWait(waitA,"toA"));
+			}
+			else
+				rigidbody2D.velocity = new Vector2 (Xvel*xMult, Yvel*xMult);
+			break;
 
-		if(!horizOnly)
-		if (transform.position.y < LocA.y) {
-			transform.position = LocA;
-			rigidbody2D.velocity = new Vector2 (0, 0);
-			state = "WaitA";
-			alreadyGoing = false;
-		}
-		if(!horizOnly)
-		if (transform.position.y > LocB.y) {
-			transform.position = LocB;
-			rigidbody2D.velocity = new Vector2 (0, 0);
-			state = "WaitB";
-			alreadyGoing = false;
+		case "toA":
+			if(!currentlyBetween){
+				transform.position = LocA;
+				rigidbody2D.velocity = new Vector2 (0, 0);
+				StartCoroutine(myWait(waitA,"start"));
+			}
+			else
+				rigidbody2D.velocity = new Vector2 (Xvel*xMult*(-1), Yvel*xMult*(-1));
+			break;
+
+		default:
+			Debug.Log("didn't have a valid state");
+			break; 
 		}
 
-		if (!activate_Me)
-						alreadyGoing = false;
 
-		if (resetMe && resetWhenDone && state == resetState) {
-			transform.position = LocA; 
-			state = "Start";
-			resetMe = false; 
-				}
+		if (vertOnly)
+			rigidbody2D.velocity = new Vector2 (0f, rigidbody2D.velocity.y);
+		if (horizOnly)
+			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0f);
+
 	}
 }

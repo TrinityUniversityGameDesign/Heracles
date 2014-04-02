@@ -71,7 +71,7 @@ public class BossLionBehavior : MonoBehaviour {
 		// if hit by spike
 		if (spike_hit) {
 			spike_hit = false;
-			GetComponent<SpriteRenderer> ().color = Color.black; 
+			GetComponent<SpriteRenderer> ().color = Color.white; 
 			anim.SetBool ("movingState", false);
 			anim.SetBool ("attackState", false);
 			stun = true;
