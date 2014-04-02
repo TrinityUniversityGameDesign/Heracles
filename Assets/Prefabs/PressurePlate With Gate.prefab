@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.27175999, y: -3.7021451, z: 0}
+  m_LocalPosition: {x: 5.70941973, y: -.125234902, z: 0}
   m_LocalScale: {x: 2, y: .300000012, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -132,22 +132,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92dcd45cfc0811446aa5c1c24b643ad0, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e293ddfc6cdf46b9a91fd5c216a01ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activate_Me: 0
   alreadyGoing: 0
-  LocA: {x: -6.5, y: .649999976}
-  LocB: {x: 0, y: .649999976}
+  LocA: {x: 0, y: 0}
+  LocB: {x: 0, y: 0}
+  currentLocation: {x: 0, y: 0}
   state: A
   waitA: .5
-  Xvel: 0
-  Yvel: 5
+  Xvel: 1
+  Yvel: 3
+  speed: 2
+  triggerDelay: 1
   vertOnly: 1
   horizOnly: 0
-  resetWhenDone: 1
+  resetWhenDone: 0
   resetMe: 0
-  resetState: WaitB
+  resetState: waitB
+  currentlyBetween: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
