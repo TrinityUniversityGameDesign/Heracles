@@ -16,15 +16,25 @@ public class OneWayPlatform : MonoBehaviour {
 	public bool left;
 	public bool right;
 
+	private Transform platBox;
+	private BoxCollider2D platCollider;
+	private Vector2 platColSize;
+	private Vector2 platColCntr;
+
 
 	void Start () {
-		Transform platBox = gameObject.transform; 
-		
+		platBox = gameObject.transform; 
+		platCollider = gameObject.GetComponent<BoxCollider2D>();
+		platColSize = platCollider.size;
+		platColCntr = platCollider.center; 
+
 		playerObject = GameObject.FindWithTag("P1");
+
+
 		platX = platBox.position.x;
 		platY = platBox.position.y;
-		width = platBox.localScale.x;
-		height = platBox.localScale.y;
+		width = platBox.localScale.x * platCollider.size.x;
+		height = platBox.localScale.y * platCollider.size.y;
 
 		this.enabled = false;
 	}
@@ -35,12 +45,12 @@ public class OneWayPlatform : MonoBehaviour {
 
 		if (isClose) {
 		
-						float minx = platX - (width / 2.0f);
-						float maxx = platX + (width / 2.0f); 
-						float maxy = platY + (height / 2.0f);
-						float miny = platY - (height / 2.0f);
+						float minx = platX - (width / 2.0f) + (platBox.localScale.x * platColCntr.x);
+			float maxx = platX + (width / 2.0f) + (platBox.localScale.x * platColCntr.x);
+			float maxy = platY + (height / 2.0f)+ (platBox.localScale.y * platColCntr.y);
+			float miny = platY - (height / 2.0f) + (platBox.localScale.y * platColCntr.y);
 		
-						BoxCollider2D playerBox = playerObject.GetComponent<BoxCollider2D> (); 
+						BoxCollider2D playerBox = playerObject.GetComponent<BoxCollider2D>();
 		
 						float psX = playerObject.transform.localScale.x;
 						float psY = playerObject.transform.localScale.y;

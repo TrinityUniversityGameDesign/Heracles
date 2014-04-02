@@ -11,8 +11,8 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100002}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 8
   m_Name: PlatformDropable&OneWay
   m_TagString: Untagged
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.61133051, y: 7.14973974, z: 0}
-  m_LocalScale: {x: 15, y: .300000012, z: 1}
+  m_LocalPosition: {x: 6.18641376, y: -.16529797, z: 0}
+  m_LocalScale: {x: 30, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!61 &6100000
@@ -40,7 +40,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.33527458, y: 4.48188066}
+  m_Size: {x: .419999987, y: .25999999}
   m_Center: {x: 0, y: 0}
 --- !u!61 &6100002
 BoxCollider2D:
@@ -51,7 +51,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 6a4efa6f28bacfb44b0f81a9789f5f82, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: .379999995, y: .150000006}
   m_Center: {x: -0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5446dc0976504274e9408db6b087aaf1, type: 3}
   m_Name: 
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ab704f70560e402ca0a1dec84101e80, type: 3}
   m_Color: {r: .337910891, g: .486218721, b: .91911763, a: 1}
 --- !u!1001 &100100000
 Prefab:
