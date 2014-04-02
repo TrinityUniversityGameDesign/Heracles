@@ -1122,6 +1122,7 @@ MonoBehaviour:
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
+  bowPullLoop: 1
 --- !u!114 &1965006605
 MonoBehaviour:
   m_ObjectHideFlags: 0
