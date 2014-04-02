@@ -95,13 +95,21 @@ public class PressurePlateChildScript : MonoBehaviour {
 			if(activate_Me)
 				if(!alreadyGoing){
 				alreadyGoing = true;
-				if(triggerDelay == 0f)
+				if(triggerDelay == 0f){
+					rigidbody2D.velocity = new Vector2 (Xvel*xMult, Yvel*xMult);
 					state = "toB";
+				}
 				else
-					StartCoroutine(myWait(triggerDelay,"toB"));
+					StartCoroutine(myWait(triggerDelay,"otherStart"));
 				}
 			break;
 
+		case "otherStart":
+			if(alreadyGoing){ 
+				rigidbody2D.velocity = new Vector2 (Xvel*xMult, Yvel*xMult);
+				state = "toB"; 
+			}
+			break;
 		case "toB":
 			if(!currentlyBetween){
 				transform.position = LocB;
