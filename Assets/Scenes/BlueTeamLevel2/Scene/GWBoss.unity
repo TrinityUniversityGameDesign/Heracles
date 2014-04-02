@@ -840,7 +840,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 1, g: .39310348, b: 0, a: 1}
+  m_Color: {r: .143673182, g: .286764681, b: .0274113212, a: 1}
 --- !u!4 &664683288
 Transform:
   m_ObjectHideFlags: 0
@@ -1286,11 +1286,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad8a0c71d0cd4dda9f111e7e34c2952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bowPull: {fileID: 0}
   direction: {x: 0, y: 0}
   shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
+  bowPullLoop: 1
 --- !u!114 &993634277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,7 +1628,7 @@ MonoBehaviour:
   genRate: 2
   genCooldown: 4
   angle: 25
-  force: 20
+  force: 10
   aimForTarget: 1
 --- !u!50 &997185867
 Rigidbody2D:
@@ -1889,7 +1891,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
       propertyPath: force
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3300000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
@@ -2286,6 +2288,18 @@ Prefab:
     - target: {fileID: 100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Name
       value: Main Stage
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.r
+      value: .143673182
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.g
+      value: .286764681
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Color.b
+      value: .0274113212
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -2835,7 +2849,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.58095837
+  orthographic size: 4.04651117
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2851,7 +2865,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941919926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.129893035, y: 6.36932611, z: -10}
+  m_LocalPosition: {x: .199386865, y: 6.36932611, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
