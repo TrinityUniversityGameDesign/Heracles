@@ -3,7 +3,8 @@ using System.Collections;
 
 public class HeadScript : MonoBehaviour {
     public bool active;
-    private bool attacking;
+    public bool attacking;
+    public int attackType;
     private int charge;
     private int chargeMax;
     private Color baseColor;
@@ -17,16 +18,18 @@ public class HeadScript : MonoBehaviour {
 	private int waitMax;
 	public GameObject fire;
 	public GameObject arcFire;
+    private bool charging;
 	// Use this for initialization
 	void Start () {
         charge = 0;
-        chargeMax = 60;
+        chargeMax = 100;
         baseColor = sprite.color;
         orig = pos.localPosition;
 		genDests ();
 		chooseDest ();
 		waitTime = 0;
 		waitMax = 20;
+        charging = false;
 	}
 
     void FixedUpdate()
@@ -36,11 +39,13 @@ public class HeadScript : MonoBehaviour {
 			moveTowardsDest();
         }
 		else if (attacking) { //if attacking and at destination, sit and charge and fire, then move away
+            charging = true;
             chargingColors();
             charge += 1;
             if(charge >= chargeMax) {
                 attack();
                 attacking = false;
+                charging = false;
 				charge = 0;
                 chooseDest();
             }
@@ -108,5 +113,22 @@ public class HeadScript : MonoBehaviour {
 		dests [8] = new Vector3 (orig.x, orig.y, orig.z);
 	}
 
+    void OnTriggerEnter2D(Collider2D otherCollider)
+    {
+        // Is this a shot?
+        ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
+        if (shot != null)
+        {
+            Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
+            if (charging) //only takes damage when charging
+            {
+                damage();
+            }
+        }
+    }
 
+    void damage() {
+        active = false;
+        this.gameObject.SetActive(false);
+    }
 }
