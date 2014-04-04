@@ -51,7 +51,7 @@ public class ShootingScript : MonoBehaviour
 			direction = direction * shotStrength / 35;
 			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
 			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
-		} else if (shotStrength > 10) { 	  
+		} else if (shotStrength > 20) { 	  
 	        Attack ();
 		    shotStrength = 0;
 		  }

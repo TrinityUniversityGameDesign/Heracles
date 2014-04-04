@@ -24,6 +24,14 @@ public class ShotScript : MonoBehaviour
   /// </summary>
   public bool isEnemyShot = false;
 
+	void Update() {
+		if (rigidbody2D.gravityScale == 0) {
+			GetComponent<PointTowardsMovementScript>().enabled = false;
+			rigidbody2D.velocity = new Vector3();
+			Destroy(gameObject, 10);
+		}
+	}
+
   void Start()
   {
 	float randomNum = Random.Range (1, 100);
