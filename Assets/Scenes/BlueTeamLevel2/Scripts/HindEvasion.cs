@@ -16,37 +16,37 @@ public class HindEvasion : MonoBehaviour {
 	Vector2 GetAcceleration(Vector2 targetPosition)
 	{
 		float physicsTimestep = Time.fixedDeltaTime;
-		Debug.Log ("secondsPerTimestep: " + physicsTimestep.ToString ());
+//		Debug.Log ("secondsPerTimestep: " + physicsTimestep.ToString ());
 		float timestepsPerSecond = Mathf.Ceil(1f/physicsTimestep);
-		Debug.Log ("timestepsPerSecond: " + timestepsPerSecond.ToString ());
+//		Debug.Log ("timestepsPerSecond: " + timestepsPerSecond.ToString ());
 		
 		//By default we set n so our projectile will reach our target point in 1 second
 		float n = timestepsPerSecond * jumpTime;
-		Debug.Log ("n: " + n.ToString ());
+//		Debug.Log ("n: " + n.ToString ());
 		Vector2 gravity = Physics.gravity * deerBody.gravityScale;
-		Debug.Log ("gravity: " + gravity.y.ToString ());
+//		Debug.Log ("gravity: " + gravity.y.ToString ());
 		
 		Vector2 a = physicsTimestep * physicsTimestep * gravity;
 		Vector2 p = targetPosition;
-		Debug.Log ("targetPosition (y): " + targetPosition.y.ToString());
+//		Debug.Log ("targetPosition (y): " + targetPosition.y.ToString());
 		Vector2 s = currentPosition;
-		Debug.Log ("current position (y): " + currentPosition.y.ToString ());
+//		Debug.Log ("current position (y): " + currentPosition.y.ToString ());
 		
 		Vector2 velocity = (s + (((n * n + n) * a) / 2f) - p) * -1 / n;
 		
 		//This will give us velocity per timestep.
-		Debug.Log ("velocity: " + velocity.y.ToString());
-		return velocity;
+//		Debug.Log ("velocity: " + velocity.y.ToString());
+		return velocity * timestepsPerSecond * timestepsPerSecond;
 	}
 
 	void ChangePosition ()
 	{
 		Vector2 nextPosition = currentPlatform.transform.position;
 		nextPosition.y += deer.renderer.bounds.extents.y;
-//		Vector2 force = GetAcceleration (nextPosition) * deerBody.mass;
-//		deerBody.AddForce (force);
+		Vector2 force = GetAcceleration (nextPosition) * deerBody.mass;
+		deerBody.AddForce (force);
 		currentPosition = nextPosition;
-		transform.position = currentPosition;
+//		transform.position = currentPosition;
 		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
 	}
 

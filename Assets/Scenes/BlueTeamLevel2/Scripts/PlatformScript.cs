@@ -29,6 +29,10 @@ public class PlatformScript : MonoBehaviour {
 			preyScript.CheckDistance(this.gameObject);
 			System.Console.WriteLine ("Collision detected.");
 		}
-
+		if (other == prey) 
+		{
+			prey.rigidbody2D.velocity = Vector2.zero;
+		}
+		
 	}
 }
