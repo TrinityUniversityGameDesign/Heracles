@@ -32,7 +32,12 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
         }
 	}
 
+	// Ensures the death is only counted once
 	void OnTriggerExit2D(Collider2D other) {
 		check = false;
+	}
+
+	public Vector3 GetRespawnPos() {
+		return respawnPos;
 	}
 }

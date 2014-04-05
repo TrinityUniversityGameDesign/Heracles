@@ -48,6 +48,10 @@ public class BT_HealthScript : MonoBehaviour {
 	void DoDie() {
 		if (!isInvincible)
 			Destroy(this.gameObject);
+		if (gameObject.tag == "P1") {
+			transform.position = GameObject.FindGameObjectWithTag("DeathArea").GetComponent<GRE_PS_Checkpoint>().GetRespawnPos();
+			GameObject.FindGameObjectWithTag("P1").GetComponent<DeathCount>().deathCount += 1;
+		}
 	}
 
 

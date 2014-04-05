@@ -7,7 +7,7 @@ public class BT_DamagingScript : MonoBehaviour {
 	//		When this object collides with any object of the predetemined Tags, damage is dealt to that object.
 
 	public int damageAmount = 10;
-	public string[] canHit = {"Player"};
+	public string[] canHit = {"P1"};
 	public bool destoryOnHit = true;
 
 	// Damage is dealt to the player if this object collides with the player
