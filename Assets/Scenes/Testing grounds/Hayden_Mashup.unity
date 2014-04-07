@@ -105,8 +105,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &55926998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -853,8 +859,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!1 &672111336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,8 +1399,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!50 &965827950
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1454,7 +1472,7 @@ GameObject:
   - 212: {fileID: 1077061590}
   - 61: {fileID: 1077061589}
   - 50: {fileID: 1077061588}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Basic Crate
   m_TagString: crate
   m_Icon: {fileID: 0}
@@ -1520,7 +1538,7 @@ Transform:
   m_PrefabInternal: {fileID: 1315197399}
   m_GameObject: {fileID: 1077061587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.31756783, y: -1.25225055, z: 0}
+  m_LocalPosition: {x: -8.30336285, y: -1.26645494, z: 0}
   m_LocalScale: {x: .830018163, y: .794628263, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1807,7 +1825,7 @@ GameObject:
   - 212: {fileID: 1161932021}
   - 61: {fileID: 1161932020}
   - 50: {fileID: 1161932019}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Basic Crate
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -1873,8 +1891,8 @@ Transform:
   m_PrefabInternal: {fileID: 1250823764}
   m_GameObject: {fileID: 1161932018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.9613304, y: -.841680706, z: 0}
-  m_LocalScale: {x: .830018163, y: .794628263, z: 1}
+  m_LocalPosition: {x: -10.9613304, y: -.692533374, z: 0}
+  m_LocalScale: {x: .830018163, y: 1.0929234, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1186840529
@@ -1951,7 +1969,7 @@ MonoBehaviour:
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
-  bowPullLoop: 1
+  bowPullLoop: 0
 --- !u!114 &1186840533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,8 +2286,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1217612791
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2983,6 +3007,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 6a4efa6f28bacfb44b0f81a9789f5f82, type: 2}
+    - target: {fileID: 100000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
   m_RootGameObject: {fileID: 1892244532}
@@ -3466,8 +3494,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!1 &1820313087
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,7 +3592,7 @@ GameObject:
   - 4: {fileID: 1892244535}
   - 212: {fileID: 1892244534}
   - 61: {fileID: 1892244533}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3935,8 +3969,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &2102442409
 BoxCollider2D:
   m_ObjectHideFlags: 0

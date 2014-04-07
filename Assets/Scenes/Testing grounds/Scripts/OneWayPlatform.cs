@@ -130,7 +130,8 @@ public class OneWayPlatform : MonoBehaviour {
 		if (other.gameObject == playerObject) {
 			isClose = false;
 			StopGhost();
+			this.enabled = false; 
 		}
-		this.enabled = false; 
+
 	}
 }
