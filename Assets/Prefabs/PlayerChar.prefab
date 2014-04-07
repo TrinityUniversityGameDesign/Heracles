@@ -50,7 +50,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.5171776, y: 3.50319242, z: 0}
+  m_LocalPosition: {x: -49.1151047, y: -.824475288, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -75,7 +75,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
-  m_GravityScale: 7
+  m_GravityScale: 2.70000005
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -246,13 +246,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
   walkSpeed: 8
-  runSpeed: 10
+  runSpeed: 6
   crouchSpeed: 1
   groundCheck: {fileID: 400002}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 1500
+  jumpPower: 800
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   boxcollider: {fileID: 0}
@@ -267,11 +267,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad8a0c71d0cd4dda9f111e7e34c2952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bowPull: {fileID: 0}
   direction: {x: 0, y: 0}
   shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
+  bowPullLoop: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
