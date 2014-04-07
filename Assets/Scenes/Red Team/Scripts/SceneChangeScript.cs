@@ -12,7 +12,10 @@ public class SceneChangeScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
-		Application.LoadLevel(level);
+		if (other.gameObject == playerObject) {
+			Application.LoadLevel (level);
+		}
 	}
 
 }
+
