@@ -20,6 +20,7 @@ public class PlayerControl : MonoBehaviour {
 	public string horizAxisName = "Horizontal";
 	public string jumpAxisName = "Vertical";
 
+	private bool crouch = false;
 	private bool isCrouched = false;
 	private float animIdleRate = 4f;
 	private float idleCooldown;
@@ -55,9 +56,10 @@ public class PlayerControl : MonoBehaviour {
 		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
 		}
-		bool crouch = Input.GetKey (KeyCode.X);
+		crouch = Input.GetButton("Shift"); // seems more user friendly than "X"
 		if (crouch) {
 			if (!isCrouched) {
+				anim.SetBool("Crouch",true);
 				isCrouched = true;
 				walkSpeed = crouchSpeed;
 				//BoxCollider2D = new BoxCollider2D (BoxCollider2D.size.x, crouchHeight);//BoxCollider2D.size.y = BoxCollider2D.size.y / 2;
@@ -65,6 +67,7 @@ public class PlayerControl : MonoBehaviour {
 				bc.center = new Vector2(bc.center.x,-.25f);
             }
         } else {
+			anim.SetBool("Crouch",false);
             isCrouched = false;
             walkSpeed = crouchSpeed * 2f;
             bc.size = new Vector2(bc.size.x, 1f);

@@ -55,6 +55,7 @@ public class ShootingScript : MonoBehaviour
 	        Attack ();
 		    shotStrength = 0;
 		  }
+		else shotStrength = 0;
     }
 
     //--------------------------------
