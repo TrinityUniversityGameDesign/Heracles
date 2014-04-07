@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
-  - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
@@ -20,6 +19,7 @@ GameObject:
   - 82: {fileID: 8200006}
   - 82: {fileID: 8200008}
   - 82: {fileID: 8200010}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: ShotPrefab1
   m_TagString: Shot
@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.66051674, y: -7.03860664, z: 0}
+  m_LocalPosition: {x: -42.808815, y: 3.78162217, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,8 +62,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .319999993, y: .0500000007}
-  m_Center: {x: 0, y: .00499999989}
+  m_Size: {x: .0500000007, y: .0500000007}
+  m_Center: {x: .135000005, y: .00499999989}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
