@@ -10,12 +10,13 @@ public class PlatformCanDrop : MonoBehaviour {
 	public string jumpAxisName = "Vertical";
 	public float vertAx = 0.0f;
 	public bool isColliding = false;
+	private OneWayPlatform otherScript;
 
-	void Awake() {
-	}
 
 	// Update is called once per frame
 	void Update () {
+		otherScript = gameObject.GetComponent<OneWayPlatform>();
+
 		vertAx = Input.GetAxis (jumpAxisName); 
 		bool drop = false;
 
@@ -26,6 +27,8 @@ public class PlatformCanDrop : MonoBehaviour {
 		 if (drop && canDrop) {
 			Drop();
 		}
+		if (isColliding)
+						otherScript.isClose = true; 
 	}
 
 	void Drop(){
@@ -39,12 +42,16 @@ public class PlatformCanDrop : MonoBehaviour {
 	
 	void Start () {
 		playerObject = GameObject.FindWithTag("P1");
+		this.enabled = false;
 	}
 	
 	void OnTriggerEnter2D (Collider2D other) {
 		isColliding = true;
 		if (other.gameObject == playerObject) {
 			canDrop = true;
+			this.enabled = true;
+			otherScript.enabled = true;
+			otherScript.isClose = true;
 		}
 	}
 	void OnTriggerExit2D (Collider2D other) {

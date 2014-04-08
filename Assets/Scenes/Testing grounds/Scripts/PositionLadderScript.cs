@@ -61,7 +61,8 @@ public class PositionLadderScript : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		canClimb = false; 
+		if( !dontStop)
+			canClimb = false; 
 
 		Collider2D[] allColliders = Physics2D.OverlapAreaAll(topL, botR);
 		foreach (Collider2D thatCollider in allColliders){

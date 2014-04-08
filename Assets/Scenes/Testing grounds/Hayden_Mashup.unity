@@ -736,6 +736,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 6a4efa6f28bacfb44b0f81a9789f5f82, type: 2}
+    - target: {fileID: 100000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
   m_RootGameObject: {fileID: 1441057253}
@@ -1133,7 +1137,7 @@ GameObject:
   - 4: {fileID: 812909704}
   - 212: {fileID: 812909703}
   - 61: {fileID: 812909702}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,6 +1232,10 @@ MonoBehaviour:
   over: 0
   left: 0
   right: 0
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &902197996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1310,7 @@ Transform:
   m_PrefabInternal: {fileID: 1319109760}
   m_GameObject: {fileID: 902197994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.35302734, y: -1.05866528, z: 0}
+  m_LocalPosition: {x: 3.24480057, y: -.91880703, z: 0}
   m_LocalScale: {x: 7.70072746, y: .372388721, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1635,9 +1643,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1115114851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780ce9ebefe891e47b91d2913ec71dcf, type: 3}
+  m_Script: {fileID: 11500000, guid: 760d0cdd911804c96b415e3e0f7e5b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClose: 0
+  isGhost: 0
+  whichWay: up
+  platX: 0
+  platY: 0
+  under: 0
+  over: 0
+  left: 0
+  right: 0
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &1115114853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1712,7 +1733,7 @@ Transform:
   m_PrefabInternal: {fileID: 1902832324}
   m_GameObject: {fileID: 1115114851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.612174, y: 2.86100793, z: 0}
+  m_LocalPosition: {x: -14.6318283, y: 2.78232503, z: 0}
   m_LocalScale: {x: 3, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1969,7 +1990,7 @@ MonoBehaviour:
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
-  bowPullLoop: 0
+  bowPullLoop: 1
 --- !u!114 &1186840533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1984,13 +2005,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
   walkSpeed: 8
-  runSpeed: 10
+  runSpeed: 6
   crouchSpeed: 1
   groundCheck: {fileID: 1608811203}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 1500
+  jumpPower: 800
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   boxcollider: {fileID: 0}
@@ -2213,7 +2234,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
-  m_GravityScale: 7
+  m_GravityScale: 2.70000005
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2572,11 +2593,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: cd0492384e20dbc48a698a7e63ff8403, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.35302734
+      value: 3.24480057
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd0492384e20dbc48a698a7e63ff8403, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.05866528
+      value: -.91880703
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd0492384e20dbc48a698a7e63ff8403, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2655,7 +2676,7 @@ GameObject:
   - 4: {fileID: 1441057256}
   - 212: {fileID: 1441057255}
   - 61: {fileID: 1441057254}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4072,6 +4093,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 6a4efa6f28bacfb44b0f81a9789f5f82, type: 2}
+    - target: {fileID: 100000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 400221db908164c749d57f806d67bc7a, type: 2}
   m_RootGameObject: {fileID: 812909701}

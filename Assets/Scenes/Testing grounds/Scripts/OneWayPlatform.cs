@@ -16,13 +16,37 @@ public class OneWayPlatform : MonoBehaviour {
 	public bool left;
 	public bool right;
 
+	public float minX;
+	public float maxX;
+	public float minY;
+	public float maxY;
+	
+	private bool dontStop = false; 
+	private Vector2 topL;
+	private Vector2 botR;
+
 	private Transform platBox;
 	private BoxCollider2D platCollider;
 	private Vector2 platColSize;
 	private Vector2 platColCntr;
 
+	private bool oneDisable= true;
 
 	void Start () {
+		playerObject = GameObject.FindWithTag("P1");
+		BoxCollider2D myCollider = gameObject.GetComponent<BoxCollider2D>();
+		Vector2 size = myCollider.size;
+		Vector2 center = myCollider.center; 
+		
+		minX = center.x - (size.x / 2f) + gameObject.transform.position.x;
+		maxX = center.x + (size.x / 2f) + gameObject.transform.position.x;
+		minY = center.y - (size.y / 2f) + gameObject.transform.position.y;
+		maxY = center.y + (size.y / 2f) + gameObject.transform.position.y; 
+		
+		topL = new Vector2 (minX, maxY);
+		botR = new Vector2 (maxX, minY); 
+
+
 		platBox = gameObject.transform; 
 		platCollider = gameObject.GetComponent<BoxCollider2D>();
 		platColSize = platCollider.size;
@@ -36,12 +60,22 @@ public class OneWayPlatform : MonoBehaviour {
 		width = platBox.localScale.x * platCollider.size.x;
 		height = platBox.localScale.y * platCollider.size.y;
 
-		this.enabled = false;
+		if (oneDisable) {
+			oneDisable = false;
+						this.enabled = false;
+				}
 	}
 
 	// Update is called once per frame
 	void Update () {
 		PlatformCanDrop dropRef =  gameObject.GetComponent<PlatformCanDrop>();
+
+		isClose = false;
+		Collider2D[] allColliders = Physics2D.OverlapAreaAll(topL, botR);
+		foreach (Collider2D thatCollider in allColliders){
+			if (thatCollider.gameObject == playerObject)
+				isClose = true; 
+		}
 
 		if (isClose) {
 		
@@ -104,6 +138,8 @@ public class OneWayPlatform : MonoBehaviour {
 				break; 	
 			}
 				}
+		//if (!isClose)
+		//				this.enabled = false;
 
 	}
 	
@@ -122,7 +158,6 @@ public class OneWayPlatform : MonoBehaviour {
 		this.enabled = true;
 		if (other.gameObject == playerObject) {
 						isClose = true;
-
 						//non abreviated floats are the platforms, p+ floats are players
 				}
 	}
@@ -130,7 +165,7 @@ public class OneWayPlatform : MonoBehaviour {
 		if (other.gameObject == playerObject) {
 			isClose = false;
 			StopGhost();
-			this.enabled = false; 
+			//this.enabled = false; 
 		}
 
 	}
