@@ -2807,7 +2807,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: message
-      value: Some obstacles cannot be avoided. It must be scaled
+      value: Some obstacles cannot simply be leaped over .
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: localy
@@ -5061,7 +5061,7 @@ MonoBehaviour:
   numberOfLines: 5
   localx: 0
   localy: 18
-  message: Some obstacles cannot be avoided. It must be scaled
+  message: Some obstacles cannot simply be leaped over .
   oneUse: 1
 --- !u!61 &1010112602
 BoxCollider2D:
