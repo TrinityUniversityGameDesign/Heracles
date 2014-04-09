@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour {
 	private float crouchHeight = .5f;
 	
 	public Transform groundCheck;
-	float groundRadius = 0.3f;
+	float groundRadius = 0.2f;
 	bool grounded = false;
 	public LayerMask groundMask;
 	public float jumpPower;
