@@ -20,7 +20,9 @@ public class ShootingScript : MonoBehaviour
     /// <summary>
     /// Building strength of shot
     /// </summary>
-    public float shotStrength = 0;
+	public float shotStrength = 0;
+	public float shotGrowth;
+	public int minShotStrength;
 	public int maxShotStrength = 40;
 	public bool bowPullLoop = false;
 
@@ -51,7 +53,7 @@ public class ShootingScript : MonoBehaviour
 			direction = direction * shotStrength / 35;
 			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
 			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
-		} else if (shotStrength > 20) { 	  
+		} else if (shotStrength > minShotStrength) { 	  
 	        Attack ();
 		    shotStrength = 0;
 		  }
