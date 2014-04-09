@@ -8,15 +8,17 @@ public class ArrowCollision : MonoBehaviour {
         // Is this a shot?
         ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
 		if (shot != null ) {
-            if (otherCollider.gameObject.layer != 0)
-            {
-                Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
-            }
-            else if (otherCollider.gameObject.layer == 0)
+            if (this.gameObject.layer == 8)
             { //Arrows stick to ground
                 shot.rigidbody2D.gravityScale = 0;
                 shot.rigidbody2D.velocity = new Vector3();
-            }
+            } else if(this.gameObject.layer == 4) {
+				otherCollider.gameObject.GetComponent<Rigidbody2D>().drag = 20;
+				otherCollider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 2.2f;
+				//otherCollider.gameObject.GetComponent<PointTowardsMovementScript>().enabled = false;
+			} else {
+				Destroy(otherCollider.gameObject);
+			}
 		}
     }
 

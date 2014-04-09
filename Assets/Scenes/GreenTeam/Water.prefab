@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water
   m_TagString: DeathArea
   m_Icon: {fileID: 0}
