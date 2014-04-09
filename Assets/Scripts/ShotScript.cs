@@ -37,10 +37,8 @@ public class ShotScript : MonoBehaviour
 	float randomNum = Random.Range (1, 100);
 	if (randomNum < 50) {
 	  audio.PlayOneShot (arrowShoot1);
-	  Debug.Log("arrowShoot1");
 	} else {
 	  audio.PlayOneShot (arrowShoot2);
-	  Debug.Log("arrowShoot2");
 	}
     // 2 - Limited time to live to avoid any leak
     Destroy(gameObject, 20); // 20sec
@@ -52,7 +50,6 @@ public class ShotScript : MonoBehaviour
 	  audio.PlayOneShot (lionHurt);
 	} else if(other.tag != "P1") {
 	  audio.PlayOneShot (arrowHit1);
-	  Debug.Log(other.tag);
 	}
   }
 }

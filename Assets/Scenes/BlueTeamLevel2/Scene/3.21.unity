@@ -319,8 +319,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &126465297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -425,8 +431,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &148252555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -758,8 +770,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &252449217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -838,8 +856,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &265903591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1123,8 +1147,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &365342923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1425,8 +1455,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &381670282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1582,8 +1618,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &413113788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1940,8 +1982,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &494247286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2020,8 +2068,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &517437133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2451,8 +2505,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &611203446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2571,8 +2631,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &651477035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3003,8 +3069,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &749370445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3160,8 +3232,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &764575200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3317,8 +3395,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &783127920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3397,8 +3481,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &804042865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3867,7 +3957,7 @@ MonoBehaviour:
   angle: 0
   shotStrength: 0
   maxShotStrength: 40
-  bowPullLoop: 0
+  bowPullLoop: 1
 --- !u!114 &892931545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3882,13 +3972,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
   walkSpeed: 8
-  runSpeed: 10
+  runSpeed: 6
   crouchSpeed: 1
   groundCheck: {fileID: 133530181}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 1500
+  jumpPower: 800
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   boxcollider: {fileID: 0}
@@ -4111,7 +4201,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
-  m_GravityScale: 7
+  m_GravityScale: 2.70000005
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4148,7 +4238,7 @@ Transform:
   m_PrefabInternal: {fileID: 1359232586}
   m_GameObject: {fileID: 892931543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.1909294, y: 17.1270523, z: 0}
+  m_LocalPosition: {x: 85.1136627, y: 15.3737822, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 133530181}
@@ -4300,8 +4390,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &947783522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4663,8 +4759,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1121613985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5429,11 +5531,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 37.1909294
+      value: 85.1136627
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 17.1270523
+      value: 15.3737822
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5535,8 +5637,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1455017072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5780,8 +5888,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1492516117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6164,6 +6278,10 @@ MonoBehaviour:
   over: 1
   left: 0
   right: 0
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1658929187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6546,8 +6664,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1703987661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7050,8 +7174,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1844425968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7408,8 +7538,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &1914431118
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7934,8 +8070,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!61 &2064246052
 BoxCollider2D:
   m_ObjectHideFlags: 0

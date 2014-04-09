@@ -5,7 +5,6 @@ public class ArrowCollision : MonoBehaviour {
     //This will destroy the arrow when it impacts an object. Use this script for anything that needs to collide with arrows!
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
-		Debug.Log ("tag:"+otherCollider.tag);
         // Is this a shot?
         ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
 		if (shot != null ) {

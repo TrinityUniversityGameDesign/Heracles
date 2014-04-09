@@ -19,7 +19,7 @@ GameObject:
   - 82: {fileID: 8200006}
   - 82: {fileID: 8200008}
   - 82: {fileID: 8200010}
-  - 61: {fileID: 6100000}
+  - 60: {fileID: 6000000}
   m_Layer: 0
   m_Name: ShotPrefab1
   m_TagString: Shot
@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.808815, y: 3.78162217, z: 0}
+  m_LocalPosition: {x: 83.7629166, y: 7.10325956, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,8 +53,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!60 &6000000
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -62,8 +62,24 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .0500000007, y: .0500000007}
-  m_Center: {x: .135000005, y: .00499999989}
+  m_Poly:
+    m_Paths:
+    - - {x: .110169984, y: .0299907681}
+      - {x: .109957889, y: .0200185776}
+      - {x: .10001526, y: .0200092327}
+      - {x: .0998657271, y: -.0100513464}
+      - {x: .109924316, y: -.0101072313}
+      - {x: .109814458, y: -.0199193954}
+      - {x: .119760133, y: -.0200908668}
+      - {x: .120095827, y: -.0100824358}
+      - {x: .140191659, y: -.010175514}
+      - {x: .140109256, y: 6.94274931e-05}
+      - {x: .159883127, y: -6.40869184e-05}
+      - {x: .159982309, y: .00999927521}
+      - {x: .140225217, y: .0099681858}
+      - {x: .140029907, y: .0198249817}
+      - {x: .119827271, y: .0199886318}
+      - {x: .120013431, y: .0299907681}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
