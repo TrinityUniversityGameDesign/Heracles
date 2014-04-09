@@ -8,10 +8,12 @@ public class ArrowCollision : MonoBehaviour {
         // Is this a shot?
         ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
 		if (shot != null ) {
-            if (this.gameObject.layer == 8)
+			if (gameObject.layer == 8 || gameObject.layer == 9  || gameObject.layer == 10)
             { //Arrows stick to ground
                 shot.rigidbody2D.gravityScale = 0;
                 shot.rigidbody2D.velocity = new Vector3();
+				if (gameObject.layer == 10)
+					shot.TrackObject(transform);
             } else if(this.gameObject.layer == 4) {
 				otherCollider.gameObject.GetComponent<Rigidbody2D>().drag = 20;
 				otherCollider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 2.2f;

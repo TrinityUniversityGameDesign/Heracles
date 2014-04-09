@@ -11,7 +11,8 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
-  m_Layer: 9
+  - 114: {fileID: 11400006}
+  m_Layer: 10
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.9391088, y: -6.67497492, z: 0}
+  m_LocalPosition: {x: 105, y: 25, z: 0}
   m_LocalScale: {x: -2.16316032, y: -.216316685, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -117,14 +118,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a0756da23c1d4bd487ffcd5d7a84156, type: 3}
+  m_Script: {fileID: 11500000, guid: 24cd579f64b5b1d458c7f4763d0813c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: 
-  time: 0
-  delay: 0
-  easetype: 
-  looptype: 
+  pathName: RB Path2
+  time: 4
+  delay: 2
+  easetype: easeInOutSine
+  looptype: pingpong
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,15 +137,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: New Path 1
+  pathName: RB Path2
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 105, y: 25, z: 0}
+  - {x: 105, y: 13, z: 0}
   nodeCount: 2
   initialized: 1
   initialName: New Path 1
   pathVisible: 1
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bcae7d0930aa41949d3e3dce043d5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

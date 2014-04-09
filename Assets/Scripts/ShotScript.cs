@@ -12,6 +12,12 @@ public class ShotScript : MonoBehaviour
   public AudioClip arrowHit2;
   public AudioClip arrowHit3;
   public AudioClip lionHurt;
+	public bool soundEnabled = true;
+	private Transform target;
+	private float xOffset;
+	private float yOffset;
+	private bool doFollow = false;
+	private bool set = false;
   // 1 - Designer variables
 
   /// <summary>
@@ -25,11 +31,23 @@ public class ShotScript : MonoBehaviour
   public bool isEnemyShot = false;
 
 	void Update() {
-		if (rigidbody2D.gravityScale == 0) {
+		if (rigidbody2D.gravityScale == 0 && !set) {
+			set = true;
+			soundEnabled = false;
 			GetComponent<PointTowardsMovementScript>().enabled = false;
 			rigidbody2D.velocity = new Vector3();
 			Destroy(gameObject, 10);
 		}
+		if (doFollow) {
+			transform.position = new Vector3(target.position.x+xOffset,target.position.y+yOffset,transform.position.z);
+		}
+	}
+
+	public void TrackObject(Transform followThis) {
+		doFollow = true;
+		target = followThis;
+		xOffset = transform.position.x-target.position.x;
+		yOffset = transform.position.y-target.position.y;
 	}
 
   void Start()
@@ -45,11 +63,11 @@ public class ShotScript : MonoBehaviour
   }
   void OnTriggerEnter2D (Collider2D other) 
   {
-
-	if (other.tag == "Lion") {
-	  audio.PlayOneShot (lionHurt);
-	} else if(other.tag != "P1") {
-	  audio.PlayOneShot (arrowHit1);
+	if (soundEnabled)
+		if (other.tag == "Lion") {
+		  audio.PlayOneShot (lionHurt);
+		} else if(other.tag != "P1") {
+		  audio.PlayOneShot (arrowHit1);
+		}
 	}
-  }
-}
+ }
