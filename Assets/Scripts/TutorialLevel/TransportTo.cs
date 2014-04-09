@@ -7,7 +7,6 @@ public class TransportTo : MonoBehaviour
 		GameObject p;
 		GameObject c;
 		public float x, y, z;
-		public float cameraX, cameraY, cameraZ;
 		public bool oneUse;
 		bool used = false;
 		public bool triggeredByPlayer;
@@ -33,7 +32,7 @@ public class TransportTo : MonoBehaviour
 								if (other.CompareTag ("P1")) {
 										if (triggeredOnNumTry == 0) {
 												p.transform.position = new Vector3 (x, y, z);
-												c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+												c.transform.position = new Vector3 (x, y, z-62.0f);
 												if (oneUse)
 														used = true;
 										} else {
@@ -44,7 +43,7 @@ public class TransportTo : MonoBehaviour
 						if (other.CompareTag ("Shot")) {
 								if (triggeredOnNumTry == 0) {
 										p.transform.position = new Vector3 (x, y, z);
-										c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+					c.transform.position = new Vector3 (x, y, z-62.0f);
 										if (oneUse)
 												used = true;
 								} else {

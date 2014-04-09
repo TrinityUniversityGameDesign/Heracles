@@ -481,7 +481,7 @@ GameObject:
   - 4: {fileID: 118590197}
   - 212: {fileID: 118590196}
   m_Layer: 0
-  m_Name: Woman2_static
+  m_Name: JumpingWomanClimbing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2099,9 +2099,6 @@ MonoBehaviour:
   x: -300
   y: -112.364601
   z: 0
-  cameraX: -341.916412
-  cameraY: -112.364601
-  cameraZ: -62
   oneUse: 1
   triggeredByPlayer: 1
   triggeredOnNumTry: 2
@@ -2810,7 +2807,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: message
-      value: Hm. You can't seem to jump over that block.
+      value: Some obstacles cannot be avoided. It must be scaled
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: localy
@@ -2827,6 +2824,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: fontSize
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: numberOfLines
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
@@ -3786,6 +3787,8 @@ MonoBehaviour:
   shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
   shotStrength: 0
+  shotGrowth: 2
+  minShotStrength: 7
   maxShotStrength: 40
   bowPullLoop: 1
 --- !u!114 &753989037
@@ -4448,7 +4451,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 879166485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 176.919586, y: 10.7449789, z: 100}
+  m_LocalPosition: {x: 177.245178, y: 10.5821772, z: 100}
   m_LocalScale: {x: 6.06042957, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4623,9 +4626,6 @@ MonoBehaviour:
   x: -29.2000008
   y: -.412999988
   z: 0
-  cameraX: -29.2000008
-  cameraY: -.412999988
-  cameraZ: -62
   oneUse: 0
   triggeredByPlayer: 0
   triggeredOnNumTry: 0
@@ -4812,7 +4812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: message
-      value: We must be careful who we hurt. Or else we will end up hurting ourselves.
+      value: Why do we always do this? Those we love are always the ones we hurt.
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: localy
@@ -5058,10 +5058,10 @@ MonoBehaviour:
   fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
-  numberOfLines: 2
+  numberOfLines: 5
   localx: 0
   localy: 18
-  message: Hm. You can't seem to jump over that block.
+  message: Some obstacles cannot be avoided. It must be scaled
   oneUse: 1
 --- !u!61 &1010112602
 BoxCollider2D:
@@ -7229,7 +7229,7 @@ MonoBehaviour:
   numberOfLines: 5
   localx: 0
   localy: 18
-  message: We must be careful who we hurt. Or else we will end up hurting ourselves.
+  message: Why do we always do this? Those we love are always the ones we hurt.
   oneUse: 1
 --- !u!61 &1462158874
 BoxCollider2D:
