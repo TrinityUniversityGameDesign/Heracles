@@ -15,6 +15,8 @@ public class PlayerControl : MonoBehaviour {
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	bool grounded = false;
+	bool groundedLoop = false;
+	public AudioClip jumpSound;
 	public LayerMask groundMask;
 	public float jumpPower;
 	public string horizAxisName = "Horizontal";
@@ -34,6 +36,9 @@ public class PlayerControl : MonoBehaviour {
 
 	Animator anim;
 	void Awake() {
+		if (!grounded) {
+			groundedLoop = true;
+		}
 		idleCooldown = animIdleRate;
 		anim = GetComponent<Animator> ();
 		bc = GetComponent<BoxCollider2D>();
@@ -50,6 +55,15 @@ public class PlayerControl : MonoBehaviour {
 				}
 			}
 		}
+
+		if (!grounded && !groundedLoop) {
+			groundedLoop = true;
+			audio.PlayOneShot (jumpSound);
+		} else if(grounded) {
+			groundedLoop = false;
+		}
+		//call jump update
+
 		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 				
 		bool jump = Input.GetButtonDown (jumpAxisName);
