@@ -48,7 +48,7 @@ GameObject:
   - 61: {fileID: 6100004}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: LadderFlip
+  m_Name: LadderFlip _ old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,8 +134,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,8 +154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
