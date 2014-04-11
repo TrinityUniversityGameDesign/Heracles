@@ -3,18 +3,20 @@ using System.Collections;
 
 public class PressurePlate : MonoBehaviour {
 
+	private GameObject playerObject;
 	public GameObject childObj;
 	private PressurePlateChildScript childScript;
 	public int isPressed = 0;
 
 	// Use this for initialization
 	void Start () {
+		playerObject = GameObject.FindWithTag("P1");
 		GameObject childObj = gameObject.transform.Find("PressureChild").gameObject;
 		childScript = childObj.GetComponent<PressurePlateChildScript>();
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
-		if (other.gameObject.rigidbody2D.mass >= 1) {
+		if (other.gameObject.rigidbody2D.mass >= 1 || other.gameObject == playerObject) {
 			isPressed++;
 			//other.gameObject.rigidbody2D.velocity = new Vector2(0, 0);
 			gotPressed();
