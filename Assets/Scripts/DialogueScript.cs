@@ -25,6 +25,7 @@ public class DialogueScript : MonoBehaviour {
 	private bool wait = false;
 	private bool skip = false;
 	private bool collide = false;
+	private bool hasFocus = false;
 
 	// Use this for initialization
 	void Start () {
@@ -46,6 +47,17 @@ public class DialogueScript : MonoBehaviour {
 		else if (Input.GetKeyDown("space") && !isDisplaying && collide) {
 			isDisplaying = true;
 			DisplayMessage(message,numberOfLines);
+		}
+		if (!collide && initilized) {
+			isDisplaying = false;
+			Debug.Log(textMesh.gameObject.GetComponent<MeshRenderer>().material.color.a);
+			if (textMesh.gameObject.GetComponent<MeshRenderer>().material.color.a > 0) {
+				Color tempColor = textMesh.gameObject.GetComponent<MeshRenderer>().material.color;
+				tempColor.a -= 0.02f;
+				textMesh.gameObject.GetComponent<MeshRenderer>().material.color = tempColor;
+			}
+			else
+				textMesh.text = "";
 		}
 	}
 	
@@ -84,6 +96,11 @@ public class DialogueScript : MonoBehaviour {
 			objText.transform.localScale = objText.transform.localScale/5;
 			objText.transform.localPosition = new Vector3(localx,localy,0f);
 			initilized = true;
+		}
+		else {
+			Color tempColor = textMesh.gameObject.GetComponent<MeshRenderer>().material.color;
+			tempColor.a = 1;
+			textMesh.gameObject.GetComponent<MeshRenderer>().material.color = tempColor;
 		}
 		index = 0;
 		textMesh.text = "";
