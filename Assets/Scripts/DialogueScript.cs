@@ -50,10 +50,9 @@ public class DialogueScript : MonoBehaviour {
 		}
 		if (!collide && initilized) {
 			isDisplaying = false;
-			Debug.Log(textMesh.gameObject.GetComponent<MeshRenderer>().material.color.a);
 			if (textMesh.gameObject.GetComponent<MeshRenderer>().material.color.a > 0) {
 				Color tempColor = textMesh.gameObject.GetComponent<MeshRenderer>().material.color;
-				tempColor.a -= 0.02f;
+				tempColor.a -= 0.015f;
 				textMesh.gameObject.GetComponent<MeshRenderer>().material.color = tempColor;
 			}
 			else

@@ -22,30 +22,36 @@ public class ShootingScript : MonoBehaviour
     /// </summary>
 	public float shotStrength = 0;
 	public float shotGrowth;
-	public int minShotStrength;
-	public int maxShotStrength = 40;
+	public float minShotStrength;
+	public float maxShotStrength = 40;
 	public bool bowPullLoop = false;
+	private PlayerControl player;
 
     void Start()
     {	
         traj = this.gameObject.GetComponent<BT_TragectoryScript>();
         traj.objShot = this.gameObject;
         traj.sightLine = this.GetComponent<LineRenderer>();
+		player = GetComponent<PlayerControl>();
     }
 
     void FixedUpdate()
     {
-		  if (Input.GetButton ("Fire")) {
+		  if (Input.GetButton ("Fire") && player.IsGrounded()) {
 			if (!bowPullLoop) {
 					audio.clip = bowPull;
 					audio.Play ();
 					bowPullLoop = true;
 			}
 			if (shotStrength < maxShotStrength) {
-					shotStrength += 2.0f;
+					shotStrength += 1f;
 			}
 			direction = Input.mousePosition;
 			Vector3 direction3 = Camera.main.ScreenToWorldPoint (new Vector3 (direction.x, direction.y, 0));
+			if (direction3.x - transform.position.x > 0 && !player.IsFacingRight())
+				player.flipDirection();
+			else if (direction3.x - transform.position.x < 0 && player.IsFacingRight())
+				player.flipDirection();
 			direction = new Vector2 (direction3.x, direction3.y);
 			direction.x -= this.gameObject.transform.position.x;
 			direction.y -= this.gameObject.transform.position.y;
@@ -53,7 +59,8 @@ public class ShootingScript : MonoBehaviour
 			direction = direction * shotStrength / 35;
 			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
 			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
-		} else if (shotStrength > minShotStrength) { 	  
+		} else if (shotStrength > minShotStrength && player.IsGrounded()) { 
+			Debug.Log(shotStrength+": "+minShotStrength);
 	        Attack ();
 		    shotStrength = 0;
 		  }
@@ -88,21 +95,27 @@ public class ShootingScript : MonoBehaviour
         }
     }
     */
-    public void Attack()
-    {
-        //if (CanGenerateNew)
-        //{
-			audio.Stop ();
-			bowPullLoop = false;
-            GameObject newObj = Instantiate(shotPrefab) as GameObject;
-            newObj.transform.position = transform.position;
-            InitialVelocityScript move = newObj.GetComponent<InitialVelocityScript>();
-            if (move != null)
-            {
-                move.direction = direction; // towards in 2D space is the right of the sprite
-            }
-        //}
-    }
+	public void Attack()
+	{
+		//if (CanGenerateNew)
+		//{
+		bool facingRight = GetComponent<PlayerControl>().IsFacingRight();
+		audio.Stop ();
+		bowPullLoop = false;
+		GameObject newObj = Instantiate(shotPrefab) as GameObject;
+		Vector3 arrowPos;
+		if (facingRight)
+			arrowPos = new Vector3(transform.position.x+0.7f,transform.position.y+0.52f,transform.position.z);
+		else
+			arrowPos = new Vector3(transform.position.x-0.7f,transform.position.y+0.52f,transform.position.z);
+		newObj.transform.position = arrowPos;
+		InitialVelocityScript move = newObj.GetComponent<InitialVelocityScript>();
+		if (move != null)
+		{
+			move.direction = direction; // towards in 2D space is the right of the sprite
+		}
+		//}
+	}
 
     /*float BallisticVel(Vector3 target, float newAngle)
     {
