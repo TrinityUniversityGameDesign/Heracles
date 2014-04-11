@@ -63,11 +63,13 @@ public class ShotScript : MonoBehaviour
   }
   void OnTriggerEnter2D (Collider2D other) 
   {
-	if (soundEnabled)
+	Debug.Log (other.tag);
+	if (soundEnabled) {
 		if (other.tag == "Lion") {
-		  audio.PlayOneShot (lionHurt);
+	  		audio.PlayOneShot (lionHurt);
 		} else if(other.tag != "P1") {
-		  audio.PlayOneShot (arrowHit1);
+	  		audio.PlayOneShot (arrowHit1);
 		}
 	}
  }
+}
