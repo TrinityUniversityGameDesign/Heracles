@@ -66,7 +66,7 @@ public class FlipperScript : MonoBehaviour
                 Damage(shot.damage);
 
                 // Destroy the shot
-                Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
+             //   Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
             }
         }
     }
