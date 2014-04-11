@@ -12,7 +12,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 82: {fileID: 8200000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.40740681, y: -2.59862137, z: 10.3220215}
+  m_LocalPosition: {x: -4.68492079, y: -1.53692353, z: 10.3220215}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 727dd6e458c789c499ee7ac3548ab6be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0ae8d63eacc01b47930630ef46aab0b, type: 3}
   m_Color: {r: .544117689, g: .480379671, b: .124026813, a: 1}
 --- !u!1001 &100100000
 Prefab:
