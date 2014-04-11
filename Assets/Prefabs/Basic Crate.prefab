@@ -12,7 +12,8 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 82: {fileID: 8200000}
-  m_Layer: 9
+  - 61: {fileID: 6100002}
+  m_Layer: 8
   m_Name: Basic Crate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.71771789, y: -1.06074679, z: 0}
-  m_LocalScale: {x: .830018163, y: .794628263, z: 1}
+  m_LocalPosition: {x: .955738604, y: .83329308, z: 0}
+  m_LocalScale: {x: 3.33929038, y: 3.33929038, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -36,7 +37,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: .75
+  m_Mass: 1.10000002
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -54,8 +55,19 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 3cd3f8ce3a5ca924d8161c224353a06c, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: .32121861, y: .320326954}
+  m_Center: {x: -.00069236313, y: .00113816164}
+--- !u!61 &6100002
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: 3cd3f8ce3a5ca924d8161c224353a06c, type: 2}
+  m_IsTrigger: 1
+  m_Size: {x: .32121861, y: .320326954}
+  m_Center: {x: -.00069236313, y: .00113816164}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -65,7 +77,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -135,8 +147,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: .426470578, g: .363321811, b: .197556227, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3299e035e3864a443b506e58363016e9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
