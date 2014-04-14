@@ -50,7 +50,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64.3097534, y: -55.2177277, z: 0}
+  m_LocalPosition: {x: 64.570549, y: 26.5525017, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -245,9 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 8
   runSpeed: 6
-  crouchSpeed: 1
+  crouchSpeed: 3
   groundCheck: {fileID: 400002}
   jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
   groundMask:
@@ -304,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8069eb8a6d101e4badfea4d88fc6b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 13200000, guid: 4436726fc7d567344ae47ce31e819781, type: 2}
+  timeText: {fileID: 0}
   timer: 0
 --- !u!114 &11400008
 MonoBehaviour:

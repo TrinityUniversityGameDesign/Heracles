@@ -6,10 +6,10 @@ public class PlayerControl : MonoBehaviour {
 	
 	//	bool facingRight = true;
 	public Vector2 resetPosition = new Vector2 (-7.5f, -1.75f);
-	
-	public float walkSpeed;
+
 	public float runSpeed;
 	public float crouchSpeed;
+	private float speed;
 	private float crouchHeight = .5f;
 	
 	public Transform groundCheck;
@@ -43,6 +43,7 @@ public class PlayerControl : MonoBehaviour {
 		idleCooldown = animIdleRate;
 		anim = GetComponent<Animator> ();
 		bc = GetComponent<BoxCollider2D>();
+		speed = runSpeed;
 	}
 	
 	// Update is called once per frame
@@ -76,7 +77,7 @@ public class PlayerControl : MonoBehaviour {
 			if (!isCrouched) {
 				anim.SetBool("Crouch",true);
 				isCrouched = true;
-				walkSpeed = crouchSpeed;
+				speed = crouchSpeed;
 				//BoxCollider2D = new BoxCollider2D (BoxCollider2D.size.x, crouchHeight);//BoxCollider2D.size.y = BoxCollider2D.size.y / 2;
 				bc.size = new Vector2(bc.size.x,crouchHeight);
 				bc.center = new Vector2(bc.center.x,-.25f);
@@ -84,7 +85,7 @@ public class PlayerControl : MonoBehaviour {
 		} else {
 			anim.SetBool("Crouch",false);
 			isCrouched = false;
-			walkSpeed = crouchSpeed * 2f;
+			speed = runSpeed;
 			bc.size = new Vector2(bc.size.x, 1f);
 			bc.center = new Vector2(bc.center.x, 0f);
 		}
@@ -109,7 +110,7 @@ public class PlayerControl : MonoBehaviour {
 	
 	void FixedUpdate () {
 		float inputX = Input.GetAxis (horizAxisName);
-		float vel = inputX * runSpeed;
+		float vel = inputX * speed;
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
 		
 		if (Input.GetButton("Fire") && grounded) {
