@@ -60,7 +60,6 @@ public class ShootingScript : MonoBehaviour
 			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
 			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
 		} else if (shotStrength > minShotStrength && player.IsGrounded()) { 
-			Debug.Log(shotStrength+": "+minShotStrength);
 	        Attack ();
 		    shotStrength = 0;
 		  }

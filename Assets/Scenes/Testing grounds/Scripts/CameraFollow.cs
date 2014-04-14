@@ -10,14 +10,14 @@ public class CameraFollow : MonoBehaviour
 	public Vector2 maxXAndY;		// The maximum x and y coordinates the camera can have.
 	public Vector2 minXAndY;		// The minimum x and y coordinates the camera can have.
 
-
-	private Transform player;		// Reference to the player's transform.
+	public Transform player;		// Reference to the player's transform.
 
 
 	void Awake ()
 	{
 		// Setting up the reference.
-		player = GameObject.FindGameObjectWithTag("P1").transform;
+		if (player == null)
+			player = GameObject.FindGameObjectWithTag("P1").transform;
 	}
 
 
@@ -64,4 +64,9 @@ public class CameraFollow : MonoBehaviour
 		// Set the camera's position to the target position with the same z component.
 		transform.position = new Vector3(targetX, targetY, transform.position.z);
 	}
+
+	public void SetTarget(Transform newTarget) {
+		player = newTarget;
+	}
+	
 }
