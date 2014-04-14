@@ -18,6 +18,7 @@ public class FlipperLadder : MonoBehaviour
 	public string lad5;
 	public bool isEnemy;
 	public bool destroyshot;
+	private bool facingRight = false; 
 
     /// <summary>
     /// Enemy or player?
@@ -49,11 +50,23 @@ public class FlipperLadder : MonoBehaviour
 	void Start(){
 
 	}
+
+	public void flipDirection(GameObject obj) {
+		//facingRight = !facingRight;
+		Vector3 transScale = obj.transform.localScale;
+		transScale.x *= -1;
+		obj.transform.localScale = transScale;
+	}
+
 	void Toggle(GameObject obj){
-		if (obj.collider2D.enabled == false)
-						Enable (obj);
-				else
-						Disable (obj);
+	//	flipDirection(obj);
+	//	flipDirection (gameObject); 
+
+		if (obj.collider2D.enabled == false) {
+			Enable (obj);
+		} else {
+			Disable (obj);
+		}
 		}
 
 	void Disable(GameObject obj){

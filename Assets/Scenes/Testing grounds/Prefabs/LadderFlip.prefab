@@ -61,7 +61,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.6579475, y: 3.41704607, z: 0}
+  m_LocalPosition: {x: -18.5329914, y: 10.8974285, z: 0}
   m_LocalScale: {x: 25.3187561, y: 24.8518391, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.59061241, y: 3.78373194, z: 0}
+  m_LocalPosition: {x: -18.5153046, y: 3.23335648, z: 0}
   m_LocalScale: {x: 25.3187542, y: 24.8518391, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .919185996, y: -2.7298522, z: 0}
+  m_LocalPosition: {x: -8.41390419, y: -2.09746552, z: 0}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -119,9 +119,9 @@ BoxCollider2D:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 4.80000019, y: 3.5}
-  m_Center: {x: .100000001, y: -.200000003}
+  m_IsTrigger: 1
+  m_Size: {x: 4.24335289, y: 5.17850828}
+  m_Center: {x: -.838809013, y: -.140052438}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,8 +134,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,8 +154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
+  canClimb: 0
   speed: 1
   tick: .100000001
+  enterDelay: .200000003
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380d5cf4544f4d64ca3b7517179c7be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numLadders: 2
+  numLadders: 5
   lad1: gateA1
   lad2: gateA2
   lad3: 
@@ -236,7 +248,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: f31831d8469760c44aabfb584129b01a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: defebc67e953a43eaa1b04ed86594470, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
