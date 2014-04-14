@@ -29,7 +29,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Testing grounds/Music2.unity
   - enabled: 1
     path: Assets/Scenes/Red Team/Scenes/BossLionVer2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BlueTeamLevel2/Scene/TutorialLevel/Tutorial2.unity
   - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/TutorialStartingLevel.unity
+  - enabled: 1
+    path: Assets/Scenes/GreenTeam/splashScreenScene.unity
+  - enabled: 1
+    path: Assets/Scenes/GreenTeam/PS_Checkpoint_Testscene.unity
