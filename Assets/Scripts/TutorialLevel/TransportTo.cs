@@ -30,7 +30,7 @@ public class TransportTo : MonoBehaviour
 		{
 				if (!used) {
 						if (triggeredByPlayer) {
-								if (other.CompareTag ("P1")) {
+								if (other.tag == "P1") {
 										if (triggeredOnNumTry == 0) {
 												p.transform.position = new Vector3 (x, y, z);
 												c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
@@ -41,7 +41,7 @@ public class TransportTo : MonoBehaviour
 										}
 								}
 						}
-						if (other.CompareTag ("Shot")) {
+						else if (other.CompareTag ("Shot")) {
 								if (triggeredOnNumTry == 0) {
 										p.transform.position = new Vector3 (x, y, z);
 										c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);

@@ -41,6 +41,7 @@ public class HindEvasion : MonoBehaviour {
 
 	void ChangePosition ()
 	{
+		currentPosition = deer.transform.position;
 		Vector2 nextPosition = currentPlatform.transform.position;
 		nextPosition.y += deer.renderer.bounds.extents.y;
 		Vector2 force = GetAcceleration (nextPosition) * deerBody.mass;
@@ -74,6 +75,7 @@ public class HindEvasion : MonoBehaviour {
 			}
 		}
 	}
+
 
 	// Use this for initialization
 	void Start ()

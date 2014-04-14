@@ -89,7 +89,11 @@ public class iTween : MonoBehaviour{
     private bool useRealTime; // Added by PressPlay
 	
 	private Transform thisTransform;
-
+	public bool checkIfChild = true;
+	public bool currentlyChild ;
+	public bool checkToggle = false; 
+	public float childCheckDelay = 1.7f;
+	private bool starterFixed = false; 
 
 	/// <summary>
 	/// The type of easing to use based on Robert Penner's open source easing equations (http://www.robertpenner.com/easing_terms_of_use.html).
@@ -4612,7 +4616,7 @@ public class iTween : MonoBehaviour{
 		if (type == "move" || type=="scale" || type=="rotate" || type=="punch" || type=="shake" || type=="curve" || type=="look") {
 			EnableKinematic();
 		}
-		
+
 		isRunning = true;
 	}
 	
@@ -6566,9 +6570,15 @@ public class iTween : MonoBehaviour{
 		}
 		TweenStart();
 	}	
-	
+	IEnumerator CheckChildDelay(){
+		yield return new WaitForSeconds (childCheckDelay);
+		checkToggle = !checkToggle;
+		checkIfChild = true;
+	}
+
 	//non-physics
 	void Update(){
+
 		if(isRunning && !physics){
 			if(!reverse){
 				if(percentage<1f){
@@ -6588,6 +6598,26 @@ public class iTween : MonoBehaviour{
 	
 	//physics
 	void FixedUpdate(){
+
+		if (checkIfChild) {
+			checkIfChild = false;
+			GameObject playerObj = GameObject.FindWithTag("P1");
+			currentlyChild = playerObj.transform.IsChildOf(gameObject.transform);
+			if(currentlyChild){
+				bool xOk = playerObj.transform.position.x < 1.5f && playerObj.transform.position.x > -1.5f;
+				bool yOk = playerObj.transform.position.y < 1.5f && playerObj.transform.position.y > -1.5f;
+				if(!xOk || !yOk)
+					playerObj.transform.parent = null;
+			}
+			StartCoroutine(CheckChildDelay()); 
+			
+		}
+		if (!starterFixed) {
+			starterFixed = true;
+			childCheckDelay = 1.2f;
+			StartCoroutine(CheckChildDelay());
+		}
+
 		if(isRunning && physics){
 			if(!reverse){
 				if(percentage<1f){

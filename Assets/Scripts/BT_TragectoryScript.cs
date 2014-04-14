@@ -16,6 +16,13 @@ public class BT_TragectoryScript : MonoBehaviour {
 	private Collider _hitObject;
 	public Collider hitObject {get {return _hitObject; }}
 	private bool yup = false;
+	private PlayerControl player;
+	private ShootingScript shooter;
+
+	void Start() {
+		player = GetComponent<PlayerControl>();
+		shooter = GetComponent<ShootingScript>();
+	}
 
 	public void SetTragectory(float newAngle, float newForce) {
 		angle = newAngle;
@@ -25,14 +32,20 @@ public class BT_TragectoryScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate() {
 		SimulatePath();
-        if(!Input.GetButton("Fire") && !lineAlwaysVisible) {
+		if((!Input.GetButton("Fire") && !lineAlwaysVisible) || !player.IsGrounded() || shooter.shotStrength < shooter.minShotStrength) {
             sightLine.SetWidth(0f, 0f);
         }
 	}
 
 	void SimulatePath() {
 		Vector3[] segments = new Vector3[segmentCount];
-		segments[0] = objShot.transform.position;
+		Vector3 linePos;
+		bool facingRight = player.IsFacingRight();
+		if (facingRight)
+			linePos = new Vector3(objShot.transform.position.x+0.7f,objShot.transform.position.y+0.52f,objShot.transform.position.z);
+		else
+			linePos = new Vector3(objShot.transform.position.x-0.7f,objShot.transform.position.y+0.52f,objShot.transform.position.z);
+		segments[0] = linePos;
 		float angleRad = angle / 180.0f * Mathf.PI;
 		Vector3 segVelocity = ((Mathf.Sin(angleRad) * transform.up + Mathf.Cos(angleRad) * transform.right) * force * 1.6f);
 		_hitObject = null;
@@ -50,7 +63,7 @@ public class BT_TragectoryScript : MonoBehaviour {
 				segments[i] = segments[i-1] + segVelocity * segTime;
 			}
 		}
-        Color startColor = Color.cyan;
+		Color startColor = Color.cyan;
 		Color endColor =  Color.magenta;
 		startColor.a = 0.25f;
 		endColor.a = 0;
