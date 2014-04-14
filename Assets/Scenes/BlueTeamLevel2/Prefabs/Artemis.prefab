@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c0975db24904dfcb4cfcd98840669f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 100000, guid: 5b9e906cd7c3d44348fdbc99d585505a, type: 2}
+  obj: {fileID: 100000, guid: 648678e2fb7ba4abca3d4f67239971d4, type: 2}
   genRate: 2
   genCooldown: 4
   angle: 25
