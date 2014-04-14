@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 3c2f212b439544d0b9f658416a3f4248
-=======
-guid: 812ae7680f84fa24099855b08b7c14fb
->>>>>>> FETCH_HEAD
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -27,16 +23,6 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-<<<<<<< HEAD
-    filterMode: 0
-    aniso: 1
-    mipBias: -1
-    wrapMode: 1
-  nPOTScale: 0
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 2
-=======
     filterMode: -1
     aniso: -1
     mipBias: -1
@@ -45,7 +31,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
->>>>>>> FETCH_HEAD
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -59,46 +44,6 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-<<<<<<< HEAD
-    sprites:
-    - name: Fire_Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Fire_Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Fire_Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Fire_Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-=======
     sprites: []
->>>>>>> FETCH_HEAD
   spritePackingTag: 
   userData: 
