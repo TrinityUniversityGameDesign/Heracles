@@ -12,6 +12,7 @@ public class TransportTo : MonoBehaviour
 		bool used = false;
 		public bool triggeredByPlayer;
 		public int triggeredOnNumTry;
+	public Transform target;
 
 		// Use this for initialization	
 		void Start ()
@@ -34,6 +35,7 @@ public class TransportTo : MonoBehaviour
 										if (triggeredOnNumTry == 0) {
 												p.transform.position = new Vector3 (x, y, z);
 												c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+												Camera.main.GetComponent<CameraFollow>().SetTarget(target);
 												if (oneUse)
 														used = true;
 										} else {
@@ -45,6 +47,7 @@ public class TransportTo : MonoBehaviour
 								if (triggeredOnNumTry == 0) {
 										p.transform.position = new Vector3 (x, y, z);
 										c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+										Camera.main.GetComponent<CameraFollow>().SetTarget(target);
 										if (oneUse)
 												used = true;
 								} else {

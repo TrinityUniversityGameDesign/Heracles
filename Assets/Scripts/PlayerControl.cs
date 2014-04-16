@@ -28,6 +28,7 @@ public class PlayerControl : MonoBehaviour {
 	private float idleCooldown;
 	private bool facingRight = true;
 	private bool isShooting = false;
+	private bool isClimbing = false;
 	
 	public Component boxcollider;
 	
@@ -58,20 +59,14 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 
-		if (!grounded && !groundedLoop) {
-			groundedLoop = true;
-			audio.PlayOneShot (jumpSound);
-		} else if(grounded) {
-			groundedLoop = false;
-		}
-		//call jump update
-
 		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 		
 		bool jump = Input.GetButtonDown (jumpAxisName);
 		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
 		}
+		if (grounded && jump)
+			audio.PlayOneShot (jumpSound);
 		crouch = Input.GetButton("Shift"); // seems more user friendly than "X"
 		if (crouch) {
 			if (!isCrouched) {
@@ -130,6 +125,10 @@ public class PlayerControl : MonoBehaviour {
 		else if (inputX < 0 && facingRight) flipDirection();
 		if (inputX > 0) idleCooldown = animIdleRate;
 	}
+
+	public void SetClimbing(bool input) {
+		isClimbing = input;
+	}
 	
 	public bool IsFacingRight() {
 		return facingRight;
@@ -137,5 +136,9 @@ public class PlayerControl : MonoBehaviour {
 
 	public bool IsGrounded() {
 		return grounded;
+	}
+
+	public bool IsClimbing() {
+		return isClimbing;
 	}
 }

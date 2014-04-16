@@ -758,6 +758,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110289876
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: UnderWater Animation
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 0}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 227, y: 65, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110296223
 State:
   m_ObjectHideFlags: 3
@@ -806,19 +821,10 @@ StateMachine:
   - {fileID: 110232772}
   - {fileID: 110288377}
   - {fileID: 110250418}
+  - {fileID: 110289876}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
-    data:
-      first: {fileID: 110250418}
-      second:
-      - {fileID: 110170353}
-      - {fileID: 110116219}
-    data:
-      first: {fileID: 110288377}
-      second:
-      - {fileID: 110187706}
-      - {fileID: 110199516}
     data:
       first: {fileID: 0}
       second:
@@ -859,6 +865,16 @@ StateMachine:
       second:
       - {fileID: 110165664}
       - {fileID: 110166403}
+    data:
+      first: {fileID: 110288377}
+      second:
+      - {fileID: 110187706}
+      - {fileID: 110199516}
+    data:
+      first: {fileID: 110250418}
+      second:
+      - {fileID: 110170353}
+      - {fileID: 110116219}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -60, y: -168, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
