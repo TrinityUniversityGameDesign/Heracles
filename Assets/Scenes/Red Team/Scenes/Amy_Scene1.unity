@@ -97,8 +97,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9076610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.91892338, y: -.472177863, z: 0}
-  m_LocalScale: {x: 3.32910466, y: 2.49683046, z: 1}
+  m_LocalPosition: {x: -5.81157875, y: -.230656624, z: 0}
+  m_LocalScale: {x: 4, y: 3, z: 1}
   m_Children:
   - {fileID: 40128338}
   - {fileID: 58209595}
@@ -402,8 +402,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 151726034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.18349838, y: 7.64571571, z: 100}
-  m_LocalScale: {x: 1.00119901, y: 1.26096547, z: 1}
+  m_LocalPosition: {x: .462087631, y: 4.83298635, z: 100}
+  m_LocalScale: {x: 2.32091069, y: 2.9230926, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &212254755
@@ -951,8 +951,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 548711948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.1220789, y: .312732458, z: 0}
-  m_LocalScale: {x: 3.48104024, y: 4.35130024, z: 1}
+  m_LocalPosition: {x: 14.2051115, y: .624110222, z: 0}
+  m_LocalScale: {x: 4, y: 5, z: 1}
   m_Children:
   - {fileID: 1837663189}
   - {fileID: 1236455891}
@@ -1004,8 +1004,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 947155510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.55840492, y: -.0334539413, z: 0}
-  m_LocalScale: {x: 3.33761406, y: 3.33761215, z: 1}
+  m_LocalPosition: {x: 3.66438627, y: .284490943, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 1150359630}
   - {fileID: 1994812090}
@@ -1173,7 +1173,6 @@ MonoBehaviour:
   ySmooth: 8
   maxXAndY: {x: 13, y: 15}
   minXAndY: {x: -13, y: 4.55000019}
-  player: {fileID: 0}
 --- !u!1 &1072799003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,8 +1282,6 @@ MonoBehaviour:
   shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
   shotStrength: 0
-  shotGrowth: 1.20000005
-  minShotStrength: 13
   maxShotStrength: 40
   bowPullLoop: 1
 --- !u!114 &1083704777
@@ -1300,14 +1297,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  runSpeed: 6
-  crouchSpeed: 3
+  walkSpeed: 8
+  runSpeed: 10
+  crouchSpeed: 1
   groundCheck: {fileID: 2131820476}
-  jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 800
+  jumpPower: 1500
   horizAxisName: Horizontal
   jumpAxisName: Vertical
   boxcollider: {fileID: 0}
@@ -1347,11 +1344,11 @@ AudioSource:
   m_GameObject: {fileID: 1083704775}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 87085e9375bf4364489eb047aad208a9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -1530,7 +1527,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: .0500000007
-  m_GravityScale: 2.70000005
+  m_GravityScale: 7
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1598,7 +1595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8069eb8a6d101e4badfea4d88fc6b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
+  timeText: {fileID: 13200000, guid: 4436726fc7d567344ae47ce31e819781, type: 2}
   timer: 0
 --- !u!1 &1104157364
 GameObject:
@@ -2276,7 +2273,7 @@ Transform:
   m_PrefabInternal: {fileID: 1877918047}
   m_GameObject: {fileID: 2131820475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0364782996, y: -.5, z: 0}
+  m_LocalPosition: {x: -.100000001, y: -.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083704787}

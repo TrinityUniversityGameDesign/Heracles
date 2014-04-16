@@ -10,7 +10,7 @@ public class splashScreenScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Space)) Application.LoadLevel("TutorialStartingLevel");
+		if(Input.GetKeyDown(KeyCode.Space)) Application.LoadLevel("PS_Checkpoint_TestScene");
 	
 	}
 }

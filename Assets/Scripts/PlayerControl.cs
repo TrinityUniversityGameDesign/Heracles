@@ -59,14 +59,20 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 
+		if (!grounded && !groundedLoop) {
+			groundedLoop = true;
+			audio.PlayOneShot (jumpSound);
+		} else if(grounded) {
+			groundedLoop = false;
+		}
+		//call jump update
+
 		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 		
 		bool jump = Input.GetButtonDown (jumpAxisName);
 		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
 		}
-		if (grounded && jump)
-			audio.PlayOneShot (jumpSound);
 		crouch = Input.GetButton("Shift"); // seems more user friendly than "X"
 		if (crouch) {
 			if (!isCrouched) {
