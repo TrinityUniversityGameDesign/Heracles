@@ -2027,7 +2027,7 @@ Transform:
   m_GameObject: {fileID: 86647843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.449999988, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .980000019, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1560539473}
 --- !u!114 &86647848
@@ -7551,7 +7551,7 @@ Transform:
   m_GameObject: {fileID: 456318409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.449999988, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .980000019, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083310809}
 --- !u!114 &456318414
@@ -7748,8 +7748,8 @@ MonoBehaviour:
   shotPrefab: {fileID: 100000, guid: d48a6e7f29401497a84c393a0f5d0a64, type: 2}
   angle: 0
   shotStrength: 0
-  shotGrowth: 2
-  minShotStrength: 7
+  shotGrowth: 1.20000005
+  minShotStrength: 13
   maxShotStrength: 40
   bowPullLoop: 1
 --- !u!114 &465665121
@@ -7765,9 +7765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 8
   runSpeed: 6
-  crouchSpeed: 1
+  crouchSpeed: 3
   groundCheck: {fileID: 1402442912}
   jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
   groundMask:
@@ -8052,7 +8051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8069eb8a6d101e4badfea4d88fc6b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 13200000, guid: 4436726fc7d567344ae47ce31e819781, type: 2}
+  timeText: {fileID: 0}
   timer: 0
 --- !u!1001 &468496940
 Prefab:
@@ -10862,14 +10861,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 650501627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cd579f64b5b1d458c7f4763d0813c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: River4
-  time: 4
-  delay: 1
-  easetype: Linear
-  looptype: pingPong
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!114 &650501629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10879,22 +10882,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 650501627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a0756da23c1d4bd487ffcd5d7a84156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: River4
-  pathColor: {r: 0, g: 1, b: 1, a: 1}
-  nodes:
-  - {x: 90, y: -47, z: 0}
-  - {x: 95, y: -51, z: 0}
-  - {x: 90, y: -50, z: 0}
-  - {x: 87.5, y: -51, z: 0}
-  - {x: 85, y: -55, z: 0}
-  - {x: 82.5, y: -59, z: 0}
-  nodeCount: 6
-  initialized: 1
-  initialName: New Path 1
-  pathVisible: 1
+  time: 0
+  delay: 0
+  easetype: 
+  looptype: 
 --- !u!50 &650501630
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -14742,7 +14737,7 @@ Transform:
   m_GameObject: {fileID: 913813388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.449999988, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .980000019, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 650501633}
 --- !u!114 &913813390
@@ -16745,14 +16740,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1083310808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cd579f64b5b1d458c7f4763d0813c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: River3
-  time: 3
-  delay: 2
-  easetype: Linear
-  looptype: pingPong
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!114 &1083310811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16762,20 +16761,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1083310808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a0756da23c1d4bd487ffcd5d7a84156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: River3
-  pathColor: {r: 0, g: 1, b: 1, a: 1}
-  nodes:
-  - {x: 97.5, y: -53, z: 0}
-  - {x: 100, y: -52, z: 0}
-  - {x: 102.5, y: -51, z: 0}
-  - {x: 105, y: -50, z: 0}
-  nodeCount: 4
-  initialized: 1
-  initialName: New Path 1
-  pathVisible: 1
+  time: 0
+  delay: 0
+  easetype: 
+  looptype: 
 --- !u!50 &1083310812
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22608,7 +22601,7 @@ Transform:
   m_GameObject: {fileID: 1417721024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.449999988, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .980000019, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2104116557}
 --- !u!114 &1417721029
@@ -24262,7 +24255,7 @@ Transform:
   m_GameObject: {fileID: 1515512861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.0084426878, y: .0415938906, z: 0}
-  m_LocalScale: {x: .0200000014, y: .0200000014, z: 1}
+  m_LocalScale: {x: .0200000014, y: .0200000014, z: -10}
   m_Children: []
   m_Father: {fileID: 1610723047}
 --- !u!1 &1515788650
@@ -24592,6 +24585,7 @@ MonoBehaviour:
   ySmooth: 3
   maxXAndY: {x: 999, y: 999}
   minXAndY: {x: -999, y: -999}
+  player: {fileID: 0}
 --- !u!1001 &1533387962
 Prefab:
   m_ObjectHideFlags: 0
@@ -25072,14 +25066,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1560539472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cd579f64b5b1d458c7f4763d0813c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: River2
-  time: 3
-  delay: 2
-  easetype: Linear
-  looptype: pingPong
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!114 &1560539475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25089,20 +25087,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1560539472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a0756da23c1d4bd487ffcd5d7a84156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: River2
-  pathColor: {r: 0, g: 1, b: 1, a: 1}
-  nodes:
-  - {x: 117, y: -53, z: 0}
-  - {x: 113, y: -53, z: 0}
-  - {x: 109, y: -53, z: 0}
-  - {x: 105, y: -53, z: 0}
-  nodeCount: 4
-  initialized: 1
-  initialName: New Path 1
-  pathVisible: 1
+  time: 0
+  delay: 0
+  easetype: 
+  looptype: 
 --- !u!50 &1560539476
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27614,7 +27606,7 @@ Transform:
   m_GameObject: {fileID: 1697962791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 223.383804, y: -30.810955, z: 0}
-  m_LocalScale: {x: .0200000014, y: .0200000014, z: 1}
+  m_LocalScale: {x: .0200000014, y: .0200000014, z: -10}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1698406424
@@ -29373,7 +29365,7 @@ Transform:
   m_GameObject: {fileID: 1753797261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 56.9441757, y: -59.9210396, z: 0}
-  m_LocalScale: {x: .300000012, y: .0200000014, z: 1}
+  m_LocalScale: {x: .300000012, y: .0200000014, z: -10}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1763132053
@@ -34050,14 +34042,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2104116556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cd579f64b5b1d458c7f4763d0813c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: Plat9
-  time: 4
-  delay: 2
-  easetype: Linear
-  looptype: pingPong
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!114 &2104116559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34067,21 +34063,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2104116556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a0756da23c1d4bd487ffcd5d7a84156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathName: Plat9
-  pathColor: {r: 0, g: 1, b: 1, a: 1}
-  nodes:
-  - {x: 156.5, y: -53.5, z: 0}
-  - {x: 159, y: -53.5, z: 0}
-  - {x: 161.5, y: -53.5, z: 0}
-  - {x: 164, y: -53.5, z: 0}
-  - {x: 166.5, y: -53.5, z: 0}
-  nodeCount: 5
-  initialized: 1
-  initialName: New Path 1
-  pathVisible: 1
+  time: 0
+  delay: 0
+  easetype: 
+  looptype: 
 --- !u!50 &2104116560
 Rigidbody2D:
   m_ObjectHideFlags: 0
