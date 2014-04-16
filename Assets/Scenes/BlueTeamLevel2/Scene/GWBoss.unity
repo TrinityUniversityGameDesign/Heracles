@@ -949,11 +949,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.50983906
+      value: 9.31076145
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.4612484
+      value: 4.3865943
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.z
@@ -990,6 +990,35 @@ Prefab:
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: label
       value: Press W to go to Cerberus Level. Press S to go back to Tutorial.
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d9a972e7c5ab41729428c73839cf60f,
+        type: 3}
+    - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Size.x
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
@@ -1652,7 +1681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: Labor 12B
-  label: Press W to go to Cerberus Level. Press S to go back to Tutorial.
+  publicLabel: 
 --- !u!61 &1267885488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1687,8 +1716,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8d9a972e7c5ab41729428c73839cf60f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1267885490
 Transform:
   m_ObjectHideFlags: 0
@@ -1696,8 +1725,8 @@ Transform:
   m_PrefabInternal: {fileID: 972435502}
   m_GameObject: {fileID: 1267885486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.50983906, y: 4.4612484, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.31076145, y: 4.3865943, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1300335222

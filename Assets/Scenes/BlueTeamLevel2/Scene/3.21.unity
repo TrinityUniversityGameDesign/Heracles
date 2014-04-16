@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: GWBoss
-  label: Press W to go to Artemis Boss. Press S to go back to Tutorial.
+  publicLabel: 
 --- !u!61 &236300767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1064,8 +1064,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8d9a972e7c5ab41729428c73839cf60f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &236300769
 Transform:
   m_ObjectHideFlags: 0
@@ -1074,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 236300765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.4667358, y: 9.53564167, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &236958934
@@ -6793,6 +6793,39 @@ Prefab:
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: label
       value: Press W to go to Artemis Boss. Press S to go back to Tutorial.
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d9a972e7c5ab41729428c73839cf60f,
+        type: 3}
+    - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Size.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
