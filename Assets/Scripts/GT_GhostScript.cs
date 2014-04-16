@@ -5,9 +5,9 @@ using System.IO;
 
 public class GT_GhostScript : MonoBehaviour {
 	
-	public static float d = 1;
-	public static Stopwatch directionTimer = new Stopwatch();
-	public static Stopwatch fadingTimer = new Stopwatch();
+	public float d = 1;
+	public Stopwatch directionTimer = new Stopwatch();
+	public Stopwatch fadingTimer = new Stopwatch();
 	public int fade = 1; //1 for fade away, -1 for fade in
 
 	Color lecolor;
@@ -19,12 +19,12 @@ public class GT_GhostScript : MonoBehaviour {
 	void Start () {
 		directionTimer.Start ();
 		fadingTimer.Start ();
-		//stableTime = (double)Random.Range (5, 15);
-		//fadeTime = (double)Random.Range (3, 10);
-		//5movingTime = (double)Random.Range(2,10);
-		stableTime = 10;
-		fadeTime = 5;
-		movingTime = 3;
+		stableTime = (double)Random.Range (5f, 15f);
+		fadeTime = (double)Random.Range (3f, 10f);
+		movingTime = (double)Random.Range(2f, 10f);
+		//stableTime = 10;
+		//fadeTime = 5;
+		//movingTime = 3;
 	}
 	
 	// Update is called once per frame
