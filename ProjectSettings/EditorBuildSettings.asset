@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GreenTeam/splashScreenScene.unity
+  - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/Level Blue 1.unity
   - enabled: 1
     path: Assets/Scenes/Red Team/Scenes/Amy_Scene2.unity
@@ -37,3 +39,13 @@ EditorBuildSettings:
     path: Assets/Scenes/GreenTeam/splashScreenScene.unity
   - enabled: 1
     path: Assets/Scenes/GreenTeam/PS_Checkpoint_Testscene.unity
+  - enabled: 1
+    path: Assets/Scenes/BlueTeamLevel2/Scene/TutorialStartingLevel.unity
+  - enabled: 1
+    path: Assets/Scenes/BlueTeamLevel2/Scene/3.21.unity
+  - enabled: 1
+    path: Assets/Labor 12B.unity
+  - enabled: 1
+    path: Assets/Scenes/Red Team/Scenes/Red Level.unity
+  - enabled: 1
+    path: Assets/Scenes/BlueTeamLevel2/Scene/GWBoss.unity

@@ -131,11 +131,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 74.9995956
+      value: -.493755341
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -29.9996071
+      value: .517108917
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: m_LocalPosition.z
@@ -160,6 +160,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
       propertyPath: level
       value: BossLionVer2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: m_Name
+      value: SceneBossLion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
+      propertyPath: label
+      value: Press W to go to Lion Boss Level. Press S to go back to Tutorial.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bfd72db3b3dc4f86b51a1298cb330cc, type: 2}
@@ -2396,7 +2404,7 @@ GameObject:
   - 61: {fileID: 448614549}
   - 114: {fileID: 448614548}
   m_Layer: 9
-  m_Name: Scene Changer
+  m_Name: SceneBossLion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2414,8 +2422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddd23310356b40309166784d3fc4c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObject: {fileID: 0}
   level: BossLionVer2
+  label: Press W to go to Lion Boss Level. Press S to go back to Tutorial.
 --- !u!61 &448614549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2459,7 +2467,7 @@ Transform:
   m_PrefabInternal: {fileID: 36406617}
   m_GameObject: {fileID: 448614547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74.9995956, y: -29.9996071, z: 0}
+  m_LocalPosition: {x: -.493755341, y: .517108917, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2726,7 +2734,7 @@ Transform:
   m_GameObject: {fileID: 476752139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 127.876015, y: -4.36712599, z: 0}
-  m_LocalScale: {x: 1.35144472, y: .158993453, z: 1}
+  m_LocalScale: {x: 2, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &488751917
@@ -5979,7 +5987,7 @@ Transform:
   m_GameObject: {fileID: 895169041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 124.0037, y: -5.75718117, z: 0}
-  m_LocalScale: {x: 1.35144472, y: .158993453, z: 1}
+  m_LocalScale: {x: 2, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &899390548
@@ -6419,7 +6427,7 @@ Transform:
   m_GameObject: {fileID: 950578645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 132.393677, y: 6.00864744, z: 0}
-  m_LocalScale: {x: 1.35144472, y: .158993453, z: 1}
+  m_LocalScale: {x: 2, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &951012271
@@ -8204,6 +8212,7 @@ MonoBehaviour:
   ySmooth: 1
   maxXAndY: {x: 9999, y: 9999}
   minXAndY: {x: -9999, y: -9999}
+  player: {fileID: 0}
 --- !u!81 &1067565876
 AudioListener:
   m_ObjectHideFlags: 0
@@ -10657,7 +10666,7 @@ Transform:
   m_GameObject: {fileID: 1387400943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 130.953979, y: -3.07635927, z: 0}
-  m_LocalScale: {x: 1.35144472, y: .158993453, z: 1}
+  m_LocalScale: {x: 2, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1387600283
@@ -11016,7 +11025,7 @@ Transform:
   m_GameObject: {fileID: 1399904869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 126.082954, y: 6.06212807, z: 0}
-  m_LocalScale: {x: 1.35144472, y: .158993453, z: 1}
+  m_LocalScale: {x: 2, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1406940828
