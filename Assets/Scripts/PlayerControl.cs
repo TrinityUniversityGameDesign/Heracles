@@ -28,6 +28,7 @@ public class PlayerControl : MonoBehaviour {
 	private float idleCooldown;
 	private bool facingRight = true;
 	private bool isShooting = false;
+	private bool isClimbing = false;
 	
 	public Component boxcollider;
 	
@@ -130,6 +131,10 @@ public class PlayerControl : MonoBehaviour {
 		else if (inputX < 0 && facingRight) flipDirection();
 		if (inputX > 0) idleCooldown = animIdleRate;
 	}
+
+	public void SetClimbing(bool input) {
+		isClimbing = input;
+	}
 	
 	public bool IsFacingRight() {
 		return facingRight;
@@ -137,5 +142,9 @@ public class PlayerControl : MonoBehaviour {
 
 	public bool IsGrounded() {
 		return grounded;
+	}
+
+	public bool IsClimbing() {
+		return isClimbing;
 	}
 }

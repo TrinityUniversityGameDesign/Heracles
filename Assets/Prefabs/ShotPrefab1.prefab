@@ -35,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 83.7629166, y: 7.10325956, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 3.5, y: 4, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -445,6 +445,7 @@ MonoBehaviour:
   arrowHit2: {fileID: 8300000, guid: f54daac27be15dd4fa91f0f65b5f7cfd, type: 3}
   arrowHit3: {fileID: 8300000, guid: b7ec107e117b6c549aaa9ea05ef176a2, type: 3}
   lionHurt: {fileID: 8300000, guid: c84365bec4c1e444496ebe8d572d5d78, type: 3}
+  soundEnabled: 1
   damage: 1
   isEnemyShot: 0
 --- !u!114 &11400002
