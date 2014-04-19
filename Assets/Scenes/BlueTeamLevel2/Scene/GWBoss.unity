@@ -995,7 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8069eb8a6d101e4badfea4d88fc6b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 13200000, guid: 4436726fc7d567344ae47ce31e819781, type: 2}
+  timeText: {fileID: 0}
   timer: 0
 --- !u!114 &993634276
 MonoBehaviour:
@@ -1031,9 +1031,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 8
   runSpeed: 6
-  crouchSpeed: 1
+  crouchSpeed: 3
   groundCheck: {fileID: 1426254815}
   jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
   groundMask:
@@ -1748,6 +1747,7 @@ GameObject:
   - 50: {fileID: 1600577012}
   - 61: {fileID: 1600577011}
   - 114: {fileID: 1600577014}
+  - 60: {fileID: 1600577018}
   m_Layer: 0
   m_Name: GoldenHindRider
   m_TagString: Hind
@@ -1761,7 +1761,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1600577010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .65625, y: .875}
@@ -1858,6 +1858,28 @@ Transform:
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!60 &1600577018
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600577010}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: -.078125, y: .4375}
+      - {x: -.078125, y: .28125}
+      - {x: -.078125, y: .21875}
+      - {x: -.015625, y: .15625}
+      - {x: -.296875, y: .125}
+      - {x: -.328125, y: .125}
+      - {x: -.328125, y: -.4375}
+      - {x: .234375, y: -.4375}
+      - {x: .265625, y: -.375}
+      - {x: .328125, y: -.21875}
+      - {x: .328125, y: .4375}
 --- !u!1 &1717072646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,7 +2364,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9
+  orthographic size: 7.4000001
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2358,7 +2380,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941919926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.5, z: -10}
+  m_LocalPosition: {x: -.22507143, y: 10.2246037, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
