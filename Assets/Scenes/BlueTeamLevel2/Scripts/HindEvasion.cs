@@ -5,13 +5,24 @@ using System;
 public class HindEvasion : MonoBehaviour {
 
 	public GameObject startPlatform;
+	public GameObject[] platforms;
 	public float jumpTime;
+	public bool facingRight = true;
 
 	private GameObject currentPlatform;
+//	private GameObject previousPlatform;
 	private GameObject[] adjacentPlatforms;
 	private Vector2 currentPosition;
 	private GameObject deer;
 	private Rigidbody2D deerBody;
+
+	private void flip() 
+	{
+		facingRight = !facingRight;
+		Vector3 transScale = transform.localScale;
+		transScale.x *= -1;
+		transform.localScale = transScale;
+	}
 
 	Vector2 GetAcceleration(Vector2 targetPosition)
 	{
@@ -41,13 +52,25 @@ public class HindEvasion : MonoBehaviour {
 
 	void ChangePosition ()
 	{
-		currentPosition = deer.transform.position;
 		Vector2 nextPosition = currentPlatform.transform.position;
 		nextPosition.y += deer.renderer.bounds.extents.y;
-		Vector2 force = GetAcceleration (nextPosition) * deerBody.mass;
-		deerBody.AddForce (force);
+//		Debug.Log ( "distance: " + Vector2.Distance(currentPosition, deer.transform.position).ToString());
+
+//		if (((nextPosition.x - deer.transform.position.x) > 0) != facingRight)
+//			flip ();
+
+		if (Vector2.Distance(currentPosition, deer.transform.position) > .6)
+		{
+			deer.transform.position = nextPosition;
+		}
+		else
+		{
+			currentPosition = deer.transform.position;
+			Vector2 force = GetAcceleration (nextPosition) * deerBody.mass;
+			deerBody.AddForce (force);
+		}
+
 		currentPosition = nextPosition;
-//		transform.position = currentPosition;
 		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
 	}
 
@@ -65,7 +88,9 @@ public class HindEvasion : MonoBehaviour {
 				nextPlatform = adjacentPlatforms [i];
 			}
 
-			if (!Array.Exists (adjacentToPlayer, platform => platform == nextPlatform) && nextPlatform != triggerPlatform) {
+			if (!Array.Exists (adjacentToPlayer, platform => platform == nextPlatform) && nextPlatform != triggerPlatform) 
+			{
+//				previousPlatform = currentPlatform;
 				currentPlatform = nextPlatform;
 				ChangePosition ();
 			}
@@ -76,13 +101,28 @@ public class HindEvasion : MonoBehaviour {
 		}
 	}
 
+//	void OnCollisionEnter2D(Collider2D coll)
+//	{
+//		if (coll.gameObject.layer == LayerMask.NameToLayer("Player")) 
+//		{
+//			Debug.Log ("Collision with player.");
+//			System.Random random = new System.Random();
+//			int i = random.Next(0, platforms.Length);
+////			previousPlatform = currentPlatform;
+//			currentPlatform = platforms[i];
+//			Vector2 nextPosition = currentPlatform.transform.position;
+//			nextPosition.y += deer.renderer.bounds.extents.y;
+//			deer.transform.position = nextPosition;
+//			currentPosition = nextPosition;
+//			adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
+//		}
+//	}
 
 	// Use this for initialization
 	void Start ()
 	{
 		deer = this.gameObject;
 		deerBody = deer.rigidbody2D;
-
 
 		currentPlatform = startPlatform;
 		currentPosition = currentPlatform.transform.position;
@@ -101,9 +141,9 @@ public class HindEvasion : MonoBehaviour {
 //			deerBody.AddForce(new Vector2(100,200));
 			System.Random random = new System.Random();
 			int i = random.Next(0, adjacentPlatforms.Length);
+//			previousPlatform = currentPlatform;
 			currentPlatform = adjacentPlatforms[i];
 			ChangePosition();
-
 		}
 	}
 }

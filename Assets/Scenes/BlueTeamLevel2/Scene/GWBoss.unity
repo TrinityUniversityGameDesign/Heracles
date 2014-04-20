@@ -233,11 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 605307977}
   - {fileID: 1878873135}
+  hunter: {fileID: 993634273}
+  prey: {fileID: 1600577010}
 --- !u!61 &436564894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -468,7 +468,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 43420a8c81393f4468ae6048800f708c, type: 2}
       propertyPath: adjacentPlatforms.Array.data[1]
       value: 
-      objectReference: {fileID: 760133849}
+      objectReference: {fileID: 1815464073}
     - target: {fileID: 11400000, guid: 43420a8c81393f4468ae6048800f708c, type: 2}
       propertyPath: adjacentPlatforms.Array.data[2]
       value: 
@@ -476,7 +476,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 43420a8c81393f4468ae6048800f708c, type: 2}
       propertyPath: adjacentPlatforms.Array.data[3]
       value: 
-      objectReference: {fileID: 1815464073}
+      objectReference: {fileID: 760133849}
     - target: {fileID: 400000, guid: 43420a8c81393f4468ae6048800f708c, type: 2}
       propertyPath: m_LocalScale.x
       value: 2
@@ -561,6 +561,10 @@ Prefab:
       propertyPath: jumpTime
       value: .699999988
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
     - {fileID: 6100000, guid: fbe942c53bfed694b90644a32cfb4d8d, type: 2}
@@ -600,11 +604,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 760133849}
   - {fileID: 436564892}
+  hunter: {fileID: 993634273}
+  prey: {fileID: 1600577010}
 --- !u!61 &605307979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -759,9 +763,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 664683288}
   - 212: {fileID: 664683287}
-  - 61: {fileID: 664683286}
   - 114: {fileID: 664683285}
   - 114: {fileID: 664683289}
+  - 61: {fileID: 664683290}
+  - 68: {fileID: 664683286}
   m_Layer: 8
   m_Name: Main Stage
   m_TagString: Untagged
@@ -781,18 +786,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcae7d0930aa41949d3e3dce043d5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &664683286
-BoxCollider2D:
+--- !u!68 &664683286
+EdgeCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: e2e440b10f0270d46894203fe359d070,
-    type: 2}
-  m_PrefabInternal: {fileID: 1579714945}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 664683284}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 9a421243c660c4decad27be414b3d90e, type: 2}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Points:
+  - {x: -.448568404, y: .0256719198}
+  - {x: .447787881, y: .0256721377}
 --- !u!212 &664683287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -815,7 +820,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fff6c8c1104934d1c953bf2d709c77ef, type: 3}
   m_Color: {r: 0, g: .20588237, b: .00605536951, a: 1}
 --- !u!4 &664683288
 Transform:
@@ -824,7 +829,7 @@ Transform:
   m_PrefabInternal: {fileID: 1579714945}
   m_GameObject: {fileID: 664683284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.118545532, y: 2.72162986, z: 0}
+  m_LocalPosition: {x: -.118545532, y: 3.20488214, z: 0}
   m_LocalScale: {x: 26.2866993, y: 1.09423804, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -839,11 +844,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 1815464073}
   - {fileID: 1790255352}
+  hunter: {fileID: 0}
+  prey: {fileID: 0}
+--- !u!61 &664683290
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664683284}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.27999997, y: 1.27999985}
+  m_Center: {x: 0, y: -.639999926}
 --- !u!1 &760133849
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,11 +891,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 1878873135}
   - {fileID: 605307977}
+  hunter: {fileID: 993634273}
+  prey: {fileID: 1600577010}
 --- !u!61 &760133851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -962,7 +978,7 @@ GameObject:
   - 114: {fileID: 993634275}
   - 114: {fileID: 993634274}
   - 114: {fileID: 993634288}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PlayerChar
   m_TagString: P1
   m_Icon: {fileID: 0}
@@ -1486,6 +1502,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
   m_RootGameObject: {fileID: 993634273}
@@ -1647,7 +1671,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1426254815}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -1376725286, guid: 0000000000000000d000000000000000, type: 0}
@@ -1678,7 +1702,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.72162986
+      value: 3.20488214
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1728,7 +1752,13 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fff6c8c1104934d1c953bf2d709c77ef,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 6100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
   m_RootGameObject: {fileID: 664683284}
   m_IsPrefabParent: 0
@@ -1748,7 +1778,7 @@ GameObject:
   - 61: {fileID: 1600577011}
   - 114: {fileID: 1600577014}
   - 60: {fileID: 1600577018}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GoldenHindRider
   m_TagString: Hind
   m_Icon: {fileID: 0}
@@ -1761,7 +1791,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1600577010}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .65625, y: .875}
@@ -1807,7 +1837,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPlatform: {fileID: 1878873135}
+  platforms: []
   jumpTime: 1
+  facingRight: 1
 --- !u!95 &1600577015
 Animator:
   serializedVersion: 2
@@ -1864,7 +1896,7 @@ PolygonCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1600577010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Poly:
@@ -1928,7 +1960,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1717072646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.3574467, y: 23.0925636, z: 0}
+  m_LocalPosition: {x: 12.3574467, y: 22.9867268, z: 0}
   m_LocalScale: {x: 1, y: 15.5175781, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1985,11 +2017,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 1878873135}
   - {fileID: 664683284}
+  hunter: {fileID: 993634273}
+  prey: {fileID: 1600577010}
 --- !u!61 &1790255354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2141,11 +2173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 1878873135}
   - {fileID: 664683284}
+  hunter: {fileID: 993634273}
+  prey: {fileID: 1600577010}
 --- !u!61 &1815464075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2237,13 +2269,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1331bff796bbc46e0a065a3f7fdd7714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hunter: {fileID: 993634273}
-  prey: {fileID: 1600577010}
   adjacentPlatforms:
   - {fileID: 436564892}
-  - {fileID: 760133849}
-  - {fileID: 1790255352}
   - {fileID: 1815464073}
+  - {fileID: 1790255352}
+  - {fileID: 760133849}
+  hunter: {fileID: 993634273}
+  prey: {fileID: 1600577010}
 --- !u!61 &1878873137
 BoxCollider2D:
   m_ObjectHideFlags: 0

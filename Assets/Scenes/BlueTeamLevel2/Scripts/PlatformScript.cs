@@ -5,14 +5,16 @@ public class PlatformScript : MonoBehaviour {
 
 	//public delegate void EventHandler();
 	//public event EventHandler CollideWithPlayer;
+	
+	public GameObject[] adjacentPlatforms;
 
 	public GameObject hunter;
 	public GameObject prey;
-	public GameObject[] adjacentPlatforms;
 
 	// Use this for initialization
 	void Start () {
-	
+		hunter = GameObject.FindWithTag("P1");
+		prey = GameObject.FindWithTag("Hind");
 	}
 	
 	// Update is called once per frame
