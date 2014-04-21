@@ -51,89 +51,89 @@ TextureImporter:
         x: 0
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_1
       rect:
         serializedVersion: 2
         x: 100
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_2
       rect:
         serializedVersion: 2
         x: 200
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_3
       rect:
         serializedVersion: 2
         x: 300
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_4
       rect:
         serializedVersion: 2
         x: 400
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_5
       rect:
         serializedVersion: 2
         x: 500
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_6
       rect:
         serializedVersion: 2
         x: 600
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_7
       rect:
         serializedVersion: 2
         x: 700
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_8
       rect:
         serializedVersion: 2
         x: 800
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: lion_idle_9
       rect:
         serializedVersion: 2
         x: 900
         y: 0
         width: 100
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: .5, y: 0}
   spritePackingTag: 
   userData: 
