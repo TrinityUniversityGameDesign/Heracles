@@ -22,6 +22,7 @@ public class Artemismove : MonoBehaviour {
 
 	void MoveArtemis () {
 		randmov = Random.Range(1, 6);
+		//randmov = 5;
 		print (randmov.ToString());
 		if (randmov == 1) {
 			
@@ -35,8 +36,8 @@ public class Artemismove : MonoBehaviour {
 		if (randmov == 2) {
 			
 			Vector3 temp = transform.position; 
-			temp.x = 5.0f;
-			temp.y = 5.0f; 
+			temp.x = 10.0f;
+			temp.y = 8.0f; 
 			transform.position = temp; 
 			
 		}
@@ -44,7 +45,7 @@ public class Artemismove : MonoBehaviour {
 		if (randmov == 3) {
 			
 			Vector3 temp = transform.position; 
-			temp.x = -3.0f;
+			temp.x = -10.0f;
 			temp.y = 4.0f; 
 			transform.position = temp; 
 			
@@ -54,7 +55,7 @@ public class Artemismove : MonoBehaviour {
 			
 			Vector3 temp = transform.position; 
 			temp.x = -5.0f;
-			temp.y = 6.5f; 
+			temp.y = 13.0f; 
 			transform.position = temp; 
 			
 		}
@@ -62,8 +63,8 @@ public class Artemismove : MonoBehaviour {
 		if (randmov == 5) {
 			
 			Vector3 temp = transform.position; 
-			temp.x = 7.5f;
-			temp.y = 9.0f; 
+			temp.x = 5f;
+			temp.y = 13.0f; 
 			transform.position = temp; 
 			
 		}
