@@ -52,8 +52,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_1
       rect:
         serializedVersion: 2
@@ -61,8 +61,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_2
       rect:
         serializedVersion: 2
@@ -70,8 +70,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_3
       rect:
         serializedVersion: 2
@@ -79,8 +79,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_4
       rect:
         serializedVersion: 2
@@ -88,8 +88,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_5
       rect:
         serializedVersion: 2
@@ -97,8 +97,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_6
       rect:
         serializedVersion: 2
@@ -106,8 +106,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_7
       rect:
         serializedVersion: 2
@@ -115,8 +115,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_8
       rect:
         serializedVersion: 2
@@ -124,8 +124,8 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
     - name: lion_run_9
       rect:
         serializedVersion: 2
@@ -133,7 +133,7 @@ TextureImporter:
         y: 0
         width: 114
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 2
+      pivot: {x: .5, y: 1}
   spritePackingTag: 
   userData: 
