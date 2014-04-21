@@ -46,7 +46,10 @@ public class BT_ObjGeneratorScript : MonoBehaviour {
 				//float tempForce = BallisticVel(GameObject.FindGameObjectWithTag("P1").transform.position,tempAngle);
 				float angleRad = tempAngle / 180.0f * Mathf.PI;
 				newObj.rigidbody2D.AddForce( (Mathf.Sin(angleRad) * newObj.transform.up + Mathf.Cos(angleRad) * newObj.transform.right) * force*49);
-				newObj.GetComponent<BT_TragectoryScript>().SetTragectory(tempAngle,force);
+				//newObj.GetComponent<BT_TragectoryScript>().SetTragectory(tempAngle,force);
+				Vector3 newdir = new Vector3(0, 0, tempAngle);
+				newObj.transform.rotation = Quaternion.Euler(newdir);
+				
 			}
 		}
 	}
