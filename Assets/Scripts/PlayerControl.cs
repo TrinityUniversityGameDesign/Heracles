@@ -17,7 +17,11 @@ public class PlayerControl : MonoBehaviour {
 	float groundRadius = 0.3f;
 	bool grounded = false;
 	bool groundedLoop = false;
+	public AudioSource[] sounds;
+	public AudioSource jumpAS;
+	public AudioSource footstepsAS;
 	public AudioClip jumpSound;
+	public AudioClip footsteps;
 	public LayerMask groundMask;
 	public float jumpPower;
 	public string horizAxisName = "Horizontal";
@@ -47,6 +51,13 @@ public class PlayerControl : MonoBehaviour {
 		bc = GetComponent<BoxCollider2D>();
 		speed = runSpeed;
 	}
+
+	void Start()
+	{
+		sounds = GetComponents<AudioSource>();
+		jumpAS = sounds[0];
+		footstepsAS = sounds[1];
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -66,9 +77,16 @@ public class PlayerControl : MonoBehaviour {
 		bool jump = Input.GetButtonDown (jumpAxisName);
 		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
-			audio.PlayOneShot (jumpSound);
+			jumpAS.PlayOneShot (jumpSound);
 		}
-
+		if (grounded && Input.GetAxis (horizAxisName) > 0) {
+			if (!footstepsAS.isPlaying) {
+				footstepsAS.clip = footsteps;
+				footstepsAS.Play ();
+			}
+		} else if (footstepsAS.isPlaying) {
+			footstepsAS.Stop ();
+		}
 		crouch = Input.GetButton("Shift"); // seems more user friendly than "X"
 		if (crouch) {
 			if (!isCrouched) {
