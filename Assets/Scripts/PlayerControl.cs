@@ -11,6 +11,7 @@ public class PlayerControl : MonoBehaviour {
 	public float crouchSpeed;
 	private float speed;
 	private float crouchHeight = .5f;
+	public bool paused;
 	
 	public Transform groundCheck;
 	float groundRadius = 0.3f;
@@ -49,6 +50,7 @@ public class PlayerControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (paused)	Time.timeScale = 0;	else Time.timeScale = 1;
 		Collider2D[] GroundList = Physics2D.OverlapCircleAll (groundCheck.position, groundRadius,groundMask);
 		grounded = false;
 		if (GroundList.Length > 0) {
@@ -86,6 +88,16 @@ public class PlayerControl : MonoBehaviour {
 		}
 		if (Input.GetKey(KeyCode.Q)){
 			gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
+		}
+		if (Input.GetKey("escape")){ //why does GetButtonDown not have escape but GetKey does?  The world may never know.
+			if(!paused) {
+				//Time.timeScale=0;
+				paused=true;
+			} else {
+				//Time.timeScale=1;
+				paused=false;
+			}
+				
 		}
 		
 		if (idleCooldown > 0)
@@ -141,4 +153,19 @@ public class PlayerControl : MonoBehaviour {
 	public bool IsClimbing() {
 		return isClimbing;
 	}
+	void OnGUI(){
+		if(paused) {
+			if(GUI.Button (new Rect ((Screen.width/2)-100, (Screen.height/2)-50, 180, 40), "Resume")){
+				paused=false;
+			}
+			if(GUI.Button (new Rect ((Screen.width/2)-100, (Screen.height/2), 180, 40), "Respawn")){
+				paused=false;
+				gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
+			}
+			if(GUI.Button (new Rect ((Screen.width/2)-100, (Screen.height/2)+50, 180, 40), "Quit")){
+				Application.Quit();
+			}
+		}
+	}
+
 }
