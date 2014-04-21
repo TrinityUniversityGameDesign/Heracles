@@ -16,7 +16,7 @@ public class WorkingLadder : MonoBehaviour {
 	void FixedUpdate () {
 		if (isClimbing) {
 			float inputY = Input.GetAxis("Vertical");
-			player.rigidbody2D.velocity = new Vector2 (player.rigidbody2D.velocity.x/4, inputY*climbSpeed);
+			player.rigidbody2D.velocity = new Vector2 (player.rigidbody2D.velocity.x/3, inputY*climbSpeed);
 		}
 	}
 
