@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  runSpeed: 6
+  runSpeed: 8
   crouchSpeed: 3
   groundCheck: {fileID: 1426254815}
   jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
@@ -1463,8 +1463,8 @@ Transform:
   m_PrefabInternal: {fileID: 1167499179}
   m_GameObject: {fileID: 997185865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.114973068, y: 12.517314, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.787364721, y: 10.7478619, z: 0}
+  m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1043718205
@@ -1510,6 +1510,10 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: runSpeed
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
   m_RootGameObject: {fileID: 993634273}
@@ -1528,11 +1532,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.114973068
+      value: -.787364721
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 12.517314
+      value: 10.7478619
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1581,6 +1585,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
       propertyPath: force
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.85000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.85000002
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3300000, guid: 948e5f170b4b3421597760e0af2dba92, type: 2}
