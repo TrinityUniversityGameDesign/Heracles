@@ -8,6 +8,7 @@ public class PositionLadderScript : MonoBehaviour {
 	public float speed = 1f;
 	public float tick = .1f;
 	public float enterDelay = .2f;
+	public float exitDelay = .2f;
 
 	public float minX;
 	public float maxX;
@@ -15,8 +16,11 @@ public class PositionLadderScript : MonoBehaviour {
 	public float maxY;
 
 	private bool dontStop = false; 
-	private Vector2 topL;
-	private Vector2 botR;
+	private bool checkingPlayer = false;
+	public Vector2 topL;
+	public Vector2 botR;
+	private PlayerControl playerScript;
+
 
 	// Use this for initialization
 	void Start () {
@@ -30,8 +34,18 @@ public class PositionLadderScript : MonoBehaviour {
 		minY = center.y - (size.y / 2f) + gameObject.transform.position.y;
 		maxY = center.y + (size.y / 2f) + gameObject.transform.position.y; 
 
-		topL = new Vector2 (minX, maxY);
-		botR = new Vector2 (maxX, minY); 
+//		topL = new Vector2 (minX, maxY);
+//		botR = new Vector2 (maxX, minY); 
+
+		float worldRight =  myCollider.transform.TransformPoint( myCollider.center + new Vector2( myCollider.size.x * 0.5f, 0)).x;
+		float worldLeft =  myCollider.transform.TransformPoint( myCollider.center - new Vector2( myCollider.size.x * 0.5f, 0)).x;
+		
+		float worldTop =  myCollider.transform.TransformPoint( myCollider.center + new Vector2(0,  myCollider.size.y * 0.5f)).y;
+		float worldBottom =  myCollider.transform.TransformPoint( myCollider.center - new Vector2(0,  myCollider.size.y * 0.5f)).y;
+		
+		topL = new Vector2 (worldLeft, worldTop);
+		botR = new Vector2 (worldRight, worldBottom);
+
 
 
 		this.enabled = false;
@@ -60,14 +74,23 @@ public class PositionLadderScript : MonoBehaviour {
 		dontStop = false; 
 	}
 
+	IEnumerator exitWait(){
+
+		yield return new WaitForSeconds (exitDelay);
+	}
+
 	void FixedUpdate() {
-		if( !dontStop)
-			canClimb = false; 
+	//	if( !dontStop)
 
 		Collider2D[] allColliders = Physics2D.OverlapAreaAll(topL, botR);
+		bool wasInThere = false;
 		foreach (Collider2D thatCollider in allColliders){
-			if (thatCollider.gameObject == playerObject)
-				canClimb = true; 
+			if (thatCollider.gameObject == playerObject){
+				wasInThere = true; 
+			}
+			if(!wasInThere){
+				canClimb = false; 
+				}
 		}
 		if (!dontStop)
 		if (!canClimb) {
