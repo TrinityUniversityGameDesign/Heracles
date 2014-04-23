@@ -7,12 +7,11 @@ public class TransportTo : MonoBehaviour
 		GameObject p;
 		GameObject c;
 		public float x, y, z;
-		public float cameraX, cameraY, cameraZ;
 		public bool oneUse;
 		bool used = false;
 		public bool triggeredByPlayer;
 		public int triggeredOnNumTry;
-	public Transform target;
+		public Transform target;
 
 		// Use this for initialization	
 		void Start ()
@@ -34,7 +33,7 @@ public class TransportTo : MonoBehaviour
 								if (other.tag == "P1") {
 										if (triggeredOnNumTry == 0) {
 												p.transform.position = new Vector3 (x, y, z);
-												c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+												c.transform.position = new Vector3 (x, y, z-63f);
 												Camera.main.GetComponent<CameraFollow>().SetTarget(target);
 												if (oneUse)
 														used = true;
@@ -46,7 +45,7 @@ public class TransportTo : MonoBehaviour
 						else if (other.CompareTag ("Shot")) {
 								if (triggeredOnNumTry == 0) {
 										p.transform.position = new Vector3 (x, y, z);
-										c.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+					c.transform.position = new Vector3 (x, y, z-63f);
 										Camera.main.GetComponent<CameraFollow>().SetTarget(target);
 										if (oneUse)
 												used = true;
