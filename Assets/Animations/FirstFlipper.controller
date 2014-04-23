@@ -8,13 +8,7 @@ AnimatorController:
   m_Name: FirstFlipper
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: stateR
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: animate
+  - m_Name: animateT
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -62,7 +56,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: animate
+    m_ConditionEvent: animateT
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -80,7 +74,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: animate
+    m_ConditionEvent: animateT
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -98,7 +92,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: animate
+    m_ConditionEvent: animateT
     m_EventTreshold: 0
     m_ExitTime: .117647171
   m_Atomic: 1
@@ -116,7 +110,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: animate
+    m_ConditionEvent: animateT
     m_EventTreshold: 0
     m_ExitTime: .117647171
   m_Atomic: 1
@@ -128,7 +122,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: leverAnim
-  m_Speed: 1
+  m_Speed: .5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 55bb0dd4b873e4842865eac5bb70d204, type: 2}
@@ -143,7 +137,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: leverAnimRev
-  m_Speed: 1
+  m_Speed: .5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 8e026b7a185eac849840e78d8126d160, type: 2}
@@ -199,12 +193,12 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110279157}
-      second:
-      - {fileID: 110120338}
-    data:
       first: {fileID: 0}
       second: []
+    data:
+      first: {fileID: 110239482}
+      second:
+      - {fileID: 110121471}
     data:
       first: {fileID: 110200000}
       second:
@@ -214,9 +208,9 @@ StateMachine:
       second:
       - {fileID: 110132763}
     data:
-      first: {fileID: 110239482}
+      first: {fileID: 110279157}
       second:
-      - {fileID: 110121471}
+      - {fileID: 110120338}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 0, y: -120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

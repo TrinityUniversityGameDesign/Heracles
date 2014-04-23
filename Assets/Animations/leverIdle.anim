@@ -14,36 +14,15 @@ AnimationClip:
   m_CompressedRotationCurves: []
   m_PositionCurves: []
   m_ScaleCurves: []
-  m_FloatCurves:
+  m_FloatCurves: []
+  m_PPtrCurves:
   - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: animStateR
+    - time: 0
+      value: {fileID: 21300000, guid: 2753adfe6f58a44c5ba8d79a9a990cff, type: 3}
+    attribute: m_Sprite
     path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 395c1955c7af6034fb35fe72612d9875, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: animate
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 395c1955c7af6034fb35fe72612d9875, type: 3}
-  m_PPtrCurves: []
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -52,7 +31,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 0
+    m_StopTime: .0166666675
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -66,34 +45,6 @@ AnimationClip:
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0
-  m_EditorCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: animStateR
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 395c1955c7af6034fb35fe72612d9875, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: animate
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 395c1955c7af6034fb35fe72612d9875, type: 3}
+  m_EditorCurves: []
   m_EulerEditorCurves: []
   m_Events: []

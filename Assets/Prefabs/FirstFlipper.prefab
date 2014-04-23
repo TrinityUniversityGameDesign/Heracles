@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200002}
   - 61: {fileID: 6100002}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: gateA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.8313141, y: -79.069603, z: 0}
-  m_LocalScale: {x: 150, y: 340, z: 1}
+  m_LocalPosition: {x: -0, y: -14.5, z: 0}
+  m_LocalScale: {x: 20, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
 --- !u!4 &400004
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.923897, y: 11.1989012, z: 0}
+  m_LocalPosition: {x: 25.2950306, y: 2.53547287, z: 0}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -93,7 +93,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: b7535f839481efb4aa75c15c909a134f, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 0
-  m_AnimatePhysics: 1
+  m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -109,7 +109,6 @@ MonoBehaviour:
   mode: 1
   numModes: 2
   isEnemy: 1
-  animStateR: 0
   animate: 0
 --- !u!212 &21200002
 SpriteRenderer:

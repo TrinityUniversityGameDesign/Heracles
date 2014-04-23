@@ -20,8 +20,8 @@ public class FlipperScript : MonoBehaviour
 
 
 	//used to determine animation state - do not touch.
-	public bool animStateR = false;
-	public bool animate = false;
+
+	public bool animate;
 	private Animator anim;
     /// <summary>
     /// Inflicts damage and check if the object should be destroyed
@@ -58,18 +58,16 @@ public class FlipperScript : MonoBehaviour
 //		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
 		GameObject gateB = GameObject.Find("gateB");
 		gateB.active = false; 
+	}
+	void Awake() {
 		anim = GetComponent<Animator> ();
 	}
 
 	void Update() {
-		if (animStateR)
-			anim.SetBool ("stateR", true);
-		else
-			anim.SetBool ("stateR", false);
 		if (animate)
-			anim.SetBool ("animate", true);
-		else
-			anim.SetBool ("animate", false);
+			anim.SetBool ("animateT", true);
+		else if(!animate)
+			anim.SetBool ("animateT", false);
 	}
 
     void OnTriggerEnter2D(Collider2D otherCollider)
