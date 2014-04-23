@@ -5,7 +5,9 @@
 /// </summary>
 public class FlipperScript : MonoBehaviour
 {
-	 
+	 //used to determine animation state - do not touch.
+	public bool animStateR = false;
+	private Animator anim;
 
 	/// <summary>
     /// Total hitpoints
@@ -52,10 +54,21 @@ public class FlipperScript : MonoBehaviour
 //		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
 		GameObject gateB = GameObject.Find("gateB");
 		gateB.active = false; 
+		anim = GetComponent<Animator> ();
 	}
 
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
+		anim.SetBool ("animate", true);
+		if (animStateR)
+			anim.Play ("leverAnimRev");
+		else {
+			anim.Play ("leverAnim");
+			animStateR = true;
+
+		}
+		anim.SetBool ("animate", false);
+
         // Is this a shot?
         ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
         if (shot != null)
