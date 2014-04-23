@@ -109,10 +109,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &55926998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,8 +159,8 @@ Transform:
   m_PrefabInternal: {fileID: 1252683914}
   m_GameObject: {fileID: 55926996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.6924877, y: 1.10568559, z: 10.3220215}
-  m_LocalScale: {x: 4.779212, y: 3.88779998, z: 1}
+  m_LocalPosition: {x: -14.6392469, y: 1.14827454, z: 10.3220215}
+  m_LocalScale: {x: 5.11194706, y: 6.41657972, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &144019237
@@ -215,7 +218,6 @@ GameObject:
   - 58: {fileID: 151603396}
   - 212: {fileID: 151603395}
   - 50: {fileID: 151603394}
-  - 82: {fileID: 151603393}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -223,65 +225,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &151603393
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 239757821}
-  m_GameObject: {fileID: 151603392}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &151603394
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -636,7 +579,6 @@ GameObject:
   - 58: {fileID: 488456994}
   - 212: {fileID: 488456993}
   - 50: {fileID: 488456992}
-  - 82: {fileID: 488456991}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -644,65 +586,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &488456991
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 609541586}
-  m_GameObject: {fileID: 488456990}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &488456992
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1001,7 +884,6 @@ GameObject:
   - 58: {fileID: 607509339}
   - 212: {fileID: 607509338}
   - 50: {fileID: 607509337}
-  - 82: {fileID: 607509336}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -1009,65 +891,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &607509336
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 520146421}
-  m_GameObject: {fileID: 607509335}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &607509337
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1293,10 +1116,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!1001 &664523973
 Prefab:
   m_ObjectHideFlags: 0
@@ -1806,10 +1632,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &879967783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1857,7 +1686,6 @@ GameObject:
   - 58: {fileID: 935439969}
   - 212: {fileID: 935439968}
   - 50: {fileID: 935439967}
-  - 82: {fileID: 935439966}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -1865,65 +1693,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &935439966
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1618626693}
-  m_GameObject: {fileID: 935439965}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &935439967
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2026,7 +1795,7 @@ GameObject:
   - 61: {fileID: 1115114854}
   - 114: {fileID: 1115114853}
   - 114: {fileID: 1115114852}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: PlatformDropable&OneWay Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2234,6 +2003,7 @@ MonoBehaviour:
   ySmooth: 1
   maxXAndY: {x: 999, y: 999}
   minXAndY: {x: -999, y: -999}
+  player: {fileID: 0}
 --- !u!1001 &1173001775
 Prefab:
   m_ObjectHideFlags: 0
@@ -2409,7 +2179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8069eb8a6d101e4badfea4d88fc6b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 13200000, guid: 4436726fc7d567344ae47ce31e819781, type: 2}
+  timeText: {fileID: 0}
   timer: 0
 --- !u!114 &1186840532
 MonoBehaviour:
@@ -2445,11 +2215,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetPosition: {x: -7.5, y: -1.75}
-  walkSpeed: 8
   runSpeed: 6
-  crouchSpeed: 1
+  crouchSpeed: 3
+  paused: 0
   groundCheck: {fileID: 1608811203}
+  sounds: []
+  jumpAS: {fileID: 0}
+  footstepsAS: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
+  footsteps: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
@@ -2858,10 +2632,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1217612791
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2920,7 +2697,6 @@ GameObject:
   - 58: {fileID: 1221372857}
   - 212: {fileID: 1221372856}
   - 50: {fileID: 1221372855}
-  - 82: {fileID: 1221372854}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -2928,65 +2704,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1221372854
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1173001775}
-  m_GameObject: {fileID: 1221372853}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1221372855
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3149,7 +2866,6 @@ GameObject:
   - 58: {fileID: 1257526648}
   - 212: {fileID: 1257526647}
   - 50: {fileID: 1257526646}
-  - 82: {fileID: 1257526645}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -3157,65 +2873,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1257526645
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1629934562}
-  m_GameObject: {fileID: 1257526644}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1257526646
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3325,10 +2982,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1323207050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3416,7 +3076,6 @@ GameObject:
   - 58: {fileID: 1395829497}
   - 212: {fileID: 1395829496}
   - 50: {fileID: 1395829495}
-  - 82: {fileID: 1395829494}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -3424,65 +3083,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1395829494
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 2075604833}
-  m_GameObject: {fileID: 1395829493}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1395829495
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4264,7 +3864,6 @@ GameObject:
   - 58: {fileID: 1639906938}
   - 212: {fileID: 1639906937}
   - 50: {fileID: 1639906936}
-  - 82: {fileID: 1639906935}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -4272,65 +3871,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1639906935
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1495537912}
-  m_GameObject: {fileID: 1639906934}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1639906936
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4405,7 +3945,6 @@ GameObject:
   - 58: {fileID: 1654040618}
   - 212: {fileID: 1654040617}
   - 50: {fileID: 1654040616}
-  - 82: {fileID: 1654040615}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -4413,65 +3952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1654040615
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1573842251}
-  m_GameObject: {fileID: 1654040614}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1654040616
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5214,7 +4694,6 @@ GameObject:
   - 58: {fileID: 1959634768}
   - 212: {fileID: 1959634767}
   - 50: {fileID: 1959634766}
-  - 82: {fileID: 1959634765}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -5222,65 +4701,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1959634765
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 2039242020}
-  m_GameObject: {fileID: 1959634764}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1959634766
 Rigidbody2D:
   m_ObjectHideFlags: 0
