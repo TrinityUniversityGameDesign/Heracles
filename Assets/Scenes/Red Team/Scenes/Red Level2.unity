@@ -911,10 +911,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &62408435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -973,7 +976,6 @@ GameObject:
   - 58: {fileID: 63295966}
   - 212: {fileID: 63295965}
   - 50: {fileID: 63295964}
-  - 82: {fileID: 63295963}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -981,65 +983,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &63295963
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1978514472}
-  m_GameObject: {fileID: 63295962}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &63295964
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1846,7 +1789,6 @@ GameObject:
   - 58: {fileID: 114028702}
   - 212: {fileID: 114028701}
   - 50: {fileID: 114028700}
-  - 82: {fileID: 114028699}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -1854,65 +1796,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &114028699
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 68977630}
-  m_GameObject: {fileID: 114028698}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &114028700
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2977,10 +2860,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &218809482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3343,7 +3229,6 @@ GameObject:
   - 58: {fileID: 253081240}
   - 212: {fileID: 253081239}
   - 50: {fileID: 253081238}
-  - 82: {fileID: 253081237}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -3351,65 +3236,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &253081237
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1210144585}
-  m_GameObject: {fileID: 253081236}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &253081238
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5723,10 +5549,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &421348310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8110,11 +7939,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 37.8762741
+      value: -2.95332527
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -28.8413296
+      value: 2.36642623
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9343,7 +9172,7 @@ Transform:
   m_PrefabInternal: {fileID: 1213930919}
   m_GameObject: {fileID: 647449421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0378120765, y: 1.69329858, z: 0}
+  m_LocalPosition: {x: -.00858917832, y: .217527419, z: 0}
   m_LocalScale: {x: 3.70705771, y: 1.12962675, z: 1}
   m_Children: []
   m_Father: {fileID: 986873634}
@@ -9653,10 +9482,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &655474012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9752,7 +9584,6 @@ GameObject:
   - 58: {fileID: 678764858}
   - 212: {fileID: 678764857}
   - 50: {fileID: 678764856}
-  - 82: {fileID: 678764855}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -9760,65 +9591,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &678764855
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1437680942}
-  m_GameObject: {fileID: 678764854}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &678764856
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10149,10 +9921,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &696183553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10395,10 +10170,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &711572708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10673,10 +10451,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &728891484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11185,10 +10966,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &750892290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11859,10 +11643,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &805709859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13421,10 +13208,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &924182819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14546,10 +14336,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &978676826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15824,10 +15617,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1046110690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15910,7 +15706,7 @@ Transform:
   m_PrefabInternal: {fileID: 562524237}
   m_GameObject: {fileID: 1049738844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.8762741, y: -28.8413296, z: 0}
+  m_LocalPosition: {x: -2.95332527, y: 2.36642623, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 1936790268}
@@ -18549,7 +18345,6 @@ GameObject:
   - 58: {fileID: 1211644111}
   - 212: {fileID: 1211644110}
   - 50: {fileID: 1211644109}
-  - 82: {fileID: 1211644108}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -18557,65 +18352,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1211644108
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 996693273}
-  m_GameObject: {fileID: 1211644107}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1211644109
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18839,6 +18575,14 @@ Prefab:
     - target: {fileID: 11400000, guid: b4c119d9506d644a8b596537fb86c912, type: 2}
       propertyPath: LocB.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b4c119d9506d644a8b596537fb86c912, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.00858917832
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b4c119d9506d644a8b596537fb86c912, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .217527419
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4c119d9506d644a8b596537fb86c912, type: 2}
@@ -19673,7 +19417,7 @@ Transform:
   m_PrefabInternal: {fileID: 475066314}
   m_GameObject: {fileID: 1333622484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.9302444, y: 10.0027676, z: 0}
+  m_LocalPosition: {x: 59.5934753, y: -30.4585819, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19753,7 +19497,6 @@ GameObject:
   - 58: {fileID: 1344452875}
   - 212: {fileID: 1344452874}
   - 50: {fileID: 1344452873}
-  - 82: {fileID: 1344452872}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -19761,65 +19504,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1344452872
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 859674782}
-  m_GameObject: {fileID: 1344452871}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1344452873
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -20052,10 +19736,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1352541375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21340,10 +21027,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1406940831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21750,10 +21440,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1435709146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24493,10 +24186,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1625864950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26628,7 +26324,6 @@ GameObject:
   - 58: {fileID: 1782290002}
   - 212: {fileID: 1782290001}
   - 50: {fileID: 1782290000}
-  - 82: {fileID: 1782289999}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -26636,65 +26331,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1782289999
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1691272066}
-  m_GameObject: {fileID: 1782289998}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1782290000
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27360,10 +26996,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1834831489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27551,9 +27190,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840423800}
-  m_LocalRotation: {x: 0, y: 0, z: .0174524076, w: .99984771}
+  m_LocalRotation: {x: 0, y: 0, z: .0406922922, w: .999171793}
   m_LocalPosition: {x: -1.49402618, y: 8.79564285, z: 0}
-  m_LocalScale: {x: 150, y: 50, z: 1}
+  m_LocalScale: {x: 149.999939, y: 49.9999428, z: 1}
   m_Children: []
   m_Father: {fileID: 647490337}
 --- !u!1001 &1848462416
@@ -27677,10 +27316,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &1852981639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28103,7 +27745,6 @@ GameObject:
   - 58: {fileID: 1902330020}
   - 212: {fileID: 1902330019}
   - 50: {fileID: 1902330018}
-  - 82: {fileID: 1902330017}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -28111,65 +27752,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1902330017
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1159187982}
-  m_GameObject: {fileID: 1902330016}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &1902330018
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31713,10 +31295,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &2135402970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31775,7 +31360,6 @@ GameObject:
   - 58: {fileID: 2138222027}
   - 212: {fileID: 2138222026}
   - 50: {fileID: 2138222025}
-  - 82: {fileID: 2138222024}
   m_Layer: 8
   m_Name: Basic Barrel
   m_TagString: Untagged
@@ -31783,65 +31367,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &2138222024
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 87c62cb4cc3ec4e33b596366bf385900,
-    type: 2}
-  m_PrefabInternal: {fileID: 1382715481}
-  m_GameObject: {fileID: 2138222023}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 63dbcdb3fdece484ba94fd520c8ca791, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!50 &2138222025
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31951,10 +31476,13 @@ MonoBehaviour:
   speed: 1
   tick: .100000001
   enterDelay: .200000003
+  exitDelay: .200000003
   minX: 0
   maxX: 0
   minY: 0
   maxY: 0
+  topL: {x: 0, y: 0}
+  botR: {x: 0, y: 0}
 --- !u!61 &2143511282
 BoxCollider2D:
   m_ObjectHideFlags: 0
