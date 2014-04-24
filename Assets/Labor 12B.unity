@@ -22386,13 +22386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f5e375d87914e43bd062976c92a556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {fileID: 833545646}
   active: 0
   attacking: 0
   attackType: 0
   sprite: {fileID: 833545645}
-  dest: {x: 0, y: 0, z: 0}
-  speed: .0299999993
-  pos: {fileID: 833545646}
   fire: {fileID: 100000, guid: f0795f919a9ee624abec78624c2c7f81, type: 2}
   arcFire: {fileID: 0}
   fireLife: 150
@@ -36620,13 +36618,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f5e375d87914e43bd062976c92a556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {fileID: 1378403800}
   active: 0
   attacking: 0
   attackType: 0
   sprite: {fileID: 1378403803}
-  dest: {x: 0, y: 0, z: 0}
-  speed: .0299999993
-  pos: {fileID: 1378403800}
   fire: {fileID: 100000, guid: f0795f919a9ee624abec78624c2c7f81, type: 2}
   arcFire: {fileID: 0}
   fireLife: 150
@@ -36966,7 +36962,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385749035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -58.5, z: 1.60742188}
+  m_LocalPosition: {x: -6.92623186, y: -59.0387497, z: 1.60742188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49496,13 +49492,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f5e375d87914e43bd062976c92a556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos: {fileID: 1744929413}
   active: 0
   attacking: 0
   attackType: 0
   sprite: {fileID: 1744929416}
-  dest: {x: 0, y: 0, z: 0}
-  speed: .0299999993
-  pos: {fileID: 1744929413}
   fire: {fileID: 100000, guid: f0795f919a9ee624abec78624c2c7f81, type: 2}
   arcFire: {fileID: 0}
   fireLife: 150
