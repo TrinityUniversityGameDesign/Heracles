@@ -639,6 +639,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 729563592}
   - 82: {fileID: 729563591}
+  - 114: {fileID: 729563593}
   m_Layer: 0
   m_Name: Bakground_MainTheme
   m_TagString: Untagged
@@ -655,11 +656,11 @@ AudioSource:
   m_GameObject: {fileID: 729563590}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a1a8edf26924dbf4592eee6b9e10ea09, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 7294a2f6d21789a4a90c8e4d66d1848f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .759000003
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -716,6 +717,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &729563593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bf5b5e445deb4e747a679d7abe1e7e02,
+    type: 2}
+  m_PrefabInternal: {fileID: 1526952093}
+  m_GameObject: {fileID: 729563590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a555a80e49c34e4eb5f63ffb8c5d271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 8300000, guid: 7294a2f6d21789a4a90c8e4d66d1848f, type: 3}
+  musicChange: 0
 --- !u!1001 &950052434
 Prefab:
   m_ObjectHideFlags: 0
@@ -824,6 +839,18 @@ Prefab:
     - target: {fileID: 400000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 7294a2f6d21789a4a90c8e4d66d1848f, type: 3}
+    - target: {fileID: 8200000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7294a2f6d21789a4a90c8e4d66d1848f, type: 3}
+    - target: {fileID: 8200000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
