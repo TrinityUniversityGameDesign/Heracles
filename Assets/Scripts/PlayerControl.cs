@@ -107,7 +107,7 @@ public class PlayerControl : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Q)){
 			gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
 		}
-		if (Input.GetKey("escape")){ //why does GetButtonDown not have escape but GetKey does?  The world may never know.
+		if (Input.GetKeyDown(KeyCode.Escape)){ //why does GetButtonDown not have escape but GetKey does?  The world may never know.
 			if(!paused) {
 				//Time.timeScale=0;
 				paused=true;
@@ -176,7 +176,7 @@ public class PlayerControl : MonoBehaviour {
 			if(GUI.Button (new Rect ((Screen.width/2)-100, (Screen.height/2)-50, 180, 40), "Resume")){
 				paused=false;
 			}
-			if(GUI.Button (new Rect ((Screen.width/2)-100, (Screen.height/2), 180, 40), "Respawn")){
+			if(GUI.Button (new Rect ((Screen.width/2)-100, (Screen.height/2), 180, 40), "Go back To Previous Checkpoint")){
 				paused=false;
 				gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
 			}
