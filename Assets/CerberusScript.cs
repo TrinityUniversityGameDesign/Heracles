@@ -37,14 +37,6 @@ public class CerberusScript : MonoBehaviour {
 	            int position = (int)Random.Range(0, 2);
 	            headScripts[head].attackType = attack;
 	            headScripts[head].attacking = true;
-	            if (position == 0)
-	            {
-	                headScripts[head].dest = heads[head].transform.parent.transform.InverseTransformPoint(lowDest);
-	            }
-	            else
-	            {
-	                headScripts[head].dest = heads[head].transform.parent.transform.InverseTransformPoint(highDest);
-	            }
 			}
         }
     }
@@ -86,14 +78,6 @@ public class CerberusScript : MonoBehaviour {
         int position = (int)Random.Range(0, 2);
         headScripts[head].attackType = attack;
         headScripts[head].attacking = true;
-        if (position == 0)
-        {
-            headScripts[head].dest = lowDest;
-        }
-        else
-        {
-            headScripts[head].dest = highDest;
-        }
     }
 
 	bool noCurrentAttacks() {
