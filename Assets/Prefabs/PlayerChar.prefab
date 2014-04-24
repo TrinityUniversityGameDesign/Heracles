@@ -21,6 +21,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
@@ -247,8 +248,13 @@ MonoBehaviour:
   resetPosition: {x: -7.5, y: -1.75}
   runSpeed: 6
   crouchSpeed: 3
+  paused: 0
   groundCheck: {fileID: 400002}
+  sounds: []
+  jumpAS: {fileID: 0}
+  footstepsAS: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
+  footsteps: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
@@ -318,6 +324,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathCountText: {fileID: 13200000, guid: e08c566bc1ac17d46956dc823c44288d, type: 2}
   deathCount: 0
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c472cceafa4c84e90433d1e70d658d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 2
+  currenthealth: 2
+  heart: {fileID: 2800000, guid: 1bb7d6f85e6fefd4798d6d373d9ff487, type: 3}
 --- !u!120 &12000000
 LineRenderer:
   m_ObjectHideFlags: 1
