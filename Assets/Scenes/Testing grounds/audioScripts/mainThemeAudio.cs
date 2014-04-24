@@ -4,7 +4,6 @@ using System.Collections;
 public class mainThemeAudio : MonoBehaviour {
 	// Use this for initialization
 	public AudioClip backgroundMusic;
-	public bool musicChange;
 	private static mainThemeAudio instance = null;
 	public static mainThemeAudio Instance {
 		get { return instance; }
@@ -17,6 +16,8 @@ public class mainThemeAudio : MonoBehaviour {
 			return;
 		} else {
 			instance = this;
+			audio.clip = backgroundMusic;
+			audio.Play();
 		}
 		DontDestroyOnLoad(this.gameObject);
 	}
@@ -26,6 +27,8 @@ public class mainThemeAudio : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		if (instance != null && instance != this) {
+			Destroy (this.gameObject);
+		}
 	}
 }
