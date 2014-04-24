@@ -36941,9 +36941,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireBall: {fileID: 100000, guid: f0795f919a9ee624abec78624c2c7f81, type: 2}
-  fireRate: 100
-  fireLife: 610
-  fireSpeed: .100000001
+  fireRate: 75
+  fireLife: 375
+  fireSpeed: .200000003
 --- !u!61 &1385749037
 BoxCollider2D:
   m_ObjectHideFlags: 0
