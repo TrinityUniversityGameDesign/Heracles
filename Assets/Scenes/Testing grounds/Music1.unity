@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: Music2
   publicLabel: 
+  stopMusic: 1
 --- !u!61 &100859255
 BoxCollider2D:
   m_ObjectHideFlags: 0

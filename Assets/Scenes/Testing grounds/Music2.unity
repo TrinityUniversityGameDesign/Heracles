@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 
   publicLabel: 
+  stopMusic: 1
 --- !u!114 &100859254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: Music1
   publicLabel: 
+  stopMusic: 1
 --- !u!114 &109745118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +644,7 @@ GameObject:
   - 114: {fileID: 729563593}
   m_Layer: 0
   m_Name: Bakground_MainTheme
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -670,7 +672,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -730,7 +732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: 7294a2f6d21789a4a90c8e4d66d1848f, type: 3}
-  musicChange: 0
 --- !u!1001 &950052434
 Prefab:
   m_ObjectHideFlags: 0
@@ -851,6 +852,14 @@ Prefab:
     - target: {fileID: 8200000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
+      propertyPath: BypassReverbZones
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf5b5e445deb4e747a679d7abe1e7e02, type: 2}
@@ -1259,6 +1268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: Music1
   publicLabel: 
+  stopMusic: 0
 --- !u!61 &1916588772
 BoxCollider2D:
   m_ObjectHideFlags: 0

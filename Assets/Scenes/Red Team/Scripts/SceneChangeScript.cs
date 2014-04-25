@@ -9,6 +9,8 @@ public class SceneChangeScript : MonoBehaviour {
 	string label = "Press N for the next level or press M for the tutorial level.";
 	bool tutorial = false;
 	bool next = false;
+	GameObject backgroundMusic;
+	public bool stopMusic;
 	
 	// Use this for initialization
 	void Start () {
@@ -46,10 +48,17 @@ public class SceneChangeScript : MonoBehaviour {
 	}
 	
 	void OnTriggerStay2D(Collider2D other) {
+		backgroundMusic = (GameObject.FindGameObjectsWithTag ("Music"))[0];
 		if(Input.GetKey(KeyCode.N)) {
+			if(stopMusic) {
+				Destroy(backgroundMusic.gameObject);
+			}
 			next = true;
 		}
 		if(Input.GetKey(KeyCode.M)){
+			if(stopMusic) {
+				Destroy(backgroundMusic.gameObject);
+			}
 			tutorial = true;
 		}
 	}
