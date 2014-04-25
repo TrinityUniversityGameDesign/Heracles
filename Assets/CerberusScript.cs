@@ -53,7 +53,7 @@ public class CerberusScript : MonoBehaviour {
 				}
 				pos.position = new Vector3(pos.position.x,pos.position.y+0.1f,0);
 			} else {
-				if(pos.position.y < -56) {
+				if(pos.position.y < -56.6) {
 					attacking = false;
 					up = false;
 					pos.position = new Vector3(pos.position.x,-56.72793f,0);
