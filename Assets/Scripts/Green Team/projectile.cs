@@ -28,4 +28,10 @@ public class projectile : MonoBehaviour {
 		//rigidbody2D.velocity = movement;
 	}
 
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		//Do some explode animation
+		Destroy(gameObject);
+	}
+
 }
