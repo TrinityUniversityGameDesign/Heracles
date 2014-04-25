@@ -18,10 +18,10 @@ public class BT_MoveHind : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "P1")
-			GetComponent<BoxCollider2D>().isTrigger = true;
-		if (destroyHind)
+		if (destroyHind) {
 			Destroy(other.gameObject);
+			GetComponent<BoxCollider2D>().enabled = false;
+		}
 		if (other.tag == "Hind" && !ignore) {
 			Debug.Log("hittinghind");
 			ignore = true;
@@ -41,8 +41,6 @@ public class BT_MoveHind : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D other) {
 		ignore = false;
-		if (other.tag == "P1")
-			GetComponent<BoxCollider2D>().isTrigger = false;
 	}
 
 }

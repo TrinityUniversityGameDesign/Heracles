@@ -3706,7 +3706,7 @@ MonoBehaviour:
   slowHind: 0
   setDirection: jumpRight
   jumpForce: 825
-  speed: 7
+  speed: 8.5
   destroyHind: 0
 --- !u!23 &589674395
 Renderer:
@@ -6820,7 +6820,7 @@ MonoBehaviour:
   slowHind: 0
   setDirection: jumpRight
   jumpForce: 825
-  speed: 6
+  speed: 7
   destroyHind: 0
 --- !u!23 &999562922
 Renderer:
@@ -8585,7 +8585,7 @@ MonoBehaviour:
   slowHind: 0
   setDirection: jumpRight
   jumpForce: 800
-  speed: 9
+  speed: 10
   destroyHind: 0
 --- !u!23 &1295396833
 Renderer:
@@ -9385,7 +9385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: speed
-      value: 7
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: m_LocalScale.x
@@ -10973,7 +10973,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: speed
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: m_LocalScale.x
@@ -13390,7 +13390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: speed
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: m_LocalScale.x
