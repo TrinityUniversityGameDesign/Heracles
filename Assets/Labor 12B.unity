@@ -14076,7 +14076,7 @@ Transform:
   m_PrefabInternal: {fileID: 1526305732}
   m_GameObject: {fileID: 465665118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 200.107559, y: -25.4443531, z: 0}
+  m_LocalPosition: {x: -37.6469879, y: -59.147625, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 1402442912}
@@ -30888,6 +30888,7 @@ MonoBehaviour:
   - {fileID: 833545642}
   pos: {fileID: 1086059959}
   attackTime: 100
+  jumpChargeMax: 40
   lowDest: {x: -47, y: -59.5, z: 0}
   highDest: {x: -47, y: -58.5, z: 0}
 --- !u!1001 &1086519931
@@ -43439,11 +43440,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 200.107559
+      value: -37.6469879
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -25.4443531
+      value: -59.147625
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -43541,7 +43542,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532150631}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1532150633
 Behaviour:
   m_ObjectHideFlags: 0
