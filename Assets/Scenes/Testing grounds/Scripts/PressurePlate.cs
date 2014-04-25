@@ -7,8 +7,6 @@ public class PressurePlate : MonoBehaviour {
 	public GameObject childObj;
 	private PressurePlateChildScript childScript;
 	public int isPressed = 0;
-	public int runningTotal = 0;
-	public int runningPlayerTotal = 0;
 
 	private Vector2 topL;
 	private Vector2 botR;
@@ -57,10 +55,6 @@ public class PressurePlate : MonoBehaviour {
 		bool wasInThere = false;
 
 		foreach (Collider2D thatCollider in allColliders){
-			runningTotal += 1;
-			if(thatCollider.gameObject == playerObject){
-				runningPlayerTotal+=1; 
-			}
 
 			if(thatCollider.rigidbody2D != null)
 			if (thatCollider.gameObject == playerObject || thatCollider.gameObject.rigidbody2D.mass >= 1){

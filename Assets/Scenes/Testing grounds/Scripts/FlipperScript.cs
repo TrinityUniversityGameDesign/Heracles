@@ -29,6 +29,7 @@ public class FlipperScript : MonoBehaviour
     /// <param name="damageCount"></param>
     public void Damage(int damageCount)
     {
+		animate = true;
 
         if (mode == 1)
         {
@@ -72,7 +73,6 @@ public class FlipperScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
-		animate = true;
         // Is this a shot?
         ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
         if (shot != null)
