@@ -12,7 +12,7 @@ public class TwoWayPlatform : MonoBehaviour {
 		if (isInvisible) {
 			//GetComponent<SpriteRenderer>().enabled = false;
 			Color temp = GetComponent<SpriteRenderer>().material.color;
-			temp.a = 0.14f;
+			temp.a = 0.07f;
 			GetComponent<SpriteRenderer>().material.color = temp;
 		}
 		if (!AllowUp)
@@ -29,8 +29,9 @@ public class TwoWayPlatform : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.tag == "P1" && other.rigidbody2D.velocity.y > 0 && AllowUp || other.GetComponent<PlayerControl>().IsClimbing())
-			GetComponents<BoxCollider2D>()[0].enabled = false;
+		if (other.tag == "P1")
+			if (other.rigidbody2D.velocity.y > 0 && AllowUp || other.GetComponent<PlayerControl>().IsClimbing())
+				GetComponents<BoxCollider2D>()[0].enabled = false;
 	}
 
 	void OnTriggerExit2D(Collider2D other) {

@@ -83,6 +83,9 @@ MonoBehaviour:
   stopHind: 1
   slowHind: 1
   setDirection: jumpLeft
+  jumpForce: 0
+  speed: 0
+  destroyHind: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -25,15 +25,20 @@ public class BT_HindScript : MonoBehaviour {
 			force = Vector2.zero;
 		}
 		if (doSlow) {
-			rigidbody2D.velocity = Vector3.Lerp(rigidbody2D.velocity,Vector3.zero,Time.deltaTime);
-			if (Vector3.Distance(rigidbody2D.velocity,Vector3.zero) < 0.2f)
+			rigidbody2D.velocity = Vector3.Lerp(rigidbody2D.velocity,Vector3.zero,Time.deltaTime*10);
+			if (Vector3.Distance(rigidbody2D.velocity,Vector3.zero) < 0.2f) {
 				doSlow = false;
+				rigidbody2D.velocity = Vector3.zero;
+			}
 		}
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "P1")
+		if (other.tag == "P1") {
 			doStop = false;
+			GetComponent<CircleCollider2D>().enabled = false;
+			GetComponents<BoxCollider2D>()[0].isTrigger = true;
+		}
 	}
 
 	public void StopHind() {
@@ -42,6 +47,14 @@ public class BT_HindScript : MonoBehaviour {
 
 	public void SlowToStop() {
 		doSlow = true;
+	}
+
+	public void SetJumpForce(float newForce) {
+		jumpForce = newForce;
+	}
+
+	public void SetSpeed(float newSpeed) {
+		speed = newSpeed;
 	}
 
 	public void SetDirection(string newDirection) {
