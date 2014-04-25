@@ -74,9 +74,11 @@ public class BossLionBehavior : MonoBehaviour {
 			GetComponent<SpriteRenderer> ().color = Color.white; 
 			anim.SetBool ("movingState", false);
 			anim.SetBool ("attackState", false);
+			anim.SetBool ("roarState", true);
 			stun = true;
 			mouth.active = true;
 			StartCoroutine(stunTime());
+			anim.SetBool ("roarState", false);
 				}
 
 
