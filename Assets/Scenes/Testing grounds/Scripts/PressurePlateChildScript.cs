@@ -16,7 +16,7 @@ public class PressurePlateChildScript : MonoBehaviour {
 	public float triggerDelay = 0f; 
 	public bool vertOnly = true;
 	public bool horizOnly = false; 
-	public bool resetWhenDone = false;
+	public bool holdWhenPressed = false;
 	public bool resetMe = false;
 	public string resetState = "waitB";
 	public bool currentlyBetween = false; 
@@ -112,9 +112,19 @@ public class PressurePlateChildScript : MonoBehaviour {
 			break;
 		case "toB":
 			if(!currentlyBetween){
+			if(!holdWhenPressed){
 				transform.position = LocB;
 				rigidbody2D.velocity = new Vector2 (0, 0);
 				StartCoroutine(myWait(waitA,"toA"));
+			}
+			else
+				if(!activate_Me){
+					rigidbody2D.velocity = new Vector2 (Xvel*xMult*(-1), Yvel*xMult*(-1));
+					state = "toA";
+				}
+				else{
+					rigidbody2D.velocity = new Vector2 (0, 0);
+				}
 			}
 			else
 				rigidbody2D.velocity = new Vector2 (Xvel*xMult, Yvel*xMult);
