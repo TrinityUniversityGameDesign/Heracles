@@ -6,13 +6,10 @@ public class playerHealth : MonoBehaviour {
 	public int maxHealth = 2;
 	public int currenthealth=2;
 	//public Texture2D heart = Resources.Load("TEMPheart") as Texture2D;
-	public Texture2D heart;
+	public Texture2D heart = (Texture2D)Resources.LoadAssetAtPath("Resources/TEMPheart.png", typeof(Sprite));
 	//private GameObject dude = new GameObject.FindGameObjectsWithTag("P1");
 	public static Vector2 respawnPos = new Vector2(21,2);
 
-	public void Start() {
-		heart = (Texture2D)Resources.LoadAssetAtPath("Resources/TEMPheart.png", typeof(Sprite));
-	}
 
 	public void damagePlayer(int damage)
 	{
