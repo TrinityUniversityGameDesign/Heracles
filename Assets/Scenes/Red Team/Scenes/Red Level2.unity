@@ -32066,7 +32066,6 @@ GameObject:
   - 20: {fileID: 1983090683}
   - 92: {fileID: 1983090682}
   - 124: {fileID: 1983090681}
-  - 81: {fileID: 1983090680}
   - 114: {fileID: 1983090679}
   m_Layer: 0
   m_Name: Main Camera
@@ -32093,13 +32092,6 @@ MonoBehaviour:
   maxXAndY: {x: 9999, y: 9999}
   minXAndY: {x: 19, y: -9999}
   player: {fileID: 0}
---- !u!81 &1983090680
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1983090678}
-  m_Enabled: 1
 --- !u!124 &1983090681
 Behaviour:
   m_ObjectHideFlags: 0
