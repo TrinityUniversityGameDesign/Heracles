@@ -27,8 +27,5 @@ public class mainThemeAudio : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (instance != null && instance != this) {
-			Destroy (this.gameObject);
-		}
 	}
 }
