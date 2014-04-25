@@ -7,6 +7,7 @@ public class FireballSpawnScript : MonoBehaviour {
     private bool active;
     public int fireRate;
     public int fireLife;
+	public Vector2 origin;
     public float fireSpeed;
     private int timer;
 	// Use this for initialization
@@ -24,11 +25,11 @@ public class FireballSpawnScript : MonoBehaviour {
                 GameObject newObj = Instantiate(fireBall) as GameObject;
                 if (Random.Range(0f, 1f) < 0.5) // 50/50 chance
                 { //comes from spawner's position
-                    newObj.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                    newObj.transform.position = new Vector3(origin.x, origin.y, transform.position.z);
                 }
                 else
                 { //comes down at your legs
-                    newObj.transform.position = new Vector3(transform.position.x, transform.position.y - 1.25f, transform.position.z);
+                    newObj.transform.position = new Vector3(origin.x, origin.y - 1.25f, transform.position.z);
                 }
                 FireballScript fire = newObj.GetComponent<FireballScript>();
                 fire.life = fireLife;
@@ -42,7 +43,7 @@ public class FireballSpawnScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D playerCollision)
 	{
         if (playerCollision.gameObject.tag == "P1") {
-            active = false; //the box collider is positioned in front, and turns it off when passed through
+            this.gameObject.SetActive(false); //the box collider is positioned in front, and turns it off when passed through
         }
     }
 }
