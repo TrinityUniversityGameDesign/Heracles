@@ -15,6 +15,8 @@ public class CerberusScript : MonoBehaviour {
 	public int jumpChargeMax;
     public Vector3 lowDest;
     public Vector3 highDest;
+	private Color baseColor;
+	public SpriteRenderer sprite;
 	// Use this for initialization
 	void Start () {
         timer = 0;
@@ -24,6 +26,7 @@ public class CerberusScript : MonoBehaviour {
 		charging = false;
 		charge = 0;
         headScripts = new HeadScript[3];
+		baseColor = sprite.color;
         for (int x = 0; x < 3; x++)
         {
             headScripts[x] = heads[x].GetComponent<HeadScript>();
@@ -34,31 +37,28 @@ public class CerberusScript : MonoBehaviour {
     {
 		if (charging) {
 			charge += 1;
+			chargingColors ();
 			if(charge > jumpChargeMax) {
 				attacking = true;
 				charging = false;
 				up = true;
 				charge = 0;
-				print("up is now true");
+				sprite.color = baseColor;
 			}
 		}
 		if (attacking) {
-			print("we are attacking");
 			if(up) {
 				if(pos.position.y > -53) {
-					print("swapdown");
 					up = false;
 				}
-				print("stuff");
 				pos.position = new Vector3(pos.position.x,pos.position.y+0.1f,0);
 			} else {
 				if(pos.position.y < -56) {
 					attacking = false;
 					up = false;
-					print("done");
+					pos.position = new Vector3(pos.position.x,-56.72793f,0);
 				}
 				pos.position = new Vector3(pos.position.x,pos.position.y-0.1f,0);
-				print("stuff2");
 			}
 
 		} else {
@@ -153,4 +153,16 @@ public class CerberusScript : MonoBehaviour {
     {
 		Destroy (this.gameObject);
     }
+
+	void chargingColors() //change colors when charging
+	{
+		if (sprite.color == baseColor)
+		{
+			sprite.color = Color.red;
+		}
+		else
+		{
+			sprite.color = baseColor;
+		}
+	}
 }
