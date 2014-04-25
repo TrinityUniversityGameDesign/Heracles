@@ -30888,9 +30888,10 @@ MonoBehaviour:
   - {fileID: 833545642}
   pos: {fileID: 1086059959}
   attackTime: 100
-  jumpChargeMax: 40
+  jumpChargeMax: 75
   lowDest: {x: -47, y: -59.5, z: 0}
   highDest: {x: -47, y: -58.5, z: 0}
+  sprite: {fileID: 1086059958}
 --- !u!1001 &1086519931
 Prefab:
   m_ObjectHideFlags: 0
