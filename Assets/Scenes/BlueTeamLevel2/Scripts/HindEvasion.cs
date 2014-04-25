@@ -27,15 +27,9 @@ public class HindEvasion : MonoBehaviour {
 	Vector2 GetAcceleration(Vector2 targetPosition)
 	{
 		float physicsTimestep = Time.fixedDeltaTime;
-//		Debug.Log ("secondsPerTimestep: " + physicsTimestep.ToString ());
 		float timestepsPerSecond = Mathf.Ceil(1f/physicsTimestep);
-//		Debug.Log ("timestepsPerSecond: " + timestepsPerSecond.ToString ());
-		
-		//By default we set n so our projectile will reach our target point in 1 second
 		float n = timestepsPerSecond * jumpTime;
-//		Debug.Log ("n: " + n.ToString ());
 		Vector2 gravity = Physics.gravity * deerBody.gravityScale;
-//		Debug.Log ("gravity: " + gravity.y.ToString ());
 		
 		Vector2 a = physicsTimestep * physicsTimestep * gravity;
 		Vector2 p = targetPosition;
@@ -44,9 +38,7 @@ public class HindEvasion : MonoBehaviour {
 //		Debug.Log ("current position (y): " + currentPosition.y.ToString ());
 		
 		Vector2 velocity = (s + (((n * n + n) * a) / 2f) - p) * -1 / n;
-		
-		//This will give us velocity per timestep.
-//		Debug.Log ("velocity: " + velocity.y.ToString());
+
 		return velocity * timestepsPerSecond * timestepsPerSecond;
 	}
 
@@ -56,7 +48,7 @@ public class HindEvasion : MonoBehaviour {
 		nextPosition.y += deer.renderer.bounds.extents.y;
 //		Debug.Log ( "distance: " + Vector2.Distance(currentPosition, deer.transform.position).ToString());
 
-//		if (((nextPosition.x - deer.transform.position.x) > 0) != facingRight)
+//		if ((nextPosition.x > deer.transform.position.x) != facingRight)
 //			flip ();
 
 		if (Vector2.Distance(currentPosition, deer.transform.position) > .6)
@@ -76,6 +68,8 @@ public class HindEvasion : MonoBehaviour {
 
 	public void CheckDistance (GameObject triggerPlatform)
 	{
+		Debug.Log ("Current platform: " + currentPlatform.name);
+
 		//Checks whether the platorm the player has just landed on is adjacent to currentPlatform
 		if (Array.Exists (adjacentPlatforms, platform => platform == triggerPlatform)) {
 			int i = 0;
@@ -92,6 +86,8 @@ public class HindEvasion : MonoBehaviour {
 			{
 //				previousPlatform = currentPlatform;
 				currentPlatform = nextPlatform;
+				if ((nextPlatform.transform.position.x > deer.transform.position.x) != facingRight)
+					flip ();
 				ChangePosition ();
 			}
 		 	else 
@@ -99,6 +95,13 @@ public class HindEvasion : MonoBehaviour {
 			print("deer has nowhere to go");
 			}
 		}
+//		else
+//		{
+//			if ((triggerPlatform.transform.position.x > deer.transform.position.x) != facingRight)
+//			{
+//				flip ();
+//			}
+//		}
 	}
 
 //	void OnCollisionEnter2D(Collider2D coll)
