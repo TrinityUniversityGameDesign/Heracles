@@ -980,6 +980,7 @@ GameObject:
   - 114: {fileID: 993634290}
   - 81: {fileID: 993634289}
   - 114: {fileID: 993634288}
+  - 114: {fileID: 993634291}
   m_Layer: 11
   m_Name: PlayerChar
   m_TagString: P1
@@ -1339,6 +1340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPhases: 05000000
   isInvincible: 0
+  showGUI: 1
+  healthUnit: {fileID: 2800000, guid: 1bb7d6f85e6fefd4798d6d373d9ff487, type: 3}
 --- !u!81 &993634289
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1354,7 +1357,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1043718205}
   m_GameObject: {fileID: 993634273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83c472cceafa4c84e90433d1e70d658d, type: 3}
   m_Name: 
@@ -1362,6 +1365,17 @@ MonoBehaviour:
   maxHealth: 2
   currenthealth: 2
   heart: {fileID: 2800000, guid: 1bb7d6f85e6fefd4798d6d373d9ff487, type: 3}
+--- !u!114 &993634291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993634273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95bf53bc74f164a4bbfee1ecb06d351c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &997185865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,6 +1557,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: runSpeed
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
@@ -1925,6 +1943,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPhases: 03000000
   isInvincible: 0
+  showGUI: 0
+  healthUnit: {fileID: 0}
 --- !u!114 &1600577014
 MonoBehaviour:
   m_ObjectHideFlags: 0
