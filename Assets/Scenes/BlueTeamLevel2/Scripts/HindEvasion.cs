@@ -8,6 +8,7 @@ public class HindEvasion : MonoBehaviour {
 	public GameObject[] platforms;
 	public float jumpTime;
 	public bool facingRight = true;
+	public Animator anim;
 
 	private GameObject currentPlatform;
 //	private GameObject previousPlatform;
@@ -57,6 +58,8 @@ public class HindEvasion : MonoBehaviour {
 		}
 		else
 		{
+			anim.SetBool("Grounded", false);
+			anim.SetTrigger("doJump");
 			currentPosition = deer.transform.position;
 			Vector2 force = GetAcceleration (nextPosition) * deerBody.mass;
 			deerBody.AddForce (force);
@@ -126,6 +129,8 @@ public class HindEvasion : MonoBehaviour {
 	{
 		deer = this.gameObject;
 		deerBody = deer.rigidbody2D;
+		anim = GetComponent<Animator> ();
+		anim.SetBool ("Grounded", true);
 
 		currentPlatform = startPlatform;
 		currentPosition = currentPlatform.transform.position;
@@ -148,5 +153,11 @@ public class HindEvasion : MonoBehaviour {
 			currentPlatform = adjacentPlatforms[i];
 			ChangePosition();
 		}
+	}
+
+	void FixedUpdate() {
+		anim.SetFloat("vSpeed", deerBody.velocity.y);
+		anim.SetFloat("Speed", deerBody.velocity.x);
+		//anim.SetBool("Grounded",grounded);
 	}
 }

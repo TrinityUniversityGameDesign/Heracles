@@ -11,10 +11,13 @@ public class PlatformScript : MonoBehaviour {
 	public GameObject hunter;
 	public GameObject prey;
 
+	private Animator hindAnimator;
+
 	// Use this for initialization
 	void Start () {
 		hunter = GameObject.FindWithTag("P1");
 		prey = GameObject.FindWithTag("Hind");
+		hindAnimator = prey.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +37,7 @@ public class PlatformScript : MonoBehaviour {
 		if (other == prey) 
 		{
 			prey.rigidbody2D.velocity = Vector2.zero;
+			hindAnimator.SetBool("Grounded", true);
 		}
 		
 	}

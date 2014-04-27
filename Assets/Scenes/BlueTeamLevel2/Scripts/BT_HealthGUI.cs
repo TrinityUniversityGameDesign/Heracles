@@ -8,7 +8,7 @@ public class BT_HealthGUI : MonoBehaviour {
 
 	void OnGUI() {
 		int currentHealth = healthScript.GetHealth ();
-		Debug.Log ("current health: " + currentHealth.ToString ());
+		//Debug.Log ("current health: " + currentHealth.ToString ());
 		int space = 50;
 		for (int i=1; i <= currentHealth; i++)
 		{
