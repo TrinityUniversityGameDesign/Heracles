@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 205.431076, y: -20.5499992, z: 0}
-  m_LocalScale: {x: .825671911, y: .825673044, z: 1}
+  m_LocalPosition: {x: 168.5, y: -20.3950005, z: 0}
+  m_LocalScale: {x: 5.5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 9a421243c660c4decad27be414b3d90e, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: 2.55999994, y: 2.55999994}
+  m_Size: {x: .319999993, y: .600000024}
   m_Center: {x: 0, y: 0}
 --- !u!82 &8200000
 AudioSource:
@@ -149,8 +149,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 5a4f597b1b88c7d47956ad197a3f4855, type: 3}
-  m_Color: {r: .647058845, g: .647058845, b: .647058845, a: .717647076}
+  m_Sprite: {fileID: 21300000, guid: bbe2f2b6ba7234c29b707762fb5799bc, type: 3}
+  m_Color: {r: .647058845, g: .647058845, b: .647058845, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
