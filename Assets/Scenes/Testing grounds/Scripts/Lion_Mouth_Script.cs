@@ -37,11 +37,13 @@ public class Lion_Mouth_Script : MonoBehaviour {
 
 			gameObject.active = false;
 
-			if(Lion_Script.HP <=0)
+			if(Lion_Script.HP <=0){
 			 anim =	Lion.GetComponent<Animator>();
+			anim.SetBool ("roarState", false);
 			anim.SetBool("deathState", true);
 			anim.SetBool("permaState", true);
-
+				Lion_Script.enabled = false;
+			}
 			Destroy(other.gameObject); 
 				}
 	}
