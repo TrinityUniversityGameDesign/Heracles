@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 58: {fileID: 5800000}
-  - 114: {fileID: 11400002}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
   - 95: {fileID: 9500000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: CerberusFireballLow
   m_TagString: Shot
@@ -138,12 +138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec8f69fe2e610a44d9357d994e58b74b, type: 3}
+  m_Script: {fileID: 11500000, guid: 91f4225925e0f7e4685544afa60542d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
-  speed: 1
-  pos: {fileID: 400000}
+  speed: 0
+  initDest: {x: -47.5, y: -60.25, z: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

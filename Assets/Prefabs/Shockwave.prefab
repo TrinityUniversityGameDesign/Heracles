@@ -10,11 +10,11 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   - 61: {fileID: 6100000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Shockwave
-  m_TagString: DeathArea
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a577fc266661b541a50404ebb7d368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.79999995
-  life: 45
+  speed: 1.29999995
+  life: 55
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,10 +62,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
+  m_Script: {fileID: 11500000, guid: bf27837d6bb47e14c81a863eb5d8c8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 0
+  damage: 1
+  hit: 0
+  speed: {x: 10, y: 10}
+  direction: {x: 1, y: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

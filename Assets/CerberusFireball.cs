@@ -15,7 +15,7 @@ public class CerberusFireball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (hitDest) {
+		if (!hitDest) {
 			moveToDestination();
 		} else {
 			headRight();
@@ -30,6 +30,9 @@ public class CerberusFireball : MonoBehaviour {
 
 	void moveToDestination() {
 		pos.position = Vector3.MoveTowards (pos.position, initDest, speed);
+		if (pos.position.x == initDest.x) {
+			hitDest = true;
+		}
 	}
 
 	void headRight() {

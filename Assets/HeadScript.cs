@@ -26,7 +26,7 @@ public class HeadScript : MonoBehaviour {
 
     void FixedUpdate()
     {
-		if (attacking) { //if attacking and at destination, sit and charge and fire, then move away
+		if (attacking) {
             charging = true;
             chargingColors();
             charge += 1;
@@ -57,9 +57,13 @@ public class HeadScript : MonoBehaviour {
     {
 		GameObject newObj = Instantiate(fire) as GameObject;
 		newObj.transform.position = new Vector3(pos.position.x, pos.position.y, pos.position.z);
-		FireballScript fireS = newObj.GetComponent<FireballScript>();
-		fireS.life = fireLife;
-		fireS.speed = fireSpeed;
+		ArcFireball fireA = newObj.GetComponent<ArcFireball>();
+		if (fireA != null) {
+			fireA.Launch(fireSpeed);
+		} else {
+			CerberusFireball fireC = newObj.GetComponent<CerberusFireball>();
+			fireC.speed = fireSpeed;
+		}
     }
 
     float abs(float num)
