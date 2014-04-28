@@ -34,8 +34,7 @@ public class FlipperScript : MonoBehaviour
 				animate = true;
 
 				print ("hello");
-				disappear.renderer.enabled = false;
-				disappear.collider2D.isTrigger = true;
+				
 		
 				if (mode == 1) {
 						GameObject gateA = gameObject.transform.Find ("gateA").gameObject;
@@ -58,13 +57,16 @@ public class FlipperScript : MonoBehaviour
 
 				if (mode > numModes)
 						mode = 1;
+
+		disappear.renderer.enabled = false;
+		disappear.collider2D.isTrigger = true;
 		}
 
 		void Start ()
 		{
 //		GameObject gateA = gameObject.transform.Find("gateA").gameObject;
-				GameObject gateB = GameObject.Find ("gateB");
-				gateB.active = false; 
+		//		GameObject gateB = GameObject.Find ("gateB");
+		//		gateB.active = false; 
 		}
 
 		void Awake ()
