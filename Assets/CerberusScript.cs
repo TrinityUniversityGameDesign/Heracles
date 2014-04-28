@@ -17,6 +17,9 @@ public class CerberusScript : MonoBehaviour {
     public Vector3 highDest;
 	private Color baseColor;
 	public SpriteRenderer sprite;
+	public GameObject spawner;
+	private SpawnStalactite spawnScript;
+	public GameObject shockwave;
 	// Use this for initialization
 	void Start () {
         timer = 0;
@@ -27,6 +30,7 @@ public class CerberusScript : MonoBehaviour {
 		charge = 0;
         headScripts = new HeadScript[3];
 		baseColor = sprite.color;
+		spawnScript = spawner.GetComponent<SpawnStalactite> ();
         for (int x = 0; x < 3; x++)
         {
             headScripts[x] = heads[x].GetComponent<HeadScript>();
@@ -57,6 +61,8 @@ public class CerberusScript : MonoBehaviour {
 					attacking = false;
 					up = false;
 					pos.position = new Vector3(pos.position.x,-56.72793f,0);
+					spawnScript.BeginFalling();
+					spawnShockwave();
 				}
 				pos.position = new Vector3(pos.position.x,pos.position.y-0.1f,0);
 			}
@@ -71,8 +77,11 @@ public class CerberusScript : MonoBehaviour {
 				head = (int)Random.Range (0, 4);
 				if (head == 3) { //not one of the heads
 					charging = true;
-				} else if (headScripts [head].active) {
-					headScripts [head].attacking = true;
+				} else {
+					while(!headScripts[head].active) {
+						head = (int)Random.Range(0,3);
+					}
+					headScripts[head].attacking = true;
 				}
 			}
 		}
@@ -98,6 +107,11 @@ public class CerberusScript : MonoBehaviour {
             }
         }
     }
+
+	void spawnShockwave() {
+		GameObject newObj = Instantiate(shockwave) as GameObject;
+		newObj.transform.position = new Vector3 (-47f, -58.7f, 0f);
+	}
 
     /*void startAttack()
     {

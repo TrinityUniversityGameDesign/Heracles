@@ -25,6 +25,7 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
             if (gameObject.tag == "DeathArea" && !check)
             {
 				playerCollision.GetComponent<PlayerControl>().SetMove(false);
+				playerCollision.GetComponent<ShootingScript>().active = false;
 				playerCollision.renderer.enabled = false;
 				StartCoroutine(wait(seconds, playerCollision));
 
@@ -52,6 +53,7 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 		playerCollision.transform.position = respawnPos;
 		playerCollision.renderer.enabled = true;
 		playerCollision.GetComponent<PlayerControl>().SetMove(true);
+		playerCollision.GetComponent<ShootingScript>().active = true;
 		death.deathCount += 1;
 	}
 }
