@@ -12,6 +12,9 @@ public class PlayerControl : MonoBehaviour {
 	private float speed;
 	private float crouchHeight = .5f;
 	public bool paused;
+
+	private float speedTemp;
+	private float runSpeedTemp;
 	
 	public Transform groundCheck;
 	float groundRadius = 0.3f;
@@ -158,6 +161,18 @@ public class PlayerControl : MonoBehaviour {
 
 	public void SetClimbing(bool input) {
 		isClimbing = input;
+	}
+
+	public void SetMove(bool input) {
+		if (input) {
+			speed = 6;
+			runSpeed = 6;
+			jumpPower = 800;
+		} else {
+			speed = 0;
+			runSpeed = 0;
+			jumpPower = 0;
+		}
 	}
 	
 	public bool IsFacingRight() {

@@ -44,7 +44,7 @@ Transform:
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -14.5, z: 0}
-  m_LocalScale: {x: 20, y: 200, z: 1}
+  m_LocalScale: {x: 20, y: 28, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
 --- !u!4 &400004
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.2950306, y: 2.53547287, z: 0}
+  m_LocalPosition: {x: 48.5051231, y: 4.10042715, z: 0}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -109,6 +109,7 @@ MonoBehaviour:
   mode: 1
   numModes: 2
   isEnemy: 1
+  stalactiteTrigger: 1
   animate: 0
 --- !u!212 &21200002
 SpriteRenderer:
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 7ab704f70560e402ca0a1dec84101e80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 692be0adcb64b489c8509424f7ec0e03, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!212 &21200004
 SpriteRenderer:

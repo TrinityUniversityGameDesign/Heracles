@@ -11,7 +11,6 @@ public class TransportTo : MonoBehaviour
 		bool used = false;
 		public bool triggeredByPlayer;
 		public int triggeredOnNumTry;
-		public Transform target;
 
 		// Use this for initialization	
 		void Start ()
@@ -19,7 +18,7 @@ public class TransportTo : MonoBehaviour
 				p = GameObject.FindGameObjectWithTag ("P1");
 				c = GameObject.FindGameObjectWithTag ("MainCamera");
 		}
-	
+
 		// Update is called once per frame
 		void Update ()
 		{
@@ -34,7 +33,7 @@ public class TransportTo : MonoBehaviour
 										if (triggeredOnNumTry == 0) {
 												p.transform.position = new Vector3 (x, y, z);
 												c.transform.position = new Vector3 (x, y, z-63f);
-												Camera.main.GetComponent<CameraFollow>().SetTarget(target);
+												Camera.main.GetComponent<CameraFollow>().SetTarget(p.transform);
 												if (oneUse)
 														used = true;
 										} else {
@@ -46,7 +45,7 @@ public class TransportTo : MonoBehaviour
 								if (triggeredOnNumTry == 0) {
 										p.transform.position = new Vector3 (x, y, z);
 					c.transform.position = new Vector3 (x, y, z-63f);
-										Camera.main.GetComponent<CameraFollow>().SetTarget(target);
+										Camera.main.GetComponent<CameraFollow>().SetTarget(p.transform);
 										if (oneUse)
 												used = true;
 								} else {

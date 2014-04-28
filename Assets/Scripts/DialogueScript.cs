@@ -12,6 +12,7 @@ public class DialogueScript : MonoBehaviour {
 	public float localy = 2;
 	public string message;
 	public bool oneUse = false;
+	//public Color c;
 
 	private GameObject objText;
 	private TextMesh textMesh;
@@ -29,7 +30,6 @@ public class DialogueScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 	}
 	
 	// Update is called once per frame
@@ -91,6 +91,7 @@ public class DialogueScript : MonoBehaviour {
 			objText.transform.parent = transform;
 			textMesh.font = fontRes;
 			textMesh.renderer.material = fontRes.material;
+			//textMesh.renderer.material.color = c;
 			textMesh.fontSize = fontSize;
 			objText.transform.localScale = objText.transform.localScale/5;
 			objText.transform.localPosition = new Vector3(localx,localy,0f);
