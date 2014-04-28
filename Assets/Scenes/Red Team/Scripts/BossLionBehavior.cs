@@ -146,13 +146,13 @@ public class BossLionBehavior : MonoBehaviour {
 
 								// if in attack range
 								if (enemyTransform.position.x - target.position.x < attackDist) {
-										GetComponent<SpriteRenderer> ().color = Color.red; 
+										//GetComponent<SpriteRenderer> ().color = Color.red; 
 										anim.SetBool ("attackState", true);
 										can_hit = true;
 										StartCoroutine(hitDelay());
 				} else 
 					if (enemyTransform.position.x - target.position.x > attackDist) {
-										GetComponent<SpriteRenderer> ().color = Color.green;
+										//GetComponent<SpriteRenderer> ().color = Color.green;
 										anim.SetBool ("attackState", false);
 										can_hit = false;
 								}

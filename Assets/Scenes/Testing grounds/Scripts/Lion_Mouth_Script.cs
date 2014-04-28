@@ -8,6 +8,7 @@ public class Lion_Mouth_Script : MonoBehaviour {
 
 	public float hit_power = 9999f;
 	public float flee_increase = .5f; 
+	Animator anim;
 
 
 
@@ -37,7 +38,9 @@ public class Lion_Mouth_Script : MonoBehaviour {
 			gameObject.active = false;
 
 			if(Lion_Script.HP <=0)
-				Destroy(Lion); 
+			 anim =	Lion.GetComponent<Animator>();
+			anim.SetBool("deathState", true);
+			anim.SetBool("permaState", true);
 
 			Destroy(other.gameObject); 
 				}
