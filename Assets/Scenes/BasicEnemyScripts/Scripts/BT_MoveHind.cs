@@ -38,6 +38,7 @@ public class BT_MoveHind : MonoBehaviour {
 			GetComponent<BoxCollider2D>().enabled = false;
 		}
 		if (beginSwitch) {
+			Destroy(GameObject.Find ("BlackAreaDeathZoneTrigger1"));
 			GameObject[] hinds = GameObject.FindGameObjectsWithTag("Hind");
 			foreach (GameObject hind in hinds) {
 				hind.GetComponent<CircleCollider2D>().enabled = true;
