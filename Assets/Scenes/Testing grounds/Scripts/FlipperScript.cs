@@ -33,7 +33,10 @@ public class FlipperScript : MonoBehaviour
 		{
 				animate = true;
 
-				print ("hello");
+		if (stalactiteTrigger) {
+			disappear.renderer.enabled = false;
+			disappear.collider2D.isTrigger = true;
+		}
 				
 		
 				if (mode == 1) {
@@ -58,8 +61,7 @@ public class FlipperScript : MonoBehaviour
 				if (mode > numModes)
 						mode = 1;
 
-		disappear.renderer.enabled = false;
-		disappear.collider2D.isTrigger = true;
+
 		}
 
 		void Start ()
