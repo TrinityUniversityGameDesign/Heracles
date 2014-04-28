@@ -46,13 +46,13 @@ public class BossLionBehavior : MonoBehaviour {
 			}
 
 			player.transform.position = temp; 
-		
+
 		}
 	}
 	IEnumerator stunTime(){
 		yield return new WaitForSeconds(stun_time);
 		stun = false; 
-	//	GetComponent<SpriteRenderer> ().color = Color.green; 
+		GetComponent<SpriteRenderer> ().color = Color.green; 
 		mouth.active = false;
 
 	}
@@ -78,7 +78,7 @@ public class BossLionBehavior : MonoBehaviour {
 			stun = true;
 			mouth.active = true;
 			StartCoroutine(stunTime());
-
+			anim.SetBool ("roarState", false);
 				}
 
 
@@ -109,7 +109,6 @@ public class BossLionBehavior : MonoBehaviour {
 								}
 
 								//begin chase animation
-								anim.SetBool ("roarState", false);
 								anim.SetBool ("movingState", true);
 
 								//chase to the right
@@ -117,13 +116,13 @@ public class BossLionBehavior : MonoBehaviour {
 								enemyTransform.position = new Vector3 (x + (1 * speed * Time.deltaTime), enemyTransform.position.y, enemyTransform.position.z);
 
 								if (target.position.x - enemyTransform.position.x < attackDist) {
-										//GetComponent<SpriteRenderer> ().color = Color.red; 
+										GetComponent<SpriteRenderer> ().color = Color.red; 
 										anim.SetBool ("attackState", true);
 										can_hit = true;
 										StartCoroutine(hitDelay());
 								} else 
 					if (target.position.x - enemyTransform.position.x > attackDist) {
-										//GetComponent<SpriteRenderer> ().color = Color.green;
+										GetComponent<SpriteRenderer> ().color = Color.green;
 										anim.SetBool ("attackState", false);
 										can_hit = false;
 								}
@@ -139,7 +138,6 @@ public class BossLionBehavior : MonoBehaviour {
 								}
 		   
 								//begin chase animation
-								anim.SetBool ("roarState", false);
 								anim.SetBool ("movingState", true);
 
 								//chase to the left
@@ -149,14 +147,12 @@ public class BossLionBehavior : MonoBehaviour {
 								// if in attack range
 								if (enemyTransform.position.x - target.position.x < attackDist) {
 										//GetComponent<SpriteRenderer> ().color = Color.red; 
-										anim.SetBool ("roarState", false);
 										anim.SetBool ("attackState", true);
 										can_hit = true;
 										StartCoroutine(hitDelay());
 				} else 
 					if (enemyTransform.position.x - target.position.x > attackDist) {
 										//GetComponent<SpriteRenderer> ().color = Color.green;
-										anim.SetBool ("roarState", false);
 										anim.SetBool ("attackState", false);
 										can_hit = false;
 								}
@@ -164,7 +160,6 @@ public class BossLionBehavior : MonoBehaviour {
 
 				} else {
 						//begin chase animation
-						anim.SetBool ("roarState", false);
 						anim.SetBool ("movingState", false);
 						anim.SetBool("attackState",false );
 				}

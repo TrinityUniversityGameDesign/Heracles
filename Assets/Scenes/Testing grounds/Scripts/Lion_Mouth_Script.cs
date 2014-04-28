@@ -34,18 +34,14 @@ public class Lion_Mouth_Script : MonoBehaviour {
 			Lion_Script.HP -= 1;
 			Lion_Script.fleeing = true;
 			Lion_Script.flee_time += flee_increase; 
-	
+
 			gameObject.active = false;
 
-			if(Lion_Script.HP <=0) {
+			if(Lion_Script.HP <=0)
 			 anim =	Lion.GetComponent<Animator>();
-			anim.SetBool ("roarState", false);
 			anim.SetBool("deathState", true);
-
 			anim.SetBool("permaState", true);
 
-				Lion_Script.enabled = false;}
-				//	Lion_Mouth_Script.enabled = false;
 			Destroy(other.gameObject); 
 				}
 	}
