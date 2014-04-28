@@ -38,6 +38,9 @@ public class BT_MoveHind : MonoBehaviour {
 			GetComponent<BoxCollider2D>().enabled = false;
 		}
 		if (beginSwitch) {
+			GameObject[] deaths = GameObject.FindGameObjectsWithTag("DeathArea");
+			foreach (GameObject death in deaths)
+				death.GetComponent<GRE_PS_Checkpoint>().enabled = false;
 			GameObject[] hinds = GameObject.FindGameObjectsWithTag("Hind");
 			foreach (GameObject hind in hinds) {
 				hind.GetComponent<CircleCollider2D>().enabled = true;
