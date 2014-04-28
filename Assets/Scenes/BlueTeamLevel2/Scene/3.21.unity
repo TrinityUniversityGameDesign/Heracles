@@ -8973,6 +8973,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
+      propertyPath: level
+      value: GWBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 4293099289
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
   m_RootGameObject: {fileID: 1739926502}
@@ -17344,7 +17352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddd23310356b40309166784d3fc4c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 
+  level: GWBoss
   publicLabel: 
   stopMusic: 1
 --- !u!199 &1739926504
@@ -17556,7 +17564,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4293803845
+        rgba: 4293099289
       minMaxState: 0
     startSize:
       scalar: .5
