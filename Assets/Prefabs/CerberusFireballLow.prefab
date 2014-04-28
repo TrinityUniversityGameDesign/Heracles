@@ -12,10 +12,10 @@ GameObject:
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
   - 82: {fileID: 8200000}
-  - 114: {fileID: 11400004}
-  - 95: {fileID: 9500002}
+  - 114: {fileID: 11400000}
+  - 95: {fileID: 9500000}
   m_Layer: 0
-  m_Name: Fireball
+  m_Name: CerberusFireballLow
   m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -44.8910904, y: -56.1349564, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,20 +108,6 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b90bd355ee5cee4d80e78ffca60e48f, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 0
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
---- !u!95 &9500002
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2b90bd355ee5cee4d80e78ffca60e48f, type: 2}
@@ -129,21 +115,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec8f69fe2e610a44d9357d994e58b74b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 5
-  speed: 1
-  pos: {fileID: 400000}
---- !u!114 &11400004
+--- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -158,6 +130,20 @@ MonoBehaviour:
   hit: 0
   speed: {x: 10, y: 10}
   direction: {x: 1, y: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8f69fe2e610a44d9357d994e58b74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 5
+  speed: 1
+  pos: {fileID: 400000}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

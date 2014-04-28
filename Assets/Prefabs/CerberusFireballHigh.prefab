@@ -12,10 +12,11 @@ GameObject:
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
   - 82: {fileID: 8200000}
+  - 114: {fileID: 11400000}
+  - 95: {fileID: 9500000}
   - 114: {fileID: 11400004}
-  - 95: {fileID: 9500002}
   m_Layer: 0
-  m_Name: Fireball
+  m_Name: CerberusFireballHigh
   m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -44.8910904, y: -56.1349564, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,20 +109,6 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b90bd355ee5cee4d80e78ffca60e48f, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 0
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
---- !u!95 &9500002
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2b90bd355ee5cee4d80e78ffca60e48f, type: 2}
@@ -129,6 +116,21 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf27837d6bb47e14c81a863eb5d8c8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  hit: 0
+  speed: {x: 10, y: 10}
+  direction: {x: 1, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,13 +153,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf27837d6bb47e14c81a863eb5d8c8a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 91f4225925e0f7e4685544afa60542d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  hit: 0
-  speed: {x: 10, y: 10}
-  direction: {x: 1, y: 0}
+  speed: 0
+  initDest: {x: 0, y: 0, z: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

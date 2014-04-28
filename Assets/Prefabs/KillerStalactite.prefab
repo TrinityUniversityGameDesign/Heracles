@@ -11,10 +11,11 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
+  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: KillerStalactite
-  m_TagString: DeathArea
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,7 +59,7 @@ BoxCollider2D:
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
@@ -68,6 +69,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf27837d6bb47e14c81a863eb5d8c8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  hit: 0
+  speed: {x: 10, y: 10}
+  direction: {x: 1, y: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
