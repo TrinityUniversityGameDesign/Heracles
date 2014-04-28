@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 262.984406, y: .25469929, z: 1.60739899}
+  m_LocalPosition: {x: 15.671896, y: -15.7048483, z: 1.60739899}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddd23310356b40309166784d3fc4c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 
+  level: GWBoss
   publicLabel: 
   stopMusic: 1
 --- !u!198 &19800000
@@ -230,7 +230,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4293803845
+        rgba: 4293099289
       minMaxState: 0
     startSize:
       scalar: .5
