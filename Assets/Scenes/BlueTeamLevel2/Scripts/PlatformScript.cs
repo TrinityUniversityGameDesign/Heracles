@@ -32,12 +32,12 @@ public class PlatformScript : MonoBehaviour {
 		{
 			HindEvasion preyScript = prey.GetComponent<HindEvasion>();
 			preyScript.CheckDistance(this.gameObject);
-			System.Console.WriteLine ("Collision detected.");
 		}
 		if (other == prey) 
 		{
 			prey.rigidbody2D.velocity = Vector2.zero;
 			hindAnimator.SetBool("Grounded", true);
+			Debug.Log ("Collision with Platform");
 		}
 		
 	}

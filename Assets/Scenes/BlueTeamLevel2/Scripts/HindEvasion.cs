@@ -49,8 +49,8 @@ public class HindEvasion : MonoBehaviour {
 		nextPosition.y += deer.renderer.bounds.extents.y;
 //		Debug.Log ( "distance: " + Vector2.Distance(currentPosition, deer.transform.position).ToString());
 
-//		if ((nextPosition.x > deer.transform.position.x) != facingRight)
-//			flip ();
+		if ((nextPosition.x > deer.transform.position.x) != facingRight)
+			flip ();
 
 		if (Vector2.Distance(currentPosition, deer.transform.position) > .6)
 		{
@@ -71,7 +71,7 @@ public class HindEvasion : MonoBehaviour {
 
 	public void CheckDistance (GameObject triggerPlatform)
 	{
-		Debug.Log ("Current platform: " + currentPlatform.name);
+		//Debug.Log ("Current platform: " + currentPlatform.name);
 
 		//Checks whether the platorm the player has just landed on is adjacent to currentPlatform
 		if (Array.Exists (adjacentPlatforms, platform => platform == triggerPlatform)) {
@@ -89,8 +89,8 @@ public class HindEvasion : MonoBehaviour {
 			{
 //				previousPlatform = currentPlatform;
 				currentPlatform = nextPlatform;
-				if ((nextPlatform.transform.position.x > deer.transform.position.x) != facingRight)
-					flip ();
+//				if ((nextPlatform.transform.position.x > deer.transform.position.x) != facingRight)
+//					flip ();
 				ChangePosition ();
 			}
 		 	else 
