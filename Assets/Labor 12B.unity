@@ -17951,7 +17951,7 @@ Transform:
   m_PrefabInternal: {fileID: 1526305732}
   m_GameObject: {fileID: 465665118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.7446976, y: -57.0963593, z: 0}
+  m_LocalPosition: {x: -34.7848511, y: -51.8865814, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 1402442912}
@@ -50048,11 +50048,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -37.7446976
+      value: -34.7848511
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -57.0963593
+      value: -51.8865814
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -71158,7 +71158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stalacPrefab: {fileID: 100000, guid: 77ee66ef9d1d6b4459f6b585c06cdb5c, type: 2}
   pos: {fileID: 2113268479}
-  minGap: 50
+  minGap: 80
   timePer: 300
   spawnChance: .30000001192092896
 --- !u!1 &2115619742
