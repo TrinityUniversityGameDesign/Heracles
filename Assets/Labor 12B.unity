@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &3390809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1575,6 +1576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &12368482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1975,6 +1977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &16642270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3068,6 +3071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &56176651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3580,6 +3584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &66141565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4311,6 +4316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &90577352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5931,6 +5937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &112353950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7937,6 +7944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &169734523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10528,6 +10536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &266962934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13831,6 +13840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &343068970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15026,6 +15036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &385773383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15486,6 +15497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &391939001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16955,6 +16967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &447020467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17411,6 +17424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &455447524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17951,7 +17965,7 @@ Transform:
   m_PrefabInternal: {fileID: 1526305732}
   m_GameObject: {fileID: 465665118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.7848511, y: -51.8865814, z: 0}
+  m_LocalPosition: {x: 122.07756, y: -49.3421974, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 1402442912}
@@ -18731,6 +18745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &474922504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21042,6 +21057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &540218896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21843,6 +21859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &565824927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22447,6 +22464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &590407086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23159,6 +23177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &614247914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23387,6 +23406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &620726243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24264,6 +24284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &646353367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27901,6 +27922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &810990726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29002,6 +29024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &845568285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30713,6 +30736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &899598922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31541,6 +31565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &931796904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31875,6 +31900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &941767237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32101,6 +32127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &946222147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32588,6 +32615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &963740932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33653,6 +33681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &998286439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33921,6 +33950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1004824154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34607,6 +34637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1025352616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35178,6 +35209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1041404901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36046,6 +36078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1076009914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36529,6 +36562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1086059962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36773,6 +36807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1091327099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37325,6 +37360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1110585001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37496,6 +37532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1114297072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37921,6 +37958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1120122361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38113,6 +38151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &1126583428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41007,6 +41046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1194873965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41618,7 +41658,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219210173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.7171955, y: -54.5314941, z: 0}
+  m_LocalPosition: {x: -31.5315323, y: -54.5314941, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44340,6 +44380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1323813686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45861,6 +45902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1393136002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46232,6 +46274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1406433507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46460,6 +46503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1407820563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47339,6 +47383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1449358486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47636,6 +47681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1462687132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48372,6 +48418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1475496714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49275,6 +49322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1506055272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50048,11 +50096,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -34.7848511
+      value: 122.07756
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -51.8865814
+      value: -49.3421974
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -50732,6 +50780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1547305807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52760,6 +52809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1612397130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53370,6 +53420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1627483216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53628,6 +53679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1628764623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54110,6 +54162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1643492306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54751,6 +54804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1676350474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55045,6 +55099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1683405031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55478,6 +55533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1695130585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56840,6 +56896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1727667629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57031,6 +57088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1732050588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58244,6 +58302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &1768198389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59576,6 +59635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1773357189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60051,6 +60111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1782999733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60958,6 +61019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1811051134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61927,6 +61989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1854603949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62536,6 +62599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1871304856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62716,6 +62780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1871789001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62896,6 +62961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1873503510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63116,6 +63182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1877332847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64458,6 +64525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &1933055367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66166,6 +66234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &1992021259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67460,6 +67529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!212 &1996743989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69274,6 +69344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &2066308202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70089,6 +70160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &2093670006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70582,6 +70654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &2104420011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70982,6 +71055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!114 &2111197233
 MonoBehaviour:
   m_ObjectHideFlags: 0

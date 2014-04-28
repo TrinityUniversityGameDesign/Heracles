@@ -3,12 +3,15 @@ using System.Collections;
 
 public class CerberusFireball : MonoBehaviour {
 	public float speed; //How fast it goes
+	public int life;
+	private int count;
 	private Transform pos; //The fireball's transform
 	public Vector3 initDest;
 	private bool hitDest;
 
 	// Use this for initialization
 	void Start () {
+		count = 0;
 		hitDest = false;
 		pos = this.gameObject.transform;
 	}
@@ -36,6 +39,10 @@ public class CerberusFireball : MonoBehaviour {
 	}
 
 	void headRight() {
+		count++;
+		if (count > life) {
+			Destroy(this.gameObject);
+		}
 		pos.position = new Vector3 (pos.position.x + speed, pos.position.y, 0);
 	}
 }

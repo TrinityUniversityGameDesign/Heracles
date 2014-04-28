@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  life: 150
   initDest: {x: -47.5, y: -60.25, z: 0}
 --- !u!212 &21200000
 SpriteRenderer:
