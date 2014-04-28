@@ -48,90 +48,90 @@ TextureImporter:
     - name: heracles_run_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 0
-        width: 32
+        width: 8
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 0
-        width: 32
+        width: 20
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 65
+        y: 3
+        width: 29
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 32
+        width: 26
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 135
         y: 0
-        width: 32
+        width: 16
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 171
         y: 0
-        width: 32
+        width: 8
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 195
         y: 0
-        width: 32
+        width: 20
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
+        x: 225
+        y: 3
+        width: 29
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 0
-        width: 32
+        width: 26
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: heracles_run_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 295
         y: 0
-        width: 32
+        width: 16
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
