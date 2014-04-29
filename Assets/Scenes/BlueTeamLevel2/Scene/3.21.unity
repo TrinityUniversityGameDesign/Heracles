@@ -6012,8 +6012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f605ebdda5d04494a4c452251d1c101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopHind: 1
-  slowHind: 1
+  stopHind: 0
+  slowHind: 0
   setDirection: jumpRight
   jumpForce: 600
   speed: 6
@@ -6207,7 +6207,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 65.8197403
+      value: 65.865303
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -11868,7 +11868,7 @@ Transform:
   m_PrefabInternal: {fileID: 654808371}
   m_GameObject: {fileID: 1231242997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.8197403, y: 26.3075294, z: 1.60739899}
+  m_LocalPosition: {x: 65.865303, y: 26.3075294, z: 1.60739899}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17584,7 +17584,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1969693684}
   m_GameObject: {fileID: 1722521881}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -23399,6 +23399,10 @@ Prefab:
       propertyPath: deathFader
       value: 
       objectReference: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
   m_RootGameObject: {fileID: 1722521881}
@@ -24894,6 +24898,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
       propertyPath: speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
+      propertyPath: stopHind
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
+      propertyPath: slowHind
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d07178720701c545913fe5489c99c74, type: 2}
