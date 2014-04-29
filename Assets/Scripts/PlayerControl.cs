@@ -37,6 +37,7 @@ public class PlayerControl : MonoBehaviour {
 	private bool facingRight = true;
 	private bool isShooting = false;
 	private bool isClimbing = false;
+	private float inputX;
 	
 	public Component boxcollider;
 	
@@ -137,11 +138,11 @@ public class PlayerControl : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-		float inputX = Input.GetAxis (horizAxisName);
+		inputX = Input.GetAxis (horizAxisName);
 		float vel = inputX * speed;
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
 		
-		if (Input.GetButton("Fire") && grounded) {
+		if (Input.GetButton("Fire") && grounded && inputX == 0) {
 			isShooting = true;
 			anim.SetBool("isShooting",isShooting);
 		}
@@ -181,6 +182,13 @@ public class PlayerControl : MonoBehaviour {
 
 	public bool IsGrounded() {
 		return grounded;
+	}
+
+	public bool CanShoot() {
+		if (grounded && inputX != 0)
+			return false;
+		else
+			return true;
 	}
 
 	public bool IsClimbing() {

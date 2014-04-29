@@ -23,6 +23,7 @@ TagManager:
   - HindPath1
   - HindPath2
   - ShotDestroyer
+  - ArtemisPoint
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

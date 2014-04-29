@@ -37,7 +37,7 @@ public class ShootingScript : MonoBehaviour
 
     void FixedUpdate()
     {
-		  if (Input.GetButton ("Fire") && player.IsGrounded()) {
+		  if (Input.GetButton ("Fire") && player.CanShoot()) {
 			if (!bowPullLoop) {
 					audio.clip = bowPull;
 					audio.Play ();
