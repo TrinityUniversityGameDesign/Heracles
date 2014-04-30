@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -8767,7 +8767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -10056,7 +10056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -10425,11 +10425,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 91.968956
+      value: -105.008217
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .1444031
+      value: .133906126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14997,7 +14997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -21213,7 +21213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -24497,7 +24497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -45455,7 +45455,7 @@ GUIText:
   m_GameObject: {fileID: 1101741528}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Number of Deaths 1
+  m_Text: Number of Deaths 0
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -47133,7 +47133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -58237,7 +58237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -71384,7 +71384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 42
   numberOfLines: 5
@@ -77814,7 +77814,7 @@ Transform:
   m_PrefabInternal: {fileID: 268685072}
   m_GameObject: {fileID: 1918083810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.968956, y: .1444031, z: 0}
+  m_LocalPosition: {x: -105.008217, y: .133906126, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1972812248}
@@ -87826,7 +87826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
