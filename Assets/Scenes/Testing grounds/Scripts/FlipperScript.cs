@@ -19,6 +19,7 @@ public class FlipperScript : MonoBehaviour
 		public bool isEnemy = true;
 		public bool stalactiteTrigger = false;
 		public GameObject disappear;
+		
 
 		//sound for flipper
 		public AudioClip lock2;

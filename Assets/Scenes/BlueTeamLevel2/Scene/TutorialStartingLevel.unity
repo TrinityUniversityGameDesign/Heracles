@@ -10404,11 +10404,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -106.052483
+      value: 208.639404
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .406573534
+      value: .558504045
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -18021,7 +18021,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 262.984406
+      value: 263.030762
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
       propertyPath: m_LocalPosition.y
@@ -18054,6 +18054,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
       propertyPath: publicLabel
       value: Press N to catch the Hind
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
+      propertyPath: instantPlayerOnTouch
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d6bf7a5c1feadf46b2bccd2b33c9631, type: 2}
@@ -28329,6 +28333,7 @@ MonoBehaviour:
   level: Labor 12B
   publicLabel: Press N to journey into the Underworld
   stopMusic: 1
+  instantPlayerOnTouch: 0
 --- !u!199 &720256469
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -45339,7 +45344,7 @@ GUIText:
   m_GameObject: {fileID: 1101741528}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Number of Deaths 1
+  m_Text: Number of Deaths 0
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -53408,6 +53413,22 @@ Prefab:
     - target: {fileID: 21200004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
@@ -69118,6 +69139,7 @@ MonoBehaviour:
   level: 3.21
   publicLabel: Press N to catch the Hind
   stopMusic: 1
+  instantPlayerOnTouch: 0
 --- !u!61 &1742137980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69161,7 +69183,7 @@ Transform:
   m_PrefabInternal: {fileID: 471155382}
   m_GameObject: {fileID: 1742137976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 262.984406, y: .25469929, z: 1.60739899}
+  m_LocalPosition: {x: 263.030762, y: .25469929, z: 1.60739899}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74389,7 +74411,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1835979310
 Transform:
   m_ObjectHideFlags: 0
@@ -77843,7 +77865,7 @@ Transform:
   m_PrefabInternal: {fileID: 268685072}
   m_GameObject: {fileID: 1918083810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -106.052483, y: .406573534, z: 0}
+  m_LocalPosition: {x: 208.639404, y: .558504045, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1972812248}
@@ -81902,6 +81924,7 @@ MonoBehaviour:
   level: Red Level 3
   publicLabel: Press N to fight the Lion
   stopMusic: 1
+  instantPlayerOnTouch: 0
 --- !u!199 &1996798840
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class SceneChangeScript : MonoBehaviour {
 	bool next = false;
 	GameObject backgroundMusic;
 	public bool stopMusic;
+	public bool instantPlayerOnTouch = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -50,6 +51,9 @@ public class SceneChangeScript : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D other) {
 		//backgroundMusic = (GameObject.FindGameObjectsWithTag ("Music"))[0];	
 		//commented because it breaks scene change - please be careful
+		if(instantPlayerOnTouch) {
+			next = true;
+		}
 		if(Input.GetKey(KeyCode.N)) {
 			if(stopMusic) {
 				Destroy(backgroundMusic.gameObject);
