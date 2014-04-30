@@ -20,6 +20,9 @@ public class FlipperScript : MonoBehaviour
 		public bool stalactiteTrigger = false;
 		public GameObject disappear;
 
+		//sound for flipper
+		public AudioClip lock2;
+
 
 		//used to determine animation state - do not touch.
 
@@ -73,6 +76,17 @@ public class FlipperScript : MonoBehaviour
 		{
 				anim = GetComponent<Animator> ();
 		}
+
+		//make sound
+		public void MakeLeverSound()
+		{
+			MakeSound(lock2);
+		}
+		private void MakeSound(AudioClip originalClip)
+		{
+			AudioSource.PlayClipAtPoint (originalClip, transform.position);
+		}
+
 
 		void Update ()
 		{
