@@ -3,9 +3,10 @@ using System.Collections;
 
 public class BT_HealthGUI : MonoBehaviour {
 
-	public Texture2D healthUnit;
+	public Texture2D healthIcon;
 	public int xStart = 20;
 	public int yStart = 20;
+	public bool flip = false;
 
 	private BT_HealthScript healthScript;
 
@@ -15,13 +16,20 @@ public class BT_HealthGUI : MonoBehaviour {
 		int space = 50;
 		for (int i=1; i <= currentHealth; i++)
 		{
-			GUI.DrawTexture (new Rect((xStart + space*(i-1)),yStart,50,25), healthUnit, ScaleMode.ScaleToFit);
+			if (flip == true)
+			{
+				GUI.DrawTexture (new Rect((xStart - space*(i-1)),yStart,50,25), healthIcon, ScaleMode.ScaleToFit);
+			}
+			else
+			{
+				GUI.DrawTexture (new Rect((xStart + space*(i-1)),yStart,50,25), healthIcon, ScaleMode.ScaleToFit);
+			}
 		}
 	}
 
 	// Use this for initialization
 	void Start () {
-		//healthUnit = (Texture2D)Resources.LoadAssetAtPath("Resources/TEMPheart.png", typeof(Sprite));
+		//healthIcon = (Texture2D)Resources.LoadAssetAtPath("Resources/TEMPheart.png", typeof(Sprite));
 		healthScript = GetComponent<BT_HealthScript> ();
 	}
 	
