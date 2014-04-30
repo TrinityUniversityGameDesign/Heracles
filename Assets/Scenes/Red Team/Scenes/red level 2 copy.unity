@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &31471449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,6 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &56242414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &58103837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,6 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &59623958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &93939542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,6 +1511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &113777719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,6 +2064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &129651086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2405,6 +2412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &168299759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2909,6 +2917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &231593820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3237,6 +3246,7 @@ GameObject:
   - 61: {fileID: 256497643}
   - 114: {fileID: 256497642}
   - 95: {fileID: 256497646}
+  - 82: {fileID: 256497647}
   m_Layer: 0
   m_Name: FirstFlipper
   m_TagString: Untagged
@@ -3261,6 +3271,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 0
   disappear: {fileID: 0}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &256497643
 BoxCollider2D:
@@ -3325,6 +3336,65 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &256497647
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 425039326}
+  m_GameObject: {fileID: 256497641}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &264373555
 Prefab:
   m_ObjectHideFlags: 0
@@ -3845,6 +3915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &292461281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4569,6 +4640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &354738456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4972,6 +5044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &387297181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5167,6 +5240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &387579793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5595,6 +5669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &421847523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5960,6 +6035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &428459180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6140,6 +6216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &447288809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6786,6 +6863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &471076157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7010,6 +7088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &478262075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7190,6 +7269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &488582776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7863,6 +7943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &541071312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7931,11 +8012,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 48.5355301
+      value: -4.83122826
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.7502346
+      value: 4.26256847
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8160,6 +8241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &578822828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8432,6 +8514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &602925406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8612,6 +8695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &603722753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8792,6 +8876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &615035994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9333,6 +9418,7 @@ GameObject:
   - 61: {fileID: 647490339}
   - 114: {fileID: 647490338}
   - 95: {fileID: 647490341}
+  - 82: {fileID: 647490342}
   m_Layer: 0
   m_Name: FirstFlipper
   m_TagString: Untagged
@@ -9369,6 +9455,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 0
   disappear: {fileID: 0}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &647490339
 BoxCollider2D:
@@ -9421,6 +9508,65 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &647490342
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1024199952}
+  m_GameObject: {fileID: 647490336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &654665025
 GameObject:
   m_ObjectHideFlags: 0
@@ -9542,6 +9688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &654665030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9935,6 +10082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &679840986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10437,6 +10585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &728117013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10617,6 +10766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &731219885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10877,6 +11027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &738110307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11178,6 +11329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &766049814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12053,6 +12205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &856002529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13491,6 +13644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &863502043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14090,6 +14244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &921584109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14464,6 +14619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &949978656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14535,6 +14691,7 @@ GameObject:
   - 61: {fileID: 953288791}
   - 114: {fileID: 953288790}
   - 95: {fileID: 953288793}
+  - 82: {fileID: 953288794}
   m_Layer: 0
   m_Name: FirstFlipper
   m_TagString: Untagged
@@ -14571,6 +14728,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 0
   disappear: {fileID: 0}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &953288791
 BoxCollider2D:
@@ -14623,6 +14781,65 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &953288794
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 2013034445}
+  m_GameObject: {fileID: 953288788}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &955085343
 Prefab:
   m_ObjectHideFlags: 0
@@ -14794,6 +15011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &959808241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14989,6 +15207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &964111179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15463,6 +15682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &989312826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15534,6 +15754,7 @@ GameObject:
   - 61: {fileID: 992331287}
   - 114: {fileID: 992331286}
   - 95: {fileID: 992331290}
+  - 82: {fileID: 992331291}
   m_Layer: 0
   m_Name: FirstFlipper
   m_TagString: Untagged
@@ -15558,6 +15779,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 0
   disappear: {fileID: 0}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &992331287
 BoxCollider2D:
@@ -15622,6 +15844,65 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &992331291
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1869996690}
+  m_GameObject: {fileID: 992331285}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &996693273
 Prefab:
   m_ObjectHideFlags: 0
@@ -16110,6 +16391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1042611505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16452,7 +16734,7 @@ Transform:
   m_PrefabInternal: {fileID: 562524237}
   m_GameObject: {fileID: 1049738844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.5355301, y: -9.7502346, z: 0}
+  m_LocalPosition: {x: -4.83122826, y: 4.26256847, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 1936790268}
@@ -17005,6 +17287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1059781881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17324,6 +17607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1091036570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17584,6 +17868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1103921227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17764,6 +18049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1107618674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18174,6 +18460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1135808581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18431,6 +18718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1169327894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18929,6 +19217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1194443212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19612,6 +19901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1273978598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20140,6 +20430,7 @@ MonoBehaviour:
   level: BossLionVer2
   publicLabel: 
   stopMusic: 0
+  instantPlayerOnTouch: 0
 --- !u!61 &1333622486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20280,6 +20571,7 @@ GameObject:
   - 61: {fileID: 1345486191}
   - 114: {fileID: 1345486190}
   - 95: {fileID: 1345486189}
+  - 82: {fileID: 1345486193}
   m_Layer: 0
   m_Name: FirstFlipper
   m_TagString: Untagged
@@ -20331,6 +20623,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 0
   disappear: {fileID: 0}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &1345486191
 BoxCollider2D:
@@ -20368,6 +20661,65 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: defebc67e953a43eaa1b04ed86594470, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!82 &1345486193
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 248822211}
+  m_GameObject: {fileID: 1345486187}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1345995765
 Prefab:
   m_ObjectHideFlags: 0
@@ -20795,6 +21147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1354370473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20975,6 +21328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1363053171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21889,6 +22243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1429425016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22394,6 +22749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1470080021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22666,6 +23022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1473543868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23056,6 +23413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1499928908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23236,6 +23594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1507003763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23416,6 +23775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1515847680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23676,6 +24036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1529323924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23841,6 +24202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1543060737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24036,6 +24398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1562235878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24305,6 +24668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1571581516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24767,6 +25131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1662457116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25080,6 +25445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 0}
 --- !u!61 &1715276292
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26320,6 +26686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1717196961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26515,6 +26882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1722142367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26822,6 +27190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1730554008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27240,6 +27609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1756604098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27435,6 +27805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1773797254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27984,6 +28355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1803064253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28725,6 +29097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1879173723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29204,6 +29577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1919304866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29384,6 +29758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1930509104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29564,6 +29939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1936701594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29770,6 +30146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1944162328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29935,6 +30312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1946272090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30665,6 +31043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &1984937186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31175,6 +31554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2024024170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31546,6 +31926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2060699557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31793,6 +32174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2069007397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31973,6 +32355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2089444207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32153,6 +32536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2093215877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32463,6 +32847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2117830345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32643,6 +33028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!114 &2131013666
 MonoBehaviour:
   m_ObjectHideFlags: 0
