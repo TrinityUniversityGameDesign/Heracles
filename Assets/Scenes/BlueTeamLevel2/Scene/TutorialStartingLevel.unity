@@ -3520,6 +3520,7 @@ GameObject:
   - 61: {fileID: 102959460}
   - 114: {fileID: 102959459}
   - 95: {fileID: 102959458}
+  - 82: {fileID: 102959462}
   m_Layer: 0
   m_Name: TriggerFirstFlipper
   m_TagString: Untagged
@@ -3572,6 +3573,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 1
   disappear: {fileID: 517826841}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &102959460
 BoxCollider2D:
@@ -3609,6 +3611,65 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: defebc67e953a43eaa1b04ed86594470, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!82 &102959462
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 462543285}
+  m_GameObject: {fileID: 102959456}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &108100905
 Prefab:
   m_ObjectHideFlags: 0
@@ -3706,11 +3767,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -8286,11 +8347,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -87.8886414
+      value: -85.5086594
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 118.171989
+      value: 104.83046
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10343,11 +10404,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -105.220436
+      value: -106.052483
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.172447205
+      value: .406573534
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -18965,7 +19026,7 @@ GameObject:
   - 114: {fileID: 505204701}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18976,7 +19037,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 505204700}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -19080,7 +19141,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1387550736}
   m_GameObject: {fileID: 505204700}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -20994,7 +21055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
-  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
+  deathFader: {fileID: 0}
 --- !u!212 &550430201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21002,7 +21063,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 213923401}
   m_GameObject: {fileID: 550430198}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -21026,7 +21087,7 @@ Transform:
   m_PrefabInternal: {fileID: 213923401}
   m_GameObject: {fileID: 550430198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -87.8886414, y: 118.171989, z: 0}
+  m_LocalPosition: {x: -85.5086594, y: 104.83046, z: 0}
   m_LocalScale: {x: 1000, y: 70, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23894,7 +23955,7 @@ GameObject:
   - 114: {fileID: 637235229}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23905,7 +23966,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 637235228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -24009,7 +24070,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1837579300}
   m_GameObject: {fileID: 637235228}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -33514,7 +33575,7 @@ GameObject:
   - 114: {fileID: 840383176}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33525,7 +33586,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 840383175}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -33629,7 +33690,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1024941507}
   m_GameObject: {fileID: 840383175}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -34437,7 +34498,7 @@ GameObject:
   - 114: {fileID: 860802894}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34448,7 +34509,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860802893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -34552,7 +34613,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2017669481}
   m_GameObject: {fileID: 860802893}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -34636,7 +34697,7 @@ GameObject:
   - 114: {fileID: 862402841}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34647,7 +34708,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862402840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -34751,7 +34812,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1869862729}
   m_GameObject: {fileID: 862402840}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -35389,7 +35450,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 879166485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 177.066666, y: 10.8365402, z: 100}
+  m_LocalPosition: {x: 177.066681, y: 10.806221, z: 100}
   m_LocalScale: {x: 6.06042957, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37671,7 +37732,7 @@ GameObject:
   - 114: {fileID: 941058229}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37682,7 +37743,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941058228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -37786,7 +37847,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 108747209}
   m_GameObject: {fileID: 941058228}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -37870,7 +37931,7 @@ GameObject:
   - 114: {fileID: 942832229}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37881,7 +37942,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 942832228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -37985,7 +38046,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1286544567}
   m_GameObject: {fileID: 942832228}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -38552,7 +38613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
-  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
+  deathFader: {fileID: 0}
 --- !u!212 &963624868
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38560,7 +38621,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1546272437}
   m_GameObject: {fileID: 963624865}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -38585,7 +38646,7 @@ Transform:
   m_GameObject: {fileID: 963624865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -132.288391, y: -5.39297676, z: 0}
-  m_LocalScale: {x: 31.3545628, y: 3.13545918, z: 0}
+  m_LocalScale: {x: 31.3545628, y: 3.13545918, z: 1.1346432}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &964197469
@@ -38747,7 +38808,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 2087406814}
   m_GameObject: {fileID: 968119845}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -40829,11 +40890,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -41182,11 +41243,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -41425,7 +41486,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 2110517942}
   m_GameObject: {fileID: 1031606494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -43895,7 +43956,7 @@ GameObject:
   - 114: {fileID: 1084764306}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43906,7 +43967,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1084764305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -44010,7 +44071,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1009494506}
   m_GameObject: {fileID: 1084764305}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -45278,7 +45339,7 @@ GUIText:
   m_GameObject: {fileID: 1101741528}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Death Count
+  m_Text: Number of Deaths 1
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -45850,7 +45911,7 @@ GameObject:
   - 114: {fileID: 1114990792}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45861,7 +45922,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1114990791}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -45965,7 +46026,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2059773846}
   m_GameObject: {fileID: 1114990791}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -49441,7 +49502,7 @@ GameObject:
   - 114: {fileID: 1213315074}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49452,7 +49513,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213315073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -49556,7 +49617,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2060023578}
   m_GameObject: {fileID: 1213315073}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -51386,11 +51447,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -51972,11 +52033,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -53330,7 +53391,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
       propertyPath: m_Size.x
-      value: 12.75
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6100004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
       propertyPath: m_Size.y
@@ -53343,6 +53404,10 @@ Prefab:
     - target: {fileID: 6100004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
       propertyPath: m_Center.x
       value: -.0299999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
@@ -55505,11 +55570,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 6.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -55921,7 +55994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
-  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
+  deathFader: {fileID: 0}
 --- !u!212 &1391249870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55929,7 +56002,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1978142945}
   m_GameObject: {fileID: 1391249867}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -57524,7 +57597,7 @@ GameObject:
   - 114: {fileID: 1442829074}
   m_Layer: 4
   m_Name: JumpPuzzleWater
-  m_TagString: Untagged
+  m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57535,7 +57608,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1442829073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32d28403833d1dc4a8743a9af68e89db, type: 3}
   m_Name: 
@@ -57639,7 +57712,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1258548296}
   m_GameObject: {fileID: 1442829073}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecb951fab9734436a3f6dbd8b910362, type: 3}
   m_Name: 
@@ -68152,7 +68225,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4293803845
+        rgba: 4293099289
       minMaxState: 0
     startSize:
       scalar: .5
@@ -74238,6 +74311,7 @@ GameObject:
   - 61: {fileID: 1835979308}
   - 114: {fileID: 1835979307}
   - 95: {fileID: 1835979306}
+  - 82: {fileID: 1835979312}
   - 114: {fileID: 1835979311}
   m_Layer: 0
   m_Name: TriggerEndFirstFlipper
@@ -74278,6 +74352,7 @@ MonoBehaviour:
   isEnemy: 1
   stalactiteTrigger: 1
   disappear: {fileID: 0}
+  lock2: {fileID: 0}
   animate: 0
 --- !u!61 &1835979308
 BoxCollider2D:
@@ -74289,7 +74364,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 12.75, y: 52.2599983}
+  m_Size: {x: 30, y: 52.2599983}
   m_Center: {x: -.0299999993, y: -20.2900009}
 --- !u!212 &1835979309
 SpriteRenderer:
@@ -74313,7 +74388,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: defebc67e953a43eaa1b04ed86594470, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1835979310
 Transform:
@@ -74344,6 +74419,65 @@ MonoBehaviour:
   oneUse: 0
   triggeredByPlayer: 1
   triggeredOnNumTry: 0
+--- !u!82 &1835979312
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1321796952}
+  m_GameObject: {fileID: 1835979305}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1836222792
 GameObject:
   m_ObjectHideFlags: 0
@@ -74640,11 +74774,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -75305,11 +75439,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -77709,7 +77843,7 @@ Transform:
   m_PrefabInternal: {fileID: 268685072}
   m_GameObject: {fileID: 1918083810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -105.220436, y: -.172447205, z: 0}
+  m_LocalPosition: {x: -106.052483, y: .406573534, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1972812248}
@@ -83232,11 +83366,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -84379,11 +84513,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -84439,11 +84573,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: DeathArea
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a343a116710334b9a1bf19a21274c8, type: 2}
@@ -85787,6 +85921,10 @@ Prefab:
       propertyPath: m_Name
       value: StartingDeathZone1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: deathFader
+      value: 
+      objectReference: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
   m_RootGameObject: {fileID: 968119845}
@@ -86398,6 +86536,10 @@ Prefab:
       propertyPath: m_Name
       value: StartingDeathZone1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: deathFader
+      value: 
+      objectReference: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
   m_RootGameObject: {fileID: 1031606494}
