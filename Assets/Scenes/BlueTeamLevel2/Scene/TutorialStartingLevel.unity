@@ -1093,7 +1093,7 @@ GameObject:
   - 61: {fileID: 28447570}
   - 114: {fileID: 28447569}
   m_Layer: 8
-  m_Name: JumpPuzzleTwoWay
+  m_Name: JumpPuzzleTwoWayGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,7 +1173,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &28447574
 Transform:
   m_ObjectHideFlags: 0
@@ -4625,15 +4625,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -5058,7 +5058,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &137726486
 Transform:
   m_ObjectHideFlags: 0
@@ -5119,19 +5119,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleTwoWay
+      value: JumpPuzzleTwoWayGround
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -5583,7 +5583,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &151013540
 Transform:
   m_ObjectHideFlags: 0
@@ -7020,7 +7020,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &179212738
 Transform:
   m_ObjectHideFlags: 0
@@ -7590,7 +7590,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleTwoWay
+      value: JumpPuzzleTwoWayGround
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_LocalScale.x
@@ -7598,15 +7598,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -8354,7 +8354,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_Name
-      value: StartingDeathZone1
+      value: StartingDeathZone1Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.r
+      value: .160784319
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.g
+      value: .0941176489
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.b
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
@@ -8662,7 +8674,7 @@ GameObject:
   - 61: {fileID: 222504034}
   - 114: {fileID: 222504033}
   m_Layer: 8
-  m_Name: JumpPuzzleTwoWay
+  m_Name: JumpPuzzleTwoWayGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8742,7 +8754,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &222504038
 Transform:
   m_ObjectHideFlags: 0
@@ -9975,7 +9987,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &243926527
 Transform:
   m_ObjectHideFlags: 0
@@ -10372,7 +10384,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &264840116
 Transform:
   m_ObjectHideFlags: 0
@@ -11846,15 +11858,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -12183,15 +12195,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -14843,7 +14855,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 8c10eebd8f323486c9d25f1e5f007d57, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &381647238
 Transform:
   m_ObjectHideFlags: 0
@@ -15929,15 +15941,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -16548,15 +16560,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -16999,15 +17011,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -17175,7 +17187,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &435807152
 Transform:
   m_ObjectHideFlags: 0
@@ -17240,15 +17252,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -18989,15 +19001,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -19739,15 +19751,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -20051,7 +20063,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &517826845
 Transform:
   m_ObjectHideFlags: 0
@@ -21145,7 +21157,7 @@ GameObject:
   - 114: {fileID: 550430200}
   - 61: {fileID: 550430199}
   m_Layer: 0
-  m_Name: StartingDeathZone1
+  m_Name: StartingDeathZone1Ground
   m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21200,7 +21212,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: fff6c8c1104934d1c953bf2d709c77ef, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &550430202
 Transform:
   m_ObjectHideFlags: 0
@@ -22103,7 +22115,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &585475729
 Transform:
   m_ObjectHideFlags: 0
@@ -23526,7 +23538,7 @@ GameObject:
   - 61: {fileID: 628716991}
   - 114: {fileID: 628716990}
   m_Layer: 8
-  m_Name: JumpPuzzleTwoWay
+  m_Name: JumpPuzzleTwoWayGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23606,7 +23618,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &628716995
 Transform:
   m_ObjectHideFlags: 0
@@ -24043,15 +24055,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -27618,7 +27630,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &711918861
 Transform:
   m_ObjectHideFlags: 0
@@ -29680,15 +29692,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -30327,7 +30339,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &733146782
 Transform:
   m_ObjectHideFlags: 0
@@ -35605,15 +35617,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -36266,7 +36278,7 @@ GameObject:
   - 61: {fileID: 889693034}
   - 114: {fileID: 889693033}
   m_Layer: 8
-  m_Name: JumpPuzzleWall
+  m_Name: JumpPuzzleWallGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36319,7 +36331,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &889693036
 Transform:
   m_ObjectHideFlags: 0
@@ -37378,7 +37390,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &923388218
 Transform:
   m_ObjectHideFlags: 0
@@ -38989,7 +39001,7 @@ GameObject:
   - 114: {fileID: 968119847}
   - 61: {fileID: 968119846}
   m_Layer: 0
-  m_Name: StartingDeathZone1
+  m_Name: StartingDeathZone1Ground
   m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39044,7 +39056,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: fff6c8c1104934d1c953bf2d709c77ef, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &968119849
 Transform:
   m_ObjectHideFlags: 0
@@ -39542,7 +39554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleTwoWay
+      value: JumpPuzzleTwoWayGround
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_LocalScale.x
@@ -39550,15 +39562,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -41186,15 +41198,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -41683,7 +41695,7 @@ GameObject:
   - 114: {fileID: 1031606496}
   - 61: {fileID: 1031606495}
   m_Layer: 0
-  m_Name: StartingDeathZone1
+  m_Name: StartingDeathZone1Ground
   m_TagString: DeathArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41738,7 +41750,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: fff6c8c1104934d1c953bf2d709c77ef, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1031606498
 Transform:
   m_ObjectHideFlags: 0
@@ -46393,7 +46405,7 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1115476376
 Transform:
   m_ObjectHideFlags: 0
@@ -46957,7 +46969,7 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1137482124
 Transform:
   m_ObjectHideFlags: 0
@@ -47904,15 +47916,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -49085,15 +49097,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -49937,7 +49949,7 @@ GameObject:
   - 61: {fileID: 1216607408}
   - 114: {fileID: 1216607407}
   m_Layer: 8
-  m_Name: JumpPuzzleTwoWay
+  m_Name: JumpPuzzleTwoWayGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50017,7 +50029,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1216607412
 Transform:
   m_ObjectHideFlags: 0
@@ -51355,7 +51367,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1251281875
 Transform:
   m_ObjectHideFlags: 0
@@ -53157,15 +53169,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -54556,15 +54568,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -55529,7 +55541,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1385079877
 Transform:
   m_ObjectHideFlags: 0
@@ -56038,7 +56050,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: fff6c8c1104934d1c953bf2d709c77ef, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1391249871
 Transform:
   m_ObjectHideFlags: 0
@@ -56392,7 +56404,7 @@ GameObject:
   - 61: {fileID: 1407370414}
   - 114: {fileID: 1407370413}
   m_Layer: 8
-  m_Name: JumpPuzzleTwoWay
+  m_Name: JumpPuzzleTwoWayGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56472,7 +56484,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1407370418
 Transform:
   m_ObjectHideFlags: 0
@@ -57034,15 +57046,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: caa766f7f4403e548b6435fef19b54b7, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: caa766f7f4403e548b6435fef19b54b7, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: caa766f7f4403e548b6435fef19b54b7, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caa766f7f4403e548b6435fef19b54b7, type: 2}
@@ -58625,7 +58637,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1475569811
 Transform:
   m_ObjectHideFlags: 0
@@ -63021,15 +63033,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -63326,7 +63338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleTwoWay
+      value: JumpPuzzleTwoWayGround
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_LocalScale.x
@@ -63334,15 +63346,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -63820,19 +63832,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleWall
+      value: JumpPuzzleWallGround
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -65351,7 +65363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleTwoWay
+      value: JumpPuzzleTwoWayGround
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_LocalScale.x
@@ -65359,15 +65371,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -65816,15 +65828,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -66689,6 +66701,18 @@ Prefab:
       propertyPath: m_Name
       value: JumpingGroundCheckpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
+      propertyPath: m_Color.r
+      value: .160784319
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
+      propertyPath: m_Color.g
+      value: .0941176489
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
+      propertyPath: m_Color.b
+      value: .0235294122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
   m_RootGameObject: {fileID: 381647232}
@@ -66811,15 +66835,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e440b10f0270d46894203fe359d070, type: 2}
@@ -67206,7 +67230,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1722620227
 Transform:
   m_ObjectHideFlags: 0
@@ -69599,7 +69623,7 @@ GameObject:
   - 61: {fileID: 1747950451}
   - 114: {fileID: 1747950450}
   m_Layer: 8
-  m_Name: JumpPuzzleTwoWay
+  m_Name: JumpPuzzleTwoWayGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69679,7 +69703,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1747950455
 Transform:
   m_ObjectHideFlags: 0
@@ -75273,7 +75297,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1860656219
 Transform:
   m_ObjectHideFlags: 0
@@ -75884,7 +75908,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &1877786641
 Transform:
   m_ObjectHideFlags: 0
@@ -80514,15 +80538,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
@@ -83163,7 +83187,7 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &2007705266
 Transform:
   m_ObjectHideFlags: 0
@@ -85763,19 +85787,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Name
-      value: JumpPuzzleTwoWay
+      value: JumpPuzzleTwoWayGround
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .160784319
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: .0941176489
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: .0235294122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -86240,12 +86264,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_Name
-      value: StartingDeathZone1
+      value: StartingDeathZone1Ground
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: deathFader
       value: 
       objectReference: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.r
+      value: .160784319
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.g
+      value: .0941176489
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.b
+      value: .0235294122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
   m_RootGameObject: {fileID: 968119845}
@@ -86855,12 +86891,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: m_Name
-      value: StartingDeathZone1
+      value: StartingDeathZone1Ground
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
       propertyPath: deathFader
       value: 
       objectReference: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.r
+      value: .160784319
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.g
+      value: .0941176489
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
+      propertyPath: m_Color.b
+      value: .0235294122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92112dff59fdfd248873fddd370a80b6, type: 2}
   m_RootGameObject: {fileID: 1031606494}
@@ -88456,7 +88504,7 @@ SpriteRenderer:
   m_SortingOrder: -3
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: c9b832a6606ef4a199c265728032016a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: .160784319, g: .0941176489, b: .0235294122, a: 1}
 --- !u!4 &2137307788
 Transform:
   m_ObjectHideFlags: 0
