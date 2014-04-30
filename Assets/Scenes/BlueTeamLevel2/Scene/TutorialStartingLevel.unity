@@ -10449,11 +10449,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 17.9297218
+      value: -103.477554
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .9877069
+      value: 1.04283655
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15021,7 +15021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -45495,7 +45495,7 @@ GUIText:
   m_GameObject: {fileID: 1101741528}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Number of Deaths 1
+  m_Text: Number of Deaths 2
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -49195,6 +49195,10 @@ Prefab:
       propertyPath: c.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 383911975}
@@ -77890,7 +77894,7 @@ Transform:
   m_PrefabInternal: {fileID: 268685072}
   m_GameObject: {fileID: 1918083810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.9297218, y: .9877069, z: 0}
+  m_LocalPosition: {x: -103.477554, y: 1.04283655, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1972812248}
