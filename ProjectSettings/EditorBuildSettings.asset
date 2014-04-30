@@ -44,6 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Labor 12B.unity
   - enabled: 1
-    path: Assets/Scenes/Red Team/Scenes/Red Level 3.unity
+    path: Assets/Scenes/Red Team/Scenes/Red Level Old.unity
   - enabled: 1
     path: Assets/Scenes/BlueTeamLevel2/Scene/GWBoss.unity
