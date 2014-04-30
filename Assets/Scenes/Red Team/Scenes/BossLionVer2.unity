@@ -531,6 +531,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8200002, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: m_Volume
+      value: .111000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200002, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
+      propertyPath: Priority
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
   m_RootGameObject: {fileID: 798246664}
@@ -1145,11 +1153,11 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .111000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 128
+  Priority: 35
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2065,7 +2073,7 @@ GameObject:
   - 4: {fileID: 1147484879}
   - 82: {fileID: 1147484878}
   m_Layer: 0
-  m_Name: LevelMusic
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2079,13 +2087,13 @@ AudioSource:
   m_GameObject: {fileID: 1147484877}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a1a8edf26924dbf4592eee6b9e10ea09, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b0b70bff89b03014ab8ad87d0dd5e213, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .5
+  m_Volume: .629000008
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Priority: 128
+  Priority: 205
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3008,7 +3016,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 128
+  Priority: 183
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
