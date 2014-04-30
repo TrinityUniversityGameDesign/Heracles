@@ -12035,6 +12035,10 @@ Prefab:
       propertyPath: m_Size.y
       value: .119999997
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69e1322a24bcd4f4580b6977085865fb, type: 2}
   m_RootGameObject: {fileID: 1652574548}
@@ -26512,7 +26516,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 85be4ed7dca6a44f289239bb0a7d78a9, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
