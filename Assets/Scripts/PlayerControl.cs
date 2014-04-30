@@ -92,8 +92,8 @@ public class PlayerControl : MonoBehaviour {
 		} else if (footstepsAS.isPlaying) {
 			footstepsAS.Stop ();
 		}
-		crouch = Input.GetAxis (jumpAxisName);
-		if (crouch < -0.01) crouch = -0.01f;
+		crouch = Input.GetAxis ("Vertical");
+		//if (crouch != -1f) crouch = 0f;
 		if (crouch < 0) {
 			if (!isCrouched) {
 				anim.SetBool("Crouch",true);
@@ -102,7 +102,6 @@ public class PlayerControl : MonoBehaviour {
 				//BoxCollider2D = new BoxCollider2D (BoxCollider2D.size.x, crouchHeight);//BoxCollider2D.size.y = BoxCollider2D.size.y / 2;
 				bc.size = new Vector2(bc.size.x,crouchHeight);
 				bc.center = new Vector2(bc.center.x,-.25f);
-				crouch = 1f;
 			}
 		} else {
 			anim.SetBool("Crouch",false);
@@ -110,7 +109,6 @@ public class PlayerControl : MonoBehaviour {
 			speed = runSpeed;
 			bc.size = new Vector2(bc.size.x, 1f);
 			bc.center = new Vector2(bc.center.x, 0f);
-			crouch = 1f;
 		}
 		if (Input.GetKey(KeyCode.Q)){
 			gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;

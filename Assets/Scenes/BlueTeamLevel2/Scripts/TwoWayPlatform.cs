@@ -7,6 +7,8 @@ public class TwoWayPlatform : MonoBehaviour {
 	public bool AllowDown = false;
 	public bool isInvisible = false;
 
+	private bool colliding;
+
 	// Use this for initialization
 	void Start () {
 		if (isInvisible) {
@@ -21,7 +23,7 @@ public class TwoWayPlatform : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (AllowDown && Input.GetButton("Down")) {
+		if (AllowDown && Input.GetButton("Down") && colliding) {
 			GetComponents<BoxCollider2D>()[0].enabled = false;
 			if (!AllowUp)
 				GetComponents<BoxCollider2D>()[1].isTrigger = true;
@@ -29,13 +31,16 @@ public class TwoWayPlatform : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.tag == "P1")
+		if (other.tag == "P1") {
+			colliding = true;
 			if (other.rigidbody2D.velocity.y > 0 && AllowUp || other.GetComponent<PlayerControl>().IsClimbing())
 				GetComponents<BoxCollider2D>()[0].enabled = false;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other) {
 		if (other.tag == "P1") {
+			colliding = false;
 			GetComponents<BoxCollider2D>()[0].enabled = true;
 			if (!AllowUp)
 				GetComponents<BoxCollider2D>()[1].isTrigger = false;
