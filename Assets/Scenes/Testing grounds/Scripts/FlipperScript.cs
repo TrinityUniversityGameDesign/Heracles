@@ -37,9 +37,10 @@ public class FlipperScript : MonoBehaviour
 		{
 				animate = true;
 
-		if (stalactiteTrigger) {
+		if (disappear != null) {
 			disappear.renderer.enabled = false;
 			disappear.collider2D.isTrigger = true;
+			renderer.enabled = false;
 		}
 
 		
