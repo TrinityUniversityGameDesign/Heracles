@@ -760,7 +760,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &148866554
 BoxCollider2D:
@@ -1073,7 +1073,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9c7220b4289c74527ac625a838a90f80, type: 2}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &185870814
 BoxCollider2D:
@@ -1715,7 +1715,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -2179,7 +2179,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -2524,7 +2524,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -3055,7 +3055,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -5058,7 +5058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &542439091
 BoxCollider2D:
@@ -7210,7 +7210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 0
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &821009344
 BoxCollider2D:
@@ -7438,7 +7438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &840345440
 BoxCollider2D:
@@ -7544,7 +7544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 0
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &848954924
 BoxCollider2D:
@@ -8531,7 +8531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowUp
@@ -9540,7 +9540,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -9963,7 +9963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &1122705299
 BoxCollider2D:
@@ -10559,7 +10559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &1168735519
 BoxCollider2D:
@@ -10671,6 +10671,10 @@ Prefab:
       propertyPath: isInvisible
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
+      propertyPath: AllowDown
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
   m_RootGameObject: {fileID: 700203196}
@@ -10757,7 +10761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -13092,7 +13096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &1328575577
 BoxCollider2D:
@@ -13781,7 +13785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 0
 --- !u!61 &1378209452
 BoxCollider2D:
@@ -13895,7 +13899,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -14235,7 +14239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -14569,7 +14573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowUp
@@ -14985,7 +14989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -15070,6 +15074,10 @@ Prefab:
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: isInvisible
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
+      propertyPath: AllowDown
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -15301,7 +15309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 0
 --- !u!61 &1566102309
 BoxCollider2D:
@@ -15479,7 +15487,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -15997,7 +16005,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -17844,6 +17852,7 @@ MonoBehaviour:
   level: GWBoss
   publicLabel: 
   stopMusic: 1
+  instantPlayerOnTouch: 0
 --- !u!199 &1739926504
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -19154,7 +19163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &1761285534
 BoxCollider2D:
@@ -19260,7 +19269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &1767114499
 BoxCollider2D:
@@ -19416,7 +19425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 0
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &1788932235
 BoxCollider2D:
@@ -19530,7 +19539,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -19578,7 +19587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -23162,7 +23171,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowUp
@@ -24766,7 +24775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 0
 --- !u!61 &1988881675
 BoxCollider2D:
@@ -24872,7 +24881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 0
 --- !u!61 &2001686492
 BoxCollider2D:
@@ -25553,7 +25562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 0
 --- !u!61 &2084022367
 BoxCollider2D:
@@ -25825,7 +25834,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
       propertyPath: AllowDown
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffecc3cb978784153a6e4dabca8bbf7f, type: 2}
@@ -25948,7 +25957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllowUp: 1
-  AllowDown: 1
+  AllowDown: 0
   isInvisible: 1
 --- !u!61 &2100051993
 BoxCollider2D:

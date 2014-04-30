@@ -91,7 +91,7 @@ public class PlayerControl : MonoBehaviour {
 		} else if (footstepsAS.isPlaying) {
 			footstepsAS.Stop ();
 		}
-		crouch = Input.GetButton("Shift"); // seems more user friendly than "X"
+		crouch = Input.GetButton("Down"); // seems more user friendly than "X"
 		if (crouch) {
 			if (!isCrouched) {
 				anim.SetBool("Crouch",true);
