@@ -50,7 +50,7 @@ public class Lion_Boss_Flipper_Child_Script : MonoBehaviour {
 	void toA(){
 		if (state == "ToA") {
 			rigidbody2D.velocity = new Vector2 (Xvel*(-1f), Yvel*(-1f));
-			
+			gameObject.renderer.material.color = new Color(1f,1f,1f,1f) ;
 		}
 		
 	}
@@ -118,8 +118,8 @@ public class Lion_Boss_Flipper_Child_Script : MonoBehaviour {
 			state = "Start"; 
 			alreadyGoing = false;
 			activate_Me = false;
-			gameObject.renderer.material.color = Color.white;
-
+			// gameObject.renderer.material.color = Color.white;
+			gameObject.renderer.material.color = new Color(1f,1f,1f,.5f) ;
 		}
 	}
 
@@ -127,15 +127,16 @@ public class Lion_Boss_Flipper_Child_Script : MonoBehaviour {
 
 
 		if (other.gameObject == Lion) {
-			gameObject.renderer.material.color = Color.red;
+			// gameObject.renderer.material.color = Color.red;
 			Lion_Script.spike_hit = true;
 		}
 		if (other.gameObject == playerObject) {
-			gameObject.renderer.material.color = Color.black;	
+			// gameObject.renderer.material.color = Color.black;	
 			playerObject.rigidbody2D.AddForce( new Vector2 (0, 1500f)); 
 		}
-		if (Lion == null)
-			gameObject.renderer.material.color = Color.gray;
+		if (Lion == null) {
+			// gameObject.renderer.material.color = Color.gray;
+		}
 	}
 
 }

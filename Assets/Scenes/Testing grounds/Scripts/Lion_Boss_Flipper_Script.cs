@@ -31,19 +31,17 @@ public class Lion_Boss_Flipper_Script : MonoBehaviour
 		//	child2.active = true; 
 			childScript = child2.GetComponent<Lion_Boss_Flipper_Child_Script>();
 			childScript.activate_Me = true;
-			child2.renderer.material.color = Color.green;
+		//	child2.renderer.material.color = new Color(1f,1f,1f,.5f) ;
 
-			child1.renderer.material.color = Color.blue;
-
+			child1.renderer.material.color = new Color(1f,1f,1f,1f) ;
 		}
 		
 		if (mode == 2) {
 		//	child1.active = true;
 			childScript = child1.GetComponent<Lion_Boss_Flipper_Child_Script>();
 			childScript.activate_Me = true;
-			child1.renderer.material.color = Color.green; 
-
-			child2.renderer.material.color = Color.blue; 
+		//	child1.renderer.material.color = new Color(1f,1f,1f,.5f) ;
+			child2.renderer.material.color = new Color(1f,1f,1f,1f) ;
 		}
 		
 		mode += 1;
@@ -55,7 +53,8 @@ public class Lion_Boss_Flipper_Script : MonoBehaviour
 	void Start(){
 		child1 = gameObject.transform.Find("Flipper_Child1").gameObject;;
 		child2 = gameObject.transform.Find("Flipper_Child2").gameObject;;
-		child2.renderer.material.color = Color.blue;
+	//	child2.renderer.material.color = Color.blue;
+		child1.renderer.material.color = new Color(1f,1f,1f,.5f) ;
 		//	child2.renderer.material.color = Color.gray;
 
 	//	child2.active = false; 
