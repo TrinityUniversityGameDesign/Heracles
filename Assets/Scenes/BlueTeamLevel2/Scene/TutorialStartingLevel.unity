@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -4888,6 +4888,10 @@ Prefab:
       propertyPath: m_Size.x
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 2123247083}
@@ -8791,7 +8795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -10080,7 +10084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -17649,6 +17653,10 @@ Prefab:
       propertyPath: numberOfLines
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 1145157765}
@@ -21241,7 +21249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -24525,7 +24533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -30486,6 +30494,10 @@ Prefab:
       propertyPath: numberOfLines
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 224496897}
@@ -37425,6 +37437,10 @@ Prefab:
       propertyPath: numberOfLines
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 1462158871}
@@ -39833,6 +39849,10 @@ Prefab:
       propertyPath: numberOfLines
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 252911823}
@@ -45495,7 +45515,7 @@ GUIText:
   m_GameObject: {fileID: 1101741528}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Number of Deaths 2
+  m_Text: Number of Deaths 0
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -47173,7 +47193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -52738,6 +52758,10 @@ Prefab:
       propertyPath: c.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 20483101}
@@ -53871,6 +53895,10 @@ Prefab:
       propertyPath: numberOfLines
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 558469631}
@@ -58235,6 +58263,10 @@ Prefab:
       propertyPath: localx
       value: -40
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 1778406780}
@@ -58281,7 +58313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
@@ -71464,7 +71496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 42
   numberOfLines: 5
@@ -72994,6 +73026,10 @@ Prefab:
       propertyPath: c.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
+      propertyPath: fontRes
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
   m_RootGameObject: {fileID: 655328739}
@@ -87918,7 +87954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe56f89526bd4b8780a1e7d4962ea34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+  fontRes: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   fontSize: 34
   messageWidth: 24
   numberOfLines: 5
