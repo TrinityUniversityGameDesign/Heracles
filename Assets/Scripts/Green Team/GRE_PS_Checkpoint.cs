@@ -42,7 +42,7 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 				playerCollision.GetComponent<ShootingScript>().active = false;
 				playerCollision.renderer.enabled = false;
 				StartCoroutine(wait(seconds, playerCollision));
-				deathfader = Instantiate(deathFader,playerCollision.transform.position,Quaternion.identity) as GameObject;
+				deathfader = Instantiate(deathFader,new Vector3(playerCollision.transform.position.x,playerCollision.transform.position.y,Camera.main.transform.position.z+1),Quaternion.identity) as GameObject;
 				Color tempColor = deathfader.GetComponent<MeshRenderer>().material.color;
 				tempColor.a = 0.0f;
 				deathfader.GetComponent<MeshRenderer>().material.color = tempColor;
