@@ -23,19 +23,19 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings:
@@ -44,6 +44,159 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: artemis_break_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_7
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_8
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_9
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_10
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_11
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_12
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_13
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_14
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_15
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: artemis_break_16
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 

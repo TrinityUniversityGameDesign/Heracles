@@ -48,65 +48,47 @@ TextureImporter:
     - name: artemis_vanish_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 44
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: artemis_vanish_1
       rect:
         serializedVersion: 2
-        x: 75
+        x: 63
         y: 0
-        width: 44
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: artemis_vanish_2
       rect:
         serializedVersion: 2
-        x: 138
+        x: 126
         y: 0
-        width: 44
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: artemis_vanish_3
       rect:
         serializedVersion: 2
-        x: 201
+        x: 189
         y: 0
-        width: 44
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: artemis_vanish_4
       rect:
         serializedVersion: 2
-        x: 259
+        x: 315
         y: 0
-        width: 50
-        height: 100
+        width: 63
+        height: 108
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: artemis_vanish_5
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 0
-        width: 44
-        height: 98
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: artemis_vanish_6
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 0
-        width: 48
-        height: 101
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 

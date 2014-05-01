@@ -17,13 +17,16 @@ public class BT_ObjGeneratorScript : MonoBehaviour {
 	//public Transform target; Original Script
 	private bool haveFiringSolution = false;
 	private bool directFire = true;
+	private bool auto = false;
 
 	// Update is called once per frame
 	void Update () {
-		if (genCooldown > 0f)
-			genCooldown -= Time.deltaTime;
-		else
-			Generate();
+		if (auto) {
+			if (genCooldown > 0f)
+				genCooldown -= Time.deltaTime;
+			else
+				Generate();
+		}
 	}
 
 	public void Generate() {

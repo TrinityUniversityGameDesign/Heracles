@@ -48,82 +48,82 @@ TextureImporter:
     - name: artemis_shoot_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 44
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 63
         y: 0
-        width: 53
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 126
         y: 0
-        width: 56
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_3
       rect:
         serializedVersion: 2
-        x: 191
+        x: 189
         y: 0
-        width: 56
-        height: 100
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_4
       rect:
         serializedVersion: 2
-        x: 254
+        x: 252
         y: 0
-        width: 54
-        height: 104
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_5
       rect:
         serializedVersion: 2
-        x: 317
+        x: 315
         y: 0
-        width: 54
-        height: 100
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_6
       rect:
         serializedVersion: 2
-        x: 380
+        x: 378
         y: 0
-        width: 55
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_7
       rect:
         serializedVersion: 2
-        x: 446
+        x: 441
         y: 0
-        width: 53
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: artemis_shoot_8
       rect:
         serializedVersion: 2
-        x: 516
+        x: 504
         y: 0
-        width: 44
-        height: 98
+        width: 63
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
