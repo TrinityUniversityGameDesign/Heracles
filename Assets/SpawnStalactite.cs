@@ -33,6 +33,10 @@ public class SpawnStalactite : MonoBehaviour {
 		timeLeft = timePer;
 	}
 
+	public void end() {
+		timeLeft = 0;
+	}
+
 	void spawnNew() {
 		sinceLast = 0;
 		GameObject newObj = Instantiate(stalacPrefab) as GameObject;

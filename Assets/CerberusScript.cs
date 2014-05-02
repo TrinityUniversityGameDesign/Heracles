@@ -163,6 +163,15 @@ public class CerberusScript : MonoBehaviour {
 		}
     }
 
+	public void returnToStart() {
+		transform.localScale = new Vector3 (6.5f, 6.5f, 0);
+		phase = 1;
+		for (int x = 0; x < 3; x++) {
+			heads[x].SetActive(true);
+			headScripts[x].active = true;
+		}
+	}
+
     void die()
     {
 		Destroy (this.gameObject);
