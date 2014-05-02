@@ -38,42 +38,44 @@ public class ShootingScript : MonoBehaviour
 
     void FixedUpdate()
     {
-		if (Input.GetButton ("Fire") && !player.CanShoot()) {
-			reset = true;
-			GetComponent<Animator>().SetBool("isShooting",false);
-		}
-		if (Input.GetButton ("Fire") && player.CanShoot())
-			reset = false;
-		if (Input.GetButton ("Fire") && player.CanShoot() && !reset) {
-			if (!bowPullLoop) {
-					audio.clip = bowPull;
-					audio.Play ();
-					bowPullLoop = true;
+		if (!player.BowDisabled()) {
+			if (Input.GetButton ("Fire") && !player.CanShoot()) {
+				reset = true;
+				GetComponent<Animator>().SetBool("isShooting",false);
 			}
-			if (shotStrength < maxShotStrength) {
-					shotStrength += 1f;
+			if (Input.GetButton ("Fire") && player.CanShoot())
+				reset = false;
+			if (Input.GetButton ("Fire") && player.CanShoot() && !reset) {
+				if (!bowPullLoop) {
+						audio.clip = bowPull;
+						audio.Play ();
+						bowPullLoop = true;
+				}
+				if (shotStrength < maxShotStrength) {
+						shotStrength += 1f;
+				}
+				direction = Input.mousePosition;
+				Vector3 direction3 = Camera.main.ScreenToWorldPoint (new Vector3 (direction.x, direction.y, 0));
+				if (direction3.x - transform.position.x > 0 && !player.IsFacingRight())
+					player.flipDirection();
+				else if (direction3.x - transform.position.x < 0 && player.IsFacingRight())
+					player.flipDirection();
+				direction = new Vector2 (direction3.x, direction3.y);
+				direction.x -= this.gameObject.transform.position.x;
+				direction.y -= this.gameObject.transform.position.y;
+				direction.Normalize ();
+				direction = direction * shotStrength / 35;
+				float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
+				traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
+			} else if (shotStrength > minShotStrength && player.IsGrounded() && player.CanShoot() && !reset) { 
+		        Attack ();
+			    shotStrength = 0;
 			}
-			direction = Input.mousePosition;
-			Vector3 direction3 = Camera.main.ScreenToWorldPoint (new Vector3 (direction.x, direction.y, 0));
-			if (direction3.x - transform.position.x > 0 && !player.IsFacingRight())
-				player.flipDirection();
-			else if (direction3.x - transform.position.x < 0 && player.IsFacingRight())
-				player.flipDirection();
-			direction = new Vector2 (direction3.x, direction3.y);
-			direction.x -= this.gameObject.transform.position.x;
-			direction.y -= this.gameObject.transform.position.y;
-			direction.Normalize ();
-			direction = direction * shotStrength / 35;
-			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
-			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
-		} else if (shotStrength > minShotStrength && player.IsGrounded() && player.CanShoot() && !reset) { 
-	        Attack ();
-		    shotStrength = 0;
+			else
+				shotStrength = 0;
+			if (Input.GetButtonUp("Fire") && !player.CanShoot())
+				reset = false;
 		}
-		else
-			shotStrength = 0;
-		if (Input.GetButtonUp("Fire") && !player.CanShoot())
-			reset = false;
     }
 
 	public bool DontShoot() {

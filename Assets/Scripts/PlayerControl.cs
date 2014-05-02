@@ -38,6 +38,7 @@ public class PlayerControl : MonoBehaviour {
 	private bool isShooting = false;
 	private bool isClimbing = false;
 	private float inputX;
+	private bool disableBow = false;
 	
 	public Component boxcollider;
 	
@@ -54,6 +55,8 @@ public class PlayerControl : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		bc = GetComponent<BoxCollider2D>();
 		speed = runSpeed;
+		if (GameObject.FindGameObjectsWithTag("ArtemisPoint").Length > 0)
+			disableBow = true;
 	}
 
 	void Start()
@@ -143,19 +146,21 @@ public class PlayerControl : MonoBehaviour {
 		inputX = Input.GetAxis (horizAxisName);
 		float vel = inputX * speed;
 		rigidbody2D.velocity = new Vector2 (vel, rigidbody2D.velocity.y);
-		
-		if (Input.GetButton("Fire") && grounded && inputX == 0) {
-			isShooting = true;
-			anim.SetBool("isShooting",isShooting);
-		}
-		if (!Input.GetButton("Fire") && isShooting && GetComponent<ShootingScript>().DontShoot()) {
-			isShooting = false;
-			anim.SetTrigger("doShoot");
-			anim.SetBool("isShooting",isShooting);
-		}
-		else if (!Input.GetButton("Fire") && isShooting) {
-			isShooting = false;
-			anim.SetBool("isShooting",isShooting);
+
+		if (!disableBow) {
+			if (Input.GetButton("Fire") && grounded && inputX == 0) {
+				isShooting = true;
+				anim.SetBool("isShooting",isShooting);
+			}
+			if (!Input.GetButton("Fire") && isShooting && GetComponent<ShootingScript>().DontShoot()) {
+				isShooting = false;
+				anim.SetTrigger("doShoot");
+				anim.SetBool("isShooting",isShooting);
+			}
+			else if (!Input.GetButton("Fire") && isShooting) {
+				isShooting = false;
+				anim.SetBool("isShooting",isShooting);
+			}
 		}
 		anim.SetFloat("Speed", Mathf.Abs(vel));
 		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
@@ -195,6 +200,10 @@ public class PlayerControl : MonoBehaviour {
 			return false;
 		else
 			return true;
+	}
+
+	public bool BowDisabled() {
+		return disableBow;
 	}
 
 	public bool IsClimbing() {
