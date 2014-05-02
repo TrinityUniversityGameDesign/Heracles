@@ -66,7 +66,7 @@ public class ShotScript : MonoBehaviour
 	if (soundEnabled) {
 		if (other.tag == "Lion") {
 	  		audio.PlayOneShot (lionHurt);
-		} else if(other.tag != "P1" && other.tag != "DeathArea") {
+		} else if(other.tag != "P1" && other.tag != "DeathArea" && other.tag != "Shot") {
 	  		audio.PlayOneShot (arrowHit1);
 		}
 	}
