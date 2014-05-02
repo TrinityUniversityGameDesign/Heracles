@@ -425,7 +425,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &12733997
 Animator:
   serializedVersion: 2
@@ -2048,7 +2047,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &66893653
 Animator:
   serializedVersion: 2
@@ -3136,7 +3134,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &87269843
 Animator:
   serializedVersion: 2
@@ -3596,7 +3593,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &102545885
 Animator:
   serializedVersion: 2
@@ -4116,7 +4112,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &109188789
 Animator:
   serializedVersion: 2
@@ -5753,7 +5748,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &148875160
 Animator:
   serializedVersion: 2
@@ -6262,7 +6256,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &154481607
 Animator:
   serializedVersion: 2
@@ -6642,7 +6635,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &158478995
 Animator:
   serializedVersion: 2
@@ -6841,7 +6833,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &158902322
 Animator:
   serializedVersion: 2
@@ -7844,7 +7835,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &192809665
 Animator:
   serializedVersion: 2
@@ -8978,7 +8968,7 @@ MonoBehaviour:
   numberOfLines: 5
   localx: 0
   localy: 18
-  message: That lever looks like you can shoot it.s
+  message: That lever looks like you can shoot it.
   oneUse: 0
 --- !u!61 &220024145
 BoxCollider2D:
@@ -10210,7 +10200,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &240613862
 Animator:
   serializedVersion: 2
@@ -12101,7 +12090,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &301293511
 Animator:
   serializedVersion: 2
@@ -12878,7 +12866,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &357021620
 Animator:
   serializedVersion: 2
@@ -20365,7 +20352,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &505204702
 Animator:
   serializedVersion: 2
@@ -21870,7 +21856,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &532937940
 Animator:
   serializedVersion: 2
@@ -22817,7 +22802,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &574135786
 Animator:
   serializedVersion: 2
@@ -23016,7 +23000,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &581010091
 Animator:
   serializedVersion: 2
@@ -23691,7 +23674,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &602938130
 Animator:
   serializedVersion: 2
@@ -25295,7 +25277,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &637235230
 Animator:
   serializedVersion: 2
@@ -25590,7 +25571,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &650232436
 Animator:
   serializedVersion: 2
@@ -29259,7 +29239,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &717132138
 Animator:
   serializedVersion: 2
@@ -31239,7 +31218,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &730486633
 Animator:
   serializedVersion: 2
@@ -32410,7 +32388,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &791704546
 Animator:
   serializedVersion: 2
@@ -32813,7 +32790,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &801791461
 Animator:
   serializedVersion: 2
@@ -33012,7 +32988,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &804192678
 Animator:
   serializedVersion: 2
@@ -34394,7 +34369,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &830401831
 Animator:
   serializedVersion: 2
@@ -34834,7 +34808,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &838360307
 Animator:
   serializedVersion: 2
@@ -35033,7 +35006,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &840383177
 Animator:
   serializedVersion: 2
@@ -35956,7 +35928,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &860802895
 Animator:
   serializedVersion: 2
@@ -36155,7 +36126,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &862402842
 Animator:
   serializedVersion: 2
@@ -37542,7 +37512,6 @@ MonoBehaviour:
   z: 0
   oneUse: 0
   triggeredByPlayer: 0
-  camShake: 0
 --- !u!1 &889693032
 GameObject:
   m_ObjectHideFlags: 0
@@ -37659,7 +37628,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &894547081
 Animator:
   serializedVersion: 2
@@ -38109,7 +38077,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &914532241
 Animator:
   serializedVersion: 2
@@ -38814,7 +38781,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &940062201
 Animator:
   serializedVersion: 2
@@ -39194,7 +39160,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &941058230
 Animator:
   serializedVersion: 2
@@ -39393,7 +39358,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &942832230
 Animator:
   serializedVersion: 2
@@ -40455,7 +40419,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 1
 --- !u!95 &971235618
 Animator:
   serializedVersion: 2
@@ -41943,7 +41906,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1007089624
 Animator:
   serializedVersion: 2
@@ -42142,7 +42104,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1007899376
 Animator:
   serializedVersion: 2
@@ -43647,7 +43608,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: message
-      value: That lever looks like you can shoot it.s
+      value: That lever looks like you can shoot it.
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0439ce2aea8b046189b48dd102683108, type: 2}
       propertyPath: localy
@@ -43729,7 +43690,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1044741015
 Animator:
   serializedVersion: 2
@@ -45518,7 +45478,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1084764307
 Animator:
   serializedVersion: 2
@@ -45985,7 +45944,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 1
 --- !u!95 &1089871366
 Animator:
   serializedVersion: 2
@@ -46413,7 +46371,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1097289460
 Animator:
   serializedVersion: 2
@@ -46880,7 +46837,7 @@ GUIText:
   m_GameObject: {fileID: 1101741528}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Number of Deaths 0
+  m_Text: Number of Deaths 1
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -46945,7 +46902,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1103833715
 Animator:
   serializedVersion: 2
@@ -47473,7 +47429,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1114990793
 Animator:
   serializedVersion: 2
@@ -48066,7 +48021,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1132793863
 Animator:
   serializedVersion: 2
@@ -48390,7 +48344,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1137532222
 Animator:
   serializedVersion: 2
@@ -51102,7 +51055,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1211557862
 Animator:
   serializedVersion: 2
@@ -51301,7 +51253,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1213315075
 Animator:
   serializedVersion: 2
@@ -51666,7 +51617,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1219501041
 Animator:
   serializedVersion: 2
@@ -54369,7 +54319,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1300338055
 Animator:
   serializedVersion: 2
@@ -54906,7 +54855,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1319569576
 Animator:
   serializedVersion: 2
@@ -55864,7 +55812,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1333253987
 Animator:
   serializedVersion: 2
@@ -59342,7 +59289,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1442829075
 Animator:
   serializedVersion: 2
@@ -59722,7 +59668,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1454895264
 Animator:
   serializedVersion: 2
@@ -59993,7 +59938,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1462207132
 Animator:
   serializedVersion: 2
@@ -61196,7 +61140,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1500394918
 Animator:
   serializedVersion: 2
@@ -63590,7 +63533,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1540194200
 Animator:
   serializedVersion: 2
@@ -64007,7 +63949,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1547786732
 Animator:
   serializedVersion: 2
@@ -64435,7 +64376,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1561395693
 Animator:
   serializedVersion: 2
@@ -67589,7 +67529,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1654233269
 Animator:
   serializedVersion: 2
@@ -68560,7 +68499,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1711410861
 Animator:
   serializedVersion: 2
@@ -68892,7 +68830,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1724868277
 Animator:
   serializedVersion: 2
@@ -69468,7 +69405,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1737317298
 Animator:
   serializedVersion: 2
@@ -71425,7 +71361,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1755634577
 Animator:
   serializedVersion: 2
@@ -71684,7 +71619,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1761025416
 Animator:
   serializedVersion: 2
@@ -74657,7 +74591,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1797691115
 Animator:
   serializedVersion: 2
@@ -76071,7 +76004,6 @@ MonoBehaviour:
   z: 0
   oneUse: 0
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!82 &1835979312
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76170,7 +76102,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1836222794
 Animator:
   serializedVersion: 2
@@ -77073,7 +77004,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &1872039861
 Animator:
   serializedVersion: 2
@@ -85917,7 +85847,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2045409085
 Animator:
   serializedVersion: 2
@@ -86542,7 +86471,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2060925550
 Animator:
   serializedVersion: 2
@@ -87379,7 +87307,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2074709876
 Animator:
   serializedVersion: 2
@@ -88143,7 +88070,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2102583088
 Animator:
   serializedVersion: 2
@@ -88624,7 +88550,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2112289886
 Animator:
   serializedVersion: 2
@@ -88823,7 +88748,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2112868901
 Animator:
   serializedVersion: 2
@@ -90274,7 +90198,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2144543633
 Animator:
   serializedVersion: 2
@@ -90473,7 +90396,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2145137460
 Animator:
   serializedVersion: 2
@@ -90672,7 +90594,6 @@ MonoBehaviour:
   z: 0
   oneUse: 1
   triggeredByPlayer: 1
-  camShake: 0
 --- !u!95 &2145894889
 Animator:
   serializedVersion: 2
