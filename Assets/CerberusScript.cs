@@ -181,7 +181,7 @@ public class CerberusScript : MonoBehaviour {
 	{
 		if (sprite.color == baseColor)
 		{
-			sprite.color = Color.red;
+			sprite.color = Color.yellow;
 		}
 		else
 		{

@@ -9,6 +9,12 @@ public class ArcFireball : MonoBehaviour {
 	void Start () {
 		
 	}
+
+	void FixedUpdate() {
+		if (!CerberusActivate.CerberusActive) {
+			Destroy(this.gameObject);
+		}
+	}
 	
 	// Update is called once per frame
 	public void Launch(float speed) {

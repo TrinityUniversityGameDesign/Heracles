@@ -17,12 +17,12 @@ public class CerberusActivate : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "P1" && !CerberusActive) {
 			Cerberus.SetActive(true);
-			Cerberus.GetComponent<CerberusScript>().returnToStart();
 			rocks.SetActive(true);
 			camera.player = bossCameraMarker;
 			camera.xMargin = 0;
 			camera.yMargin = 0;
 			CerberusActive = true;
+			Cerberus.GetComponent<CerberusScript>().returnToStart();
 		}
 	}
 }
