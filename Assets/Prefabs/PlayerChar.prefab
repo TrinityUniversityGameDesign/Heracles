@@ -261,7 +261,7 @@ MonoBehaviour:
   sounds: []
   jumpAS: {fileID: 0}
   footstepsAS: {fileID: 0}
-  jumpSound: {fileID: 8300000, guid: 5e8426cbabb794a0f9a2074a3ea7f74e, type: 3}
+  jumpSound: {fileID: 8300000, guid: 7c1a4663391e7164da7142dce04ca2d9, type: 3}
   footsteps: {fileID: 0}
   groundMask:
     serializedVersion: 2
