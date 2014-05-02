@@ -3017,7 +3017,7 @@ MonoBehaviour:
   ySmooth: 8
   maxXAndY: {x: 1000, y: 40}
   minXAndY: {x: -100, y: -40}
-  player: {fileID: 0}
+  player: {fileID: 892931555}
 --- !u!1001 &375559359
 Prefab:
   m_ObjectHideFlags: 0
