@@ -18,6 +18,8 @@ public class playerHealth : MonoBehaviour {
 			//Destroy (gameObject);
 			gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
 			currenthealth=maxHealth;
+			if (GameObject.FindGameObjectsWithTag("ArtemisPoint").Length <= 0)
+				GetComponent<GRE_PS_Checkpoint>().EnableDeathFade();
 		}
 	}
 

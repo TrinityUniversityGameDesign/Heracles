@@ -69,6 +69,10 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 	public Vector3 GetRespawnPos() {
 		return respawnPos;
 	}
+
+	public void EnableDeathFade() {
+		fade = true;
+	}
 	
 	IEnumerator wait(float seconds, Collider2D playerCollision) {
 		yield return new WaitForSeconds (seconds); 
