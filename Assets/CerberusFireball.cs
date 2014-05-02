@@ -18,6 +18,9 @@ public class CerberusFireball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (!CerberusActivate.CerberusActive) {
+			Destroy(this.gameObject);
+		}
 		if (!hitDest) {
 			moveToDestination();
 		} else {
