@@ -50,13 +50,13 @@ public class Artemismove : MonoBehaviour {
 	IEnumerator Shoot(float waitTime) {
 		yield return new WaitForSeconds(waitTime);
 		GetComponent<BT_ObjGeneratorScript>().Generate();
-		StartCoroutine(WaitAndTeleport(0.6f));
+		StartCoroutine(WaitAndTeleport(1f));
 	}
 
 	IEnumerator WaitAndTeleport(float waitTime) {
 		yield return new WaitForSeconds(waitTime);
 		anim.SetTrigger("doTeleport");
-		StartCoroutine(WaitAndMove(1f));
+		StartCoroutine(WaitAndMove(0.4f));
 	}
 
 	IEnumerator WaitAndMove(float waitTime) {
