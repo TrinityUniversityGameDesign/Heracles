@@ -26,6 +26,7 @@ public class ShootingScript : MonoBehaviour
 	public float maxShotStrength = 40;
 	public bool bowPullLoop = false;
 	private PlayerControl player;
+	private bool reset = false;
 
     void Start()
     {	
@@ -37,7 +38,13 @@ public class ShootingScript : MonoBehaviour
 
     void FixedUpdate()
     {
-		  if (Input.GetButton ("Fire") && player.CanShoot()) {
+		if (Input.GetButton ("Fire") && !player.CanShoot()) {
+			reset = true;
+			GetComponent<Animator>().SetBool("isShooting",false);
+		}
+		if (Input.GetButton ("Fire") && player.CanShoot())
+			reset = false;
+		if (Input.GetButton ("Fire") && player.CanShoot() && !reset) {
 			if (!bowPullLoop) {
 					audio.clip = bowPull;
 					audio.Play ();
@@ -59,12 +66,19 @@ public class ShootingScript : MonoBehaviour
 			direction = direction * shotStrength / 35;
 			float tempAngle = (Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg);
 			traj.SetTragectory (tempAngle, shotStrength+5); //Addison - added 5 to second parameter so that the trajectory doesn't start drawing from the floor.
-		} else if (shotStrength > minShotStrength && player.IsGrounded()) { 
+		} else if (shotStrength > minShotStrength && player.IsGrounded() && player.CanShoot() && !reset) { 
 	        Attack ();
 		    shotStrength = 0;
-		  }
-		else shotStrength = 0;
+		}
+		else
+			shotStrength = 0;
+		if (Input.GetButtonUp("Fire") && !player.CanShoot())
+			reset = false;
     }
+
+	public bool DontShoot() {
+		return reset;
+	}
 
     //--------------------------------
     // 3 - Shooting from another script

@@ -148,9 +148,13 @@ public class PlayerControl : MonoBehaviour {
 			isShooting = true;
 			anim.SetBool("isShooting",isShooting);
 		}
-		if (!Input.GetButton("Fire") && isShooting) {
+		if (!Input.GetButton("Fire") && isShooting && GetComponent<ShootingScript>().DontShoot()) {
 			isShooting = false;
 			anim.SetTrigger("doShoot");
+			anim.SetBool("isShooting",isShooting);
+		}
+		else if (!Input.GetButton("Fire") && isShooting) {
+			isShooting = false;
 			anim.SetBool("isShooting",isShooting);
 		}
 		anim.SetFloat("Speed", Mathf.Abs(vel));
