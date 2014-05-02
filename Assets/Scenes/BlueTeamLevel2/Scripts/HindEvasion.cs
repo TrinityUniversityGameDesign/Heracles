@@ -16,6 +16,7 @@ public class HindEvasion : MonoBehaviour {
 	private Vector2 currentPosition;
 	private GameObject deer;
 	private Rigidbody2D deerBody;
+	private BT_HealthScript playerHealth;
 
 	private void flip() 
 	{
@@ -131,13 +132,13 @@ public class HindEvasion : MonoBehaviour {
 		deerBody = deer.rigidbody2D;
 		anim = GetComponent<Animator> ();
 		anim.SetBool ("Grounded", true);
-
 		currentPlatform = startPlatform;
 		currentPosition = currentPlatform.transform.position;
-		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
-		
+		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;		
 		currentPosition.y += deer.renderer.bounds.extents.y;	
 		transform.position = currentPosition;
+
+		playerHealth = GameObject.FindGameObjectWithTag ("P1").GetComponent<BT_HealthScript> ();
 	}
 	
 	// Update is called once per frame
@@ -159,5 +160,15 @@ public class HindEvasion : MonoBehaviour {
 		anim.SetFloat("vSpeed", deerBody.velocity.y);
 		anim.SetFloat("Speed", deerBody.velocity.x);
 		//anim.SetBool("Grounded",grounded);
+		if (playerHealth.GetHealth() <= 0)
+		{
+			anim.SetBool ("Grounded", true);
+			currentPlatform = startPlatform;
+			currentPosition = currentPlatform.transform.position;
+			adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;		
+			currentPosition.y += deer.renderer.bounds.extents.y;	
+			transform.position = currentPosition;
+			GetComponent<BT_HealthScript>().ResetHealth();
+		}
 	}
 }

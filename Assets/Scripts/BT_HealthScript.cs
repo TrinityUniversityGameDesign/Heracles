@@ -39,6 +39,10 @@ public class BT_HealthScript : MonoBehaviour {
 		return currentHealth;
 	}
 
+	public void ResetHealth() {
+		currentHealth = healthPhases [currentPhase];
+	}
+
 	// Returns the current phase
 	public int GetPhase() {
 		return currentPhase;
@@ -46,11 +50,17 @@ public class BT_HealthScript : MonoBehaviour {
 
 	// Called when out of phases and health
 	void DoDie() {
-		if (!isInvincible)
-			Destroy(this.gameObject);
 		if (gameObject.tag == "P1") {
-			transform.position = GameObject.FindGameObjectWithTag("DeathArea").GetComponent<GRE_PS_Checkpoint>().GetRespawnPos();
-			GameObject.FindGameObjectWithTag("P1").GetComponent<DeathCount>().deathCount += 1;
+			transform.position = GetComponent<PlayerControl>().resetPosition;
+			//transform.position = GameObject.FindGameObjectWithTag("DeathArea").GetComponent<GRE_PS_Checkpoint>().GetRespawnPos();
+			GetComponent<DeathCount>().deathCount += 1;
+			currentPhase = 0;
+			ResetHealth();
+		}
+		else 
+		{
+			if (!isInvincible)
+			Destroy(this.gameObject);
 		}
 	}
 
