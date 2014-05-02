@@ -20,14 +20,14 @@ public class TransportTo : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-
 		}
 
 		void OnTriggerEnter2D (Collider2D other)
-		{
+	{
 				if (!used) {
 						if (triggeredByPlayer) {
 								if (other.tag == "P1") {
+					shake();
 										p.transform.position = new Vector3 (x, y, z);
 										c.transform.position = new Vector3 (x, y, z - 63f);
 										Camera.main.GetComponent<CameraFollow> ().SetTarget (p.transform);
@@ -35,6 +35,7 @@ public class TransportTo : MonoBehaviour
 												used = true;
 								}
 						} else if (other.CompareTag ("Shot")) {
+				shake ();
 								p.transform.position = new Vector3 (x, y, z);
 								c.transform.position = new Vector3 (x, y, z - 63f);
 								Camera.main.GetComponent<CameraFollow> ().SetTarget (p.transform);
@@ -44,4 +45,11 @@ public class TransportTo : MonoBehaviour
 						}
 				}
 		}
+
+	void shake() {
+		GameObject cam = GameObject.FindGameObjectWithTag ("MainCamera");
+		iTween.ShakePosition (cam, new Vector3 (3, 3, 0), 2f);
+
+	}
+
 }
