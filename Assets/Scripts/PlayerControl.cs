@@ -83,9 +83,11 @@ public class PlayerControl : MonoBehaviour {
 		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, groundMask);
 		
 		bool jump = Input.GetButtonDown (jumpAxisName);
+		if (jump && grounded) {
+			jumpAS.PlayOneShot (jumpSound);
+		}
 		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
-			jumpAS.PlayOneShot (jumpSound);
 		}
 		if (grounded && Input.GetAxis (horizAxisName) > 0) {
 			if (!footstepsAS.isPlaying) {
