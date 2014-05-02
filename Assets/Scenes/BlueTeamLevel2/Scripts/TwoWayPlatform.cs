@@ -23,7 +23,8 @@ public class TwoWayPlatform : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (AllowDown && Input.GetButton("Down") && colliding) {
+		float crouch = Input.GetAxis ("Vertical");
+		if (AllowDown && (crouch < 0f) && colliding) {
 			GetComponents<BoxCollider2D>()[0].enabled = false;
 			if (!AllowUp)
 				GetComponents<BoxCollider2D>()[1].isTrigger = true;
