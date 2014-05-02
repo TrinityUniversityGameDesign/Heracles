@@ -1748,6 +1748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   genRate: 4
   genCooldown: 5
+  deathFader: {fileID: 100000, guid: b89cf546f187d4b5c83cb122ec116d8e, type: 2}
 --- !u!4 &997185872
 Transform:
   m_ObjectHideFlags: 0
@@ -2397,7 +2398,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1300335222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.6300516, y: 23.6388378, z: 0}
+  m_LocalPosition: {x: -13.8000002, y: 23.6388378, z: 0}
   m_LocalScale: {x: 1, y: 15.9979229, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3178,7 +3179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1717072646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.3574467, y: 22.9867268, z: 0}
+  m_LocalPosition: {x: 12.5, y: 22.9867268, z: 0}
   m_LocalScale: {x: 1, y: 15.5175781, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

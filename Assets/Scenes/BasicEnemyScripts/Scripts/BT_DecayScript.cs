@@ -14,4 +14,8 @@ public class BT_DecayScript : MonoBehaviour {
 		if (doDecay)
 			Destroy (this.gameObject, destroyAfter);
 	}
+
+	public void DecayNow(float time) {
+		Destroy(this.gameObject, time);
+	}
 }

@@ -13,6 +13,11 @@ public class Artemismove : MonoBehaviour {
 	private GameObject hind;
 	private bool canShoot = true;
 
+	public GameObject deathFader;
+	private GameObject deathfader;
+	private bool fade = false;
+	private bool check = false;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -23,9 +28,18 @@ public class Artemismove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (GameObject.FindGameObjectsWithTag("P1").Length == 0) {
-			canShoot = false;
-			anim.SetBool("playerDead",true);
-			rigidbody2D.gravityScale = 0.5f;
+			if (!check) {
+				canShoot = false;
+				anim.SetBool("playerDead",true);
+				rigidbody2D.gravityScale = 0.5f;
+				deathfader = Instantiate(deathFader,new Vector3(0f,14f,Camera.main.transform.position.z+1),Quaternion.identity) as GameObject;
+				deathfader.GetComponent<BT_DecayScript>().DecayNow(2f);
+				Color tempColor = deathfader.GetComponent<MeshRenderer>().material.color;
+				tempColor.a = 0.0f;
+				deathfader.GetComponent<MeshRenderer>().material.color = tempColor;
+				fade = true;
+				check = true;
+			}
 		}
 		if (canShoot) {
 			if (GameObject.FindGameObjectWithTag("P1").transform.position.x < transform.position.x && facingRight)
@@ -37,6 +51,11 @@ public class Artemismove : MonoBehaviour {
 			if (hind.GetComponent<BT_HealthScript>().GetHealth() < 3)
 				difficultyMod = 2f;
 		}
+		if (fade) {
+			Color tempColor = deathfader.GetComponent<MeshRenderer>().material.color;
+			tempColor.a += 0.009f;
+			deathfader.GetComponent<MeshRenderer>().material.color = tempColor;
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
@@ -45,6 +64,7 @@ public class Artemismove : MonoBehaviour {
 			rigidbody2D.velocity = Vector3.zero;
 			anim.SetBool("grounded",true);
 			rigidbody2D.gravityScale = 0f;
+			StartCoroutine(RestartLevel(2f));
 		}
 	}
 
@@ -99,5 +119,10 @@ public class Artemismove : MonoBehaviour {
 			MoveArtemis();
 			StartCoroutine(WaitAndShoot(2.6f/difficultyMod));
 		}
+	}
+
+	IEnumerator RestartLevel(float waitTime) {
+		yield return new WaitForSeconds(waitTime);
+		Application.LoadLevel("GWBoss");
 	}
 }

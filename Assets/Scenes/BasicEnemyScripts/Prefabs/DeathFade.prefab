@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc432cad790934b21b998850ebde1beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doDecay: 1
+  doDecay: 0
   destroyAfter: 1.39999998
 --- !u!198 &19800000
 ParticleSystem:
