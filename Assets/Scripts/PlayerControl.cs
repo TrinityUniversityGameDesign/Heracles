@@ -98,8 +98,9 @@ public class PlayerControl : MonoBehaviour {
 			footstepsAS.Stop ();
 		}
 		crouch = Input.GetAxis ("Vertical");
+		anim.SetFloat ("vertAxis", crouch);
 		//if (crouch != -1f) crouch = 0f;
-		if (crouch < 0) {
+		if (crouch < -0.5) {
 			if (!isCrouched) {
 				anim.SetBool("Crouch",true);
 				isCrouched = true;

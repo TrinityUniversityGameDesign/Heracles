@@ -16,8 +16,9 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 	private bool fade = false;
 	
 	void Start() {
-		if (gameObject.tag == "Checkpoint")
-			particleSystem.enableEmission = false;
+		if (gameObject.tag == "Checkpoint") {
+			gameObject.GetComponentInChildren<ParticleSystem>().enableEmission = false;
+		}
 		death = GameObject.FindGameObjectWithTag("P1").GetComponent<DeathCount>();
 		if (seconds == 0) {
 			seconds = 1.4f;		
@@ -53,9 +54,16 @@ public class GRE_PS_Checkpoint : MonoBehaviour {
 			{
 				respawnPos = playerCollision.transform.position; //Not resetting global variable
 				GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
-				foreach (GameObject checkpoint in checkpoints)
-					checkpoint.gameObject.particleSystem.enableEmission = false;
-				particleSystem.enableEmission = true;
+				ParticleSystem ps;
+				foreach (GameObject checkpoint in checkpoints) {
+					ps = checkpoint.GetComponentInChildren<ParticleSystem>();
+					Debug.Log(ps);
+					ps.enableEmission = false;
+					//checkpoint.gameObject.particleSystem.enableEmission = false;
+				}
+				ps = GetComponentInChildren<ParticleSystem>();
+				ps.enableEmission = true;
+				//particleSystem.enableEmission = true;
 			}
 			
 		}
