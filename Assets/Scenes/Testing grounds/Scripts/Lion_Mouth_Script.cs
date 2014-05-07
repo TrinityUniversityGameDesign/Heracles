@@ -10,12 +10,14 @@ public class Lion_Mouth_Script : MonoBehaviour {
 	public float flee_increase = .5f; 
 	Animator anim;
 
+	private BossHealthScript BHScript;
 
 
 	// Use this for initialization
 	void Start () {
 		Lion = GameObject.FindWithTag("Lion");
 		Lion_Script = Lion.GetComponent<BossLionBehavior> (); 
+		BHScript = Lion.GetComponent<BossHealthScript> ();
 	}
 	
 	// Update is called once per frame
@@ -32,6 +34,7 @@ public class Lion_Mouth_Script : MonoBehaviour {
 				Lion.rigidbody2D.AddForce( new Vector2( -1 * hit_power, 0));
 
 			Lion_Script.HP -= 1;
+			BHScript.currenthealth -= 1; 
 			Lion_Script.fleeing = true;
 			Lion_Script.flee_time += flee_increase; 
 
