@@ -30,9 +30,9 @@ public class BossHealthScript : MonoBehaviour {
 	void OnGUI() {
 		
 		//TODO save pos as var, make ifs into loop
-		if(currenthealth>=1) GUI.DrawTexture (new Rect(750,20,50,25), heart, ScaleMode.ScaleToFit);
-		if(currenthealth>=2) GUI.DrawTexture (new Rect(800,20,50,25), heart, ScaleMode.ScaleToFit);
-		if(currenthealth>=3) GUI.DrawTexture (new Rect(850,20,50,25), heart, ScaleMode.ScaleToFit);
+		if(currenthealth>=1) GUI.DrawTexture (new Rect(30,50,50,25), heart, ScaleMode.ScaleToFit);
+		if(currenthealth>=2) GUI.DrawTexture (new Rect(80,50,50,25), heart, ScaleMode.ScaleToFit);
+		if(currenthealth>=3) GUI.DrawTexture (new Rect(130,50,50,25), heart, ScaleMode.ScaleToFit);
 	}
 	
 	// Update is called once per frame
