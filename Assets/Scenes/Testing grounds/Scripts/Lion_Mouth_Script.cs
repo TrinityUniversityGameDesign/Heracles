@@ -5,6 +5,7 @@ public class Lion_Mouth_Script : MonoBehaviour {
 	private GameObject shot;
 	private GameObject Lion;
 	private BossLionBehavior Lion_Script;
+	public AudioClip lionroar;
 
 	public float hit_power = 9999f;
 	public float flee_increase = .5f; 
@@ -34,8 +35,10 @@ public class Lion_Mouth_Script : MonoBehaviour {
 				Lion.rigidbody2D.AddForce( new Vector2( -1 * hit_power, 0));
 
 			Lion_Script.HP -= 1;
-			BHScript.currenthealth -= 1; 
+			BHScript.currenthealth -= 1;
+			Lion.audio.PlayOneShot (lionroar);
 			Lion_Script.fleeing = true;
+
 			Lion_Script.flee_time += flee_increase; 
 
 			gameObject.active = false;

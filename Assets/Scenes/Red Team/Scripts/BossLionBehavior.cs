@@ -18,6 +18,7 @@ public class BossLionBehavior : MonoBehaviour {
 	
 	private GameObject mouth;
 	private GameObject player;
+	private playerHealth playerhealth;
 	Animator anim;
 
 	private bool stun = false;
@@ -27,6 +28,7 @@ public class BossLionBehavior : MonoBehaviour {
 		player = GameObject.FindWithTag ("P1");
 		mouth.active = false;
 		anim = GetComponent<Animator> ();
+		playerhealth = player.GetComponent<playerHealth>();
 	}
 
 	IEnumerator hitDelay(){
@@ -39,10 +41,13 @@ public class BossLionBehavior : MonoBehaviour {
 			if( player.transform.position.x > gameObject.transform.position.x){
 				temp.x += .3f;
 				player.rigidbody2D.AddForce( new Vector2 (attack_ko_power , 350f));
+				playerhealth.damagePlayer(1);
+
 			}
 			else {
 				player.rigidbody2D.AddForce( new Vector2 (-1 * attack_ko_power , 350f));
 				temp.x -=.3f;
+				playerhealth.damagePlayer(1);
 			}
 
 			player.transform.position = temp; 
