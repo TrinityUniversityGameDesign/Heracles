@@ -50,36 +50,36 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 13
-      alignment: 0
+        width: 57
+        height: 38
+      alignment: 4
       pivot: {x: 0, y: 0}
     - name: PlayerHealth_Sheet_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 57
         y: 0
-        width: 64
-        height: 13
-      alignment: 0
+        width: 57
+        height: 38
+      alignment: 4
       pivot: {x: 0, y: 0}
     - name: PlayerHealth_Sheet_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 114
         y: 0
-        width: 64
-        height: 13
-      alignment: 0
+        width: 57
+        height: 38
+      alignment: 4
       pivot: {x: 0, y: 0}
     - name: PlayerHealth_Sheet_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 171
         y: 0
-        width: 64
-        height: 13
-      alignment: 0
+        width: 57
+        height: 38
+      alignment: 4
       pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
