@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d23ec266bae61447afe0ec9d51dc866
+guid: 0e2cc2fc708b21247b244df38c312a33
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -30,7 +30,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,42 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: PlayerHealth_Sheet2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: PlayerHealth_Sheet2_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: PlayerHealth_Sheet2_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: PlayerHealth_Sheet2_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
