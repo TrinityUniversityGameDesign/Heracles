@@ -17456,9 +17456,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 433777483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d67d80c1a699164da38d7ea01531563, type: 3}
+  m_Script: {fileID: 11500000, guid: 5763760a9aba30a4a82dfbdcb0d9829f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cerberus: {fileID: 1086059957}
+  rocks: {fileID: 206035169}
+  camera: {fileID: 1532150637}
+  bossCameraMarker: {fileID: 1416354144}
 --- !u!1 &434974564
 GameObject:
   m_ObjectHideFlags: 0
@@ -18856,7 +18860,7 @@ Transform:
   m_PrefabInternal: {fileID: 1526305732}
   m_GameObject: {fileID: 465665118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.3073959, y: 1.02488995, z: 0}
+  m_LocalPosition: {x: -49.2297287, y: 1.66600037, z: 0}
   m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
   m_Children:
   - {fileID: 1402442912}
@@ -19202,6 +19206,9 @@ MonoBehaviour:
   maxHealth: 2
   currenthealth: 2
   heart: {fileID: 2800000, guid: 1bb7d6f85e6fefd4798d6d373d9ff487, type: 3}
+  healthEnd: {fileID: 0}
+  healthMiddle: {fileID: 0}
+  healthStart: {fileID: 0}
 --- !u!114 &465665134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19217,6 +19224,9 @@ MonoBehaviour:
   maxHealth: 2
   currenthealth: 2
   heart: {fileID: 2800000, guid: 1bb7d6f85e6fefd4798d6d373d9ff487, type: 3}
+  healthEnd: {fileID: 0}
+  healthMiddle: {fileID: 0}
+  healthStart: {fileID: 0}
 --- !u!81 &465665135
 AudioListener:
   m_ObjectHideFlags: 0
@@ -55000,11 +55010,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.3073959
+      value: -49.2297287
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.02488995
+      value: 1.66600037
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -57986,7 +57996,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -19.9704876
+      value: -19.9223175
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 33b7c54a9e9a64a2baa9c17c51c048d8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -71837,7 +71847,7 @@ Transform:
   m_PrefabInternal: {fileID: 1615960062}
   m_GameObject: {fileID: 1992021257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.9704876, y: -59.353302, z: 1.60739899}
+  m_LocalPosition: {x: -19.9223175, y: -59.353302, z: 1.60739899}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 1866925480}
@@ -72927,9 +72937,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1992021257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f9a5649c1f51b43aea7f809c0479e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ee8cee1049f18c489249e5277783c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cerberus: {fileID: 1086059957}
+  rocks: {fileID: 206035169}
+  camera: {fileID: 1532150637}
+  stalactiteSpawning: {fileID: 2113268480}
 --- !u!1 &1992813901
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class CerberusScript : MonoBehaviour {
 	public GameObject spawner;
 	private SpawnStalactite spawnScript;
 	public GameObject shockwave;
+	private bool firstStrike;
 	// Use this for initialization
 	void Start () {
         timer = 0;
@@ -27,6 +28,7 @@ public class CerberusScript : MonoBehaviour {
 		attacking = false;
 		up = false;
 		charging = false;
+		firstStrike = true;
 		charge = 0;
         headScripts = new HeadScript[3];
 		baseColor = sprite.color;
@@ -74,7 +76,12 @@ public class CerberusScript : MonoBehaviour {
 				timer = 0;
 				//bool done = false;
 				int head = -1;
-				head = (int)Random.Range (0, 4);
+				if(firstStrike) {
+					firstStrike = false;
+					head = 3;
+				} else {
+					head = (int)Random.Range (0, 4);
+				}
 				if (head == 3) { //not one of the heads
 					charging = true;
 				} else {
@@ -147,6 +154,7 @@ public class CerberusScript : MonoBehaviour {
     {
 		transform.localScale = new Vector3 (0.75f * transform.localScale.x, 0.75f * transform.localScale.y, 0);
 		phase = 2;
+		firstStrike = true;
 		for (int x = 0; x < 3; x++) {
 			heads[x].SetActive(true);
 			headScripts[x].active = true;
@@ -157,6 +165,7 @@ public class CerberusScript : MonoBehaviour {
     {
 		transform.localScale = new Vector3 (0.75f * transform.localScale.x, 0.75f * transform.localScale.y, 0);
 		phase = 3;
+		firstStrike = true;
 		for (int x = 0; x < 3; x++) {
 			heads[x].SetActive(true);
 			headScripts[x].active = true;
@@ -166,6 +175,7 @@ public class CerberusScript : MonoBehaviour {
 	public void returnToStart() {
 		transform.localScale = new Vector3 (6.5f, 6.5f, 0);
 		phase = 1;
+		firstStrike = true;
 		for (int x = 0; x < 3; x++) {
 			heads[x].SetActive(true);
 			headScripts[x].active = true;
