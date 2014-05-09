@@ -9,8 +9,6 @@ public class ShotScript : MonoBehaviour
   public AudioClip arrowShoot1;
   public AudioClip arrowShoot2;
   public AudioClip arrowHit1;
-  public AudioClip arrowHit2;
-  public AudioClip arrowHit3;
   public AudioClip lionHurt;
   public bool soundEnabled = true;
   private Transform target;
@@ -18,6 +16,10 @@ public class ShotScript : MonoBehaviour
   private float yOffset;
   private bool doFollow = false;
   private bool set = false;
+  bool hitOnce = false;
+  GameObject player;
+  bool arrowInXBounds;
+  bool arrowInYBounds;
   // 1 - Designer variables
 
   /// <summary>
@@ -52,6 +54,7 @@ public class ShotScript : MonoBehaviour
 
   void Start()
   {
+	player = GameObject.FindWithTag ("P1");
 	float randomNum = Random.Range (1, 100);
 	if (randomNum < 50) {
 	  audio.PlayOneShot (arrowShoot1);
@@ -66,8 +69,12 @@ public class ShotScript : MonoBehaviour
 	if (soundEnabled) {
 		/*if (other.tag == "Lion") {
 	  		audio.PlayOneShot (lionHurt);
-		} else */ if(this.rigidbody2D.velocity == new Vector2(0,0)) {
-	  		audio.PlayOneShot (arrowHit1);
+		} else */ 
+		arrowInXBounds = (((this.transform.position.x - player.transform.position.x) < 20) || ((this.transform.position.x - player.transform.position.x) > -20)); 
+		arrowInYBounds = (((this.transform.position.y - player.transform.position.y) < 20) || ((this.transform.position.y - player.transform.position.y) > -20)); 
+		if((this.rigidbody2D.velocity == new Vector2(0,0)) && !hitOnce && arrowInXBounds && arrowInYBounds) {
+	  	  audio.PlayOneShot (arrowHit1);
+		  hitOnce = true;
 		}
 	}
  }
