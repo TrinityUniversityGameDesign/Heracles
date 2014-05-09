@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
-  - 82: {fileID: 8200000}
   - 114: {fileID: 11400004}
   - 120: {fileID: 12000000}
   - 82: {fileID: 8200002}
@@ -23,6 +22,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   - 81: {fileID: 8100000}
+  - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: P1
@@ -52,8 +52,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.4528513, y: -4.50935221, z: 0}
-  m_LocalScale: {x: 1.85000002, y: 1.85000002, z: 1}
+  m_LocalPosition: {x: -103.477554, y: 1.04283655, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -126,8 +126,8 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 221
-  DopplerLevel: 0
+  Priority: 128
+  DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -178,9 +178,9 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 7c1a4663391e7164da7142dce04ca2d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 64db11f1ff8f73b4f8e6baf9b03a3b1e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -258,11 +258,7 @@ MonoBehaviour:
   crouchSpeed: 3
   paused: 0
   groundCheck: {fileID: 400002}
-  sounds: []
-  jumpAS: {fileID: 0}
-  footstepsAS: {fileID: 0}
-  jumpSound: {fileID: 8300000, guid: 7c1a4663391e7164da7142dce04ca2d9, type: 3}
-  footsteps: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: 64db11f1ff8f73b4f8e6baf9b03a3b1e, type: 3}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
