@@ -12,12 +12,12 @@ public class ShotScript : MonoBehaviour
   public AudioClip arrowHit2;
   public AudioClip arrowHit3;
   public AudioClip lionHurt;
-	public bool soundEnabled = true;
-	private Transform target;
-	private float xOffset;
-	private float yOffset;
-	private bool doFollow = false;
-	private bool set = false;
+  public bool soundEnabled = true;
+  private Transform target;
+  private float xOffset;
+  private float yOffset;
+  private bool doFollow = false;
+  private bool set = false;
   // 1 - Designer variables
 
   /// <summary>
@@ -59,14 +59,14 @@ public class ShotScript : MonoBehaviour
 	  audio.PlayOneShot (arrowShoot2);
 	}
     // 2 - Limited time to live to avoid any leak
-    Destroy(gameObject, 20); // 20sec
+    Destroy(gameObject, 6); // 20sec
   }
   void OnTriggerEnter2D (Collider2D other) 
   {
 	if (soundEnabled) {
 		/*if (other.tag == "Lion") {
 	  		audio.PlayOneShot (lionHurt);
-		} else */ if(other.tag != "P1" && other.tag != "DeathArea" && other.tag != "Shot") {
+		} else */ if(this.rigidbody2D.velocity == new Vector2(0,0)) {
 	  		audio.PlayOneShot (arrowHit1);
 		}
 	}
