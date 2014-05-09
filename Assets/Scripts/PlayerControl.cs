@@ -20,11 +20,9 @@ public class PlayerControl : MonoBehaviour {
 	float groundRadius = 0.3f;
 	bool grounded = false;
 	bool groundedLoop = false;
-	public AudioSource[] sounds;
-	public AudioSource jumpAS;
-	public AudioSource footstepsAS;
+	AudioSource[] sounds;
+	AudioSource jumpAS;
 	public AudioClip jumpSound;
-	public AudioClip footsteps;
 	public LayerMask groundMask;
 	public float jumpPower;
 	public string horizAxisName = "Horizontal";
@@ -63,7 +61,6 @@ public class PlayerControl : MonoBehaviour {
 	{
 		sounds = GetComponents<AudioSource>();
 		jumpAS = sounds[0];
-		footstepsAS = sounds[1];
 	}
 	
 	// Update is called once per frame
@@ -88,14 +85,6 @@ public class PlayerControl : MonoBehaviour {
 		}
 		if (jump && grounded && Input.GetAxis(jumpAxisName)>0) {
 			rigidbody2D.AddForce (new Vector2 (0, jumpPower));
-		}
-		if (grounded && Input.GetAxis (horizAxisName) > 0) {
-			if (!footstepsAS.isPlaying) {
-				footstepsAS.clip = footsteps;
-				footstepsAS.Play ();
-			}
-		} else if (footstepsAS.isPlaying) {
-			footstepsAS.Stop ();
 		}
 		crouch = Input.GetAxis ("Vertical");
 		anim.SetFloat ("vertAxis", crouch);
