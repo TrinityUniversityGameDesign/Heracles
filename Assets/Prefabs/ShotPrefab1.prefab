@@ -16,8 +16,6 @@ GameObject:
   - 82: {fileID: 8200002}
   - 82: {fileID: 8200004}
   - 82: {fileID: 8200000}
-  - 82: {fileID: 8200006}
-  - 82: {fileID: 8200008}
   - 82: {fileID: 8200010}
   - 58: {fileID: 5800000}
   m_Layer: 0
@@ -75,45 +73,30 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 791e5ff4611ce4146bc406e7708d0b6d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: .5
   Loop: 0
   Mute: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .100000001
+    - time: .0500000007
       value: 1
-      inSlope: -10.0039835
-      outSlope: -10.0039835
+      inSlope: 0
+      outSlope: -1.05263162
       tangentMode: 0
-    - time: .200000003
-      value: .5
-      inSlope: -2.50099587
-      outSlope: -2.50099587
-      tangentMode: 0
-    - time: .400000006
-      value: .25
-      inSlope: -.625248969
-      outSlope: -.625248969
-      tangentMode: 0
-    - time: .800000012
-      value: .125
-      inSlope: -.156312242
-      outSlope: -.156312242
-      tangentMode: 0
-    - time: .995575249
+    - time: .741721869
       value: 0
-      inSlope: -.100039922
-      outSlope: -.100039922
+      inSlope: -1.05263162
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -131,7 +114,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0
+      value: .537222207
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -153,10 +136,10 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 10
+  MinDistance: 0
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -283,152 +266,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!82 &8200006
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: f54daac27be15dd4fa91f0f65b5f7cfd, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 10
-  Pan2D: 0
-  rolloffMode: 2
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: .100000001
-      value: 1
-      inSlope: -10.0039835
-      outSlope: -10.0039835
-      tangentMode: 0
-    - time: .200000003
-      value: .5
-      inSlope: -2.50099587
-      outSlope: -2.50099587
-      tangentMode: 0
-    - time: .400000006
-      value: .25
-      inSlope: -.625248969
-      outSlope: -.625248969
-      tangentMode: 0
-    - time: .800000012
-      value: .125
-      inSlope: -.156312242
-      outSlope: -.156312242
-      tangentMode: 0
-    - time: .977876127
-      value: 0
-      inSlope: -.100039922
-      outSlope: -.100039922
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!82 &8200008
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: b7ec107e117b6c549aaa9ea05ef176a2, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 10
-  Pan2D: 0
-  rolloffMode: 2
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: .100000001
-      value: 1
-      inSlope: -10.0039835
-      outSlope: -10.0039835
-      tangentMode: 0
-    - time: .200000003
-      value: .5
-      inSlope: -2.50099587
-      outSlope: -2.50099587
-      tangentMode: 0
-    - time: .400000006
-      value: .25
-      inSlope: -.625248969
-      outSlope: -.625248969
-      tangentMode: 0
-    - time: .800000012
-      value: .125
-      inSlope: -.156312242
-      outSlope: -.156312242
-      tangentMode: 0
-    - time: .991150439
-      value: 0
-      inSlope: -.100039922
-      outSlope: -.100039922
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!82 &8200010
 AudioSource:
   m_ObjectHideFlags: 1
@@ -516,8 +353,6 @@ MonoBehaviour:
   arrowShoot1: {fileID: 8300000, guid: ee6774bd8b054314ba62e544475d19d1, type: 3}
   arrowShoot2: {fileID: 8300000, guid: f4f9b1383fac54943b1fcf40520586dc, type: 3}
   arrowHit1: {fileID: 8300000, guid: 791e5ff4611ce4146bc406e7708d0b6d, type: 3}
-  arrowHit2: {fileID: 8300000, guid: f54daac27be15dd4fa91f0f65b5f7cfd, type: 3}
-  arrowHit3: {fileID: 8300000, guid: b7ec107e117b6c549aaa9ea05ef176a2, type: 3}
   lionHurt: {fileID: 8300000, guid: c84365bec4c1e444496ebe8d572d5d78, type: 3}
   soundEnabled: 1
   damage: 1

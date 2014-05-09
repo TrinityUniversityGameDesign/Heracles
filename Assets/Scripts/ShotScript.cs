@@ -18,8 +18,7 @@ public class ShotScript : MonoBehaviour
   private bool set = false;
   bool hitOnce = false;
   GameObject player;
-  bool arrowInXBounds;
-  bool arrowInYBounds;
+  float arrowDistance;
   // 1 - Designer variables
 
   /// <summary>
@@ -43,6 +42,8 @@ public class ShotScript : MonoBehaviour
 		if (doFollow) {
 			transform.position = new Vector3(target.position.x+xOffset,target.position.y+yOffset,transform.position.z);
 		}
+		arrowDistance = Vector3.Distance(this.transform.position,player.transform.position);
+		
 	}
 
 	public void TrackObject(Transform followThis) {
@@ -70,9 +71,7 @@ public class ShotScript : MonoBehaviour
 		/*if (other.tag == "Lion") {
 	  		audio.PlayOneShot (lionHurt);
 		} else */ 
-		arrowInXBounds = (((this.transform.position.x - player.transform.position.x) < 20) || ((this.transform.position.x - player.transform.position.x) > -20)); 
-		arrowInYBounds = (((this.transform.position.y - player.transform.position.y) < 20) || ((this.transform.position.y - player.transform.position.y) > -20)); 
-		if((this.rigidbody2D.velocity == new Vector2(0,0)) && !hitOnce && arrowInXBounds && arrowInYBounds) {
+		if((this.rigidbody2D.velocity == new Vector2(0,0)) && !hitOnce && (arrowDistance<20)) {
 	  	  audio.PlayOneShot (arrowHit1);
 		  hitOnce = true;
 		}
