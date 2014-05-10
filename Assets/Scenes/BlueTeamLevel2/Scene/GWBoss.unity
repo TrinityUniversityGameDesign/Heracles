@@ -3096,7 +3096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthIcon: {fileID: 2800000, guid: 41257f813fad940ca8cbcb295caa4437, type: 3}
-  xStart: 650
+  xStart: 1175
   yStart: 20
   flip: 1
 --- !u!1001 &1654604954
