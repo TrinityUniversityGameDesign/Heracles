@@ -18860,7 +18860,7 @@ Transform:
   m_PrefabInternal: {fileID: 1526305732}
   m_GameObject: {fileID: 465665118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.2297287, y: 1.66600037, z: 0}
+  m_LocalPosition: {x: -48.6474533, y: 1.08371735, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1402442912}
@@ -40799,7 +40799,7 @@ MonoBehaviour:
   - {fileID: 1744929412}
   - {fileID: 1378403799}
   - {fileID: 833545642}
-  sceneChanger: {fileID: 0}
+  sceneChanger: {fileID: 1842678186}
   pos: {fileID: 1086059959}
   attackTime: 100
   jumpChargeMax: 75
@@ -55005,11 +55005,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49.2297287
+      value: -48.6474533
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.66600037
+      value: 1.08371735
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 575274fdd087a4fe3bf10eea10a3502d, type: 2}
       propertyPath: m_LocalPosition.z
