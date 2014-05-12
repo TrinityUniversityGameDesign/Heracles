@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CerberusScript : MonoBehaviour {
     public GameObject[] heads;
+	public GameObject sceneChanger;
     private HeadScript[] headScripts;
     public Transform pos;
     public int attackTime;
@@ -184,6 +185,7 @@ public class CerberusScript : MonoBehaviour {
 
     void die()
     {
+		sceneChanger.SetActive (true);
 		Destroy (this.gameObject);
     }
 
