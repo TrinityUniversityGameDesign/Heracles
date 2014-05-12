@@ -17,6 +17,7 @@ public class HindEvasion : MonoBehaviour {
 	private GameObject deer;
 	private Rigidbody2D deerBody;
 	private BT_HealthScript playerHealth;
+	private int playerDeaths = 0;
 
 	private void flip() 
 	{
@@ -144,23 +145,7 @@ public class HindEvasion : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		//for testing -- causes deer to jump to random adjacent platform
-		if (Input.GetButtonDown ("Fire1"))
-		{
-//			deerBody.AddForce(new Vector2(100,200));
-			System.Random random = new System.Random();
-			int i = random.Next(0, adjacentPlatforms.Length);
-//			previousPlatform = currentPlatform;
-			currentPlatform = adjacentPlatforms[i];
-			ChangePosition();
-		}
-	}
-
-	void FixedUpdate() {
-		anim.SetFloat("vSpeed", deerBody.velocity.y);
-		anim.SetFloat("Speed", deerBody.velocity.x);
-		//anim.SetBool("Grounded",grounded);
-		if (playerHealth.GetHealth() <= 0)
+		if (playerHealth.GetDeathCount() > playerDeaths)
 		{
 			anim.SetBool ("Grounded", true);
 			currentPlatform = startPlatform;
@@ -169,6 +154,23 @@ public class HindEvasion : MonoBehaviour {
 			currentPosition.y += deer.renderer.bounds.extents.y;	
 			transform.position = currentPosition;
 			GetComponent<BT_HealthScript>().ResetHealth();
+			playerDeaths += 1;
 		}
+		//for testing -- causes deer to jump to random adjacent platform
+//		if (Input.GetButtonDown ("Fire1"))
+//		{
+//			System.Random random = new System.Random();
+//			int i = random.Next(0, adjacentPlatforms.Length);
+////			previousPlatform = currentPlatform;
+//			currentPlatform = adjacentPlatforms[i];
+//			ChangePosition();
+//		}
+	}
+
+	void FixedUpdate() {
+		anim.SetFloat("vSpeed", deerBody.velocity.y);
+		anim.SetFloat("Speed", deerBody.velocity.x);
+		//anim.SetBool("Grounded",grounded);
+
 	}
 }
