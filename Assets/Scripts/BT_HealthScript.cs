@@ -10,16 +10,11 @@ public class BT_HealthScript : MonoBehaviour {
 
 	public int[] healthPhases = {100};
 	public bool isInvincible = false;
-	public float seconds = 1.4f;
-	public GameObject deathFader;
-	public bool fadeOnDeath = false;
+	public Vector2 respawnPos;
 
-	private GameObject deathfader;
-	private bool fade = false;
-	private int deathCount = 0;	
 	private int currentHealth, currentPhase;
 	private GameObject player;
-	public Vector2 respawnPos;
+
 
 	void Start() {
 		currentPhase = healthPhases.Length-1;
@@ -63,39 +58,10 @@ public class BT_HealthScript : MonoBehaviour {
 		return currentPhase;
 	}
 
-	public int GetDeathCount() {
-		return deathCount;
-	}
-
 	// Called when out of phases and health
 	void DoDie() {
-		if (gameObject.tag == "P1") {
-			if (fadeOnDeath == false)
-				transform.position = respawnPos;
-			//transform.position = GameObject.FindGameObjectWithTag("DeathArea").GetComponent<GRE_PS_Checkpoint>().GetRespawnPos();
-			deathCount += 1;
-			GetComponent<DeathCount>().deathCount = (double)deathCount;
-			currentPhase = 0;
-			ResetHealth();
-		}
-		else 
-		{
-			if (!isInvincible)
+		if (!isInvincible)
 			Destroy(this.gameObject);
-		}
-		if (fadeOnDeath == true) 
-		{
-			player.GetComponent<PlayerControl>().SetMove(false);
-			player.GetComponent<ShootingScript>().active = false;
-			player.renderer.enabled = false;
-			StartCoroutine(wait(seconds, player.collider2D));
-			deathfader = Instantiate(deathFader,new Vector3(player.transform.position.x,player.transform.position.y,Camera.main.transform.position.z+1),Quaternion.identity) as GameObject;
-			deathfader.GetComponent<BT_DecayScript>().DecayNow(seconds);
-			Color tempColor = deathfader.GetComponent<MeshRenderer>().material.color;
-			tempColor.a = 0.0f;
-			deathfader.GetComponent<MeshRenderer>().material.color = tempColor;
-			fade = true;
-		}
 	}
 
 
@@ -105,22 +71,7 @@ public class BT_HealthScript : MonoBehaviour {
 	}
 
 	void Update() {
-		if (fade) {
-			Color tempColor = deathfader.GetComponent<MeshRenderer>().material.color;
-			tempColor.a += 0.015f;
-			deathfader.GetComponent<MeshRenderer>().material.color = tempColor;
-		}
-	}
 
-	IEnumerator wait(float seconds, Collider2D playerCollider) {
-		yield return new WaitForSeconds (seconds); 
-		playerCollider.transform.position = respawnPos;
-		playerCollider.renderer.enabled = true;
-		playerCollider.GetComponent<PlayerControl>().SetMove(true);
-		playerCollider.GetComponent<ShootingScript>().active = true;
-		Color tempColor = deathfader.GetComponent<MeshRenderer>().material.color;
-		tempColor.a = 0.0f;
-		deathfader.GetComponent<MeshRenderer>().material.color = tempColor;
-		fade = false;
 	}
+	
 }

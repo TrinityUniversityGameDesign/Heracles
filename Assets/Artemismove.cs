@@ -41,6 +41,13 @@ public class Artemismove : MonoBehaviour {
 				check = true;
 			}
 		}
+		if (GameObject.FindGameObjectsWithTag ("Hind").Length == 0 && !check) {
+			canShoot = false;
+			GameObject sceneChange = GameObject.Find ("SceneChangeCheckpoint");
+			sceneChange.renderer.enabled = true;
+			sceneChange.GetComponent<SceneChangeScript>().enabled = true;
+			check = true;
+		}
 		if (canShoot) {
 			if (GameObject.FindGameObjectWithTag("P1").transform.position.x < transform.position.x && facingRight)
 				flipDirection();

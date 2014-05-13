@@ -11,13 +11,10 @@ public class HindEvasion : MonoBehaviour {
 	public Animator anim;
 
 	private GameObject currentPlatform;
-//	private GameObject previousPlatform;
 	private GameObject[] adjacentPlatforms;
 	private Vector2 currentPosition;
 	private GameObject deer;
 	private Rigidbody2D deerBody;
-	private BT_HealthScript playerHealth;
-	private int playerDeaths = 0;
 
 	private void flip() 
 	{
@@ -89,10 +86,7 @@ public class HindEvasion : MonoBehaviour {
 
 			if (!Array.Exists (adjacentToPlayer, platform => platform == nextPlatform) && nextPlatform != triggerPlatform) 
 			{
-//				previousPlatform = currentPlatform;
 				currentPlatform = nextPlatform;
-//				if ((nextPlatform.transform.position.x > deer.transform.position.x) != facingRight)
-//					flip ();
 				ChangePosition ();
 			}
 		 	else 
@@ -109,22 +103,6 @@ public class HindEvasion : MonoBehaviour {
 //		}
 	}
 
-//	void OnCollisionEnter2D(Collider2D coll)
-//	{
-//		if (coll.gameObject.layer == LayerMask.NameToLayer("Player")) 
-//		{
-//			Debug.Log ("Collision with player.");
-//			System.Random random = new System.Random();
-//			int i = random.Next(0, platforms.Length);
-////			previousPlatform = currentPlatform;
-//			currentPlatform = platforms[i];
-//			Vector2 nextPosition = currentPlatform.transform.position;
-//			nextPosition.y += deer.renderer.bounds.extents.y;
-//			deer.transform.position = nextPosition;
-//			currentPosition = nextPosition;
-//			adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;
-//		}
-//	}
 
 	// Use this for initialization
 	void Start ()
@@ -138,39 +116,17 @@ public class HindEvasion : MonoBehaviour {
 		adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;		
 		currentPosition.y += deer.renderer.bounds.extents.y;	
 		transform.position = currentPosition;
-
-		playerHealth = GameObject.FindGameObjectWithTag ("P1").GetComponent<BT_HealthScript> ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (playerHealth.GetDeathCount() > playerDeaths)
-		{
-			anim.SetBool ("Grounded", true);
-			currentPlatform = startPlatform;
-			currentPosition = currentPlatform.transform.position;
-			adjacentPlatforms = currentPlatform.GetComponent<PlatformScript> ().adjacentPlatforms;		
-			currentPosition.y += deer.renderer.bounds.extents.y;	
-			transform.position = currentPosition;
-			GetComponent<BT_HealthScript>().ResetHealth();
-			playerDeaths += 1;
-		}
-		//for testing -- causes deer to jump to random adjacent platform
-//		if (Input.GetButtonDown ("Fire1"))
-//		{
-//			System.Random random = new System.Random();
-//			int i = random.Next(0, adjacentPlatforms.Length);
-////			previousPlatform = currentPlatform;
-//			currentPlatform = adjacentPlatforms[i];
-//			ChangePosition();
-//		}
+
 	}
 
 	void FixedUpdate() {
 		anim.SetFloat("vSpeed", deerBody.velocity.y);
 		anim.SetFloat("Speed", deerBody.velocity.x);
-		//anim.SetBool("Grounded",grounded);
 
 	}
 }

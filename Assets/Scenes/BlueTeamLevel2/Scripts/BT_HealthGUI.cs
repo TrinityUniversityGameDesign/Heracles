@@ -29,7 +29,6 @@ public class BT_HealthGUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//healthIcon = (Texture2D)Resources.LoadAssetAtPath("Resources/TEMPheart.png", typeof(Sprite));
 		healthScript = GetComponent<BT_HealthScript> ();
 	}
 	
