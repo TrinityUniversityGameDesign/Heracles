@@ -11,17 +11,21 @@ public class playerHealth : MonoBehaviour {
 	public Texture2D healthStart = (Texture2D)Resources.LoadAssetAtPath("Sprites/scissorsOpen.png", typeof(Sprite));
 	//private GameObject dude = new GameObject.FindGameObjectsWithTag("P1");
 	public static Vector2 respawnPos = new Vector2(21,2);
-
+	public bool destroyOnDeath = false;
 
 	public void damagePlayer(int damage)
 	{
 		currenthealth-=damage;
 		if (currenthealth <= 0) {
-			//Destroy (gameObject);
-			gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
-			currenthealth=maxHealth;
-			if (GameObject.FindGameObjectsWithTag("ArtemisPoint").Length <= 0)
-				GetComponent<GRE_PS_Checkpoint>().EnableDeathFade();
+			if (destroyOnDeath == true)
+				Destroy (gameObject);
+			else
+			{
+				gameObject.transform.position = GRE_PS_Checkpoint.respawnPos;
+				currenthealth=maxHealth;
+				if (GameObject.FindGameObjectsWithTag("ArtemisPoint").Length <= 0)
+					GetComponent<GRE_PS_Checkpoint>().EnableDeathFade();
+			}
 		}
 	}
 

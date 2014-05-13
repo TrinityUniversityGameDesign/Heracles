@@ -55,7 +55,7 @@ public class Artemismove : MonoBehaviour {
 				flipDirection();
 			if (hind.GetComponent<BT_HealthScript>().GetHealth() < 3)
 				difficultyMod = 1.5f;
-			if (hind.GetComponent<BT_HealthScript>().GetHealth() < 3)
+			if (hind.GetComponent<BT_HealthScript>().GetHealth() < 2)
 				difficultyMod = 2f;
 		}
 		if (fade) {
