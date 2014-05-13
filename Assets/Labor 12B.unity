@@ -17396,6 +17396,7 @@ GameObject:
   - 212: {fileID: 433777485}
   - 114: {fileID: 433777489}
   - 61: {fileID: 433777488}
+  - 114: {fileID: 433777486}
   m_Layer: 8
   m_Name: BoneGateLeft
   m_TagString: Untagged
@@ -17437,6 +17438,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 90f1957751872474fb731e9a8a76ba27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &433777486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433777483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 167466aa8e08e6449ac0fa1ceb022bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &433777488
 BoxCollider2D:
   m_ObjectHideFlags: 0

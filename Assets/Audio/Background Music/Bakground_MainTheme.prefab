@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: a1a8edf26924dbf4592eee6b9e10ea09, type: 3}
+  cerberusTheme: {fileID: 8300000, guid: 7294a2f6d21789a4a90c8e4d66d1848f, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
