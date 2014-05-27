@@ -19256,6 +19256,7 @@ MonoBehaviour:
   healthEnd: {fileID: 0}
   healthMiddle: {fileID: 0}
   healthStart: {fileID: 0}
+  destroyOnDeath: 0
 --- !u!114 &465665134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19273,6 +19274,7 @@ MonoBehaviour:
   healthEnd: {fileID: 2800000, guid: 29dcd060f65554f4c9093263c00a2e34, type: 3}
   healthMiddle: {fileID: 2800000, guid: 3d23ec266bae61447afe0ec9d51dc866, type: 3}
   healthStart: {fileID: 2800000, guid: 863e0408cfb3671419aa49661a3fa661, type: 3}
+  destroyOnDeath: 0
 --- !u!81 &465665135
 AudioListener:
   m_ObjectHideFlags: 0
@@ -40488,7 +40490,7 @@ Transform:
   m_PrefabInternal: {fileID: 1270128766}
   m_GameObject: {fileID: 1078865423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195, y: -28, z: 0}
+  m_LocalPosition: {x: 200, y: -28, z: 0}
   m_LocalScale: {x: -2.16316032, y: -.216316685, z: 1}
   m_Children:
   - {fileID: 12427784}
@@ -47577,7 +47579,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 68861beb9fa194c7bbcb8762c00f733a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 195
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 68861beb9fa194c7bbcb8762c00f733a, type: 2}
       propertyPath: m_LocalPosition.y
